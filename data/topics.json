@@ -1,0 +1,461 @@
+[
+  {
+    "id": "vivienda",
+    "name": "Vivienda y alquiler",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'La vivienda' (% de menciones espontáneas como problema principal de España)",
+        "value": 37.5
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-PER: vivienda entre los problemas que afectan personalmente (% de menciones)",
+        "value": 27.9
+      }
+    ]
+  },
+  {
+    "id": "economia",
+    "name": "Economía y coste de vida",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'La crisis económica' (% de menciones espontáneas como problema principal de España)",
+        "value": 21.6
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-PER: crisis económica entre los problemas que afectan personalmente (% de menciones)",
+        "value": 30.1
+      }
+    ]
+  },
+  {
+    "id": "inmigracion",
+    "name": "Inmigración y control de fronteras",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'La inmigración' (% de menciones espontáneas como problema principal de España)",
+        "value": 19.7
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-PER: inmigración entre los problemas que afectan personalmente (% de menciones)",
+        "value": 12.6
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: subcategoría 'Crisis con Marruecos. Fronteras de Ceuta y Melilla' (% de menciones)",
+        "value": 4.8
+      }
+    ]
+  },
+  {
+    "id": "calidad-empleo",
+    "name": "Calidad del empleo y precariedad",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'Los problemas relacionados con la calidad del empleo' (% de menciones)",
+        "value": 13.7
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-PER: calidad del empleo entre los problemas que afectan personalmente (% de menciones)",
+        "value": 16.4
+      }
+    ]
+  },
+  {
+    "id": "paro",
+    "name": "Paro y desempleo",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'El paro' (% de menciones espontáneas como problema principal de España)",
+        "value": 11.5
+      }
+    ]
+  },
+  {
+    "id": "sanidad",
+    "name": "Sanidad pública y listas de espera",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'La sanidad' (% de menciones espontáneas como problema principal de España)",
+        "value": 11.1
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-PER: sanidad entre los problemas que afectan personalmente (% de menciones)",
+        "value": 20.1
+      }
+    ]
+  },
+  {
+    "id": "corrupcion",
+    "name": "Corrupción y fraude",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'La corrupción y el fraude' (% de menciones espontáneas)",
+        "value": 6.5
+      }
+    ]
+  },
+  {
+    "id": "seguridad-ciudadana",
+    "name": "Seguridad ciudadana",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'La inseguridad ciudadana' (% de menciones espontáneas)",
+        "value": 3.9
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-PER: inseguridad ciudadana entre los problemas que afectan personalmente (% de menciones)",
+        "value": 7.8
+      }
+    ]
+  },
+  {
+    "id": "calidad-democratica",
+    "name": "Calidad democrática y Gobierno",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'El Gobierno y los partidos políticos' (% de menciones)",
+        "value": 18.8
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'Los problemas políticos' (% de menciones)",
+        "value": 13.9
+      },
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'El mal comportamiento de los/as políticos/as' (% de menciones)",
+        "value": 9.7
+      }
+    ]
+  },
+  {
+    "id": "extremismos",
+    "name": "Extremismos y polarización",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: 'Los extremismos' (% de menciones espontáneas)",
+        "value": 8.0
+      }
+    ]
+  },
+  {
+    "id": "marruecos-fronteras",
+    "name": "Relaciones con Marruecos y fronteras",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-ranking",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-NAC: subcategoría 'Crisis con Marruecos. Fronteras de Ceuta y Melilla' (% de menciones)",
+        "value": 4.8
+      },
+      {
+        "type": "cis-survey",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-CEU: refuerzo de fronteras ante entradas masivas (% de 'sí')",
+        "value": 82.2
+      }
+    ]
+  },
+  {
+    "id": "medio-ambiente",
+    "name": "Medio ambiente, cambio climático e incendios",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-survey",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-INC: preocupación por los incendios (% 'muy o bastante preocupado'; no es un índice temático)",
+        "value": 98.2
+      },
+      {
+        "type": "cis-survey",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-INC: cree muy probable verse afectado por los incendios (%)",
+        "value": 74.3
+      }
+    ]
+  },
+  {
+    "id": "politica-exterior",
+    "name": "Política exterior y conflictos",
+    "block": "A",
+    "evidence": [
+      {
+        "type": "cis-survey",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-INT: preocupación por el conflicto de Gaza (% 'muy o bastante preocupado')",
+        "value": 70.8
+      },
+      {
+        "type": "cis-survey",
+        "sourceName": "CIS, Estudio 3577 — Barómetro de septiembre 2026",
+        "sourceUrl": "https://www.cis.es/es/w/avance-de-resultados-del-estudio-3577-bar%C3%B3metro-de-septiembre-2026-",
+        "sourceDate": "2026-09-01",
+        "metric": "Q-INT: preocupación por el conflicto de Ucrania (% 'muy o bastante preocupado')",
+        "value": 69.2
+      }
+    ]
+  },
+  {
+    "id": "pensiones",
+    "name": "Pensiones y sostenibilidad de la Seguridad Social",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Pensiones); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "educacion",
+    "name": "Educación y Formación Profesional",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Educación); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "impuestos",
+    "name": "Impuestos y fiscalidad",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Impuestos); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "energia",
+    "name": "Energía y transición energética",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Energía); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "desigualdad",
+    "name": "Desigualdad y políticas sociales",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Políticas sociales); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "igualdad-genero",
+    "name": "Igualdad de género y violencia contra la mujer",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Feminismo); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "derechos-lgtbiq",
+    "name": "Derechos LGTBIQ+",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (LGTBIQ+); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "modelo-estado",
+    "name": "Modelo de Estado y territorial",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Modelo de Estado); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "justicia",
+    "name": "Justicia",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Justicia); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "defensa",
+    "name": "Defensa",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Defensa); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "agricultura-despoblacion",
+    "name": "Agricultura, ganadería y medio rural / despoblación",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Ganadería y Agricultura / Despoblación); sin % CIS de ranking"
+      }
+    ]
+  },
+  {
+    "id": "cultura",
+    "name": "Cultura",
+    "block": "B",
+    "evidence": [
+      {
+        "type": "agenda",
+        "sourceName": "Comparador de programas electorales 23J (RTVE)",
+        "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+        "sourceDate": "2023-07-23",
+        "metric": "Temática de programa/agenda (Cultura); sin % CIS de ranking"
+      }
+    ]
+  }
+]

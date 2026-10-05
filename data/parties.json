@@ -1,0 +1,98 @@
+[
+  {
+    "id": "psoe",
+    "displayName": "PSOE",
+    "scope": "estatal",
+    "websiteUrl": "https://www.psoe.es/",
+    "programUrl": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+    "programYear": 2023
+  },
+  {
+    "id": "pp",
+    "displayName": "PP",
+    "scope": "estatal",
+    "websiteUrl": "https://www.pp.es/",
+    "programUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+    "programYear": 2023
+  },
+  {
+    "id": "vox",
+    "displayName": "VOX",
+    "scope": "estatal",
+    "websiteUrl": "https://www.voxespana.es/",
+    "programUrl": "https://files.mediaset.es/file/2023/0707/15/programa-vox-completo-pdf.pdf",
+    "programYear": 2023
+  },
+  {
+    "id": "sumar",
+    "displayName": "Sumar",
+    "scope": "estatal",
+    "websiteUrl": "https://movimientosumar.es/",
+    "programUrl": "https://movimientosumar.es/programa-electoral-23j/",
+    "programYear": 2023,
+    "identityNote": "En 2026 Sumar se recompone como 'Frente Amplio' (Movimiento Sumar, IU, Más Madrid, Catalunya en Comú); identidad sujeta a las coaliciones del 16-oct-2026."
+  },
+  {
+    "id": "podemos",
+    "displayName": "Podemos",
+    "scope": "estatal",
+    "websiteUrl": "https://podemos.info/",
+    "programUrl": "https://podemos.info/wp-content/uploads/2023/05/Podemos_programa_marco_28M_interactivo.pdf",
+    "programYear": 2023,
+    "identityNote": "En 2023 concurrió dentro de Sumar sin programa propio de generales; en 2026 negocia coalición o concurrencia propia (primarias 14-15-oct-2026)."
+  },
+  {
+    "id": "erc",
+    "displayName": "ERC",
+    "scope": "territorial",
+    "communities": ["cataluna"],
+    "websiteUrl": "https://www.esquerra.cat/",
+    "programUrl": "https://esquerrarepublicana.cat/",
+    "programYear": 2023
+  },
+  {
+    "id": "junts",
+    "displayName": "Junts",
+    "scope": "territorial",
+    "communities": ["cataluna"],
+    "websiteUrl": "https://junts.cat/",
+    "programUrl": "https://beteve.cat/politica/programa-junts-eleccions-generals-2023/",
+    "programYear": 2023
+  },
+  {
+    "id": "pnv",
+    "displayName": "EAJ-PNV",
+    "scope": "territorial",
+    "communities": ["pais-vasco"],
+    "websiteUrl": "https://www.eaj-pnv.eus/",
+    "programUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "programYear": 2023
+  },
+  {
+    "id": "eh-bildu",
+    "displayName": "EH Bildu",
+    "scope": "territorial",
+    "communities": ["pais-vasco", "navarra"],
+    "websiteUrl": "https://ehbildu.eus/",
+    "programUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "programYear": 2023
+  },
+  {
+    "id": "bng",
+    "displayName": "BNG",
+    "scope": "territorial",
+    "communities": ["galicia"],
+    "websiteUrl": "https://www.bng.gal/",
+    "programUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "programYear": 2023
+  },
+  {
+    "id": "coalicion-canaria",
+    "displayName": "Coalición Canaria",
+    "scope": "territorial",
+    "communities": ["canarias"],
+    "websiteUrl": "https://coalicioncanaria.org/",
+    "programUrl": "https://coalicioncanaria.org/programas-electorales/",
+    "programYear": 2023
+  }
+]
