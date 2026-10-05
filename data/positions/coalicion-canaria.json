@@ -1,0 +1,227 @@
+[
+  {
+    "topicId": "vivienda",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el manifiesto CC-NC de las generales de 2019 (programa de generales más reciente publicado; no hay programa de generales 2023 en la web oficial) no recoge el eje de vivienda."
+  },
+  {
+    "topicId": "economia",
+    "value": -0.3,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): diversificación económica, apoyo a la industria local y a la I+D y cumplimiento del REF para compensar sobrecostes."
+  },
+  {
+    "topicId": "inmigracion",
+    "value": -0.3,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): migración ordenada, cooperación con los países de origen y lucha contra la inmigración ilegal, con acogida e integración de menores."
+  },
+  {
+    "topicId": "calidad-empleo",
+    "value": -0.4,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): dejar atrás la precariedad laboral, sueldos dignos, estabilidad y formación profesional."
+  },
+  {
+    "topicId": "paro",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): incentivos a la contratación indefinida de jóvenes y bonificaciones en la cuota empresarial de la Seguridad Social."
+  },
+  {
+    "topicId": "sanidad",
+    "value": -0.7,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): sanidad pública y universal, financiación sanitaria específica y revisión del sobrecoste de la insularidad."
+  },
+  {
+    "topicId": "corrupcion",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no contiene propuestas trazables sobre el eje de corrupción."
+  },
+  {
+    "topicId": "seguridad-ciudadana",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no recoge una posición sobre seguridad ciudadana."
+  },
+  {
+    "topicId": "calidad-democratica",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no recoge una posición sobre participación y contrapesos democráticos."
+  },
+  {
+    "topicId": "extremismos",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no recoge una posición sobre desinformación y plataformas."
+  },
+  {
+    "topicId": "marruecos-fronteras",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: la posición sobre el Sáhara Occidental corresponde a política exterior, no al eje de la relación bilateral y Ceuta y Melilla."
+  },
+  {
+    "topicId": "medio-ambiente",
+    "value": -0.7,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): transición hacia el 45% de renovables en 2025, calendario de cierre de los sectores fósiles, economía circular y movilidad sostenible."
+  },
+  {
+    "topicId": "politica-exterior",
+    "value": -0.4,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): Canarias como plataforma de paz y cooperación con África Occidental, y defensa de la libre determinación del pueblo saharaui."
+  },
+  {
+    "topicId": "pensiones",
+    "value": -0.7,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): plan de actualización de las pensiones no contributivas hasta el SMI y Pacto de Estado por unas pensiones dignas."
+  },
+  {
+    "topicId": "educacion",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): pacto social por la educación, gratuidad del primer ciclo de infantil (0-3), FP dual y becas específicas para Canarias."
+  },
+  {
+    "topicId": "impuestos",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el manifiesto defiende el diferencial fiscal canario y el REF, sin una posición sobre el eje general de presión fiscal."
+  },
+  {
+    "topicId": "energia",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): renovables hasta el 45% en 2025, cierre de los sectores fósiles y desarrollo de la eólica marina."
+  },
+  {
+    "topicId": "desigualdad",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): lucha contra la pobreza, sistema canario de servicios sociales y financiación estatal de la dependencia."
+  },
+  {
+    "topicId": "igualdad-genero",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): Pacto de Estado contra la Violencia de Género, Convenio de Estambul y medidas contra las brechas de género."
+  },
+  {
+    "topicId": "derechos-lgtbiq",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): lucha contra la LGTBIfobia, respaldo legal y social y protocolos frente al acoso escolar."
+  },
+  {
+    "topicId": "modelo-estado",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): Estado plurinacional, mayores cotas de autogobierno, blindaje del REF y reforma del Senado."
+  },
+  {
+    "topicId": "justicia",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no recoge una posición sobre el eje de la Justicia."
+  },
+  {
+    "topicId": "defensa",
+    "value": -0.4,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): recuperación para uso civil de la Base Naval de Las Palmas y de otros espacios militares en desuso."
+  },
+  {
+    "topicId": "agricultura-despoblacion",
+    "value": -0.4,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): cumplimiento del REF agrario y del POSEI, seguros agrarios y subvenciones al transporte para el sector primario canario."
+  },
+  {
+    "topicId": "cultura",
+    "value": -0.4,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2019-10-04",
+    "note": "Manifiesto electoral CC-NC (10-N-2019): recuperación de recursos para la movilidad cultural extrapeninsular y deducción para producciones cinematográficas en Canarias."
+  }
+]

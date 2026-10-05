@@ -1,0 +1,227 @@
+[
+  {
+    "topicId": "vivienda",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: ampliar el parque público de alquiler, movilizar los pisos de la SAREB y limitar las reducciones fiscales a los alquileres por encima del índice de referencia."
+  },
+  {
+    "topicId": "economia",
+    "value": 0,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: inversión en I+D+i hasta el 3% del PIB y reindustrialización, con una fiscalidad al servicio del crecimiento sin incrementar la presión global."
+  },
+  {
+    "topicId": "inmigracion",
+    "value": 0.7,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: articular vías legales y seguras de migración regular, eliminar las devoluciones en caliente y políticas de apertura y acogida."
+  },
+  {
+    "topicId": "calidad-empleo",
+    "value": -0.4,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: salario mínimo catalán de 1.319€, más estabilidad y formación, y la 'motxilla austríaca' con un nuevo sistema de indemnizaciones."
+  },
+  {
+    "topicId": "paro",
+    "value": -0.4,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: políticas activas de empleo (1% del PIB), traspaso de las políticas pasivas y protección de los parados de larga duración."
+  },
+  {
+    "topicId": "sanidad",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: acceso universal a un servicio sanitario público de calidad, más recursos frente al infrafinanciamiento y más plazas MIR."
+  },
+  {
+    "topicId": "corrupcion",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: denuncia de la politización de la Justicia y del Tribunal de Cuentas, nueva Ley de Secretos Oficiales y renovación del CGPJ."
+  },
+  {
+    "topicId": "seguridad-ciudadana",
+    "value": 0.3,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: modificar el Código Penal contra la multirreincidencia en los hurtos y agilizar el desalojo de las ocupaciones ilegales."
+  },
+  {
+    "topicId": "calidad-democratica",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: gobierno abierto (transparencia, participación y datos abiertos), derogación de la LRSAL y reforma del reglamento del Congreso."
+  },
+  {
+    "topicId": "extremismos",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: reforma del Código Penal de los delitos que limitan la libertad de expresión y derogación de la ley mordaza."
+  },
+  {
+    "topicId": "marruecos-fronteras",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el programa 23J de Junts no recoge una posición sobre la relación bilateral con Marruecos ni sobre Ceuta y Melilla."
+  },
+  {
+    "topicId": "medio-ambiente",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: compromisos de reducción de emisiones, renovables, eficiencia energética y criterios de fiscalidad ambiental."
+  },
+  {
+    "topicId": "politica-exterior",
+    "value": 0.2,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: defensa de los derechos humanos como eje de la política exterior, apoyo a Ucrania y exigencia del cumplimiento de los compromisos con la OTAN."
+  },
+  {
+    "topicId": "pensiones",
+    "value": -0.4,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: mantener el poder adquisitivo, mejorar las pensiones mínimas y no contributivas y un factor de sostenibilidad ligado a la esperanza de vida."
+  },
+  {
+    "topicId": "educacion",
+    "value": -0.3,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: incrementar el presupuesto público de educación (6% del PIB), gratuidad de 0-3 y de la postobligatoria y la concertada con finalidad social."
+  },
+  {
+    "topicId": "impuestos",
+    "value": -0.2,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: que aporte más quien más tiene, deflactar las escalas, bajar el impuesto de sociedades de las pymes del 25% al 20% y fiscalidad verde."
+  },
+  {
+    "topicId": "energia",
+    "value": -0.3,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: impulsar las renovables, crear un mercado catalán de contratación a plazo y sacar la nuclear y la gran hidráulica de la subasta eléctrica."
+  },
+  {
+    "topicId": "desigualdad",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: políticas redistributivas y predistributivas, refuerzo de la atención a las familias sin ingresos y actualización del IPREM."
+  },
+  {
+    "topicId": "igualdad-genero",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: igualdad retributiva, ley de corresponsabilidad, ley de igualdad salarial y lucha contra la violencia machista."
+  },
+  {
+    "topicId": "derechos-lgtbiq",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: reconocimiento y defensa de los derechos de las personas LGTBI y lucha contra la LGTBIfobia."
+  },
+  {
+    "topicId": "modelo-estado",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: derecho a la autodeterminación, un Estado propio para Cataluña y competencias plenas."
+  },
+  {
+    "topicId": "justicia",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: independencia judicial y despolitización, creación del Consell de Justícia de Catalunya y refuerzo de las garantías procesales."
+  },
+  {
+    "topicId": "defensa",
+    "value": -0.3,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: revisar el modelo de Defensa y sus programas de armamento, avanzar hacia un ejército europeo y no exportar armas a países que violan derechos."
+  },
+  {
+    "topicId": "agricultura-despoblacion",
+    "value": -0.2,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: regionalización de la PAC y respeto al Plan Estratégico catalán, ayudas a agricultores y pescadores, modernización de regadíos y ley de cadena alimentaria."
+  },
+  {
+    "topicId": "cultura",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J de Junts: territorializar los fondos de lengua y cultura, oficialidad del catalán, más recursos para los museos y Ley del Cinema."
+  }
+]
