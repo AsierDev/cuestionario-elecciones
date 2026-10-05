@@ -1,0 +1,227 @@
+[
+  {
+    "topicId": "vivienda",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/vivienda-suministros-basicos/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, vivienda): intervenir el mercado del alquiler con control de precios, gran parque público de alquiler y fin de las SOCIMI."
+  },
+  {
+    "topicId": "economia",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/economia/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, economía): subir impuestos a grandes corporaciones y fortunas, banca pública y recuperación de sectores estratégicos."
+  },
+  {
+    "topicId": "inmigracion",
+    "value": 0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/migraciones/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, migraciones): vías legales y seguras, cierre de los CIE, fin de las devoluciones en caliente y regularización."
+  },
+  {
+    "topicId": "calidad-empleo",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/empleo/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, empleo): jornada de 34 h, prohibición de contratos temporales de menos de un mes y fin de la precariedad en prácticas."
+  },
+  {
+    "topicId": "paro",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/empleo/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, empleo): SMI de 1.200 €, fortalecimiento de la protección por desempleo y protección especial para jóvenes."
+  },
+  {
+    "topicId": "sanidad",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/sanidad/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, sanidad): frenar la mercantilización, listas de espera máximas de un mes y dentista gratuito en el sistema público."
+  },
+  {
+    "topicId": "corrupcion",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/anticorrupcion-buen-gobierno/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, anticorrupción): Plan Nacional contra la Corrupción, prohibición de puertas giratorias y registro de lobbies."
+  },
+  {
+    "topicId": "seguridad-ciudadana",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://podemos.info/materia/seguridad-interior-proteccion-civil/",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el programa no permite situar con claridad el eje prevención social frente a endurecimiento penal."
+  },
+  {
+    "topicId": "calidad-democratica",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/democracia-participacion/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, democracia): reforma electoral más proporcional, sufragio a partir de los 16 años y democratización de los partidos."
+  },
+  {
+    "topicId": "extremismos",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://podemos.info/materia/democracia-participacion/",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: la responsabilidad informativa no permite situar con claridad el eje regular plataformas frente a autorregulación."
+  },
+  {
+    "topicId": "marruecos-fronteras",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://podemos.info/materia/internacional/",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: la posición sobre el Sáhara no permite situar con claridad el eje firmeza frente a cooperación con Marruecos."
+  },
+  {
+    "topicId": "medio-ambiente",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/medio-ambiente/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, medio ambiente): 100% renovables en 2040, cierre de nucleares y carbón e impuesto a las grandes empresas contaminantes."
+  },
+  {
+    "topicId": "politica-exterior",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/internacional/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, internacional): compromiso activo con la paz, cooperación feminista y aumento de la Ayuda Oficial al Desarrollo."
+  },
+  {
+    "topicId": "pensiones",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/pensiones/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, pensiones): garantía de revalorización, subida de las mínimas y no contributivas y más ingresos para la Seguridad Social."
+  },
+  {
+    "topicId": "educacion",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/educacion/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, educación): universidad pública gratuita, nueva ley que supere la LOMCE, más becas y fin de los conciertos segregadores."
+  },
+  {
+    "topicId": "impuestos",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/fiscalidad/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, fiscalidad): impuesto a las grandes fortunas, más progresividad en el IRPF, impuesto a la banca y fin de privilegios fiscales."
+  },
+  {
+    "topicId": "energia",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/energia/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, energía): 100% renovables en 2040, cierre de las centrales nucleares y de carbón y empresa pública eléctrica."
+  },
+  {
+    "topicId": "desigualdad",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/lucha-contra-la-pobreza/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, lucha contra la pobreza): Ingreso Básico Garantizado, SMI de 1.200 € y prestaciones para el cuidado de menores."
+  },
+  {
+    "topicId": "igualdad-genero",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/feminismos/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, feminismos): plan estatal contra las violencias machistas dotado con 600 M€, paridad y listas cremallera."
+  },
+  {
+    "topicId": "derechos-lgtbiq",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/lgtbi/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, LGTBI): ampliar los derechos de las personas LGTBI y protocolos contra la LGTBIfobia."
+  },
+  {
+    "topicId": "modelo-estado",
+    "value": 0.9,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/plurinacionalidad-municipalismo-modelo-territorial/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, modelo territorial): Senado como cámara territorial, resolución democrática del conflicto catalán y lenguas cooficiales."
+  },
+  {
+    "topicId": "justicia",
+    "value": -0.7,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/justicia/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, justicia): reformar el CGPJ con elección directa, despolitizar el Tribunal Constitucional y derecho a una justicia de calidad."
+  },
+  {
+    "topicId": "defensa",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/paz-seguridad/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, paz y seguridad): desplazamiento progresivo de la OTAN hacia la defensa europea (PCSD) y apoyo a la abolición de las armas nucleares."
+  },
+  {
+    "topicId": "agricultura-despoblacion",
+    "value": -0.8,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/mundo-rural-lucha-contra-la-despoblacion/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, mundo rural): Plan Nacional de Desarrollo Rural, precios sostén para pequeños productores y PAC más justa."
+  },
+  {
+    "topicId": "cultura",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://podemos.info/materia/cultura/",
+    "sourceDate": "2020-09-08",
+    "note": "Programa de Podemos (podemos.info, cultura): Estatuto del Artista, red de centros culturales ciudadanos y producción en las lenguas propias."
+  }
+]

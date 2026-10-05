@@ -1,0 +1,227 @@
+[
+  {
+    "topicId": "vivienda",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Vivienda): parque de 2 millones de viviendas sociales y asequibles, alquiler social obligatorio para grandes tenedores y precios de referencia."
+  },
+  {
+    "topicId": "economia",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Economía): herencia universal de 20.000 € al cumplir 18 años, jornada máxima de 37,5 h y SMI por encima del IPC."
+  },
+  {
+    "topicId": "inmigracion",
+    "value": 0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Inmigración): movilidad con derechos, tipificación de las devoluciones sumarias y corredores humanitarios para vías legales y seguras."
+  },
+  {
+    "topicId": "calidad-empleo",
+    "value": -0.7,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Paro): reorganización de la prestación por desempleo con transiciones seguras y prestación específica para el sector cultural."
+  },
+  {
+    "topicId": "paro",
+    "value": -0.7,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Paro): prestaciones que garanticen las transiciones laborales y reconocimiento de días cotizados en formación a fijas-discontinuas."
+  },
+  {
+    "topicId": "sanidad",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Sanidad): blindar el carácter público del SNS, desprivatizar servicios y ley de listas de espera con tiempos máximos."
+  },
+  {
+    "topicId": "corrupcion",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el bloque de Sumar en el comparador RTVE 23J (Justicia) no contiene propuestas contra la corrupción que sitúen el eje."
+  },
+  {
+    "topicId": "seguridad-ciudadana",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el comparador RTVE 23J no recoge una posición clara sobre prevención social frente a endurecimiento penal."
+  },
+  {
+    "topicId": "calidad-democratica",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: el comparador RTVE 23J no ofrece propuestas trazables sobre participación y contrapesos democráticos."
+  },
+  {
+    "topicId": "extremismos",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: sin propuesta trazable sobre regular plataformas frente a autorregulación en el comparador RTVE 23J."
+  },
+  {
+    "topicId": "marruecos-fronteras",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2026-10-05",
+    "note": "Búsqueda negativa: la posición sobre el Sáhara no permite situar con claridad el eje firmeza frente a cooperación con Marruecos."
+  },
+  {
+    "topicId": "medio-ambiente",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Medio Ambiente): elevar la ambición climática al 55% de reducción de emisiones en 2030 y fiscalidad ambiental a la industria fósil."
+  },
+  {
+    "topicId": "politica-exterior",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Política Exterior): autonomía estratégica europea frente a la OTAN, solidaridad con Ucrania por vía diplomática y apoyo al Sáhara."
+  },
+  {
+    "topicId": "pensiones",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Pensiones): revalorización con el IPC y por encima para las pensiones mínimas, y refuerzo del sistema con más ingresos."
+  },
+  {
+    "topicId": "educacion",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Educación): universalizar la educación 0-3, alcanzar el 5% del PIB en gasto educativo y ecocomedores públicos gratuitos."
+  },
+  {
+    "topicId": "impuestos",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Impuestos): impuesto permanente a las grandes fortunas, sucesiones con mínimo estatal y sociedades al 15% efectivo."
+  },
+  {
+    "topicId": "energia",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Energía): 500.000 empleos en renovables, fin de las nuevas inversiones en fósiles y reforma del mercado eléctrico."
+  },
+  {
+    "topicId": "desigualdad",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Políticas sociales): blindar el derecho a la Seguridad Social en la Constitución, revalorizar prestaciones con el IPC y ley de cuidados."
+  },
+  {
+    "topicId": "igualdad-genero",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Feminismo): vicepresidencia de Feminismos, blindar el Pacto contra la Violencia de Género y paridad en los ámbitos de decisión."
+  },
+  {
+    "topicId": "derechos-lgtbiq",
+    "value": -0.9,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (LGTBIQ+): pacto contra los discursos de odio, red de acogida para víctimas y acceso a tratamientos de identidad de género."
+  },
+  {
+    "topicId": "modelo-estado",
+    "value": 0.8,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Modelo de estado): mesa de diálogo con Cataluña con consulta, nuevo pacto territorial y reforma de la financiación autonómica."
+  },
+  {
+    "topicId": "justicia",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Justicia): plan de choque en la administración de justicia, renovación del CGPJ con más peso parlamentario y justicia restaurativa."
+  },
+  {
+    "topicId": "defensa",
+    "value": -0.6,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Defensa): Estrategia Nacional de Seguridad Humana, auditoría de los programas de armamento y control de la exportación de armas."
+  },
+  {
+    "topicId": "agricultura-despoblacion",
+    "value": -0.7,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Ganadería y Agricultura/Despoblación): transición agroecológica, moratoria del regadío intensivo y servicios en 'Territorio 30 minutos'."
+  },
+  {
+    "topicId": "cultura",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Comparador RTVE 23J (Cultura): elevar el presupuesto de cultura al 1% de los PGE y extender el bono cultural de 16 a 30 años."
+  }
+]
