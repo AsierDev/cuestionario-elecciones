@@ -1,0 +1,677 @@
+[
+  {
+    "id": "q-vivienda",
+    "topicId": "vivienda",
+    "text": "¿Qué papel debería tener el Estado en el acceso a la vivienda?",
+    "type": "single",
+    "axisNote": "-1: Limitar los precios del alquiler y ampliar la vivienda pública | +1: Desregular el suelo y rebajar impuestos a los propietarios",
+    "options": [
+      {
+        "id": "regulacion",
+        "label": "Limitar los precios del alquiler y ampliar la vivienda pública",
+        "value": -1
+      },
+      {
+        "id": "mixta",
+        "label": "Combinar ayudas al alquiler con incentivos a la construcción",
+        "value": 0
+      },
+      {
+        "id": "liberalizacion",
+        "label": "Desregular el suelo y rebajar los impuestos a los propietarios",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-economia",
+    "topicId": "economia",
+    "text": "¿Qué medidas económicas apoyarías? Marca todas las que quieras.",
+    "type": "multi",
+    "axisNote": "-1: Más gasto público e impuestos a las rentas altas | +1: Menos gasto, menos impuestos y menos regulación",
+    "options": [
+      {
+        "id": "gasto-social",
+        "label": "Aumentar el gasto social",
+        "value": -1
+      },
+      {
+        "id": "mas-ingresos",
+        "label": "Subir impuestos a las rentas altas y a las grandes empresas",
+        "value": -0.5
+      },
+      {
+        "id": "continuidad",
+        "label": "Mantener las cuentas equilibradas sin grandes cambios",
+        "value": 0
+      },
+      {
+        "id": "menos-impuestos",
+        "label": "Bajar impuestos y recortar el gasto público",
+        "value": 0.5
+      },
+      {
+        "id": "desregulacion",
+        "label": "Reducir trabas y regulación a las empresas",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-inmigracion",
+    "topicId": "inmigracion",
+    "text": "¿Cómo debería gestionarse la inmigración en España?",
+    "type": "single",
+    "axisNote": "-1: Reforzar el control de fronteras y las devoluciones | +1: Ampliar las vías legales y la regularización",
+    "options": [
+      {
+        "id": "control-fronteras",
+        "label": "Reforzar el control de fronteras y las devoluciones",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener la política actual reforzando la integración",
+        "value": 0
+      },
+      {
+        "id": "aperturista",
+        "label": "Ampliar las vías legales y regularizar a los residentes",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-calidad-empleo",
+    "topicId": "calidad-empleo",
+    "text": "¿Qué medidas apoyarías para la calidad del empleo? Marca todas las que quieras.",
+    "type": "multi",
+    "axisNote": "-1: Más derechos y estabilidad laboral | +1: Más flexibilidad para las empresas",
+    "options": [
+      {
+        "id": "derechos",
+        "label": "Subir el salario mínimo y limitar la temporalidad",
+        "value": -1
+      },
+      {
+        "id": "inspeccion",
+        "label": "Reforzar la inspección de trabajo y las sanciones",
+        "value": -0.5
+      },
+      {
+        "id": "continuidad",
+        "label": "Mantener el marco laboral actual",
+        "value": 0
+      },
+      {
+        "id": "flexibilidad",
+        "label": "Flexibilizar la contratación y reducir la indemnización por despido",
+        "value": 0.5
+      },
+      {
+        "id": "cotizaciones",
+        "label": "Reducir las cotizaciones a la contratación",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-paro",
+    "topicId": "paro",
+    "text": "¿Qué prioridad debería darse a las políticas contra el paro?",
+    "type": "single",
+    "axisNote": "-1: Más protección por desempleo y formación pública | +1: Menos coste de contratación mediante bonificaciones",
+    "options": [
+      {
+        "id": "proteccion",
+        "label": "Ampliar la protección por desempleo y la formación pública",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener las políticas de empleo actuales",
+        "value": 0
+      },
+      {
+        "id": "bonificaciones",
+        "label": "Reducir el coste de contratación mediante bonificaciones",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-sanidad",
+    "topicId": "sanidad",
+    "text": "¿Cómo debería organizarse la sanidad pública?",
+    "type": "single",
+    "axisNote": "-1: Sanidad pública exclusiva y sin copago | +1: Más sanidad privada y seguros",
+    "options": [
+      {
+        "id": "publica",
+        "label": "Sanidad pública, universal y sin copago",
+        "value": -1
+      },
+      {
+        "id": "mixta",
+        "label": "Reforzar la pública con conciertos puntuales",
+        "value": 0
+      },
+      {
+        "id": "privada",
+        "label": "Ampliar la sanidad privada y los seguros",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-corrupcion",
+    "topicId": "corrupcion",
+    "text": "¿Qué enfoque prefieres para combatir la corrupción?",
+    "type": "single",
+    "axisNote": "-1: Más transparencia y controles previos | +1: Menos burocracia y administración más ágil",
+    "options": [
+      {
+        "id": "prevencion",
+        "label": "Más transparencia y controles previos en la administración",
+        "value": -1
+      },
+      {
+        "id": "sancion",
+        "label": "Aumentar las penas y perseguir el enriquecimiento ilícito",
+        "value": 0
+      },
+      {
+        "id": "simplificacion",
+        "label": "Reducir la burocracia y agilizar la administración",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-seguridad-ciudadana",
+    "topicId": "seguridad-ciudadana",
+    "text": "¿Cómo debería abordarse la seguridad ciudadana?",
+    "type": "single",
+    "axisNote": "-1: Prevención social y alternativas a la prisión | +1: Más penas y prisión preventiva",
+    "options": [
+      {
+        "id": "prevencion",
+        "label": "Prevención social y alternativas a la prisión",
+        "value": -1
+      },
+      {
+        "id": "policia",
+        "label": "Reforzar la presencia policial y la vigilancia",
+        "value": 0
+      },
+      {
+        "id": "penas",
+        "label": "Ampliar las penas y la prisión preventiva",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-calidad-democratica",
+    "topicId": "calidad-democratica",
+    "text": "¿Qué cambios en el funcionamiento democrático apoyarías? Marca todos los que quieras.",
+    "type": "multi",
+    "axisNote": "-1: Más participación ciudadana y contrapesos | +1: Más estabilidad y agilidad de gobierno",
+    "options": [
+      {
+        "id": "participacion",
+        "label": "Más consultas ciudadanas y participación directa",
+        "value": -1
+      },
+      {
+        "id": "contrapesos",
+        "label": "Limitar mandatos y reforzar la separación de poderes",
+        "value": -0.5
+      },
+      {
+        "id": "continuidad",
+        "label": "Mantener el sistema actual con ajustes menores",
+        "value": 0
+      },
+      {
+        "id": "estabilidad",
+        "label": "Priorizar la estabilidad y reducir la confrontación",
+        "value": 0.5
+      },
+      {
+        "id": "agilidad",
+        "label": "Agilizar la toma de decisiones concentrando competencias en el Gobierno",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-extremismos",
+    "topicId": "extremismos",
+    "text": "¿Qué medidas sobre polarización y desinformación deberían priorizarse?",
+    "type": "single",
+    "axisNote": "-1: Regular por ley el discurso y las plataformas | +1: Primar la autorregulación y la libertad de expresión",
+    "options": [
+      {
+        "id": "regulacion",
+        "label": "Regular por ley la desinformación y las plataformas digitales",
+        "value": -1
+      },
+      {
+        "id": "transparencia",
+        "label": "Exigir más transparencia en la financiación de partidos y la publicidad institucional",
+        "value": -0.5
+      },
+      {
+        "id": "educacion-civica",
+        "label": "Reforzar la educación cívica y la alfabetización mediática",
+        "value": 0
+      },
+      {
+        "id": "autorregulacion",
+        "label": "Fomentar la autorregulación de los medios y las plataformas",
+        "value": 0.5
+      },
+      {
+        "id": "libertad-expresion",
+        "label": "Primar la libertad de expresión sin nuevas regulaciones",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-marruecos-fronteras",
+    "topicId": "marruecos-fronteras",
+    "text": "¿Qué enfoque debería seguir España en su relación con Marruecos?",
+    "type": "single",
+    "axisNote": "-1: Firmeza y control de Ceuta y Melilla | +1: Cooperación y diálogo diplomático",
+    "options": [
+      {
+        "id": "firmeza",
+        "label": "Priorizar la firmeza y el control de Ceuta y Melilla",
+        "value": -1
+      },
+      {
+        "id": "equilibrio",
+        "label": "Equilibrio entre firmeza y cooperación",
+        "value": 0
+      },
+      {
+        "id": "cooperacion",
+        "label": "Priorizar la cooperación y el diálogo diplomático",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-medio-ambiente",
+    "topicId": "medio-ambiente",
+    "text": "¿Qué medidas ambientales apoyarías? Marca todas las que quieras.",
+    "type": "multi",
+    "axisNote": "-1: Transición ecológica ambiciosa con impuestos verdes | +1: Crecimiento económico y menos regulación ambiental",
+    "options": [
+      {
+        "id": "ambiciosa",
+        "label": "Acelerar las renovables y cerrar la energía nuclear",
+        "value": -1
+      },
+      {
+        "id": "impuestos-verdes",
+        "label": "Aplicar impuestos verdes y límites a las emisiones",
+        "value": -0.5
+      },
+      {
+        "id": "continuidad",
+        "label": "Mantener los objetivos actuales sin nuevos impuestos",
+        "value": 0
+      },
+      {
+        "id": "crecimiento",
+        "label": "Priorizar el crecimiento económico y el empleo sobre la regulación ambiental",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-politica-exterior",
+    "topicId": "politica-exterior",
+    "text": "¿Qué papel debería tener España en los conflictos internacionales?",
+    "type": "single",
+    "axisNote": "-1: Diplomacia y ayuda humanitaria | +1: Refuerzo en la OTAN y la Unión Europea",
+    "options": [
+      {
+        "id": "diplomacia",
+        "label": "Priorizar la diplomacia y la ayuda humanitaria",
+        "value": -1
+      },
+      {
+        "id": "equilibrio",
+        "label": "Mantener el equilibrio actual",
+        "value": 0
+      },
+      {
+        "id": "alianzas",
+        "label": "Reforzar el papel en la OTAN y en la Unión Europea",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-pensiones",
+    "topicId": "pensiones",
+    "text": "¿Cómo debería garantizarse la sostenibilidad de las pensiones?",
+    "type": "single",
+    "axisNote": "-1: Subir cotizaciones y garantizar el poder adquisitivo | +1: Ajustar el gasto e incentivar el ahorro privado",
+    "options": [
+      {
+        "id": "suficiencia",
+        "label": "Subir las cotizaciones y garantizar el poder adquisitivo",
+        "value": -1
+      },
+      {
+        "id": "mixta",
+        "label": "Combinar ajustes moderados con nuevos ingresos",
+        "value": 0
+      },
+      {
+        "id": "sostenibilidad",
+        "label": "Retrasar la jubilación e incentivar el ahorro privado",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-educacion",
+    "topicId": "educacion",
+    "text": "¿Qué medidas educativas apoyarías? Marca todas las que quieras.",
+    "type": "multi",
+    "axisNote": "-1: Más financiación pública y becas | +1: Más libertad de elección y conciertos",
+    "options": [
+      {
+        "id": "publica",
+        "label": "Aumentar la financiación de la escuela pública",
+        "value": -1
+      },
+      {
+        "id": "recursos",
+        "label": "Reducir ratios y ampliar las becas",
+        "value": -0.5
+      },
+      {
+        "id": "continuidad",
+        "label": "Mantener el modelo educativo actual",
+        "value": 0
+      },
+      {
+        "id": "conciertos",
+        "label": "Ampliar los conciertos y la libre elección de centro",
+        "value": 0.5
+      },
+      {
+        "id": "privada-publica",
+        "label": "Financiar con dinero público también la educación privada",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-impuestos",
+    "topicId": "impuestos",
+    "text": "¿Qué política fiscal prefieres?",
+    "type": "single",
+    "axisNote": "-1: Subir impuestos a rentas altas y patrimonios | +1: Bajar impuestos de forma general",
+    "options": [
+      {
+        "id": "progresiva",
+        "label": "Subir impuestos a las rentas altas y a los patrimonios",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener la presión fiscal actual",
+        "value": 0
+      },
+      {
+        "id": "bajada",
+        "label": "Bajar los impuestos a todos, sobre todo a las rentas medias",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-energia",
+    "topicId": "energia",
+    "text": "¿Cómo debería abordarse la política energética?",
+    "type": "single",
+    "axisNote": "-1: Intervenir los precios y cerrar la energía nuclear | +1: Libre competencia y más energía nuclear",
+    "options": [
+      {
+        "id": "intervencion",
+        "label": "Intervenir los precios y acelerar el cierre de la energía nuclear",
+        "value": -1
+      },
+      {
+        "id": "mixta",
+        "label": "Mantener el mix actual ampliando las renovables",
+        "value": 0
+      },
+      {
+        "id": "libre",
+        "label": "Dejar los precios a la libre competencia y ampliar la energía nuclear",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-desigualdad",
+    "topicId": "desigualdad",
+    "text": "¿Qué medidas contra la desigualdad apoyarías? Marca todas las que quieras.",
+    "type": "multi",
+    "axisNote": "-1: Redistribución con impuestos y ayudas directas | +1: Igualdad de oportunidades y menos impuestos",
+    "options": [
+      {
+        "id": "grandes-fortunas",
+        "label": "Aplicar un impuesto a las grandes fortunas",
+        "value": -1
+      },
+      {
+        "id": "ayudas",
+        "label": "Ampliar el ingreso mínimo y las ayudas directas",
+        "value": -0.5
+      },
+      {
+        "id": "continuidad",
+        "label": "Mantener las políticas actuales",
+        "value": 0
+      },
+      {
+        "id": "oportunidades",
+        "label": "Primar la formación y el empleo sobre las ayudas",
+        "value": 0.5
+      },
+      {
+        "id": "inversion",
+        "label": "Reducir impuestos para fomentar la inversión",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-igualdad-genero",
+    "topicId": "igualdad-genero",
+    "text": "¿Qué enfoque prefieres en las políticas de igualdad de género?",
+    "type": "single",
+    "axisNote": "-1: Más cuotas y políticas específicas | +1: Igualdad legal sin cuotas",
+    "options": [
+      {
+        "id": "especificas",
+        "label": "Ampliar las cuotas y las políticas específicas",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener las políticas actuales",
+        "value": 0
+      },
+      {
+        "id": "legal",
+        "label": "Igualdad legal sin cuotas ni ministerio propio",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-derechos-lgtbiq",
+    "topicId": "derechos-lgtbiq",
+    "text": "¿Qué posición prefieres sobre los derechos del colectivo LGTBIQ+?",
+    "type": "single",
+    "axisNote": "-1: Ampliar la protección de los derechos y la autodeterminación | +1: Revisar la legislación actual",
+    "options": [
+      {
+        "id": "ampliacion",
+        "label": "Ampliar la protección de los derechos y la autodeterminación de género",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener la legislación actual",
+        "value": 0
+      },
+      {
+        "id": "revision",
+        "label": "Revisar la legislación actual en materia de autodeterminación de género",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-modelo-estado",
+    "topicId": "modelo-estado",
+    "text": "¿Cómo debería organizarse el modelo territorial del Estado?",
+    "type": "single",
+    "axisNote": "-1: Centralizar competencias y reforzar el Estado | +1: Ampliar la autonomía de las comunidades",
+    "options": [
+      {
+        "id": "centralizacion",
+        "label": "Centralizar competencias y reforzar el Estado",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener el Estado autonómico actual",
+        "value": 0
+      },
+      {
+        "id": "autonomia",
+        "label": "Ampliar la autonomía y reconocer la pluralidad nacional",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-justicia",
+    "topicId": "justicia",
+    "text": "¿Qué prioridad debería tener la Justicia?",
+    "type": "single",
+    "axisNote": "-1: Reforzar la independencia y las garantías procesales | +1: Agilizar los procesos reduciendo trámites",
+    "options": [
+      {
+        "id": "garantias",
+        "label": "Reforzar la independencia y las garantías procesales",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener el sistema actual con mejoras",
+        "value": 0
+      },
+      {
+        "id": "agilidad",
+        "label": "Agilizar los procesos reduciendo trámites y tiempos de espera",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-defensa",
+    "topicId": "defensa",
+    "text": "¿Cómo debería ser la política de defensa?",
+    "type": "single",
+    "axisNote": "-1: Reducir el gasto militar | +1: Aumentar el gasto en defensa",
+    "options": [
+      {
+        "id": "reducir",
+        "label": "Reducir el gasto militar y priorizar lo social",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener el gasto actual",
+        "value": 0
+      },
+      {
+        "id": "aumentar",
+        "label": "Aumentar el gasto en defensa",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-agricultura-despoblacion",
+    "topicId": "agricultura-despoblacion",
+    "text": "¿Qué medidas para el medio rural apoyarías? Marca todas las que quieras.",
+    "type": "multi",
+    "axisNote": "-1: Agricultura ecológica y ayudas al medio rural | +1: Productividad y desregulación del sector",
+    "options": [
+      {
+        "id": "ecologica",
+        "label": "Fomentar la agricultura ecológica y de proximidad",
+        "value": -1
+      },
+      {
+        "id": "pequenos",
+        "label": "Ayudar a los pequeños productores y a fijar población",
+        "value": -0.5
+      },
+      {
+        "id": "continuidad",
+        "label": "Mantener las políticas actuales",
+        "value": 0
+      },
+      {
+        "id": "regadios",
+        "label": "Modernizar los regadíos y facilitar la exportación",
+        "value": 0.5
+      },
+      {
+        "id": "productividad",
+        "label": "Desregular el sector y priorizar la productividad",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "q-cultura",
+    "topicId": "cultura",
+    "text": "¿Qué papel debería tener el Estado en la cultura?",
+    "type": "single",
+    "axisNote": "-1: Más financiación pública y protección de las lenguas | +1: Mecenazgo privado y menos subvenciones",
+    "options": [
+      {
+        "id": "publica",
+        "label": "Aumentar la financiación pública y proteger las lenguas cooficiales",
+        "value": -1
+      },
+      {
+        "id": "actual",
+        "label": "Mantener el apoyo público actual",
+        "value": 0
+      },
+      {
+        "id": "privada",
+        "label": "Primar el mecenazgo privado y reducir las subvenciones",
+        "value": 1
+      }
+    ]
+  }
+]
