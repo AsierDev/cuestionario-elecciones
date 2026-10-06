@@ -1,227 +1,272 @@
 [
   {
-    "topicId": "vivienda",
-    "value": 0.7,
+    "questionId": "q-alquiler-tope",
+    "value": -1,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Vivienda): derogar la nueva Ley de Vivienda, avales públicos para hipotecas de jóvenes hasta 35 años y plan antiocupación con desalojos en 24 h."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
+    "sourceDate": "2023-04-27",
+    "note": "Votó en contra de la Ley de Vivienda (abril 2023) y rechaza el control de precios del alquiler."
   },
   {
-    "topicId": "economia",
-    "value": 0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Economía): auditoría de los fondos de recuperación europeos, plan de atracción de empresas, tarifa cero para nuevos autónomos y reducción de la fragmentación normativa."
+    "questionId": "q-desalojo-rapido",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/espana/congreso-toma-consideracion-ley-antiokupas-pp-gracias-20260519215135-nt.html",
+    "sourceDate": "2026-05-19",
+    "note": "Autor de la proposición de ley de desalojo en 24 horas, tomada en consideración en mayo de 2026."
   },
   {
-    "topicId": "inmigracion",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Inmigración): inmigración legal cualificada por puntos, refuerzo de la inspección fronteriza y agilización de las órdenes de retorno."
-  },
-  {
-    "topicId": "calidad-empleo",
-    "value": 0.3,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Paro): reforma integral de las políticas activas de empleo, actualización del SMI en el marco del diálogo social y bonificación a la cuota empresarial de los autónomos que contraten."
-  },
-  {
-    "topicId": "paro",
-    "value": 0.3,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Paro): bonificación específica a los autónomos que contraten por cuenta ajena y plan contra el desempleo femenino."
-  },
-  {
-    "topicId": "sanidad",
-    "value": -0.2,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Sanidad): plan de choque en Atención Primaria con 1.000 plazas, nueva Ley General de Sanidad y Ley de Pandemias y estrategia de salud mental."
-  },
-  {
-    "topicId": "corrupcion",
+    "questionId": "q-impuesto-grandes-fortunas",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Justicia): elegir a los vocales del CGPJ por los jueces, desvincular al Fiscal General del poder ejecutivo y evitar cargos políticos en organismos independientes."
+    "note": "Programa 23J: suprimir el impuesto temporal de solidaridad de las grandes fortunas."
   },
   {
-    "topicId": "seguridad-ciudadana",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el comparador RTVE 23J no recoge una posición clara sobre prevención social frente a endurecimiento penal."
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.europapress.es/economia/energia-00341/noticia-congreso-rechaza-propuesta-psoe-nuevo-impuesto-energeticas-no-pp-vox-junts-20260930151439.html",
+    "sourceDate": "2026-09-30",
+    "note": "Votó contra el impuesto a las energéticas (enero 2025) y contra la nueva propuesta (septiembre 2026)."
   },
   {
-    "topicId": "calidad-democratica",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el comparador RTVE 23J no ofrece propuestas trazables sobre participación y contrapesos democráticos."
-  },
-  {
-    "topicId": "extremismos",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: sin propuesta trazable sobre regular plataformas frente a autorregulación en el comparador RTVE 23J."
-  },
-  {
-    "topicId": "marruecos-fronteras",
-    "value": 0.3,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Política Exterior): apoyo a los esfuerzos de la ONU para una solución política y negociada en el Sáhara Occidental."
-  },
-  {
-    "topicId": "medio-ambiente",
-    "value": -0.1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Medio Ambiente): protección de los espacios naturales y la biodiversidad (Mar Menor, Doñana, Daimiel) y nueva regulación de la franja litoral."
-  },
-  {
-    "topicId": "politica-exterior",
+    "questionId": "q-bajar-irpf",
     "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Política Exterior): sanciones a Rusia, refuerzo de las relaciones con Estados Unidos y objetivos de la Agenda 2030 en la cooperación."
+    "note": "Programa 23J: bajar el IRPF, sobre todo a rentas medias y bajas, y ganar eficiencia en el gasto."
   },
   {
-    "topicId": "pensiones",
+    "questionId": "q-jornada-37-5",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
+    "sourceDate": "2025-09-10",
+    "note": "Presentó enmienda a la totalidad y tumbó la reducción de jornada a 37,5 horas (septiembre 2025)."
+  },
+  {
+    "questionId": "q-salario-minimo",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: fijar el SMI en el diálogo social, sin vincularlo automáticamente al 60 % del salario medio."
+  },
+  {
+    "questionId": "q-cotizaciones-contratar",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: rebajar cotizaciones para fomentar la contratación, especialmente de jóvenes y autónomos."
+  },
+  {
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
+    "sourceDate": "2023-03-30",
+    "note": "Votó en contra de la reforma de pensiones de 2023, que sube las cotizaciones de los sueldos altos."
+  },
+  {
+    "questionId": "q-planes-pensiones-privados",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: recuperar los incentivos fiscales a los planes de pensiones individuales."
+  },
+  {
+    "questionId": "q-ingreso-minimo",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: reformar el IMV para vincularlo a la inserción laboral y mejorar su gestión."
+  },
+  {
+    "questionId": "q-sanidad-privada",
     "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Pensiones): sostenibilidad sin mención al IPC y 'mochila austriaca' de cuentas individuales portables."
+    "note": "Programa 23J: plan de choque contra las listas de espera con todos los recursos disponibles, incluida la colaboración público-privada."
   },
   {
-    "topicId": "educacion",
-    "value": 0.4,
+    "questionId": "q-escuela-concertada",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Educación): reformar la LOMLOE, EBAU común, libre elección de centro y sistema nacional de becas."
+    "note": "Programa 23J: libertad de elección de centro y apoyo a la enseñanza concertada."
   },
   {
-    "topicId": "impuestos",
-    "value": 0.7,
+    "questionId": "q-regularizacion",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://elpais.com/espana/2026-03-18/el-congreso-pide-parar-la-regularizacion-de-inmigrantes-con-los-votos-del-pp-vox-y-junts.html",
+    "sourceDate": "2026-03-18",
+    "note": "Promovió la moción aprobada en marzo de 2026 que pide renunciar a la regularización extraordinaria."
+  },
+  {
+    "questionId": "q-rechazo-frontera",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Impuestos): rebajar el IRPF a rentas inferiores a 40.000 €, eliminar el impuesto a las grandes fortunas y bajar el IVA de carne y pescado."
+    "note": "Introdujo los rechazos en frontera en 2015 y defiende mantenerlos."
   },
   {
-    "topicId": "energia",
-    "value": 0.4,
+    "questionId": "q-menores-reparto",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
+    "sourceDate": "2025-04-10",
+    "note": "Votó en contra del decreto de reparto obligatorio de menores (abril 2025)."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
+    "sourceDate": "2025-06-17",
+    "note": "Autor de la ley para prorrogar las centrales nucleares (junio 2025)."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Energía): extensión de la vida útil de las centrales nucleares, bono social único y fin de la intervención del mercado mayorista."
+    "note": "Programa 23J: rechaza nuevos impuestos, incluida la subida de la fiscalidad del diésel."
   },
   {
-    "topicId": "desigualdad",
-    "value": 0.3,
+    "questionId": "q-trasvases",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Políticas sociales): mejorar el acceso al Ingreso Mínimo Vital en coordinación con las CCAA y ayudas contra la pobreza infantil."
+    "note": "Programa 23J: Plan Hidrológico Nacional con interconexión de cuencas y defensa del trasvase Tajo-Segura."
   },
   {
-    "topicId": "igualdad-genero",
-    "value": -0.2,
+    "questionId": "q-cgpj-jueces",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Feminismo): erradicación de la violencia de género, cumplir el Pacto de Estado, ley contra la trata y planes de igualdad con presencia equilibrada en puestos directivos."
+    "note": "Programa 23J: que los jueces elijan a los vocales judiciales del CGPJ."
   },
   {
-    "topicId": "derechos-lgtbiq",
-    "value": 0.4,
+    "questionId": "q-voto-16",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.aragonplay.es/aragonnoticias/espana/el-congreso-aprueba-una-propuesta-de-sumar-para-rebajar-a-los-16-anos-la-edad-para-votar.html",
+    "sourceDate": "2024-06-27",
+    "note": "Votó en contra en comisión de rebajar la edad de voto a 16 años (junio 2024): la considera inviable sin reforma constitucional."
+  },
+  {
+    "questionId": "q-gasto-defensa",
+    "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (LGTBIQ+): derogar la ley 'trans' y aprobar una nueva de consenso, y garantizar el sexo biológico en competiciones femeninas."
+    "note": "Programa 23J: cumplir los compromisos de gasto con la OTAN."
   },
   {
-    "topicId": "modelo-estado",
-    "value": -0.2,
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Modelo de estado): reforma del sistema de financiación autonómica y local y mayor apoyo del Estado a Ceuta y Melilla."
+    "note": "Apoya la ayuda militar a Ucrania en el marco de la UE y la OTAN."
   },
   {
-    "topicId": "justicia",
-    "value": -0.2,
+    "questionId": "q-multirreincidencia",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.newtral.es/congreso-ley-multirreincidencia/20260212/",
+    "sourceDate": "2026-02-12",
+    "note": "Votó a favor de la ley de multirreincidencia (febrero 2026)."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
+    "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Justicia): recuperar los delitos de sedición y malversación y elegir el CGPJ por los jueces; reforma del Tribunal Constitucional."
+    "note": "Apoya el Pacto de Estado contra la Violencia de Género, aunque ha pactado textos de «violencia intrafamiliar» en algunos gobiernos autonómicos."
   },
   {
-    "topicId": "defensa",
-    "value": 0.8,
+    "questionId": "q-autodeterminacion-genero",
+    "value": -0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Defensa): reforzar las Fuerzas Armadas, cumplir el 2% del PIB en defensa y elevar los efectivos hasta 140.000."
+    "note": "Votó en contra de la ley trans en su paso por el Congreso (2022) y propone reformarla."
   },
   {
-    "topicId": "agricultura-despoblacion",
-    "value": 0.2,
+    "questionId": "q-eutanasia",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
+    "sourceDate": "2021-03-18",
+    "note": "Votó en contra de la ley de eutanasia (marzo 2021) y la recurrió ante el Tribunal Constitucional."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Ganadería y Agricultura/Despoblación): revisar el plan estratégico de la PAC, apoyar la agricultura familiar y ley de desarrollo rural."
+    "note": "Rechaza cualquier referéndum de autodeterminación."
   },
   {
-    "topicId": "cultura",
-    "value": 0.2,
+    "questionId": "q-autonomia-fiscal",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://www.moncloa.com/2026/09/05/financiacion-singular-cataluna-cpff-3426682/",
+    "sourceDate": "2026-09-05",
+    "note": "Sus comunidades votaron contra el nuevo modelo de financiación con trato singular para Cataluña (2026)."
+  },
+  {
+    "questionId": "q-lengua-cooficial",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Cultura): reforzar el Instituto Cervantes, ley de mecenazgo y estatuto del artista."
+    "note": "Defiende que la lengua cooficial sea un mérito y no un requisito; lo ha aplicado en gobiernos autonómicos (p. ej., sanidad balear)."
   }
 ]

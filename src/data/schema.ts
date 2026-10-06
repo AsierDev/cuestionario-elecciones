@@ -56,63 +56,30 @@ export const topicEvidenceSchema = z
     }
   });
 
-export const topicBlockSchema = z.enum(['A', 'B']);
-
-export const topicSchema = z
-  .object({
-    id: idSchema,
-    name: z.string().min(1),
-    block: topicBlockSchema,
-    evidence: z.array(topicEvidenceSchema).min(1),
-  })
-  .superRefine((topic, ctx) => {
-    const hasCis = topic.evidence.some(
-      (evidence) => evidence.type === 'cis-ranking' || evidence.type === 'cis-survey',
-    );
-    const hasAgenda = topic.evidence.some((evidence) => evidence.type === 'agenda');
-    if (topic.block === 'A' && !hasCis) {
-      ctx.addIssue({
-        code: 'custom',
-        path: ['evidence'],
-        message: 'los temas del bloque A requieren evidencia CIS (cis-ranking o cis-survey)',
-      });
-    }
-    if (topic.block === 'B' && !hasAgenda) {
-      ctx.addIssue({
-        code: 'custom',
-        path: ['evidence'],
-        message: 'los temas del bloque B requieren evidencia de agenda',
-      });
-    }
-  });
-
-export const questionTypeSchema = z.enum(['single', 'multi']);
-
-export const questionOptionSchema = z.object({
+export const topicSchema = z.object({
   id: idSchema,
-  label: z.string().min(1),
-  value: z.number().min(-1).max(1),
+  name: z.string().min(1),
+  description: z.string().min(1),
+  evidence: z.array(topicEvidenceSchema).min(1),
 });
 
-export const questionSchema = z
-  .object({
-    id: idSchema,
-    topicId: idSchema,
-    text: z.string().min(1),
-    type: questionTypeSchema,
-    axisNote: z.string().min(1).optional(),
-    options: z.array(questionOptionSchema).min(3).max(5),
-  })
-  .superRefine((question, ctx) => {
-    const values = question.options.map((option) => option.value);
-    if (new Set(values).size !== values.length) {
-      ctx.addIssue({
-        code: 'custom',
-        path: ['options'],
-        message: 'los valores de las opciones deben ser distintos',
-      });
-    }
-  });
+export const glossaryEntrySchema = z.object({
+  term: z.string().min(1),
+  definition: z.string().min(1),
+});
+
+export const questionSchema = z.object({
+  id: idSchema,
+  topicId: idSchema,
+  title: z.string().min(1),
+  statement: z.string().min(1),
+  summary: z.string().min(1),
+  context: z.string().min(1),
+  change: z.string().min(1),
+  ifFavor: z.string().min(1),
+  ifAgainst: z.string().min(1),
+  glossary: z.array(glossaryEntrySchema).default([]),
+});
 
 export const positionStatusSchema = z.enum(['verificado', 'provisional', 'sin-datos-suficientes']);
 
@@ -126,7 +93,7 @@ export const sourceTypeSchema = z.enum([
 
 export const positionSchema = z
   .object({
-    topicId: idSchema,
+    questionId: idSchema,
     value: z.number().min(-1).max(1).nullable(),
     status: positionStatusSchema,
     sourceType: sourceTypeSchema,
@@ -196,10 +163,8 @@ export type Party = z.infer<typeof partySchema>;
 export type PartyScope = z.infer<typeof partyScopeSchema>;
 export type EvidenceType = z.infer<typeof evidenceTypeSchema>;
 export type TopicEvidence = z.infer<typeof topicEvidenceSchema>;
-export type TopicBlock = z.infer<typeof topicBlockSchema>;
 export type Topic = z.infer<typeof topicSchema>;
-export type QuestionType = z.infer<typeof questionTypeSchema>;
-export type QuestionOption = z.infer<typeof questionOptionSchema>;
+export type GlossaryEntry = z.infer<typeof glossaryEntrySchema>;
 export type Question = z.infer<typeof questionSchema>;
 export type PositionStatus = z.infer<typeof positionStatusSchema>;
 export type SourceType = z.infer<typeof sourceTypeSchema>;
@@ -259,6 +224,7 @@ export function validateDataReferences(data: DataBundle): string[] {
   const territoryIds = new Set(data.territories.map((territory) => territory.id));
   const partyIds = new Set(data.parties.map((party) => party.id));
   const topicIds = new Set(data.topics.map((topic) => topic.id));
+  const questionIds = new Set(data.questions.map((question) => question.id));
 
   for (const party of data.parties) {
     for (const community of party.communities ?? []) {
@@ -290,22 +256,28 @@ export function validateDataReferences(data: DataBundle): string[] {
     }
   }
 
+  for (const topic of data.topics) {
+    if (!data.questions.some((question) => question.topicId === topic.id)) {
+      issues.push(`tema "${topic.id}": no tiene ninguna pregunta en data/questions.json`);
+    }
+  }
+
   for (const [partyId, rows] of Object.entries(data.positions)) {
-    const seenTopics = new Set<string>();
+    const seenQuestions = new Set<string>();
     for (const row of rows) {
-      if (!topicIds.has(row.topicId)) {
-        issues.push(`data/positions/${partyId}.json: el topicId "${row.topicId}" no existe`);
+      if (!questionIds.has(row.questionId)) {
+        issues.push(`data/positions/${partyId}.json: la pregunta "${row.questionId}" no existe`);
       }
-      if (seenTopics.has(row.topicId)) {
+      if (seenQuestions.has(row.questionId)) {
         issues.push(
-          `data/positions/${partyId}.json: el tema "${row.topicId}" aparece más de una vez`,
+          `data/positions/${partyId}.json: la pregunta "${row.questionId}" aparece más de una vez`,
         );
       }
-      seenTopics.add(row.topicId);
+      seenQuestions.add(row.questionId);
     }
-    for (const topic of data.topics) {
-      if (!seenTopics.has(topic.id)) {
-        issues.push(`data/positions/${partyId}.json: falta el tema "${topic.id}"`);
+    for (const question of data.questions) {
+      if (!seenQuestions.has(question.id)) {
+        issues.push(`data/positions/${partyId}.json: falta la pregunta "${question.id}"`);
       }
     }
   }

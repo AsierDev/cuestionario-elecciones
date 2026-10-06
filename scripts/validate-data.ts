@@ -19,7 +19,8 @@ import {
   type Topic,
 } from '../src/data/schema';
 
-const EXPECTED_QUESTIONS = 25;
+const EXPECTED_QUESTIONS = 30;
+const MAX_TOPICS = 12;
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (relativePath: string): unknown =>
@@ -45,23 +46,9 @@ function validateQuestionCoverage(topics: Topic[], questions: Question[]): strin
       `data/questions.json: se esperan exactamente ${EXPECTED_QUESTIONS} preguntas, hay ${questions.length}`,
     );
   }
-
-  const counts = new Map<string, number>();
-  for (const question of questions) {
-    counts.set(question.topicId, (counts.get(question.topicId) ?? 0) + 1);
+  if (topics.length > MAX_TOPICS) {
+    issues.push(`data/topics.json: hay ${topics.length} temas; el máximo es ${MAX_TOPICS}`);
   }
-
-  for (const topic of topics) {
-    const count = counts.get(topic.id) ?? 0;
-    if (count === 0) {
-      issues.push(`data/questions.json: falta la pregunta del tema "${topic.id}"`);
-    } else if (count > 1) {
-      issues.push(
-        `data/questions.json: hay ${count} preguntas para el tema "${topic.id}" (se espera una)`,
-      );
-    }
-  }
-
   return issues;
 }
 
@@ -101,5 +88,5 @@ if (issues.length > 0) {
 console.log(
   `✓ Contrato de datos válido: ${territories?.length ?? 0} territorios, ${topics?.length ?? 0} temas, ` +
     `${parties?.length ?? 0} partidos, ${questions?.length ?? 0} preguntas, matriz ` +
-    `${positionFiles.length}×${topics?.length ?? 0}.`,
+    `${positionFiles.length}×${questions?.length ?? 0}.`,
 );

@@ -1,227 +1,272 @@
 [
   {
-    "topicId": "vivienda",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el resumen del programa 23J de ERC no recoge una posición trazable sobre el eje de vivienda (regulación de alquileres frente a desregulación)."
-  },
-  {
-    "topicId": "economia",
-    "value": -0.5,
+    "questionId": "q-alquiler-tope",
+    "value": 1,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC (resumen ABC; PDF oficial no localizado): nuevo sistema de financiación para Cataluña, revisión del IVA de bienes de lujo, tipo mínimo del 15% en sociedades e impuesto al transporte aéreo."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
+    "sourceDate": "2023-04-27",
+    "note": "Votó a favor de la Ley de Vivienda (abril 2023)."
   },
   {
-    "topicId": "inmigracion",
+    "questionId": "q-desalojo-rapido",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/espana/congreso-toma-consideracion-ley-antiokupas-pp-gracias-20260519215135-nt.html",
+    "sourceDate": "2026-05-19",
+    "note": "Votó en contra de tramitar la ley de desalojo exprés (mayo 2026)."
+  },
+  {
+    "questionId": "q-impuesto-grandes-fortunas",
     "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: derogar la Ley de Extranjería, acabar con las devoluciones en caliente, cerrar los CIE y nuevas vías de regularización."
+    "note": "Programa 23J: fiscalidad progresiva, incluido el impuesto a las grandes fortunas."
   },
   {
-    "topicId": "calidad-empleo",
-    "value": -1,
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": 1,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: derogar las reformas laborales de 2010 y 2012, recuperar la indemnización mínima de 45 días por año y plantear la semana de 4 días."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.cronicamadrid.com/noticia/1297360/nacional/el-congreso-deroga-el-decreto-del-gravamen-energetico-con-el-voto-de-pp-vox-junts-el-pnv-y-upn.html",
+    "sourceDate": "2025-01-22",
+    "note": "Votó a favor de mantener el impuesto a las energéticas (enero 2025)."
   },
   {
-    "topicId": "paro",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: aumentar la cuantía y la duración del paro de los artistas y derogar las reformas laborales, con la semana de 4 días como conciliación."
-  },
-  {
-    "topicId": "sanidad",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el resumen del programa 23J de ERC no contiene una propuesta sobre el modelo sanitario público o privado."
-  },
-  {
-    "topicId": "corrupcion",
+    "questionId": "q-bajar-irpf",
     "value": -0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: ley de fiscalización parlamentaria y económica de la Monarquía, despenalizar las injurias a la Corona y activar comisiones de investigación."
+    "note": "Programa 23J: fiscalidad progresiva; rechaza rebajas generales de impuestos."
   },
   {
-    "topicId": "seguridad-ciudadana",
+    "questionId": "q-jornada-37-5",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
+    "sourceDate": "2025-09-10",
+    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada (septiembre 2025)."
+  },
+  {
+    "questionId": "q-salario-minimo",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
+    "sourceDate": "2023-07-23",
+    "note": "Apoya subir el salario mínimo, aunque reclama un SMI propio para Cataluña."
+  },
+  {
+    "questionId": "q-cotizaciones-contratar",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el resumen del programa 23J de ERC no define una posición sobre prevención social frente a endurecimiento penal."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "calidad-democratica",
-    "value": -0.8,
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": 0.5,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: suprimir el Senado, referéndum de autodeterminación, fiscalización de la Monarquía y derogación de la ley mordaza."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
+    "sourceDate": "2023-03-30",
+    "note": "Votó a favor de la reforma de pensiones de 2023."
   },
   {
-    "topicId": "extremismos",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: luchar contra la desinformación y derogar la ley mordaza. Se impone el polo regulador (-) porque el programa enlaza desinformación con medidas sobre medios, pese a defender la libertad de expresión."
-  },
-  {
-    "topicId": "marruecos-fronteras",
+    "questionId": "q-planes-pensiones-privados",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: la posición sobre el Sáhara Occidental corresponde a política exterior, no al eje de la relación bilateral y Ceuta y Melilla."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "medio-ambiente",
-    "value": -0.8,
+    "questionId": "q-ingreso-minimo",
+    "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: medidas contra la contaminación lumínica, priorizar el tren frente al avión, modificar la Ley de costas e impuesto a la carne industrial."
+    "note": "Apoya el IMV, pero reclama su gestión por la Generalitat."
   },
   {
-    "topicId": "politica-exterior",
-    "value": -0.3,
-    "status": "provisional",
-    "sourceType": "programa-2023",
+    "questionId": "q-sanidad-privada",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: oficialidad del catalán en la UE, reconocimiento de Kosovo, revertir la posición sobre el Sáhara y promover la abolición de la pena de muerte."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "pensiones",
+    "questionId": "q-escuela-concertada",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-regularizacion",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://elpais.com/espana/2026-03-18/el-congreso-pide-parar-la-regularizacion-de-inmigrantes-con-los-votos-del-pp-vox-y-junts.html",
+    "sourceDate": "2026-03-18",
+    "note": "Votó contra la moción que pedía renunciar a la regularización extraordinaria (marzo 2026)."
+  },
+  {
+    "questionId": "q-rechazo-frontera",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: rebajar la edad ordinaria de jubilación a los 65 años y poder elegir los 15 mejores años de cotización."
+    "note": "Pide acabar con las devoluciones en caliente."
   },
   {
-    "topicId": "educacion",
-    "value": -0.6,
+    "questionId": "q-menores-reparto",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
+    "sourceDate": "2025-04-10",
+    "note": "Votó a favor del decreto de reparto obligatorio de menores (abril 2025)."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
+    "sourceDate": "2025-06-17",
+    "note": "Votó en contra de prorrogar las centrales nucleares (junio 2025)."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: competencias exclusivas en los currículums obligatorios, defender la inmersión lingüística, Estatuto del Becario y comisión sobre títulos universitarios."
+    "note": "Programa 23J: impulsar la fiscalidad ambiental."
   },
   {
-    "topicId": "impuestos",
+    "questionId": "q-trasvases",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: revisar el IVA de los bienes de lujo, tipo mínimo del 15% en sociedades para grandes empresas y aumentar el impuesto al juego al 30%."
+    "note": "Se opone a los trasvases, en especial del Ebro."
   },
   {
-    "topicId": "energia",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: revocar la reforma eléctrica, eliminar el impuesto al autoconsumo y una nueva ley del sector eléctrico."
-  },
-  {
-    "topicId": "desigualdad",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: pensión universal por crianza, ampliar el permiso de maternidad y financiación estable de los servicios de cuidados."
-  },
-  {
-    "topicId": "igualdad-genero",
+    "questionId": "q-cgpj-jueces",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: ampliar la Ley contra la Violencia de Género a las violencias digitales, IVA reducido a productos menstruales y permiso por duelo gestacional."
+    "note": "Rechaza el modelo de elección del CGPJ por los propios jueces."
   },
   {
-    "topicId": "derechos-lgtbiq",
-    "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: impulsar que la legislación estatal use 'identidad de género' en lugar de 'identidad sexual'."
-  },
-  {
-    "topicId": "modelo-estado",
+    "questionId": "q-voto-16",
     "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: referéndum de autodeterminación, suprimir el Senado y traspaso de competencias (puertos, aeropuertos, Rodalies)."
+    "note": "Defiende el voto a los 16 años."
   },
   {
-    "topicId": "justicia",
-    "value": -1,
+    "questionId": "q-gasto-defensa",
+    "value": -0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: derogar la prisión permanente revisable, aprobar la Ley del Derecho a la Defensa y derogar las leyes franquistas."
+    "note": "Crítico con el aumento del gasto militar."
   },
   {
-    "topicId": "defensa",
-    "value": -1,
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: reducir un 50% el presupuesto del Ministerio de Defensa en programas armamentísticos y desmilitarizar las políticas públicas."
+    "note": "Apoya a Ucrania en el marco de la UE."
   },
   {
-    "topicId": "agricultura-despoblacion",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el resumen del programa 23J de ERC no recoge una posición trazable sobre agricultura y medio rural."
+    "questionId": "q-multirreincidencia",
+    "value": 0,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.newtral.es/congreso-ley-multirreincidencia/20260212/",
+    "sourceDate": "2026-02-12",
+    "note": "Se abstuvo en la ley de multirreincidencia (febrero 2026) tras pactar más jueces para Cataluña."
   },
   {
-    "topicId": "cultura",
-    "value": -0.8,
+    "questionId": "q-ley-violencia-genero",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de ERC: reducir al 4% el IVA de los productos culturales, aprobar una Ley de Lenguas y cuotas lingüísticas en las ayudas al cine."
+    "note": "Defiende la ley integral contra la violencia de género."
+  },
+  {
+    "questionId": "q-autodeterminacion-genero",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://theobjective.com/espana/politica/2023-02-16/congreso-ley-trans-mayoria/",
+    "sourceDate": "2023-02-16",
+    "note": "Votó a favor de la ley trans (2023)."
+  },
+  {
+    "questionId": "q-eutanasia",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
+    "sourceDate": "2021-03-18",
+    "note": "Votó a favor de la ley de eutanasia (marzo 2021)."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: referéndum de autodeterminación acordado con el Estado."
+  },
+  {
+    "questionId": "q-autonomia-fiscal",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://www.moncloa.com/2026/09/05/financiacion-singular-cataluna-cpff-3426682/",
+    "sourceDate": "2026-09-05",
+    "note": "Pactó una financiación singular para que Cataluña recaude todos sus impuestos."
+  },
+  {
+    "questionId": "q-lengua-cooficial",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
+    "sourceDate": "2023-07-23",
+    "note": "Defiende el catalán como requisito en la Administración catalana."
   }
 ]

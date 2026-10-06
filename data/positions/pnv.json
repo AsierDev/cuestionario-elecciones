@@ -1,227 +1,272 @@
 [
   {
-    "topicId": "vivienda",
-    "value": -0.3,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: fomentar el alquiler y la promoción de vivienda pública suficiente, con un equilibrio entre arrendatario y arrendador."
-  },
-  {
-    "topicId": "economia",
+    "questionId": "q-alquiler-tope",
     "value": 0,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: consolidación fiscal a medio plazo que no estrangule el crecimiento, incentivos a la inversión y un sistema tributario progresivo."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
+    "sourceDate": "2023-04-27",
+    "note": "Votó en contra de la Ley de Vivienda (2023) por invadir competencias, aunque el Gobierno vasco la aplica después en zonas tensionadas."
   },
   {
-    "topicId": "inmigracion",
-    "value": 0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: política europea de inmigración y asilo, distribución equitativa, garantía de derechos y reforma de la legislación de extranjería."
-  },
-  {
-    "topicId": "calidad-empleo",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: evitar la precariedad y la devaluación salarial, formación continua y estabilidad, vinculando los salarios a la productividad."
-  },
-  {
-    "topicId": "paro",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: políticas activas de empleo, mejora de la cobertura por desempleo hasta 36 meses y formación."
-  },
-  {
-    "topicId": "sanidad",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: acceso universal al sistema sanitario, transferencia de competencias pendientes y más plazas MIR."
-  },
-  {
-    "topicId": "corrupcion",
-    "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: firmeza ante la corrupción, transparencia y rendición de cuentas, nueva Ley de Secretos Oficiales, regulación de lobbies y supresión de aforamientos."
-  },
-  {
-    "topicId": "seguridad-ciudadana",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: principios de reeducación y reinserción, revisión del incrementalismo punitivo y rechazo a la prisión permanente revisable."
-  },
-  {
-    "topicId": "calidad-democratica",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: transparencia y participación como derechos ciudadanos, cocreación de políticas públicas y control ciudadano."
-  },
-  {
-    "topicId": "extremismos",
-    "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: reforma del Código Penal de los delitos contra la Corona, los poderes y los símbolos del Estado que limitan la libertad de expresión."
-  },
-  {
-    "topicId": "marruecos-fronteras",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: denuncia los sucesos de Melilla del 24-06-2022 (capítulo de inmigración) y rechaza el giro del Gobierno español sobre la soberanía marroquí del Sáhara. Polo de firmeza, algo menos intenso que el -0,6 de BNG."
-  },
-  {
-    "topicId": "medio-ambiente",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: Pacto Verde europeo, reducción de emisiones del 55% en 2030, renovables, economía circular y fiscalidad verde."
-  },
-  {
-    "topicId": "politica-exterior",
+    "questionId": "q-desalojo-rapido",
     "value": 0,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: política exterior comprometida con los derechos humanos, autonomía estratégica de la UE (PESC), cooperación al desarrollo y jurisdicción universal."
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/espana/congreso-toma-consideracion-ley-antiokupas-pp-gracias-20260519215135-nt.html",
+    "sourceDate": "2026-05-19",
+    "note": "Se abstuvo en la tramitación de la ley de desalojo exprés (mayo 2026)."
   },
   {
-    "topicId": "pensiones",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: mantener el espíritu del Pacto de Toledo, revalorización conforme al IPC y sostenibilidad del sistema público de pensiones."
-  },
-  {
-    "topicId": "educacion",
+    "questionId": "q-impuesto-grandes-fortunas",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el programa se centra en competencias, FP y universidad sin una posición sobre financiación pública frente a conciertos."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "impuestos",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.energias-renovables.com/panorama/pnv-y-junts-dicen-no-al-impuesto-20260929",
+    "sourceDate": "2026-09-29",
+    "note": "Votó contra el impuesto a las energéticas en enero de 2025 y en septiembre de 2026."
+  },
+  {
+    "questionId": "q-bajar-irpf",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: sistema tributario progresivo, equitativo y justo, revisión del IVA y concertación de los impuestos a la banca y las energéticas."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "energia",
-    "value": -0.3,
+    "questionId": "q-jornada-37-5",
+    "value": 0.5,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: acelerar las renovables y la electrificación, protección de los consumidores vulnerables y transición energética ordenada."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
+    "sourceDate": "2025-09-10",
+    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada (septiembre 2025), aunque pedía flexibilidad para las pymes."
   },
   {
-    "topicId": "desigualdad",
-    "value": -0.6,
+    "questionId": "q-salario-minimo",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-cotizaciones-contratar",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": 0.5,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: prosperidad inclusiva, erradicación de la pobreza infantil, Renta de Garantía de Ingresos/IMV y garantía infantil europea."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
+    "sourceDate": "2023-03-30",
+    "note": "Votó a favor de la reforma de pensiones de 2023."
   },
   {
-    "topicId": "igualdad-genero",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: igualdad real y efectiva, aplicación de la CEDAW, Pacto de Estado contra la Violencia de Género y cierre de la brecha salarial."
-  },
-  {
-    "topicId": "derechos-lgtbiq",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: defensa de todos los derechos de las personas LGTBI y erradicación de la LGTBIfobia."
-  },
-  {
-    "topicId": "modelo-estado",
+    "questionId": "q-planes-pensiones-privados",
     "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: reconocimiento nacional de Euskadi, bilateralidad, defensa del Concierto Económico y ampliación del autogobierno."
+    "note": "Defiende el modelo vasco de previsión social complementaria (EPSV) y sus incentivos fiscales."
   },
   {
-    "topicId": "justicia",
+    "questionId": "q-ingreso-minimo",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: la adecuación de la Administración de Justicia al ámbito vasco no define una posición sobre garantías procesales frente a agilidad."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "defensa",
+    "questionId": "q-sanidad-privada",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el programa 23J del EAJ-PNV no recoge una posición trazable sobre el nivel de gasto en defensa."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "agricultura-despoblacion",
-    "value": -0.4,
+    "questionId": "q-escuela-concertada",
+    "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: apoyo al relevo generacional, revisión de la PAC, producción ecológica y sostenible y respuesta al reto demográfico."
+    "note": "Defiende el modelo educativo vasco, con una red concertada amplia."
   },
   {
-    "topicId": "cultura",
-    "value": -0.8,
+    "questionId": "q-regularizacion",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://elpais.com/espana/2026-03-18/el-congreso-pide-parar-la-regularizacion-de-inmigrantes-con-los-votos-del-pp-vox-y-junts.html",
+    "sourceDate": "2026-03-18",
+    "note": "No apoyó la moción contra la regularización extraordinaria (marzo 2026)."
+  },
+  {
+    "questionId": "q-rechazo-frontera",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-menores-reparto",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
+    "sourceDate": "2025-04-10",
+    "note": "Votó a favor del decreto de reparto obligatorio de menores (abril 2025)."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
+    "sourceDate": "2025-06-17",
+    "note": "Votó en contra de la ley de prórroga nuclear (junio 2025)."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-trasvases",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-cgpj-jueces",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-voto-16",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-gasto-defensa",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J del EAJ-PNV: defensa de las lenguas oficiales, presencia del euskera y dotación para producciones en lenguas cooficiales."
+    "note": "Apoya la ayuda a Ucrania, incluida la militar."
+  },
+  {
+    "questionId": "q-multirreincidencia",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.newtral.es/congreso-ley-multirreincidencia/20260212/",
+    "sourceDate": "2026-02-12",
+    "note": "Votó a favor de la ley de multirreincidencia (febrero 2026)."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2023-07-23",
+    "note": "Apoya la ley integral contra la violencia de género."
+  },
+  {
+    "questionId": "q-autodeterminacion-genero",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://theobjective.com/espana/politica/2023-02-16/congreso-ley-trans-mayoria/",
+    "sourceDate": "2023-02-16",
+    "note": "Votó a favor de la ley trans (2023)."
+  },
+  {
+    "questionId": "q-eutanasia",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
+    "sourceDate": "2021-03-18",
+    "note": "Votó a favor de la ley de eutanasia (marzo 2021)."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: derecho a decidir mediante una consulta pactada."
+  },
+  {
+    "questionId": "q-autonomia-fiscal",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2023-07-23",
+    "note": "Defiende el concierto económico vasco como modelo de autogobierno."
+  },
+  {
+    "questionId": "q-lengua-cooficial",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+    "sourceDate": "2023-07-23",
+    "note": "Defiende los perfiles lingüísticos en euskera según el puesto en la Administración vasca."
   }
 ]

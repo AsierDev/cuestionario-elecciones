@@ -1,8 +1,8 @@
-import { SCORING_CONFIG } from '../core/config';
+import { ANSWER_SCALE, SCORING_CONFIG } from '../core/config';
 import type { DataBundle } from '../data/schema';
 
 import { createButton, el } from './components';
-import { formatDate, formatPercent } from './format';
+import { formatDate, formatFactor, formatPercent } from './format';
 import { MAX_PRIORITY_TOPICS } from './state';
 
 export interface MethodologyViewHandlers {
@@ -58,11 +58,11 @@ function renderTopicCatalog(data: DataBundle): HTMLElement {
   return section('methodology-topics-heading', 'Catálogo de temas y evidencias', [
     el('p', {
       className: 'section-lead',
-      text: 'Temas incluidos y la evidencia que los respalda (encuestas del CIS, agenda o programas electorales).',
+      text: 'Temas incluidos y la evidencia de su relevancia (encuestas del CIS, agenda o programas electorales).',
     }),
     el('p', {
       className: 'section-lead',
-      text: 'La prioridad de los temas del bloque A se apoya en el CIS, Estudio 3577 (septiembre de 2026). Es una fuente institucional que puede percibirse como sesgada; por eso la citamos con URL y fecha, la complementamos con agenda y programas, y no la usamos para estimar voto.',
+      text: 'La relevancia de varios temas se apoya en el CIS, Estudio 3577 (septiembre de 2026). Es una fuente institucional que puede percibirse como sesgada; por eso la citamos con URL y fecha, la complementamos con agenda y programas, y no la usamos para estimar voto.',
     }),
     list,
   ]);
@@ -89,19 +89,33 @@ export function renderMethodologyView(
       className: 'lead',
       text: 'Cómo se calculan los resultados, de dónde sale cada dato y qué limitaciones tiene este buscador.',
     }),
+    section('methodology-questions-heading', 'Cómo están hechas las preguntas', [
+      el('p', {
+        text: `Cada pregunta plantea una única medida concreta, de modo que no tengas que aceptar un paquete de medidas. Las ${data.questions.length} propuestas se agrupan en ${data.topics.length} temas y se eligieron porque los partidos discrepan sobre ellas y esa discrepancia está documentada (votaciones, programas o declaraciones oficiales).`,
+      }),
+      el('p', {
+        text: 'Cada propuesta incluye la situación actual, qué cambiaría si se aplicara y qué implica estar a favor o en contra, siempre con sus costes en ambos sentidos. Durante el cuestionario no se muestra qué partido defiende cada medida.',
+      }),
+      el('p', {
+        text: `Respondes en una escala común de cinco puntos: ${ANSWER_SCALE.map((point) => `«${point.label}» (${formatFactor(point.value)})`).join(', ')}. «Sin opinión» no cuenta; la posición central sí, como postura intermedia. Las posiciones de los partidos se codifican en esa misma escala.`,
+      }),
+    ]),
     section('methodology-formula-heading', 'Cómo se calcula la afinidad', [
       el('p', {
-        text: 'Cada pregunta sitúa tus respuestas en un eje de −1 a +1. La afinidad con un partido en un tema es la cercanía entre ambas posiciones:',
+        text: 'En cada propuesta, la afinidad con un partido es la cercanía entre tu posición y la suya en la escala de −1 a +1:',
       }),
       el('p', {
         className: 'formula',
         text: 'afinidad = 1 − |tu posición − posición del partido| / 2',
       }),
       el('p', {
-        text: `La distancia máxima del eje es 2, así que la afinidad va de 0 a 1 (de 0 % a 100 %). Los temas que marques como prioritarios pesan ${String(SCORING_CONFIG.priorityFactor).replace('.', ',')} veces más (puedes elegir hasta ${MAX_PRIORITY_TOPICS} en el paso inicial).`,
+        text: `Va de 100 % (la misma posición) a 0 % (posiciones opuestas). Las propuestas de los temas que marques como prioritarios (hasta ${MAX_PRIORITY_TOPICS}) pesan ${formatFactor(SCORING_CONFIG.priorityFactor)} veces más.`,
       }),
       el('p', {
-        text: 'La afinidad de un partido es la media ponderada de la afinidad en los temas que respondiste y en los que el partido tiene posición documentada. La cobertura es la parte de tus respuestas (ponderadas) con dato disponible para ese partido. El redondeo a un decimal solo se aplica al mostrar.',
+        text: 'La afinidad global con un partido es la media ponderada de las propuestas que respondiste y en las que el partido tiene posición documentada. La afinidad por tema aplica la misma media solo a las propuestas de ese tema. Los porcentajes se redondean al mostrarlos.',
+      }),
+      el('p', {
+        text: '«Donde más coincidís» recoge las propuestas con afinidad igual o superior al 75 %, y «Donde más discrepáis», las que tienen un 50 % o menos: como mínimo, un punto completo de la escala de distancia.',
       }),
     ]),
     section('methodology-coverage-heading', 'Cobertura y datos faltantes', [
@@ -109,10 +123,10 @@ export function renderMethodologyView(
         text: 'Si un partido no tiene posición documentada en un tema, esa pregunta se excluye de su media y reduce su cobertura; nunca se le asigna un valor inventado.',
       }),
       el('p', {
-        text: 'Un partido sin ningún dato entre tus respuestas aparece bajo «Sin datos suficientes», sin porcentaje. Los partidos que no concurren en tu comunidad no se puntúan y se listan aparte.',
+        text: 'Un partido sin ningún dato entre tus respuestas aparece sin porcentaje. Los partidos que no concurren en tu comunidad no se puntúan y se listan aparte.',
       }),
       el('p', {
-        text: `El ranking principal solo incluye a los partidos con comparación suficiente: al menos ${SCORING_CONFIG.minComparedQuestions} preguntas comparadas y ${formatPercent(SCORING_CONFIG.minCoverage)} de cobertura ponderada. Los partidos con dato pero por debajo de esos umbrales aparecen bajo «Cobertura insuficiente». Si respondes menos de ${SCORING_CONFIG.minComparedQuestions} preguntas, no se muestra ranking y se avisa de comparación parcial.`,
+        text: `El ranking principal solo incluye a los partidos con comparación suficiente: al menos ${SCORING_CONFIG.minComparedQuestions} preguntas comparadas y ${formatPercent(SCORING_CONFIG.minCoverage)} de cobertura ponderada. Los partidos con dato pero por debajo de esos umbrales aparecen bajo «Comparación insuficiente». Si respondes menos de ${SCORING_CONFIG.minComparedQuestions} preguntas, no se muestra ranking y se avisa de comparación parcial.`,
       }),
     ]),
     section('methodology-status-heading', 'Estados de los datos y actualización', [
@@ -137,7 +151,7 @@ export function renderMethodologyView(
       }),
       el('p', { text: declarationNote }),
       el('p', {
-        text: 'El eje de la pregunta sobre corrupción va de más transparencia y controles previos (−1) a menos burocracia y administración más ágil (+1); el signo de cada posición sigue ese criterio.',
+        text: 'Cuando hay una votación parlamentaria sobre la medida, se usa como evidencia principal: votar a favor se codifica como «a favor» (o «totalmente a favor» si el partido la impulsó), la abstención como posición intermedia y el voto en contra como «en contra». Los matices documentados (por ejemplo, votar en contra por motivos competenciales) se reflejan en la nota de cada posición.',
       }),
     ]),
     renderTopicCatalog(data),

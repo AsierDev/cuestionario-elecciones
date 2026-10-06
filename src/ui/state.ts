@@ -1,22 +1,18 @@
-export type QuestionnaireStep = 'territory' | 'questions' | 'done';
+export type QuestionnaireStep = 'intro' | 'questions' | 'done';
 
-export const MAX_PRIORITY_TOPICS = 5;
-
-export interface QuestionAnswer {
-  optionIds: string[];
-}
+export const MAX_PRIORITY_TOPICS = 3;
 
 export interface QuestionnaireState {
   step: QuestionnaireStep;
   territoryId: string | null;
   currentIndex: number;
-  answers: Record<string, QuestionAnswer>;
+  answers: Record<string, number>;
   priorityTopicIds: string[];
 }
 
 export function createInitialState(): QuestionnaireState {
   return {
-    step: 'territory',
+    step: 'intro',
     territoryId: null,
     currentIndex: 0,
     answers: {},
@@ -31,38 +27,32 @@ export function selectTerritory(
   return { ...state, territoryId: territoryId === '' ? null : territoryId };
 }
 
-export function confirmTerritory(state: QuestionnaireState): QuestionnaireState {
+export function startQuestionnaire(state: QuestionnaireState): QuestionnaireState {
   if (state.territoryId === null) return state;
   return { ...state, step: 'questions', currentIndex: 0 };
 }
 
-export function getAnswer(
-  state: QuestionnaireState,
-  questionId: string,
-): QuestionAnswer | undefined {
+export function getAnswer(state: QuestionnaireState, questionId: string): number | undefined {
   return state.answers[questionId];
 }
 
-export function isAnswered(state: QuestionnaireState, questionId: string): boolean {
-  return (state.answers[questionId]?.optionIds.length ?? 0) > 0;
-}
-
 export function answeredCount(state: QuestionnaireState): number {
-  return Object.values(state.answers).filter((answer) => answer.optionIds.length > 0).length;
+  return Object.keys(state.answers).length;
 }
 
 export function setAnswer(
   state: QuestionnaireState,
   questionId: string,
-  optionIds: string[],
+  value: number,
 ): QuestionnaireState {
-  return {
-    ...state,
-    answers: {
-      ...state.answers,
-      [questionId]: { optionIds: [...optionIds] },
-    },
-  };
+  return { ...state, answers: { ...state.answers, [questionId]: value } };
+}
+
+export function clearAnswer(state: QuestionnaireState, questionId: string): QuestionnaireState {
+  if (!(questionId in state.answers)) return state;
+  const answers = { ...state.answers };
+  delete answers[questionId];
+  return { ...state, answers };
 }
 
 export function togglePriorityTopic(
@@ -74,13 +64,6 @@ export function togglePriorityTopic(
   }
   if (state.priorityTopicIds.length >= MAX_PRIORITY_TOPICS) return state;
   return { ...state, priorityTopicIds: [...state.priorityTopicIds, topicId] };
-}
-
-export function clearAnswer(state: QuestionnaireState, questionId: string): QuestionnaireState {
-  if (!(questionId in state.answers)) return state;
-  const answers = { ...state.answers };
-  delete answers[questionId];
-  return { ...state, answers };
 }
 
 export function currentQuestion<T extends { id: string }>(
@@ -101,6 +84,15 @@ export function goNext(state: QuestionnaireState, questionCount: number): Questi
 export function goPrevious(state: QuestionnaireState): QuestionnaireState {
   if (state.step !== 'questions' || state.currentIndex === 0) return state;
   return { ...state, currentIndex: state.currentIndex - 1 };
+}
+
+export function goToQuestion(
+  state: QuestionnaireState,
+  index: number,
+  questionCount: number,
+): QuestionnaireState {
+  if (state.territoryId === null || index < 0 || index >= questionCount) return state;
+  return { ...state, step: 'questions', currentIndex: index };
 }
 
 export function skipCurrent<T extends { id: string }>(

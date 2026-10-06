@@ -1,227 +1,272 @@
 [
   {
-    "topicId": "vivienda",
-    "value": -0.9,
+    "questionId": "q-alquiler-tope",
+    "value": 0.5,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: aumentar el investimento en vivenda, transferir as vivendas da SAREB ao parque público, mobilizar a vivenda baleira e fomentar contratos longos e estables."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
+    "sourceDate": "2023-04-27",
+    "note": "Se abstuvo en la Ley de Vivienda (abril 2023): apoya limitar los alquileres, pero critica la invasión de competencias."
   },
   {
-    "topicId": "economia",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: plan de industrialización, oposición á deslocalización con devolución de axudas e investimento en I+D+i ata o 3% do PIB."
+    "questionId": "q-desalojo-rapido",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/espana/congreso-toma-consideracion-ley-antiokupas-pp-gracias-20260519215135-nt.html",
+    "sourceDate": "2026-05-19",
+    "note": "Votó en contra de tramitar la ley de desalojo exprés (mayo 2026)."
   },
   {
-    "topicId": "inmigracion",
+    "questionId": "q-impuesto-grandes-fortunas",
     "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: regularización administrativa, garantía de dereitos das persoas migrantes, peche dos CIE e fin das deportacións."
+    "note": "Programa 23J: fiscalidad progresiva sobre las grandes fortunas."
   },
   {
-    "topicId": "calidad-empleo",
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.cronicamadrid.com/noticia/1297360/nacional/el-congreso-deroga-el-decreto-del-gravamen-energetico-con-el-voto-de-pp-vox-junts-el-pnv-y-upn.html",
+    "sourceDate": "2025-01-22",
+    "note": "Votó a favor de mantener el impuesto a las energéticas (enero 2025)."
+  },
+  {
+    "questionId": "q-bajar-irpf",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: derrogación das reformas laborais, 45 días de indemnización, xornada de 35 horas e SMI no 60% do salario medio."
+    "note": "Programa 23J: fiscalidad progresiva para financiar los servicios públicos."
   },
   {
-    "topicId": "paro",
-    "value": -0.8,
+    "questionId": "q-jornada-37-5",
+    "value": 1,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: reforzar o servizo público de emprego, cobertura para todas as persoas sen ocupación e plan contra a sinistralidade laboral."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
+    "sourceDate": "2025-09-10",
+    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada (septiembre 2025)."
   },
   {
-    "topicId": "sanidad",
-    "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: carácter público exclusivo da sanidade, reverter a privatización (Lei 15/97), universalidade e fin dos copagamentos."
-  },
-  {
-    "topicId": "corrupcion",
-    "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: inhabilitación de cargos por fraude fiscal, regulación estrita das portas xiratorias e incompatibilidades, e transparencia na contratación pública."
-  },
-  {
-    "topicId": "seguridad-ciudadana",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: derrogación da prisión permanente revisable e da lei mordaza, con alternativas baseadas na reinserción social."
-  },
-  {
-    "topicId": "calidad-democratica",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: consultas populares e referendos vinculantes, reforma electoral proporcional e transparencia na contratación pública."
-  },
-  {
-    "topicId": "extremismos",
+    "questionId": "q-salario-minimo",
     "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: derrogación da lei mordaza e do delito de ofensas aos símbolos do Estado, e impulso da pluralidade informativa."
+    "note": "Apoya subir el salario mínimo y reclama uno propio para Galicia."
   },
   {
-    "topicId": "marruecos-fronteras",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: condena da ocupación marroquí do Sáhara Occidental, esixencia dun referendo de autodeterminación e denuncia da masacre de Melilla."
-  },
-  {
-    "topicId": "medio-ambiente",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: protección do 30% das terras e augas, consideración do eucalipto como especie invasora, economía circular e fiscalidade ambiental."
-  },
-  {
-    "topicId": "politica-exterior",
+    "questionId": "q-cotizaciones-contratar",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: neutralidade activa en Ucraína, cese do envío de armamento, saída da OTAN e aposta pola diplomacia e a paz."
+    "note": "Rechaza rebajar cotizaciones empresariales."
   },
   {
-    "topicId": "pensiones",
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-planes-pensiones-privados",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: pensións mínimas no 60% do salario medio, revalorización conforme ao IPC real e xubilación ordinaria aos 65 anos."
+    "note": "Defiende el sistema público de pensiones."
   },
   {
-    "topicId": "educacion",
+    "questionId": "q-ingreso-minimo",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2023-07-05",
+    "note": "Apoya la protección social, con gestión propia en Galicia."
+  },
+  {
+    "questionId": "q-sanidad-privada",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: educación pública, universal e gratuíta de 0 a 18 anos, 7% do PIB e camiño cara á supresión dos concertos."
+    "note": "Programa 23J: sanidad pública y rechazo a las derivaciones a la privada."
   },
   {
-    "topicId": "impuestos",
+    "questionId": "q-escuela-concertada",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: maior progresividade no IRPF e no capital, impostos permanentes á banca, as enerxéticas e as grandes fortunas e fiscalidade ambiental."
+    "note": "Programa 23J: priorizar la escuela pública."
   },
   {
-    "topicId": "energia",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: transición enerxética distribuída e de control público, tarifa eléctrica galega, autoconsumo e oposición á eólica mariña."
+    "questionId": "q-regularizacion",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://elpais.com/espana/2026-03-18/el-congreso-pide-parar-la-regularizacion-de-inmigrantes-con-los-votos-del-pp-vox-y-junts.html",
+    "sourceDate": "2026-03-18",
+    "note": "Votó contra la moción que pedía renunciar a la regularización extraordinaria (marzo 2026)."
   },
   {
-    "topicId": "desigualdad",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: transferencia do IMV, investimento en protección social ata a media da UE e renda social básica."
-  },
-  {
-    "topicId": "igualdad-genero",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: políticas feministas, Pacto de Estado contra a violencia machista, Convenio de Istambul e revisión da violencia sexual co consentimento como centro."
-  },
-  {
-    "topicId": "derechos-lgtbiq",
+    "questionId": "q-rechazo-frontera",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: consolidar e ampliar os dereitos das persoas LGTBI, despatoloxización social das persoas trans e loita contra os delitos de odio."
+    "note": "Pide acabar con las devoluciones en caliente."
   },
   {
-    "topicId": "modelo-estado",
+    "questionId": "q-menores-reparto",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
+    "sourceDate": "2025-04-10",
+    "note": "Votó a favor del decreto de reparto obligatorio de menores (abril 2025)."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
+    "sourceDate": "2025-06-17",
+    "note": "Votó en contra de prorrogar las centrales nucleares (junio 2025)."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-trasvases",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-cgpj-jueces",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-voto-16",
     "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: recoñecemento do dereito de autodeterminación de Galiza, novo modelo de financiamento por concerto económico e bilateralidade."
+    "note": "Defiende el voto a los 16 años."
   },
   {
-    "topicId": "justicia",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: derrogación da prisión permanente revisable, garantías procesuais e oposición á lei mordaza."
-  },
-  {
-    "topicId": "defensa",
+    "questionId": "q-gasto-defensa",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: anular o aumento do gasto militar ata o 2% do PIB, saída da OTAN e cese da venda de armamento."
+    "note": "Programa 23J: reducir el gasto militar."
   },
   {
-    "topicId": "agricultura-despoblacion",
-    "value": -0.8,
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: reforma da Lei da Cadea Alimentaria, apoio aos circuítos curtos e á produción de calidade, e resposta ao despoboamento do medio rural."
+    "note": "Se opone al envío de armamento y a la escalada militar."
   },
   {
-    "topicId": "cultura",
-    "value": -0.9,
+    "questionId": "q-multirreincidencia",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.newtral.es/congreso-ley-multirreincidencia/20260212/",
+    "sourceDate": "2026-02-12",
+    "note": "Votó en contra de la ley de multirreincidencia (febrero 2026)."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
     "sourceDate": "2023-07-05",
-    "note": "Programa Xerais 2023 do BNG: normalización da lingua galega, máis financiamento público para producións en galego e reforma da Lei do Audiovisual."
+    "note": "Defiende la ley integral contra la violencia de género."
+  },
+  {
+    "questionId": "q-autodeterminacion-genero",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-eutanasia",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
+    "sourceDate": "2021-03-18",
+    "note": "Votó a favor de la ley de eutanasia (marzo 2021)."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2023-07-05",
+    "note": "Programa 23J: derecho de autodeterminación de Galicia."
+  },
+  {
+    "questionId": "q-autonomia-fiscal",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2023-07-05",
+    "note": "Programa 23J: concierto económico propio para Galicia."
+  },
+  {
+    "questionId": "q-lengua-cooficial",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+    "sourceDate": "2023-07-05",
+    "note": "Defiende el gallego como requisito en la Administración gallega."
   }
 ]
