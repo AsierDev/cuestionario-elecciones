@@ -468,3 +468,150 @@ describe('computeResults — determinismo', () => {
     expect(computeResults(data, input)).toEqual(computeResults(data, input));
   });
 });
+
+describe('computeResults — comparabilidad y elegibilidad', () => {
+  it('cuenta las preguntas comparadas por partido', () => {
+    const data = makeBundle({
+      parties: [ALFA, BETA],
+      topics: [topic('tema-1'), topic('tema-2')],
+      questions: [question('q1', 'tema-1'), question('q2', 'tema-2')],
+      positions: {
+        'partido-a': [position('tema-1', 1), position('tema-2', 1)],
+        'partido-b': [position('tema-1', -1), position('tema-2', null)],
+      },
+    });
+
+    const results = computeResults(data, {
+      territoryId: 't1',
+      answers: [answer('q1', ['q1-op2']), answer('q2', ['q2-op2'])],
+    });
+
+    const alfa = results.ranking.find((score) => score.party.id === 'partido-a');
+    const beta = results.ranking.find((score) => score.party.id === 'partido-b');
+    expect(alfa?.comparedCount).toBe(2);
+    expect(beta?.comparedCount).toBe(1);
+  });
+
+  it('es elegible con dato en las 10 preguntas de un bundle de 10', () => {
+    const { topics, questions } = manyQuestions(10);
+    const data = makeBundle({
+      parties: [ALFA],
+      topics,
+      questions,
+      positions: { 'partido-a': topics.map((item) => position(item.id, 1)) },
+    });
+
+    const results = computeResults(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [item.options[2].id])),
+    });
+
+    expect(results.ranking[0]?.comparedCount).toBe(10);
+    expect(results.ranking[0]?.coverage).toBe(1);
+    expect(results.ranking[0]?.eligible).toBe(true);
+  });
+
+  it('no es elegible con dato en 9 de 10 preguntas', () => {
+    const { topics, questions } = manyQuestions(10);
+    const data = makeBundle({
+      parties: [ALFA],
+      topics,
+      questions,
+      positions: {
+        'partido-a': topics.map((item, index) => position(item.id, index === 9 ? null : 1)),
+      },
+    });
+
+    const results = computeResults(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [item.options[2].id])),
+    });
+
+    expect(results.ranking[0]?.comparedCount).toBe(9);
+    expect(results.ranking[0]?.coverage).toBeCloseTo(0.9);
+    expect(results.ranking[0]?.eligible).toBe(false);
+  });
+
+  it('no es elegible por cobertura aunque alcance 10 preguntas comparadas', () => {
+    const { topics, questions } = manyQuestions(20);
+    const data = makeBundle({
+      parties: [ALFA, BETA],
+      topics,
+      questions,
+      positions: {
+        'partido-a': topics.map((item, index) => position(item.id, index < 10 ? null : 1)),
+        'partido-b': topics.map((item) => position(item.id, 1)),
+      },
+    });
+
+    const results = computeResults(data, {
+      territoryId: 't1',
+      answers: questions.map((item, index) => answer(item.id, [item.options[2].id], index < 10)),
+    });
+
+    const alfa = results.ranking.find((score) => score.party.id === 'partido-a');
+    const beta = results.ranking.find((score) => score.party.id === 'partido-b');
+    expect(alfa?.comparedCount).toBe(10);
+    expect(alfa?.coverage).toBeCloseTo(0.4);
+    expect(alfa?.eligible).toBe(false);
+    expect(beta?.eligible).toBe(true);
+  });
+
+  it('separa los no elegibles en lowCoverage, en orden alfabético, sin sacarlos de ranking', () => {
+    const { topics, questions } = manyQuestions(10);
+    const zeta = party('partido-z', { displayName: 'Zeta' });
+    const beta = party('partido-b', { displayName: 'Beta' });
+    const alfa = party('partido-a', { displayName: 'Alfa' });
+    const data = makeBundle({
+      parties: [zeta, beta, alfa],
+      topics,
+      questions,
+      positions: {
+        'partido-z': topics.map((item) => position(item.id, 1)),
+        'partido-b': topics.map((item, index) => position(item.id, index < 5 ? 1 : null)),
+        'partido-a': topics.map((item, index) => position(item.id, index < 5 ? 1 : null)),
+      },
+    });
+
+    const results = computeResults(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [item.options[2].id])),
+    });
+
+    expect(results.lowCoverage.map((score) => score.party.displayName)).toEqual(['Alfa', 'Beta']);
+    expect(results.ranking.map((score) => score.party.displayName)).toEqual([
+      'Alfa',
+      'Beta',
+      'Zeta',
+    ]);
+    expect(results.ranking.every((score) => score.affinity !== null)).toBe(true);
+  });
+
+  it('marca comparación parcial con menos de 10 respuestas y no sin respuestas', () => {
+    const { topics, questions } = manyQuestions(10);
+    const data = makeBundle({
+      parties: [ALFA],
+      topics,
+      questions,
+      positions: { 'partido-a': topics.map((item) => position(item.id, 1)) },
+    });
+
+    const nine = computeResults(data, {
+      territoryId: 't1',
+      answers: questions.slice(0, 9).map((item) => answer(item.id, [item.options[2].id])),
+    });
+    const ten = computeResults(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [item.options[2].id])),
+    });
+    const none = computeResults(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [])),
+    });
+
+    expect(nine.partialComparison).toBe(true);
+    expect(ten.partialComparison).toBe(false);
+    expect(none.partialComparison).toBe(false);
+    expect(none.lowCoverage).toEqual([]);
+  });
+});

@@ -17,6 +17,8 @@ export interface PartyScore {
   party: Party;
   affinity: number | null;
   coverage: number | null;
+  comparedCount: number;
+  eligible: boolean;
   missingTopicIds: string[];
   provisional: boolean;
 }
@@ -37,9 +39,11 @@ export interface ScoringResults {
   answeredCount: number;
   totalWeight: number;
   ranking: PartyScore[];
+  lowCoverage: PartyScore[];
   withoutData: PartyScore[];
   questions: QuestionResult[];
   provisional: boolean;
+  partialComparison: boolean;
 }
 
 function compareByName(a: Party, b: Party): number {
@@ -130,6 +134,7 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
     const positions = positionByPartyTopic.get(party.id);
     let weightedSum = 0;
     let scorableWeight = 0;
+    let comparedCount = 0;
     let provisional = false;
     const missingTopicIds: string[] = [];
 
@@ -138,25 +143,41 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
       if (row && row.value !== null) {
         weightedSum += entry.weight * questionAffinity(entry.userPosition, row.value);
         scorableWeight += entry.weight;
+        comparedCount += 1;
         if (row.status === 'provisional') provisional = true;
       } else {
         missingTopicIds.push(entry.question.topicId);
       }
     }
 
+    const affinity = scorableWeight > 0 ? weightedSum / scorableWeight : null;
+    const coverage = totalWeight > 0 ? scorableWeight / totalWeight : null;
+
     return {
       party,
-      affinity: scorableWeight > 0 ? weightedSum / scorableWeight : null,
-      coverage: totalWeight > 0 ? scorableWeight / totalWeight : null,
+      affinity,
+      coverage,
+      comparedCount,
+      eligible:
+        affinity !== null &&
+        (coverage ?? 0) >= SCORING_CONFIG.minCoverage &&
+        comparedCount >= SCORING_CONFIG.minComparedQuestions,
       missingTopicIds,
       provisional,
     };
   });
 
+  // `ranking` conserva su semántica: todos los partidos puntuados, por afinidad.
   const ranking = hasAnswers
     ? scores
         .filter((score) => score.affinity !== null)
         .sort((a, b) => (b.affinity ?? 0) - (a.affinity ?? 0) || compareByName(a.party, b.party))
+    : [];
+
+  const lowCoverage = hasAnswers
+    ? scores
+        .filter((score) => score.affinity !== null && !score.eligible)
+        .sort((a, b) => compareByName(a.party, b.party))
     : [];
 
   const withoutData = hasAnswers
@@ -164,6 +185,8 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
         .filter((score) => score.affinity === null)
         .sort((a, b) => compareByName(a.party, b.party))
     : [];
+
+  const partialComparison = hasAnswers && answered.length < SCORING_CONFIG.minComparedQuestions;
 
   const questions: QuestionResult[] = answered.map((entry) => {
     const withData: { party: Party; affinity: number }[] = [];
@@ -207,8 +230,10 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
     answeredCount: answered.length,
     totalWeight,
     ranking,
+    lowCoverage,
     withoutData,
     questions,
     provisional: scores.some((score) => score.provisional),
+    partialComparison,
   };
 }

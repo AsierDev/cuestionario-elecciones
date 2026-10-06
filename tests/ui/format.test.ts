@@ -15,6 +15,8 @@ function score(displayName: string, affinity: number | null): PartyScore {
     party: party(displayName.toLowerCase(), { displayName }),
     affinity,
     coverage: 1,
+    comparedCount: 1,
+    eligible: false,
     missingTopicIds: [],
     provisional: false,
   };

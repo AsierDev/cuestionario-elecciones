@@ -93,4 +93,20 @@ describe('invariante territorial sobre los 19 territorios', () => {
       expect(results.withoutData).toEqual([]);
     }
   });
+
+  it('no pierde partidos al separar elegibles y baja cobertura con respuestas completas', () => {
+    const answers = fullAnswerSet();
+    for (const territoryId of Object.keys(TERRITORY_PARTY_COUNTS)) {
+      const results = computeResults(data, { territoryId, answers });
+      expect(results.partialComparison).toBe(false);
+
+      const classified = [
+        ...results.ranking.filter((score) => score.eligible),
+        ...results.lowCoverage,
+      ].map((score) => score.party.id);
+      expect(new Set(classified)).toEqual(
+        new Set(results.ranking.map((score) => score.party.id)),
+      );
+    }
+  });
 });
