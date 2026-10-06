@@ -144,6 +144,25 @@ describe('vista de resultados — ganadores por pregunta', () => {
 
     expect(node.querySelector('.winner__party')?.textContent).toBe('Más afín: Alfa, Beta');
     expect(node.querySelector('.winner__affinity')?.textContent).toBe('Afinidad: 100,0 %');
+    expect(node.querySelector('.winner__answer')?.textContent).toBe('Tu respuesta: Opción 1');
+  });
+
+  it('muestra las etiquetas de todas las opciones elegidas en una pregunta múltiple', () => {
+    const data = makeBundle({
+      parties: [ALFA],
+      topics: [topic('tema-1')],
+      questions: [question('q1', 'tema-1', { type: 'multi' })],
+      positions: { 'partido-a': [position('tema-1', 0)] },
+    });
+
+    const node = render(data, {
+      territoryId: 't1',
+      answers: [answer('q1', ['q1-op0', 'q1-op2'])],
+    });
+
+    expect(node.querySelector('.winner__answer')?.textContent).toBe(
+      'Tu respuesta: Opción 0, Opción 2',
+    );
   });
 
   it('avisa cuando no hay partidos aplicables con dato en una pregunta', () => {
@@ -167,6 +186,8 @@ describe('vista de resultados — ganadores por pregunta', () => {
     expect(winners[1]?.querySelector('.winner__empty')?.textContent).toBe(
       'Sin datos suficientes en tu territorio para esta pregunta.',
     );
+    expect(winners[0]?.querySelector('.winner__answer')?.textContent).toBe('Tu respuesta: Opción 1');
+    expect(winners[1]?.querySelector('.winner__answer')?.textContent).toBe('Tu respuesta: Opción 1');
   });
 });
 

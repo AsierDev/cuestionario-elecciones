@@ -68,6 +68,12 @@ function renderQuestionResult(result: QuestionResult): HTMLElement {
     el('p', { className: 'winner__question', text: result.question.text }),
   ]);
 
+  const labelById = new Map(result.question.options.map((option) => [option.id, option.label]));
+  if (result.userOptionIds.length > 0) {
+    const labels = result.userOptionIds.map((id) => labelById.get(id) ?? id);
+    item.append(el('p', { className: 'winner__answer', text: `Tu respuesta: ${labels.join(', ')}` }));
+  }
+
   if (result.winners.length === 0) {
     item.append(
       el('p', {

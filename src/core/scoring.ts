@@ -24,6 +24,7 @@ export interface PartyScore {
 export interface QuestionResult {
   question: Question;
   userPosition: number;
+  userOptionIds: string[];
   bestAffinity: number | null;
   winners: Party[];
 }
@@ -92,6 +93,7 @@ function indexPositionsByPartyTopic(data: DataBundle): Map<string, Map<string, P
 interface AnsweredEntry {
   question: Question;
   userPosition: number;
+  userOptionIds: string[];
   weight: number;
 }
 
@@ -116,6 +118,7 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
     answered.push({
       question,
       userPosition: position,
+      userOptionIds: [...answer.optionIds],
       weight: answer.priority ? SCORING_CONFIG.priorityFactor : 1,
     });
   }
@@ -175,6 +178,7 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
       return {
         question: entry.question,
         userPosition: entry.userPosition,
+        userOptionIds: entry.userOptionIds,
         bestAffinity: null,
         winners: [],
       };
@@ -189,6 +193,7 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
     return {
       question: entry.question,
       userPosition: entry.userPosition,
+      userOptionIds: entry.userOptionIds,
       bestAffinity,
       winners,
     };

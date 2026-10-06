@@ -306,6 +306,60 @@ describe('computeResults — empates', () => {
   });
 });
 
+describe('computeResults — opciones elegidas', () => {
+  it('refleja la opción enviada en una pregunta de opción única', () => {
+    const data = makeBundle({
+      parties: [ALFA],
+      topics: [topic('tema-1')],
+      questions: [question('q1', 'tema-1')],
+      positions: { 'partido-a': [position('tema-1', 0)] },
+    });
+
+    const results = computeResults(data, {
+      territoryId: 't1',
+      answers: [answer('q1', ['q1-op2'])],
+    });
+
+    expect(results.questions[0]?.userOptionIds).toEqual(['q1-op2']);
+  });
+
+  it('conserva todas las opciones marcadas en orden en una pregunta múltiple', () => {
+    const data = makeBundle({
+      parties: [ALFA],
+      topics: [topic('tema-1')],
+      questions: [question('q1', 'tema-1', { type: 'multi' })],
+      positions: { 'partido-a': [position('tema-1', 0)] },
+    });
+
+    const results = computeResults(data, {
+      territoryId: 't1',
+      answers: [answer('q1', ['q1-op0', 'q1-op2'])],
+    });
+
+    expect(results.questions[0]?.userOptionIds).toEqual(['q1-op0', 'q1-op2']);
+  });
+
+  it('mantiene las opciones elegidas aunque ningún partido tenga datos', () => {
+    const data = makeBundle({
+      parties: [ALFA, BETA],
+      topics: [topic('tema-1')],
+      questions: [question('q1', 'tema-1')],
+      positions: {
+        'partido-a': [position('tema-1', null)],
+        'partido-b': [position('tema-1', null)],
+      },
+    });
+
+    const results = computeResults(data, {
+      territoryId: 't1',
+      answers: [answer('q1', ['q1-op1'])],
+    });
+
+    expect(results.questions[0]?.winners).toEqual([]);
+    expect(results.questions[0]?.userOptionIds).toEqual(['q1-op1']);
+  });
+});
+
 describe('computeResults — estados borde', () => {
   it('con todas las preguntas omitidas deja afinidad y cobertura a null y sin ranking', () => {
     const { topics, questions } = manyQuestions(25);
