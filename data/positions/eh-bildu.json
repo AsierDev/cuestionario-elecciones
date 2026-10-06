@@ -1,227 +1,272 @@
 [
   {
-    "topicId": "vivienda",
+    "questionId": "q-alquiler-tope",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
+    "sourceDate": "2023-04-27",
+    "note": "Votó a favor de la Ley de Vivienda (abril 2023)."
+  },
+  {
+    "questionId": "q-desalojo-rapido",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: aprobar la Ley de Vivienda que limita los alquileres, declara zonas tensionadas y recupera la prórroga automática de los contratos."
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/espana/congreso-toma-consideracion-ley-antiokupas-pp-gracias-20260519215135-nt.html",
+    "sourceDate": "2026-05-19",
+    "note": "Votó en contra de tramitar la ley de desalojo exprés (mayo 2026)."
   },
   {
-    "topicId": "economia",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: impuestos a la banca, las energéticas y las grandes fortunas, PERTE de economía social y nueva Ley de Industria."
-  },
-  {
-    "topicId": "inmigracion",
+    "questionId": "q-impuesto-grandes-fortunas",
     "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: derogar la Ley de Extranjería, corredores y vías seguras, fin de las devoluciones en caliente y Ley contra el Racismo."
+    "note": "Programa 23J: fiscalidad progresiva sobre las grandes fortunas."
   },
   {
-    "topicId": "calidad-empleo",
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.cronicamadrid.com/noticia/1297360/nacional/el-congreso-deroga-el-decreto-del-gravamen-energetico-con-el-voto-de-pp-vox-junts-el-pnv-y-upn.html",
+    "sourceDate": "2025-01-22",
+    "note": "Votó a favor de mantener el impuesto a las energéticas (enero 2025)."
+  },
+  {
+    "questionId": "q-bajar-irpf",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: indemnización por despido de 45 días, jornada de 32 horas semanales sin reducción salarial y SMI de 1.200€."
+    "note": "Programa 23J: más recaudación progresiva para reforzar los servicios públicos."
   },
   {
-    "topicId": "paro",
-    "value": -0.7,
+    "questionId": "q-jornada-37-5",
+    "value": 1,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: transferencia de las políticas pasivas de empleo y de la Inspección de Trabajo al ámbito vasco."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
+    "sourceDate": "2025-09-10",
+    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada (septiembre 2025)."
   },
   {
-    "topicId": "sanidad",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: más plazas MIR, derogar la Ley 15/1997 que permite la privatización sanitaria y ampliar la salud mental y la cartera dental y oftalmológica."
-  },
-  {
-    "topicId": "corrupcion",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: acabar con la Ley de Secretos Oficiales y crear un mecanismo externo e independiente de supervisión de las actuaciones policiales."
-  },
-  {
-    "topicId": "seguridad-ciudadana",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el programa 23J de EH Bildu no define una posición sobre prevención social frente a endurecimiento penal."
-  },
-  {
-    "topicId": "calidad-democratica",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: derogar la Ley Mordaza, crear un mecanismo independiente de supervisión policial y ampliar la Ley de Memoria Democrática."
-  },
-  {
-    "topicId": "extremismos",
+    "questionId": "q-salario-minimo",
     "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: derogar la Ley Mordaza y sus artículos sobre 'faltas de respeto' y desobediencia, en defensa de la libertad de expresión."
+    "note": "Apoya subir el salario mínimo y reclama uno propio para Euskal Herria."
   },
   {
-    "topicId": "marruecos-fronteras",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el programa 23J de EH Bildu no recoge una posición sobre la relación bilateral con Marruecos ni sobre Ceuta y Melilla."
-  },
-  {
-    "topicId": "medio-ambiente",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: revisar al alza la Ley de Cambio Climático, neutralidad climática en 2040 y empresas públicas de comercialización eléctrica."
-  },
-  {
-    "topicId": "politica-exterior",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el programa 23J de EH Bildu no recoge una posición trazable sobre el papel de España en los conflictos internacionales."
-  },
-  {
-    "topicId": "pensiones",
+    "questionId": "q-cotizaciones-contratar",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: aumento de las pensiones mínimas a 1.080€, rechazo a subir la edad de jubilación y transferencia del régimen económico de la Seguridad Social."
+    "note": "Rechaza rebajar cotizaciones empresariales."
   },
   {
-    "topicId": "educacion",
-    "value": -0.4,
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": 0,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: blindar los modelos educativos y curriculares propios y el euskera, y transferir las becas al ámbito vasco."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
+    "sourceDate": "2023-03-30",
+    "note": "Se abstuvo en la convalidación de la reforma de pensiones de 2023."
   },
   {
-    "topicId": "impuestos",
+    "questionId": "q-planes-pensiones-privados",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: aumentar la carga impositiva y convertir en permanentes los impuestos a la banca, las energéticas y las grandes fortunas."
+    "note": "Defiende el sistema público de pensiones frente a los planes privados."
   },
   {
-    "topicId": "energia",
-    "value": -0.8,
+    "questionId": "q-ingreso-minimo",
+    "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: renovables, empresas públicas de comercialización eléctrica y cambio del sistema marginalista de fijación de precios."
+    "note": "Apoya las rentas mínimas, con gestión propia en el País Vasco y Navarra."
   },
   {
-    "topicId": "desigualdad",
-    "value": -0.8,
+    "questionId": "q-sanidad-privada",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: ampliar el Ingreso Mínimo Vital, mantener el escudo social y ampliar la protección social."
+    "note": "Rechaza las derivaciones a la sanidad privada."
   },
   {
-    "topicId": "igualdad-genero",
-    "value": -0.8,
+    "questionId": "q-escuela-concertada",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: reforzar la lucha contra la violencia machista y avanzar en la igualdad real desde el feminismo transformador."
+    "note": "Defiende priorizar la escuela pública."
   },
   {
-    "topicId": "derechos-lgtbiq",
-    "value": -0.8,
+    "questionId": "q-regularizacion",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://elpais.com/espana/2026-03-18/el-congreso-pide-parar-la-regularizacion-de-inmigrantes-con-los-votos-del-pp-vox-y-junts.html",
+    "sourceDate": "2026-03-18",
+    "note": "Votó contra la moción que pedía renunciar a la regularización extraordinaria (marzo 2026)."
+  },
+  {
+    "questionId": "q-rechazo-frontera",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: defender los avances y conquistas de las personas LGTBIQ+ y combatir los discursos y delitos de odio."
+    "note": "Pide acabar con las devoluciones en caliente."
   },
   {
-    "topicId": "modelo-estado",
+    "questionId": "q-menores-reparto",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
+    "sourceDate": "2025-04-10",
+    "note": "Votó a favor del decreto de reparto obligatorio de menores (abril 2025)."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
+    "sourceDate": "2025-06-17",
+    "note": "Votó en contra de prorrogar las centrales nucleares (junio 2025)."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-trasvases",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-cgpj-jueces",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Rechaza el modelo de elección del CGPJ por los propios jueces."
+  },
+  {
+    "questionId": "q-voto-16",
     "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: reconocimiento del carácter plurinacional del Estado, de Euskal Herria como nación y del derecho a decidir."
+    "note": "Defiende el voto a los 16 años."
   },
   {
-    "topicId": "justicia",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: la memoria democrática del programa 23J de EH Bildu no define una posición sobre garantías procesales frente a agilidad."
-  },
-  {
-    "topicId": "defensa",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el programa 23J de EH Bildu no recoge una posición trazable sobre el nivel de gasto en defensa."
-  },
-  {
-    "topicId": "agricultura-despoblacion",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: nueva política de regulación, control y ahorro del agua que asegure el suministro al ámbito agrícola y apoyo a los sectores más afectados."
-  },
-  {
-    "topicId": "cultura",
+    "questionId": "q-gasto-defensa",
     "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de EH Bildu: garantizar el uso del euskera en las administraciones dependientes del Estado y el respeto a las lenguas propias de los pueblos del Estado."
+    "note": "Se opone al aumento del gasto militar."
+  },
+  {
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Crítico con el envío de armamento; prioriza la vía diplomática."
+  },
+  {
+    "questionId": "q-multirreincidencia",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.newtral.es/congreso-ley-multirreincidencia/20260212/",
+    "sourceDate": "2026-02-12",
+    "note": "Votó en contra de la ley de multirreincidencia (febrero 2026)."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Defiende la ley integral contra la violencia de género."
+  },
+  {
+    "questionId": "q-autodeterminacion-genero",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://theobjective.com/espana/politica/2023-02-16/congreso-ley-trans-mayoria/",
+    "sourceDate": "2023-02-16",
+    "note": "Votó a favor de la ley trans (2023)."
+  },
+  {
+    "questionId": "q-eutanasia",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
+    "sourceDate": "2021-03-18",
+    "note": "Votó a favor de la ley de eutanasia (marzo 2021)."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: derecho de autodeterminación de Euskal Herria."
+  },
+  {
+    "questionId": "q-autonomia-fiscal",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Defiende la soberanía fiscal y el concierto económico."
+  },
+  {
+    "questionId": "q-lengua-cooficial",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+    "sourceDate": "2023-07-23",
+    "note": "Defiende el euskera como requisito en la Administración."
   }
 ]

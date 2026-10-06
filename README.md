@@ -1,14 +1,21 @@
-# Buscador de afinidad de voto — Elecciones Generales 29-NOV-2026
+# Brújula de voto — Elecciones Generales 29-NOV-2026
 
 Web estática, solo cliente y sin backend que ayuda a cualquier persona a ver **qué partido
 español se ajusta más a sus posiciones** de cara a las elecciones generales del
 **29 de noviembre de 2026**.
 
-El flujo es: elegir comunidad autónoma y hasta 5 temas prioritarios opcionales ponderados ×1,5 →
-responder 25 preguntas neutrales (de opción única o múltiple) → ver, por cada pregunta, el
-partido votable en tu territorio más afín, y al final el **% de afinidad** por partido
-aplicable, la **cobertura de datos**, los **temas sin datos suficientes**, los **enlaces a los
-programas**, la **última actualización** y la **metodología**.
+El flujo es: elegir comunidad autónoma y hasta 3 temas prioritarios opcionales (ponderados ×1,5) →
+responder **30 propuestas concretas** agrupadas en **11 temas**, cada una con una escala común de
+cinco puntos (de «totalmente en contra» a «totalmente a favor», más «Sin opinión») y una ficha
+desplegable que explica la situación actual, qué cambiaría y qué implica estar a favor o en contra
+→ ver los resultados en tres niveles:
+
+1. **Afinidad con cada partido**, con sus mayores coincidencias y discrepancias contigo y la
+   fuente de cada posición.
+2. **Afinidad por temas**: un mapa de calor tema × partido y el partido más cercano en cada tema.
+3. **Propuesta a propuesta**: tu posición y la de cada partido en la misma escala.
+
+Durante el cuestionario no se muestra qué partido defiende cada medida.
 
 Todo el contenido (temas, partidos, territorios, preguntas y posiciones) vive en `/data` y es
 auditable: cada posición guarda fuente, fecha, tipo y estado. Actualizar posiciones **no
@@ -43,7 +50,7 @@ npm run preview # sirve dist/ localmente
 | `npm run test:core` | Tests del motor de scoring. |
 | `npm run test:ui` | Tests de la UI (happy-dom). |
 | `npm run lint` | ESLint. |
-| `npm run validate:data` | Valida `/data` contra el esquema zod, referencias cruzadas y matriz 11×25. |
+| `npm run validate:data` | Valida `/data` contra el esquema zod, referencias cruzadas y matriz 11×30. |
 | `npm run coverage:data` | Informe de cobertura de posiciones por partido y global. |
 | `npm run check:dist` | Verifica que `dist/index.html` usa rutas relativas y que sus assets existen. |
 
@@ -53,14 +60,20 @@ Toda la información de partidos y temas es dato editable en `/data`. Para cambi
 posición:
 
 1. **Edita el JSON del partido** en `data/positions/<partido>.json`. Cada fila tiene:
-   `topicId`, `value` (número en `[-1, 1]` o `null`), `status`, `sourceType`, `sourceUrl`,
-   `sourceDate` (ISO `YYYY-MM-DD`) y, opcionalmente, `note` (paráfrasis breve con atribución).
+   `questionId`, `value` (uno de los cinco puntos de la escala: `-1`, `-0.5`, `0`, `0.5`, `1`, o
+   `null`), `status`, `sourceType`, `sourceUrl`, `sourceDate` (ISO `YYYY-MM-DD`) y `note`
+   (paráfrasis breve, ≤240 caracteres, que justifica la codificación).
+   El valor expresa la posición del partido **sobre esa propuesta concreta**: `1` = totalmente a
+   favor, `-1` = totalmente en contra. Si hay votación parlamentaria sobre la medida, es la
+   evidencia preferente: impulsarla = `1`, votar a favor = `0,5`–`1`, abstenerse = `0`, votar en
+   contra = `-0,5`–`-1`, y los matices (p. ej., voto en contra por competencias) van en la nota.
    Si necesitas un partido o tema nuevo, edita también `data/parties.json` o `data/topics.json`
    (y la pregunta correspondiente en `data/questions.json`).
 2. **Valida el contrato**: `npm run validate:data`
-   (esquema, campos obligatorios por posición, referencias cruzadas y matriz completa 11×25).
+   (esquema, campos obligatorios por posición, referencias cruzadas y matriz completa 11×30).
 3. **Revisa la cobertura**: `npm run coverage:data`
-   (los tests exigen ≥70% global y ≥50% por partido con estado `verificado` o `provisional`).
+   (los tests exigen ≥75 % global, ≥85 % en los partidos estatales y que cada propuesta tenga
+   al menos un partido a favor y otro en contra).
 4. **Pasa la suite completa**: `npm test`
    (incluye contrato, integración territorial, motor y el test que garantiza que `src/` no
    contiene ids de partidos ni temas).
@@ -83,10 +96,11 @@ Reglas del contrato que debes respetar al editar:
 data/territories.json            [{ id, name }]                                 // 19 territorios
 data/parties.json                [{ id, displayName, scope, communities?,       // 11 partidos
                                      websiteUrl, programUrl, programYear, identityNote? }]
-data/topics.json                 [{ id, name, block, evidence[] }]              // 25 temas
-data/questions.json              [{ id, topicId, text, type, axisNote?, options[] }] // 25 preguntas
-data/positions/<partyId>.json    [{ topicId, value, status, sourceType,         // 25 por partido
-                                     sourceUrl, sourceDate, note? }]
+data/topics.json                 [{ id, name, description, evidence[] }]        // 11 temas
+data/questions.json              [{ id, topicId, title, statement, summary,     // 30 propuestas
+                                     context, change, ifFavor, ifAgainst, glossary[] }]
+data/positions/<partyId>.json    [{ questionId, value, status, sourceType,      // 30 por partido
+                                     sourceUrl, sourceDate, note }]
 data/meta.json                   { updatedAt, dataVersion, notes? }
 ```
 
@@ -128,16 +142,21 @@ Principios de neutralidad:
   en la metodología).
 - Sin color ni logo de partido como identidad; sin nombres de partidos en los enunciados de las
   preguntas.
-- Los temas se justifican con evidencia (CIS Estudio 3577 para el Bloque A; agenda/programa
-  para el Bloque B) y el posible sesgo percibido de la fuente CIS se declara en la metodología.
+- Los temas se justifican con evidencia (CIS Estudio 3577 y agenda/programas) y el posible sesgo
+  percibido de la fuente CIS se declara en la metodología.
+- Cada propuesta plantea una sola medida; su ficha expone el coste de estar a favor y el de estar
+  en contra («aunque…»). Los tests comprueban que ningún texto del cuestionario nombra partidos ni
+  personas.
 
 ## Metodología (resumen)
 
-- Posición del usuario: `single` → valor de la opción; `multi` → media de los valores elegidos;
-  pregunta omitida → no puntúa.
-- Afinidad por pregunta: `1 − |u − p| / 2` ∈ [0,1] (distancia máxima del eje = 2).
-- Peso: `1,5` si el tema se marcó prioritario (hasta 5, elegidos en el paso inicial), `1,0` si no.
-- Afinidad por partido: `Σ(peso × afinidad) / Σ(peso)` sobre los temas puntuables.
+- Posición del usuario: uno de los cinco puntos de la escala (`-1`, `-0,5`, `0`, `0,5`, `1`); la
+  posición central cuenta; «Sin opinión» no puntúa.
+- Afinidad por propuesta: `1 − |u − p| / 2` ∈ [0,1] (cada punto de distancia resta un 25 %).
+- Peso: `1,5` si el tema se marcó prioritario (hasta 3, elegidos en el paso inicial), `1,0` si no.
+- Afinidad por partido: `Σ(peso × afinidad) / Σ(peso)` sobre las propuestas puntuables; la
+  afinidad por tema aplica la misma media a las propuestas de cada tema.
+- Coincidencias: propuestas con afinidad ≥75 %; discrepancias: ≤50 %.
 - Cobertura: `Σpeso(puntuables) / Σpeso(respondidos)`.
 - Filtrado territorial: los partidos no aplicables en la comunidad elegida no se puntúan.
 - Datos faltantes: se excluyen del cálculo y reducen la cobertura; sin cobertura → "Sin datos
@@ -195,6 +214,6 @@ se apoyan en 2023/declaraciones/votaciones y se marcan como `provisional` con av
 
 ## Estado de los datos
 
-- `dataVersion`: `0.3.1` · `updatedAt`: `2026-10-05`.
-- Cobertura global de posiciones: **233/275 (84,7%)**; mínima por partido, Coalición Canaria
-  (17/25, 68,0%).
+- `dataVersion`: `0.4.0` · `updatedAt`: `2026-10-06`.
+- Cobertura global de posiciones: **269/330 (81,5 %)**. Estatales ≥93 %; huecos principales en
+  Coalición Canaria (10/30) y Junts (17/30), que quedan como «sin datos» en lugar de estimarse.

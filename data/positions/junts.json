@@ -1,227 +1,272 @@
 [
   {
-    "topicId": "vivienda",
-    "value": -0.6,
+    "questionId": "q-alquiler-tope",
+    "value": -0.5,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: ampliar el parque público de alquiler, movilizar los pisos de la SAREB y limitar las reducciones fiscales a los alquileres por encima del índice de referencia."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
+    "sourceDate": "2023-04-27",
+    "note": "Votó en contra de la Ley de Vivienda (abril 2023), alegando sobre todo invasión de competencias."
   },
   {
-    "topicId": "economia",
-    "value": 0,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: inversión en I+D+i hasta el 3% del PIB y reindustrialización, con una fiscalidad al servicio del crecimiento sin incrementar la presión global."
+    "questionId": "q-desalojo-rapido",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/espana/congreso-toma-consideracion-ley-antiokupas-pp-gracias-20260519215135-nt.html",
+    "sourceDate": "2026-05-19",
+    "note": "Tiene su propia propuesta contra la ocupación; se abstuvo en la ley del PP (mayo 2026)."
   },
   {
-    "topicId": "inmigracion",
-    "value": 0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
+    "questionId": "q-impuesto-grandes-fortunas",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: articular vías legales y seguras de migración regular, eliminar las devoluciones en caliente y políticas de apertura y acogida."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "calidad-empleo",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: salario mínimo catalán de 1.319€, más estabilidad y formación, y la 'motxilla austríaca' con un nuevo sistema de indemnizaciones."
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.energias-renovables.com/panorama/pnv-y-junts-dicen-no-al-impuesto-20260929",
+    "sourceDate": "2026-09-29",
+    "note": "Votó contra el impuesto a las energéticas en enero de 2025 y en septiembre de 2026."
   },
   {
-    "topicId": "paro",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "programa-2023",
+    "questionId": "q-bajar-irpf",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: políticas activas de empleo (1% del PIB), traspaso de las políticas pasivas y protección de los parados de larga duración."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "sanidad",
-    "value": -0.6,
+    "questionId": "q-jornada-37-5",
+    "value": -1,
     "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: acceso universal a un servicio sanitario público de calidad, más recursos frente al infrafinanciamiento y más plazas MIR."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
+    "sourceDate": "2025-09-10",
+    "note": "Presentó enmienda a la totalidad contra la reducción de jornada (septiembre 2025)."
   },
   {
-    "topicId": "corrupcion",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
+    "questionId": "q-salario-minimo",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: denuncia de la politización de la Justicia y del Tribunal de Cuentas, nueva Ley de Secretos Oficiales y renovación del CGPJ."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "seguridad-ciudadana",
-    "value": 0.3,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: modificar el Código Penal contra la multirreincidencia en los hurtos y agilizar el desalojo de las ocupaciones ilegales."
-  },
-  {
-    "topicId": "calidad-democratica",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: gobierno abierto (transparencia, participación y datos abiertos), derogación de la LRSAL y reforma del reglamento del Congreso."
-  },
-  {
-    "topicId": "extremismos",
+    "questionId": "q-cotizaciones-contratar",
     "value": 0.5,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: reforma del Código Penal de los delitos que limitan la libertad de expresión y derogación de la ley mordaza."
+    "note": "Programa 23J: reducir cargas a autónomos y pymes para favorecer la contratación."
   },
   {
-    "topicId": "marruecos-fronteras",
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": 0,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
+    "sourceDate": "2023-03-30",
+    "note": "Se abstuvo en la convalidación de la reforma de pensiones de 2023."
+  },
+  {
+    "questionId": "q-planes-pensiones-privados",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el programa 23J de Junts no recoge una posición sobre la relación bilateral con Marruecos ni sobre Ceuta y Melilla."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "medio-ambiente",
-    "value": -0.5,
+    "questionId": "q-ingreso-minimo",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-sanidad-privada",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-escuela-concertada",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-regularizacion",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://elpais.com/espana/2026-03-18/el-congreso-pide-parar-la-regularizacion-de-inmigrantes-con-los-votos-del-pp-vox-y-junts.html",
+    "sourceDate": "2026-03-18",
+    "note": "Votó a favor de la moción que pide renunciar a la regularización extraordinaria (marzo 2026)."
+  },
+  {
+    "questionId": "q-rechazo-frontera",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-menores-reparto",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
+    "sourceDate": "2025-04-10",
+    "note": "Votó a favor del decreto de reparto de menores (abril 2025), tras pactar que Cataluña quedara al margen."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
+    "sourceDate": "2025-06-17",
+    "note": "Se declara favorable a alargar Ascó y Vandellòs, pero se abstuvo en la ley de prórroga (junio 2025)."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-trasvases",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: compromisos de reducción de emisiones, renovables, eficiencia energética y criterios de fiscalidad ambiental."
+    "note": "Se opone a trasvasar agua del Ebro."
   },
   {
-    "topicId": "politica-exterior",
-    "value": 0.2,
-    "status": "provisional",
-    "sourceType": "programa-2023",
+    "questionId": "q-cgpj-jueces",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: defensa de los derechos humanos como eje de la política exterior, apoyo a Ucrania y exigencia del cumplimiento de los compromisos con la OTAN."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "pensiones",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "programa-2023",
+    "questionId": "q-voto-16",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: mantener el poder adquisitivo, mejorar las pensiones mínimas y no contributivas y un factor de sostenibilidad ligado a la esperanza de vida."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "educacion",
-    "value": -0.3,
-    "status": "provisional",
-    "sourceType": "programa-2023",
+    "questionId": "q-gasto-defensa",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: incrementar el presupuesto público de educación (6% del PIB), gratuidad de 0-3 y de la postobligatoria y la concertada con finalidad social."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "impuestos",
-    "value": -0.2,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: que aporte más quien más tiene, deflactar las escalas, bajar el impuesto de sociedades de las pymes del 25% al 20% y fiscalidad verde."
-  },
-  {
-    "topicId": "energia",
-    "value": -0.3,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: impulsar las renovables, crear un mercado catalán de contratación a plazo y sacar la nuclear y la gran hidráulica de la subasta eléctrica."
-  },
-  {
-    "topicId": "desigualdad",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: políticas redistributivas y predistributivas, refuerzo de la atención a las familias sin ingresos y actualización del IPREM."
-  },
-  {
-    "topicId": "igualdad-genero",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: igualdad retributiva, ley de corresponsabilidad, ley de igualdad salarial y lucha contra la violencia machista."
-  },
-  {
-    "topicId": "derechos-lgtbiq",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: reconocimiento y defensa de los derechos de las personas LGTBI y lucha contra la LGTBIfobia."
-  },
-  {
-    "topicId": "modelo-estado",
+    "questionId": "q-ayuda-militar-ucrania",
     "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: derecho a la autodeterminación, un Estado propio para Cataluña y competencias plenas."
+    "note": "Apoya la ayuda a Ucrania, incluida la militar, en línea con la UE."
   },
   {
-    "topicId": "justicia",
-    "value": -0.6,
+    "questionId": "q-multirreincidencia",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.newtral.es/congreso-ley-multirreincidencia/20260212/",
+    "sourceDate": "2026-02-12",
+    "note": "Impulsó la ley de multirreincidencia aprobada en febrero de 2026."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: independencia judicial y despolitización, creación del Consell de Justícia de Catalunya y refuerzo de las garantías procesales."
+    "note": "Apoya la ley integral contra la violencia de género."
   },
   {
-    "topicId": "defensa",
-    "value": -0.3,
+    "questionId": "q-autodeterminacion-genero",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-eutanasia",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
+    "sourceDate": "2021-03-18",
+    "note": "Votó a favor de la ley de eutanasia (marzo 2021)."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: revisar el modelo de Defensa y sus programas de armamento, avanzar hacia un ejército europeo y no exportar armas a países que violan derechos."
+    "note": "Programa 23J: defiende la autodeterminación de Cataluña mediante referéndum."
   },
   {
-    "topicId": "agricultura-despoblacion",
-    "value": -0.2,
+    "questionId": "q-autonomia-fiscal",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: regionalización de la PAC y respeto al Plan Estratégico catalán, ayudas a agricultores y pescadores, modernización de regadíos y ley de cadena alimentaria."
+    "note": "Reclama un concierto económico para Cataluña, como el del País Vasco y Navarra."
   },
   {
-    "topicId": "cultura",
-    "value": -0.8,
+    "questionId": "q-lengua-cooficial",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
     "sourceDate": "2023-07-23",
-    "note": "Programa 23J de Junts: territorializar los fondos de lengua y cultura, oficialidad del catalán, más recursos para los museos y Ley del Cinema."
+    "note": "Defiende el catalán como requisito en la Administración catalana."
   }
 ]

@@ -1,227 +1,272 @@
 [
   {
-    "topicId": "vivienda",
-    "value": -0.9,
+    "questionId": "q-alquiler-tope",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
+    "sourceDate": "2023-04-27",
+    "note": "Sus integrantes (Unidas Podemos, Más País, Compromís) votaron a favor de la Ley de Vivienda (2023); el programa 23J pide topes más amplios."
+  },
+  {
+    "questionId": "q-desalojo-rapido",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/espana/congreso-toma-consideracion-ley-antiokupas-pp-gracias-20260519215135-nt.html",
+    "sourceDate": "2026-05-19",
+    "note": "Votó en contra de tramitar la ley de desalojo exprés (mayo 2026)."
+  },
+  {
+    "questionId": "q-impuesto-grandes-fortunas",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Vivienda): parque de 2 millones de viviendas sociales y asequibles, alquiler social obligatorio para grandes tenedores y precios de referencia."
+    "note": "Programa 23J: impuesto permanente a las grandes fortunas."
   },
   {
-    "topicId": "economia",
-    "value": -0.6,
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.europapress.es/economia/energia-00341/noticia-congreso-rechaza-propuesta-psoe-nuevo-impuesto-energeticas-no-pp-vox-junts-20260930151439.html",
+    "sourceDate": "2026-09-30",
+    "note": "Apoyó la propuesta de impuesto a las energéticas (septiembre 2026) y los gravámenes anteriores."
+  },
+  {
+    "questionId": "q-bajar-irpf",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Economía): herencia universal de 20.000 € al cumplir 18 años, jornada máxima de 37,5 h y SMI por encima del IPC."
+    "note": "Programa 23J: reforma fiscal progresiva para aumentar la recaudación y el gasto social."
   },
   {
-    "topicId": "inmigracion",
-    "value": 0.9,
+    "questionId": "q-jornada-37-5",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
+    "sourceDate": "2025-09-10",
+    "note": "Impulsó desde el Ministerio de Trabajo la reducción de jornada a 37,5 horas (2025)."
+  },
+  {
+    "questionId": "q-salario-minimo",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Inmigración): movilidad con derechos, tipificación de las devoluciones sumarias y corredores humanitarios para vías legales y seguras."
+    "note": "Programa 23J: SMI al 60 % del salario medio."
   },
   {
-    "topicId": "calidad-empleo",
-    "value": -0.7,
+    "questionId": "q-cotizaciones-contratar",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Paro): reorganización de la prestación por desempleo con transiciones seguras y prestación específica para el sector cultural."
+    "note": "Programa 23J: reforzar los ingresos de la Seguridad Social y no reducir cotizaciones."
   },
   {
-    "topicId": "paro",
-    "value": -0.7,
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
+    "sourceDate": "2023-03-30",
+    "note": "Sus integrantes votaron a favor de la reforma de 2023 y su programa 23J pide destopar por completo las bases de cotización."
+  },
+  {
+    "questionId": "q-planes-pensiones-privados",
+    "value": -1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Paro): prestaciones que garanticen las transiciones laborales y reconocimiento de días cotizados en formación a fijas-discontinuas."
+    "note": "Programa 23J: reforzar el sistema público frente a los incentivos a planes privados."
   },
   {
-    "topicId": "sanidad",
-    "value": -0.9,
+    "questionId": "q-ingreso-minimo",
+    "value": 1,
     "status": "provisional",
     "sourceType": "programa-2023",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
     "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Sanidad): blindar el carácter público del SNS, desprivatizar servicios y ley de listas de espera con tiempos máximos."
+    "note": "Programa 23J: ampliar el Ingreso Mínimo Vital y la protección contra la pobreza."
   },
   {
-    "topicId": "corrupcion",
+    "questionId": "q-sanidad-privada",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://www.rtve.es/noticias/20260512/gobierno-aprueba-proyecto-ley-frena-gestion-privada-sanidad-publica/17064696.shtml",
+    "sourceDate": "2026-05-12",
+    "note": "Forma parte del Gobierno que aprobó el proyecto de ley que limita las derivaciones a la sanidad privada (2026)."
+  },
+  {
+    "questionId": "q-escuela-concertada",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: priorizar la escuela pública."
+  },
+  {
+    "questionId": "q-regularizacion",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://elpais.com/espana/2026-03-18/el-congreso-pide-parar-la-regularizacion-de-inmigrantes-con-los-votos-del-pp-vox-y-junts.html",
+    "sourceDate": "2026-03-18",
+    "note": "Votó contra la moción que pedía renunciar a la regularización extraordinaria (marzo 2026)."
+  },
+  {
+    "questionId": "q-rechazo-frontera",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: derogar la Ley de Seguridad Ciudadana y poner fin a las devoluciones en caliente."
+  },
+  {
+    "questionId": "q-menores-reparto",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
+    "sourceDate": "2025-04-10",
+    "note": "Votó a favor del decreto de reparto obligatorio de menores (abril 2025)."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
+    "sourceDate": "2025-06-17",
+    "note": "Votó en contra de prorrogar las centrales nucleares (junio 2025)."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: fiscalidad verde para acelerar la transición ecológica."
+  },
+  {
+    "questionId": "q-trasvases",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: priorizar los caudales ecológicos y una gestión sostenible del agua."
+  },
+  {
+    "questionId": "q-cgpj-jueces",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Defiende que el CGPJ lo elijan las Cortes y rechaza el modelo de elección por los propios jueces."
+  },
+  {
+    "questionId": "q-voto-16",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.aragonplay.es/aragonnoticias/espana/el-congreso-aprueba-una-propuesta-de-sumar-para-rebajar-a-los-16-anos-la-edad-para-votar.html",
+    "sourceDate": "2024-06-27",
+    "note": "Promovió la proposición aprobada en comisión para rebajar la edad de voto a 16 años (junio 2024)."
+  },
+  {
+    "questionId": "q-gasto-defensa",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Se opone a aumentar el gasto militar y criticó el plan para alcanzar el 2 % (2025)."
+  },
+  {
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": 0,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Dividido: apoya a Ucrania, pero parte de sus integrantes rechaza el envío de armamento."
+  },
+  {
+    "questionId": "q-multirreincidencia",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.newtral.es/congreso-ley-multirreincidencia/20260212/",
+    "sourceDate": "2026-02-12",
+    "note": "Votó en contra de la ley de multirreincidencia (febrero 2026)."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: reforzar la ley integral contra la violencia de género."
+  },
+  {
+    "questionId": "q-autodeterminacion-genero",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://theobjective.com/espana/politica/2023-02-16/congreso-ley-trans-mayoria/",
+    "sourceDate": "2023-02-16",
+    "note": "Sus integrantes impulsaron y votaron a favor de la ley trans (2023)."
+  },
+  {
+    "questionId": "q-eutanasia",
+    "value": 1,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
+    "sourceDate": "2021-03-18",
+    "note": "Sus integrantes votaron a favor de la ley de eutanasia (2021)."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "programa-2023",
+    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
+    "sourceDate": "2023-07-23",
+    "note": "Programa 23J: diálogo y soluciones pactadas; varias de sus formaciones defienden una consulta acordada."
+  },
+  {
+    "questionId": "q-autonomia-fiscal",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el bloque de Sumar en el comparador RTVE 23J (Justicia) no contiene propuestas contra la corrupción que sitúen el eje."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "seguridad-ciudadana",
+    "questionId": "q-lengua-cooficial",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el comparador RTVE 23J no recoge una posición clara sobre prevención social frente a endurecimiento penal."
-  },
-  {
-    "topicId": "calidad-democratica",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el comparador RTVE 23J no ofrece propuestas trazables sobre participación y contrapesos democráticos."
-  },
-  {
-    "topicId": "extremismos",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: sin propuesta trazable sobre regular plataformas frente a autorregulación en el comparador RTVE 23J."
-  },
-  {
-    "topicId": "marruecos-fronteras",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: la posición sobre el Sáhara no permite situar con claridad el eje firmeza frente a cooperación con Marruecos."
-  },
-  {
-    "topicId": "medio-ambiente",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Medio Ambiente): elevar la ambición climática al 55% de reducción de emisiones en 2030 y fiscalidad ambiental a la industria fósil."
-  },
-  {
-    "topicId": "politica-exterior",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Política Exterior): autonomía estratégica europea frente a la OTAN, solidaridad con Ucrania por vía diplomática y apoyo al Sáhara."
-  },
-  {
-    "topicId": "pensiones",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Pensiones): revalorización con el IPC y por encima para las pensiones mínimas, y refuerzo del sistema con más ingresos."
-  },
-  {
-    "topicId": "educacion",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Educación): universalizar la educación 0-3, alcanzar el 5% del PIB en gasto educativo y ecocomedores públicos gratuitos."
-  },
-  {
-    "topicId": "impuestos",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Impuestos): impuesto permanente a las grandes fortunas, sucesiones con mínimo estatal y sociedades al 15% efectivo."
-  },
-  {
-    "topicId": "energia",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Energía): 500.000 empleos en renovables, fin de las nuevas inversiones en fósiles y reforma del mercado eléctrico."
-  },
-  {
-    "topicId": "desigualdad",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Políticas sociales): blindar el derecho a la Seguridad Social en la Constitución, revalorizar prestaciones con el IPC y ley de cuidados."
-  },
-  {
-    "topicId": "igualdad-genero",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Feminismo): vicepresidencia de Feminismos, blindar el Pacto contra la Violencia de Género y paridad en los ámbitos de decisión."
-  },
-  {
-    "topicId": "derechos-lgtbiq",
-    "value": -0.9,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (LGTBIQ+): pacto contra los discursos de odio, red de acogida para víctimas y acceso a tratamientos de identidad de género."
-  },
-  {
-    "topicId": "modelo-estado",
-    "value": 0.8,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Modelo de estado): mesa de diálogo con Cataluña con consulta, nuevo pacto territorial y reforma de la financiación autonómica."
-  },
-  {
-    "topicId": "justicia",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Justicia): plan de choque en la administración de justicia, renovación del CGPJ con más peso parlamentario y justicia restaurativa."
-  },
-  {
-    "topicId": "defensa",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Defensa): Estrategia Nacional de Seguridad Humana, auditoría de los programas de armamento y control de la exportación de armas."
-  },
-  {
-    "topicId": "agricultura-despoblacion",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Ganadería y Agricultura/Despoblación): transición agroecológica, moratoria del regadío intensivo y servicios en 'Territorio 30 minutos'."
-  },
-  {
-    "topicId": "cultura",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Comparador RTVE 23J (Cultura): elevar el presupuesto de cultura al 1% de los PGE y extender el bono cultural de 16 a 30 años."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   }
 ]

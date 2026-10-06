@@ -5,19 +5,21 @@ import type { DataBundle, Question } from '../data/schema';
 
 import { el } from './components';
 import { renderMethodologyView } from './methodology';
-import { renderQuestionView, renderTerritoryView } from './questionnaire';
+import { renderIntroView, renderQuestionView } from './questionnaire';
 import { renderResultsView } from './results';
 import {
-  confirmTerritory,
+  answeredCount,
   createInitialState,
   currentQuestion,
   getAnswer,
   goNext,
   goPrevious,
+  goToQuestion,
   MAX_PRIORITY_TOPICS,
   selectTerritory,
   setAnswer,
   skipCurrent,
+  startQuestionnaire,
   togglePriorityTopic,
   type QuestionnaireState,
 } from './state';
@@ -25,16 +27,12 @@ import {
 type ResultScreen = 'results' | 'methodology';
 
 function collectAnswers(state: QuestionnaireState, questions: Question[]): QuestionAnswer[] {
-  const answers: QuestionAnswer[] = [];
   const priorityTopicIds = new Set(state.priorityTopicIds);
+  const answers: QuestionAnswer[] = [];
   for (const question of questions) {
-    const answer = getAnswer(state, question.id);
-    if (answer && answer.optionIds.length > 0) {
-      answers.push({
-        questionId: question.id,
-        optionIds: answer.optionIds,
-        priority: priorityTopicIds.has(question.topicId),
-      });
+    const value = getAnswer(state, question.id);
+    if (value !== undefined) {
+      answers.push({ questionId: question.id, value, priority: priorityTopicIds.has(question.topicId) });
     }
   }
   return answers;
@@ -44,20 +42,26 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
   container.textContent = '';
 
   const header = el('header', { className: 'app-header' }, [
-    el('h1', { className: 'app-title', text: APP_NAME }),
-    el('p', {
-      className: 'app-subtitle',
-      text: `Compara tus respuestas a ${data.questions.length} preguntas con las posiciones documentadas de los partidos incluidos. La aplicación no transmite ni almacena tus respuestas fuera del navegador.`,
-    }),
+    el('div', { className: 'app-header__inner' }, [
+      el('p', { className: 'app-title' }, [
+        el('span', { className: 'app-title__mark', text: '29N', attrs: { 'aria-hidden': 'true' } }),
+        el('span', { className: 'app-title__name', text: APP_NAME }),
+      ]),
+      el('p', {
+        className: 'app-subtitle',
+        text: 'Independiente · Sin registro · Tus respuestas no salen de tu navegador',
+      }),
+    ]),
   ]);
   const status = el('div', {
     className: 'visually-hidden',
     attrs: { id: 'app-status', role: 'status', 'aria-live': 'polite' },
   });
-  const viewRoot = el('div', { className: 'app-view', attrs: { id: 'app-view' } });
+  const viewRoot = el('main', { className: 'app-view', attrs: { id: 'app-view' } });
   container.append(header, status, viewRoot);
 
-  const topicNameById = new Map(data.topics.map((topic) => [topic.id, topic.name]));
+  const topicById = new Map(data.topics.map((topic) => [topic.id, topic]));
+  const total = data.questions.length;
   let state: QuestionnaireState = createInitialState();
   let screen: ResultScreen = 'results';
   let territoryError: string | null = null;
@@ -69,13 +73,14 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
   function render(): void {
     viewRoot.textContent = '';
 
-    if (state.step === 'territory') {
+    if (state.step === 'intro') {
       viewRoot.append(
-        renderTerritoryView({
+        renderIntroView({
           territories: data.territories,
           selectedId: state.territoryId,
           error: territoryError,
           topics: data.topics,
+          questionCount: total,
           priorityTopicIds: state.priorityTopicIds,
           handlers: {
             onSelect: (territoryId) => {
@@ -92,11 +97,11 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
             },
             onSubmit: () => {
               if (state.territoryId === null) {
-                territoryError = 'Selecciona una comunidad autónoma para continuar.';
+                territoryError = 'Selecciona tu comunidad autónoma para continuar.';
                 render();
                 return;
               }
-              state = confirmTerritory(state);
+              state = startQuestionnaire(state);
               announce('Cuestionario iniciado.');
               render();
             },
@@ -111,42 +116,42 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
         return;
       }
 
-      const index = state.currentIndex;
-      const total = data.questions.length;
-      const answer = getAnswer(state, question.id);
+      const advance = (next: QuestionnaireState, message: string): void => {
+        state = next;
+        announce(
+          state.step === 'done' ? 'Cuestionario completado.' : `${message} Pregunta ${state.currentIndex + 1} de ${total}.`,
+        );
+        render();
+      };
 
       viewRoot.append(
         renderQuestionView({
           question,
-          topicName: topicNameById.get(question.topicId) ?? null,
-          index,
+          topicName: topicById.get(question.topicId)?.name ?? null,
+          priority: state.priorityTopicIds.includes(question.topicId),
+          index: state.currentIndex,
           total,
-          selectedOptionIds: answer?.optionIds ?? [],
+          answered: answeredCount(state),
+          selectedValue: getAnswer(state, question.id),
           handlers: {
-            onAnswer: (optionIds) => {
-              state = setAnswer(state, question.id, optionIds);
+            onAnswer: (value) => {
+              state = setAnswer(state, question.id, value);
+              const counter = viewRoot.querySelector<HTMLElement>('.progress__answered');
+              if (counter) counter.textContent = `${answeredCount(state)} respondidas`;
             },
-            onPrevious: () => {
-              state = goPrevious(state);
-              announce(`Pregunta ${state.currentIndex + 1} de ${total}`);
-              render();
-            },
-            onSkip: () => {
-              state = skipCurrent(state, data.questions);
-              announce(
-                state.step === 'done' ? 'Cuestionario completado.' : 'Pregunta omitida.',
-              );
-              render();
-            },
-            onSubmit: () => {
-              state = goNext(state, total);
-              announce(
-                state.step === 'done'
-                  ? 'Cuestionario completado.'
-                  : `Pregunta ${state.currentIndex + 1} de ${total}`,
-              );
-              render();
-            },
+            onPrevious: () => advance(goPrevious(state), ''),
+            onSkip: () => advance(skipCurrent(state, data.questions), 'Propuesta omitida.'),
+            onSubmit: () => advance(goNext(state, total), ''),
+          },
+        }),
+      );
+    } else if (screen === 'methodology') {
+      viewRoot.append(
+        renderMethodologyView(data, {
+          onBackToResults: () => {
+            screen = 'results';
+            announce('Resultados.');
+            render();
           },
         }),
       );
@@ -155,46 +160,45 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
         territoryId: state.territoryId ?? '',
         answers: collectAnswers(state, data.questions),
       });
-
-      if (screen === 'methodology') {
-        viewRoot.append(
-          renderMethodologyView(data, {
-            onBackToResults: () => {
+      viewRoot.append(
+        renderResultsView({
+          data,
+          results,
+          updatedAt: data.meta.updatedAt,
+          handlers: {
+            onRestart: () => {
+              state = createInitialState();
+              territoryError = null;
               screen = 'results';
-              announce('Resultados.');
+              announce('Cuestionario reiniciado.');
               render();
             },
-          }),
-        );
-      } else {
-        viewRoot.append(
-          renderResultsView({
-            data,
-            results,
-            updatedAt: data.meta.updatedAt,
-            handlers: {
-              onRestart: () => {
-                state = createInitialState();
-                territoryError = null;
-                screen = 'results';
-                announce('Cuestionario reiniciado.');
-                render();
-              },
-              onShowMethodology: () => {
-                screen = 'methodology';
-                announce('Metodología.');
-                render();
-              },
+            onReview: () => {
+              state = goToQuestion(state, 0, total);
+              announce(`Revisando respuestas. Pregunta 1 de ${total}.`);
+              render();
             },
-          }),
-        );
-      }
+            onShowMethodology: () => {
+              screen = 'methodology';
+              announce('Metodología.');
+              render();
+            },
+          },
+        }),
+      );
     }
 
-    if (state.step === 'territory' && territoryError !== null) {
+    if (state.step === 'intro' && territoryError !== null) {
       viewRoot.querySelector<HTMLSelectElement>('#territory-select')?.focus();
     } else {
-      viewRoot.querySelector<HTMLElement>('h2')?.focus();
+      viewRoot.querySelector<HTMLElement>('h2')?.focus({ preventScroll: true });
+    }
+    if (typeof window.scrollTo === 'function') {
+      try {
+        window.scrollTo({ top: 0 });
+      } catch {
+        // Entornos sin layout (tests) no implementan scrollTo.
+      }
     }
   }
 

@@ -1,227 +1,272 @@
 [
   {
-    "topicId": "vivienda",
+    "questionId": "q-alquiler-tope",
+    "value": -0.5,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
+    "sourceDate": "2023-04-27",
+    "note": "Votó en contra de la Ley de Vivienda (abril 2023)."
+  },
+  {
+    "questionId": "q-desalojo-rapido",
+    "value": 0,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.eldebate.com/espana/20250805/ley-feijoo-desalojo-expres-okupas-podria-contar-votos-sigue-bloqueada_323336.html",
+    "sourceDate": "2025-08-05",
+    "note": "Se abstuvo en la ley de desalojo exprés en su paso por el Senado."
+  },
+  {
+    "questionId": "q-impuesto-grandes-fortunas",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el manifiesto CC-NC de las generales de 2019 (programa de generales más reciente publicado; no hay programa de generales 2023 en la web oficial) no recoge el eje de vivienda."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "economia",
-    "value": -0.3,
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": 0,
     "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): diversificación económica, apoyo a la industria local y a la I+D y cumplimiento del REF para compensar sobrecostes."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.cronicamadrid.com/noticia/1297360/nacional/el-congreso-deroga-el-decreto-del-gravamen-energetico-con-el-voto-de-pp-vox-junts-el-pnv-y-upn.html",
+    "sourceDate": "2025-01-22",
+    "note": "Se abstuvo en el decreto del impuesto a las energéticas (enero 2025)."
   },
   {
-    "topicId": "inmigracion",
-    "value": -0.3,
-    "status": "provisional",
-    "sourceType": "declaracion",
+    "questionId": "q-bajar-irpf",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): migración ordenada, cooperación con los países de origen y lucha contra la inmigración ilegal, con acogida e integración de menores."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "calidad-empleo",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): dejar atrás la precariedad laboral, sueldos dignos, estabilidad y formación profesional."
-  },
-  {
-    "topicId": "paro",
+    "questionId": "q-jornada-37-5",
     "value": 0.5,
     "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): incentivos a la contratación indefinida de jóvenes y bonificaciones en la cuota empresarial de la Seguridad Social."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
+    "sourceDate": "2025-09-10",
+    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada (septiembre 2025)."
   },
   {
-    "topicId": "sanidad",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): sanidad pública y universal, financiación sanitaria específica y revisión del sobrecoste de la insularidad."
-  },
-  {
-    "topicId": "corrupcion",
+    "questionId": "q-salario-minimo",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no contiene propuestas trazables sobre el eje de corrupción."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "seguridad-ciudadana",
+    "questionId": "q-cotizaciones-contratar",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no recoge una posición sobre seguridad ciudadana."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "calidad-democratica",
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": 0.5,
+    "status": "provisional",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
+    "sourceDate": "2023-03-30",
+    "note": "Votó a favor de la reforma de pensiones de 2023."
+  },
+  {
+    "questionId": "q-planes-pensiones-privados",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no recoge una posición sobre participación y contrapesos democráticos."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "extremismos",
+    "questionId": "q-ingreso-minimo",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no recoge una posición sobre desinformación y plataformas."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "marruecos-fronteras",
+    "questionId": "q-sanidad-privada",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: la posición sobre el Sáhara Occidental corresponde a política exterior, no al eje de la relación bilateral y Ceuta y Melilla."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "medio-ambiente",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): transición hacia el 45% de renovables en 2025, calendario de cierre de los sectores fósiles, economía circular y movilidad sostenible."
-  },
-  {
-    "topicId": "politica-exterior",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): Canarias como plataforma de paz y cooperación con África Occidental, y defensa de la libre determinación del pueblo saharaui."
-  },
-  {
-    "topicId": "pensiones",
-    "value": -0.7,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): plan de actualización de las pensiones no contributivas hasta el SMI y Pacto de Estado por unas pensiones dignas."
-  },
-  {
-    "topicId": "educacion",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): pacto social por la educación, gratuidad del primer ciclo de infantil (0-3), FP dual y becas específicas para Canarias."
-  },
-  {
-    "topicId": "impuestos",
+    "questionId": "q-escuela-concertada",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el manifiesto defiende el diferencial fiscal canario y el REF, sin una posición sobre el eje general de presión fiscal."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "energia",
-    "value": -0.8,
-    "status": "provisional",
-    "sourceType": "declaracion",
+    "questionId": "q-regularizacion",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): renovables hasta el 45% en 2025, cierre de los sectores fósiles y desarrollo de la eólica marina."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "desigualdad",
-    "value": -0.6,
-    "status": "provisional",
-    "sourceType": "declaracion",
+    "questionId": "q-rechazo-frontera",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): lucha contra la pobreza, sistema canario de servicios sociales y financiación estatal de la dependencia."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "igualdad-genero",
-    "value": -0.8,
+    "questionId": "q-menores-reparto",
+    "value": 1,
     "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): Pacto de Estado contra la Violencia de Género, Convenio de Estambul y medidas contra las brechas de género."
+    "sourceType": "votacion",
+    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
+    "sourceDate": "2025-04-10",
+    "note": "Impulsó y votó a favor del decreto de reparto obligatorio de menores (abril 2025)."
   },
   {
-    "topicId": "derechos-lgtbiq",
-    "value": -0.8,
+    "questionId": "q-nucleares",
+    "value": -0.5,
     "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): lucha contra la LGTBIfobia, respaldo legal y social y protocolos frente al acoso escolar."
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.elnacional.cat/oneconomia/es/sostenibilidad/alargamiento-vida-nucleares-tumba-congreso-pp-propuesta-abstencion-junts_1512817_102.html",
+    "sourceDate": "2025-11-13",
+    "note": "Votó en contra de la enmienda para prorrogar las nucleares (noviembre 2025)."
   },
   {
-    "topicId": "modelo-estado",
+    "questionId": "q-impuestos-verdes",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-trasvases",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-cgpj-jueces",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-voto-16",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-gasto-defensa",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+  },
+  {
+    "questionId": "q-multirreincidencia",
+    "value": 0,
+    "status": "verificado",
+    "sourceType": "votacion",
+    "sourceUrl": "https://www.newtral.es/congreso-ley-multirreincidencia/20260212/",
+    "sourceDate": "2026-02-12",
+    "note": "Se abstuvo en la ley de multirreincidencia (febrero 2026)."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
     "value": 1,
     "status": "provisional",
     "sourceType": "declaracion",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
     "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): Estado plurinacional, mayores cotas de autogobierno, blindaje del REF y reforma del Senado."
+    "note": "Apoya el Pacto de Estado contra la Violencia de Género."
   },
   {
-    "topicId": "justicia",
+    "questionId": "q-autodeterminacion-genero",
     "value": null,
     "status": "sin-datos-suficientes",
     "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2026-10-05",
-    "note": "Búsqueda negativa: el manifiesto electoral CC-NC (10-N-2019) no recoge una posición sobre el eje de la Justicia."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "defensa",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "declaracion",
+    "questionId": "q-eutanasia",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): recuperación para uso civil de la Base Naval de Las Palmas y de otros espacios militares en desuso."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "agricultura-despoblacion",
-    "value": -0.4,
-    "status": "provisional",
-    "sourceType": "declaracion",
+    "questionId": "q-referendum-pactado",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): cumplimiento del REF agrario y del POSEI, seguros agrarios y subvenciones al transporte para el sector primario canario."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   },
   {
-    "topicId": "cultura",
-    "value": -0.4,
-    "status": "provisional",
+    "questionId": "q-autonomia-fiscal",
+    "value": 0.5,
+    "status": "verificado",
     "sourceType": "declaracion",
+    "sourceUrl": "https://www.moncloa.com/2026/09/05/financiacion-singular-cataluna-cpff-3426682/",
+    "sourceDate": "2026-09-05",
+    "note": "El Gobierno canario, que preside, apoyó el nuevo modelo de financiación singular (2026) y defiende el régimen fiscal canario."
+  },
+  {
+    "questionId": "q-lengua-cooficial",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
     "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Manifiesto electoral CC-NC (10-N-2019): recuperación de recursos para la movilidad cultural extrapeninsular y deducción para producciones cinematográficas en Canarias."
+    "sourceDate": "2026-10-06",
+    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
   }
 ]

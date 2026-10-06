@@ -2,14 +2,14 @@ import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { partiesFileSchema, positionsFileSchema, topicsFileSchema } from '../src/data/schema';
+import { partiesFileSchema, positionsFileSchema, questionsFileSchema } from '../src/data/schema';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (relativePath: string): unknown =>
   JSON.parse(readFileSync(join(root, relativePath), 'utf8'));
 
 const parties = partiesFileSchema.parse(readJson('data/parties.json'));
-const topics = topicsFileSchema.parse(readJson('data/topics.json'));
+const questions = questionsFileSchema.parse(readJson('data/questions.json'));
 
 interface CoverageRow {
   label: string;
@@ -44,7 +44,7 @@ const labelWidth = Math.max(7, ...rows.map((row) => row.label.length));
 const line = (label: string, withData: number, withoutData: number, percentage: number): string =>
   `${label.padEnd(labelWidth)}  ${String(withData).padStart(8)}  ${String(withoutData).padStart(9)}  ${`${percentage.toFixed(1)}%`.padStart(9)}`;
 
-console.log(`Cobertura de posiciones (${topics.length} temas por partido)`);
+console.log(`Cobertura de posiciones (${questions.length} propuestas por partido)`);
 console.log(
   `${'Partido'.padEnd(labelWidth)}  ${'Con dato'.padStart(8)}  ${'Sin datos'.padStart(9)}  ${'Cobertura'.padStart(9)}`,
 );

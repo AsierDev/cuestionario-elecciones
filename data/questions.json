@@ -1,676 +1,537 @@
 [
   {
-    "id": "q-vivienda",
+    "id": "q-alquiler-tope",
     "topicId": "vivienda",
-    "text": "¿Qué papel debería tener el Estado en el acceso a la vivienda?",
-    "type": "single",
-    "axisNote": "-1: Limitar los precios del alquiler y ampliar la vivienda pública | +1: Desregular el suelo y rebajar impuestos a los propietarios",
-    "options": [
+    "title": "Tope al precio del alquiler",
+    "statement": "Limitar por ley el precio del alquiler en las zonas donde acceder a una vivienda es más difícil.",
+    "summary": "Se trata de fijar un precio máximo a los alquileres en zonas concretas. No afecta al precio de compraventa de las viviendas.",
+    "context": "Desde 2023, la Ley de Vivienda permite que cada comunidad autónoma declare «zonas tensionadas» y limite allí los alquileres. Hoy solo algunas comunidades lo aplican.",
+    "change": "En esas zonas, los contratos nuevos y las renovaciones no podrían superar un precio de referencia fijado por la Administración.",
+    "ifFavor": "Aceptas que el Estado fije un precio máximo para proteger a quien alquila, aunque los propietarios pierdan libertad para decidir el precio y algunos puedan retirar sus pisos del mercado del alquiler.",
+    "ifAgainst": "Prefieres que el precio lo pacten propietario e inquilino y que el acceso se mejore por otras vías (más construcción, ayudas o incentivos), aunque los alquileres puedan seguir subiendo.",
+    "glossary": [
       {
-        "id": "regulacion",
-        "label": "Limitar los precios del alquiler y ampliar la vivienda pública",
-        "value": -1
-      },
-      {
-        "id": "mixta",
-        "label": "Combinar ayudas al alquiler con incentivos a la construcción",
-        "value": 0
-      },
-      {
-        "id": "liberalizacion",
-        "label": "Desregular el suelo y rebajar los impuestos a los propietarios",
-        "value": 1
+        "term": "Zona tensionada",
+        "definition": "Área declarada por la comunidad autónoma donde el coste de la vivienda supera ciertos umbrales en relación con los ingresos de los hogares."
       }
     ]
   },
   {
-    "id": "q-economia",
+    "id": "q-desalojo-rapido",
+    "topicId": "vivienda",
+    "title": "Desalojo rápido de viviendas ocupadas",
+    "statement": "Acelerar los desalojos para que un propietario recupere en 24 a 48 horas una vivienda ocupada sin título legal.",
+    "summary": "Se refiere a viviendas ocupadas sin contrato ni permiso del dueño, no a inquilinos con contrato que dejan de pagar el alquiler.",
+    "context": "Si la ocupación no se detecta en el momento, el propietario suele tener que ir a juicio, y el proceso puede durar meses. En el Congreso se han tramitado propuestas para acortar ese plazo.",
+    "change": "Si el ocupante no presenta un título válido (contrato o escritura), un juez ordenaría el desalojo en un plazo muy corto y se endurecerían las sanciones.",
+    "ifFavor": "Priorizas la protección de la propiedad y la rapidez, aunque haya menos margen para estudiar situaciones de vulnerabilidad, como familias con menores o personas sin alternativa habitacional.",
+    "ifAgainst": "Prefieres que cada caso pase por un procedimiento con más garantías y que se valore la situación social de los ocupantes, aunque el propietario tarde más en recuperar su vivienda.",
+    "glossary": [
+      {
+        "term": "Título legal",
+        "definition": "Documento que acredita el derecho a vivir en una vivienda, como un contrato de alquiler o una escritura de propiedad."
+      }
+    ]
+  },
+  {
+    "id": "q-impuesto-grandes-fortunas",
     "topicId": "economia",
-    "text": "¿Qué medidas económicas apoyarías? Marca todas las que quieras.",
-    "type": "multi",
-    "axisNote": "-1: Más gasto público e impuestos a las rentas altas | +1: Menos gasto, menos impuestos y menos regulación",
-    "options": [
+    "title": "Impuesto a las grandes fortunas",
+    "statement": "Mantener un impuesto anual sobre los patrimonios de más de 3 millones de euros.",
+    "summary": "Solo lo paga quien acumula más de 3 millones de euros en bienes (viviendas, acciones, depósitos…), una vez descontadas las deudas.",
+    "context": "Desde 2023 existe un impuesto estatal «de solidaridad» sobre las grandes fortunas. Se aplica sobre todo en las comunidades que habían rebajado o suprimido su impuesto sobre el patrimonio. Lo pagan alrededor de 12.000 personas.",
+    "change": "Seguiría existiendo un impuesto estatal que hace que los grandes patrimonios tributen en todo el país, con independencia de lo que decida su comunidad.",
+    "ifFavor": "Aceptas gravar la riqueza acumulada para recaudar más y reducir la desigualdad, aunque pueda desincentivar la inversión o llevar a algunos contribuyentes a trasladar su residencia.",
+    "ifAgainst": "Prefieres no gravar un patrimonio que ya pagó impuestos al generarse, o que lo decida cada comunidad, aunque el Estado recaude menos.",
+    "glossary": [
       {
-        "id": "gasto-social",
-        "label": "Aumentar el gasto social",
-        "value": -1
-      },
-      {
-        "id": "mas-ingresos",
-        "label": "Subir impuestos a las rentas altas y a las grandes empresas",
-        "value": -0.5
-      },
-      {
-        "id": "continuidad",
-        "label": "Mantener las cuentas equilibradas sin grandes cambios",
-        "value": 0
-      },
-      {
-        "id": "menos-impuestos",
-        "label": "Bajar impuestos y recortar el gasto público",
-        "value": 0.5
-      },
-      {
-        "id": "desregulacion",
-        "label": "Reducir trabas y regulación a las empresas",
-        "value": 1
+        "term": "Patrimonio neto",
+        "definition": "Valor de todos los bienes y derechos de una persona menos sus deudas."
       }
     ]
   },
   {
-    "id": "q-inmigracion",
-    "topicId": "inmigracion",
-    "text": "¿Cómo debería gestionarse la inmigración en España?",
-    "type": "single",
-    "axisNote": "-1: Reforzar el control de fronteras y las devoluciones | +1: Ampliar las vías legales y la regularización",
-    "options": [
+    "id": "q-impuesto-banca-energeticas",
+    "topicId": "economia",
+    "title": "Impuesto extra a bancos y energéticas",
+    "statement": "Cobrar un impuesto adicional a los grandes bancos y empresas energéticas cuando tengan beneficios extraordinarios.",
+    "summary": "Se aplicaría a las mayores empresas de estos sectores cuando sus beneficios crecen muy por encima de lo habitual, por ejemplo por subidas de los tipos de interés o del precio de la energía.",
+    "context": "Entre 2023 y 2024 se aplicaron gravámenes temporales a bancos y energéticas. El de las energéticas decayó en enero de 2025, cuando el Congreso no convalidó el decreto que lo prorrogaba. El de la banca se sustituyó por un impuesto sobre sus ingresos por intereses y comisiones.",
+    "change": "Estas empresas pagarían un porcentaje extra sobre sus ingresos o beneficios, además del impuesto de sociedades habitual.",
+    "ifFavor": "Aceptas que los sectores con grandes beneficios aporten más en épocas de crisis, aunque puedan trasladar parte del coste a sus clientes o reducir sus inversiones.",
+    "ifAgainst": "Prefieres no crear impuestos para sectores concretos, para no frenar la inversión ni restar seguridad jurídica, aunque eso suponga recaudar menos.",
+    "glossary": [
       {
-        "id": "control-fronteras",
-        "label": "Reforzar el control de fronteras y las devoluciones",
-        "value": -1
+        "term": "Beneficios extraordinarios",
+        "definition": "Ganancias muy superiores a las habituales que no se deben a una mejora de la empresa, sino a circunstancias externas como una guerra o una subida de los tipos de interés."
       },
       {
-        "id": "actual",
-        "label": "Mantener la política actual reforzando la integración",
-        "value": 0
-      },
-      {
-        "id": "aperturista",
-        "label": "Ampliar las vías legales y regularizar a los residentes",
-        "value": 1
+        "term": "Impuesto de sociedades",
+        "definition": "Impuesto general que pagan las empresas sobre sus beneficios."
       }
     ]
   },
   {
-    "id": "q-calidad-empleo",
-    "topicId": "calidad-empleo",
-    "text": "¿Qué medidas apoyarías para la calidad del empleo? Marca todas las que quieras.",
-    "type": "multi",
-    "axisNote": "-1: Más derechos y estabilidad laboral | +1: Más flexibilidad para las empresas",
-    "options": [
+    "id": "q-bajar-irpf",
+    "topicId": "economia",
+    "title": "Bajar el IRPF aunque haya menos gasto público",
+    "statement": "Bajar el IRPF en todos los tramos, aunque eso obligue a reducir el gasto público.",
+    "summary": "El IRPF es el impuesto que se paga por el sueldo y otras rentas. Bajarlo deja más dinero a cada contribuyente, pero reduce lo que ingresan el Estado y las comunidades.",
+    "context": "El IRPF es la principal fuente de ingresos públicos. En los últimos años se ha rebajado parcialmente, sobre todo para las rentas bajas, y algunas comunidades han reducido su parte.",
+    "change": "Todos los contribuyentes pagarían menos. Para cuadrar las cuentas habría que recortar otras partidas, como inversiones, subvenciones, personal o prestaciones.",
+    "ifFavor": "Priorizas que cada persona decida sobre una parte mayor de su renta, aunque haya menos recursos para servicios y ayudas públicas.",
+    "ifAgainst": "Priorizas mantener o ampliar los servicios públicos con la recaudación actual, aunque no baje el impuesto sobre la renta.",
+    "glossary": [
       {
-        "id": "derechos",
-        "label": "Subir el salario mínimo y limitar la temporalidad",
-        "value": -1
+        "term": "IRPF",
+        "definition": "Impuesto sobre la Renta de las Personas Físicas. Grava los ingresos de cada persona (sueldo, alquileres, intereses…) con tipos que suben según cuánto se gana."
       },
       {
-        "id": "inspeccion",
-        "label": "Reforzar la inspección de trabajo y las sanciones",
-        "value": -0.5
-      },
-      {
-        "id": "continuidad",
-        "label": "Mantener el marco laboral actual",
-        "value": 0
-      },
-      {
-        "id": "flexibilidad",
-        "label": "Flexibilizar la contratación y reducir la indemnización por despido",
-        "value": 0.5
-      },
-      {
-        "id": "cotizaciones",
-        "label": "Reducir las cotizaciones a la contratación",
-        "value": 1
+        "term": "Tramo",
+        "definition": "Franja de ingresos a la que se aplica un mismo porcentaje del impuesto."
       }
     ]
   },
   {
-    "id": "q-paro",
-    "topicId": "paro",
-    "text": "¿Qué prioridad debería darse a las políticas contra el paro?",
-    "type": "single",
-    "axisNote": "-1: Más protección por desempleo y formación pública | +1: Menos coste de contratación mediante bonificaciones",
-    "options": [
+    "id": "q-jornada-37-5",
+    "topicId": "empleo",
+    "title": "Jornada laboral de 37,5 horas",
+    "statement": "Reducir por ley la jornada laboral máxima de 40 a 37,5 horas semanales, sin rebajar el sueldo.",
+    "summary": "Afectaría a quienes trabajan a tiempo completo con jornadas de más de 37,5 horas, sobre todo en sectores como el comercio, la hostelería o la industria.",
+    "context": "La jornada máxima legal es de 40 horas semanales desde 1983, aunque muchos convenios ya fijan menos. En 2025, el Congreso rechazó tramitar una ley para reducirla a 37,5 horas.",
+    "change": "Las empresas tendrían que reorganizar horarios o contratar más personal para cubrir el mismo trabajo con 2,5 horas semanales menos por persona, sin bajar los salarios.",
+    "ifFavor": "Aceptas que las empresas asuman el coste de reducir horas para mejorar la conciliación y repartir el empleo, aunque algunas, sobre todo las pequeñas, puedan tener dificultades.",
+    "ifAgainst": "Prefieres que la jornada se negocie por sectores o empresas en los convenios colectivos, sin imponerla por ley, aunque muchas personas sigan trabajando 40 horas.",
+    "glossary": [
       {
-        "id": "proteccion",
-        "label": "Ampliar la protección por desempleo y la formación pública",
-        "value": -1
-      },
-      {
-        "id": "actual",
-        "label": "Mantener las políticas de empleo actuales",
-        "value": 0
-      },
-      {
-        "id": "bonificaciones",
-        "label": "Reducir el coste de contratación mediante bonificaciones",
-        "value": 1
+        "term": "Convenio colectivo",
+        "definition": "Acuerdo entre sindicatos y empresas que fija salarios, horarios y condiciones de trabajo en un sector o una empresa."
       }
     ]
   },
   {
-    "id": "q-sanidad",
-    "topicId": "sanidad",
-    "text": "¿Cómo debería organizarse la sanidad pública?",
-    "type": "single",
-    "axisNote": "-1: Sanidad pública exclusiva y sin copago | +1: Más sanidad privada y seguros",
-    "options": [
+    "id": "q-salario-minimo",
+    "topicId": "empleo",
+    "title": "Salario mínimo al 60 % del salario medio",
+    "statement": "Subir el salario mínimo hasta que alcance, como mínimo, el 60 % del salario medio.",
+    "summary": "El salario mínimo es lo menos que se puede cobrar por una jornada completa. La propuesta lo vincularía al nivel medio de los sueldos.",
+    "context": "Cada año el Gobierno fija el salario mínimo interprofesional (SMI). En 2025 era de 1.184 euros brutos al mes en 14 pagas. La Carta Social Europea recomienda situarlo cerca del 60 % del salario medio.",
+    "change": "El SMI subiría hasta ese porcentaje y quedaría ligado a la evolución de los salarios, en lugar de depender solo de la decisión anual del Gobierno.",
+    "ifFavor": "Aceptas subidas para proteger los sueldos más bajos, aunque puedan encarecer la contratación en sectores o zonas con salarios más bajos.",
+    "ifAgainst": "Prefieres que el Gobierno decida cada año según la situación económica, o que haya salarios mínimos por región o sector, aunque las subidas no estén garantizadas.",
+    "glossary": [
       {
-        "id": "publica",
-        "label": "Sanidad pública, universal y sin copago",
-        "value": -1
+        "term": "SMI",
+        "definition": "Salario mínimo interprofesional: la retribución mínima legal por una jornada completa."
       },
       {
-        "id": "mixta",
-        "label": "Reforzar la pública con conciertos puntuales",
-        "value": 0
-      },
-      {
-        "id": "privada",
-        "label": "Ampliar la sanidad privada y los seguros",
-        "value": 1
+        "term": "Salario medio",
+        "definition": "Promedio de lo que cobran las personas asalariadas."
       }
     ]
   },
   {
-    "id": "q-corrupcion",
-    "topicId": "corrupcion",
-    "text": "¿Qué enfoque prefieres para combatir la corrupción?",
-    "type": "single",
-    "axisNote": "-1: Más transparencia y controles previos | +1: Menos burocracia y administración más ágil",
-    "options": [
+    "id": "q-cotizaciones-contratar",
+    "topicId": "empleo",
+    "title": "Rebajar las cotizaciones para contratar",
+    "statement": "Reducir las cotizaciones que pagan las empresas a la Seguridad Social por cada persona contratada, para fomentar el empleo.",
+    "summary": "Las cotizaciones son la parte del coste laboral que la empresa ingresa a la Seguridad Social. Con ellas se pagan las pensiones, el paro y las bajas.",
+    "context": "Además del salario, la empresa paga a la Seguridad Social cerca de un 30 % del sueldo bruto de cada trabajador. Ya existen bonificaciones puntuales para algunos colectivos, como jóvenes o personas en paro de larga duración.",
+    "change": "Contratar costaría menos. La Seguridad Social ingresaría menos y habría que compensarlo con impuestos, deuda o menos gasto.",
+    "ifFavor": "Priorizas abaratar la contratación para crear empleo, aunque la Seguridad Social pierda ingresos que habría que compensar por otra vía.",
+    "ifAgainst": "Prefieres mantener los ingresos de la Seguridad Social para garantizar pensiones y prestaciones, aunque contratar siga siendo más caro.",
+    "glossary": [
       {
-        "id": "prevencion",
-        "label": "Más transparencia y controles previos en la administración",
-        "value": -1
+        "term": "Cotización social",
+        "definition": "Pago obligatorio a la Seguridad Social que hacen empresa y trabajador. Da derecho a pensión, paro y bajas."
       },
       {
-        "id": "sancion",
-        "label": "Aumentar las penas y perseguir el enriquecimiento ilícito",
-        "value": 0
-      },
-      {
-        "id": "simplificacion",
-        "label": "Reducir la burocracia y agilizar la administración",
-        "value": 1
+        "term": "Bonificación",
+        "definition": "Descuento temporal en las cotizaciones por contratar a determinados colectivos."
       }
     ]
   },
   {
-    "id": "q-seguridad-ciudadana",
-    "topicId": "seguridad-ciudadana",
-    "text": "¿Cómo debería abordarse la seguridad ciudadana?",
-    "type": "single",
-    "axisNote": "-1: Prevención social y alternativas a la prisión | +1: Más penas y prisión preventiva",
-    "options": [
-      {
-        "id": "prevencion",
-        "label": "Prevención social y alternativas a la prisión",
-        "value": -1
-      },
-      {
-        "id": "policia",
-        "label": "Reforzar la presencia policial y la vigilancia",
-        "value": 0
-      },
-      {
-        "id": "penas",
-        "label": "Ampliar las penas y la prisión preventiva",
-        "value": 1
-      }
-    ]
-  },
-  {
-    "id": "q-calidad-democratica",
-    "topicId": "calidad-democratica",
-    "text": "¿Qué cambios en el funcionamiento democrático apoyarías? Marca todos los que quieras.",
-    "type": "multi",
-    "axisNote": "-1: Más participación ciudadana y contrapesos | +1: Más estabilidad y agilidad de gobierno",
-    "options": [
-      {
-        "id": "participacion",
-        "label": "Más consultas ciudadanas y participación directa",
-        "value": -1
-      },
-      {
-        "id": "contrapesos",
-        "label": "Limitar mandatos y reforzar la separación de poderes",
-        "value": -0.5
-      },
-      {
-        "id": "continuidad",
-        "label": "Mantener el sistema actual con ajustes menores",
-        "value": 0
-      },
-      {
-        "id": "estabilidad",
-        "label": "Priorizar la estabilidad y reducir la confrontación",
-        "value": 0.5
-      },
-      {
-        "id": "agilidad",
-        "label": "Agilizar la toma de decisiones concentrando competencias en el Gobierno",
-        "value": 1
-      }
-    ]
-  },
-  {
-    "id": "q-extremismos",
-    "topicId": "extremismos",
-    "text": "¿Qué medidas sobre polarización y desinformación deberían priorizarse?",
-    "type": "single",
-    "axisNote": "-1: Regular por ley el discurso y las plataformas | +1: Primar la autorregulación y la libertad de expresión",
-    "options": [
-      {
-        "id": "regulacion",
-        "label": "Regular por ley la desinformación y las plataformas digitales",
-        "value": -1
-      },
-      {
-        "id": "transparencia",
-        "label": "Exigir más transparencia en la financiación de partidos y la publicidad institucional",
-        "value": -0.5
-      },
-      {
-        "id": "educacion-civica",
-        "label": "Reforzar la educación cívica y la alfabetización mediática",
-        "value": 0
-      },
-      {
-        "id": "autorregulacion",
-        "label": "Fomentar la autorregulación de los medios y las plataformas",
-        "value": 0.5
-      },
-      {
-        "id": "libertad-expresion",
-        "label": "Primar la libertad de expresión sin nuevas regulaciones",
-        "value": 1
-      }
-    ]
-  },
-  {
-    "id": "q-marruecos-fronteras",
-    "topicId": "marruecos-fronteras",
-    "text": "¿Qué enfoque debería seguir España en su relación con Marruecos?",
-    "type": "single",
-    "axisNote": "-1: Firmeza y control de Ceuta y Melilla | +1: Cooperación y diálogo diplomático",
-    "options": [
-      {
-        "id": "firmeza",
-        "label": "Priorizar la firmeza y el control de Ceuta y Melilla",
-        "value": -1
-      },
-      {
-        "id": "equilibrio",
-        "label": "Equilibrio entre firmeza y cooperación",
-        "value": 0
-      },
-      {
-        "id": "cooperacion",
-        "label": "Priorizar la cooperación y el diálogo diplomático",
-        "value": 1
-      }
-    ]
-  },
-  {
-    "id": "q-medio-ambiente",
-    "topicId": "medio-ambiente",
-    "text": "¿Qué medidas ambientales apoyarías? Marca todas las que quieras.",
-    "type": "multi",
-    "axisNote": "-1: Transición ecológica ambiciosa con impuestos verdes | +1: Crecimiento económico y menos regulación ambiental",
-    "options": [
-      {
-        "id": "ambiciosa",
-        "label": "Acelerar las renovables y cerrar la energía nuclear",
-        "value": -1
-      },
-      {
-        "id": "impuestos-verdes",
-        "label": "Aplicar impuestos verdes y límites a las emisiones",
-        "value": -0.5
-      },
-      {
-        "id": "continuidad",
-        "label": "Mantener los objetivos actuales sin nuevos impuestos",
-        "value": 0
-      },
-      {
-        "id": "crecimiento",
-        "label": "Priorizar el crecimiento económico y el empleo sobre la regulación ambiental",
-        "value": 1
-      }
-    ]
-  },
-  {
-    "id": "q-politica-exterior",
-    "topicId": "politica-exterior",
-    "text": "¿Qué papel debería tener España en los conflictos internacionales?",
-    "type": "single",
-    "axisNote": "-1: Diplomacia y ayuda humanitaria | +1: Refuerzo en la OTAN y la Unión Europea",
-    "options": [
-      {
-        "id": "diplomacia",
-        "label": "Priorizar la diplomacia y la ayuda humanitaria",
-        "value": -1
-      },
-      {
-        "id": "equilibrio",
-        "label": "Mantener el equilibrio actual",
-        "value": 0
-      },
-      {
-        "id": "alianzas",
-        "label": "Reforzar el papel en la OTAN y en la Unión Europea",
-        "value": 1
-      }
-    ]
-  },
-  {
-    "id": "q-pensiones",
+    "id": "q-cotizacion-sueldos-altos",
     "topicId": "pensiones",
-    "text": "¿Cómo debería garantizarse la sostenibilidad de las pensiones?",
-    "type": "single",
-    "axisNote": "-1: Subir cotizaciones y garantizar el poder adquisitivo | +1: Ajustar el gasto e incentivar el ahorro privado",
-    "options": [
+    "title": "Más cotización para los sueldos altos",
+    "statement": "Aumentar lo que cotizan a la Seguridad Social los sueldos más altos para financiar las pensiones, aunque su pensión máxima no suba en la misma proporción.",
+    "summary": "Afecta a quienes cobran por encima de la base máxima de cotización: en 2025, unos 4.900 euros brutos al mes.",
+    "context": "La reforma de pensiones de 2023 sube cada año la base máxima de cotización por encima de la inflación. Además, creó una «cuota de solidaridad» sobre la parte del sueldo que supera esa base, que se aplica de forma gradual desde 2025.",
+    "change": "Se reforzaría esa vía: los sueldos altos cotizarían por una parte mayor de su salario y aumentarían los ingresos de la Seguridad Social.",
+    "ifFavor": "Priorizas que los sueldos altos aporten más para financiar las pensiones, aunque su contratación sea más cara y su pensión no crezca en proporción a lo que aportan.",
+    "ifAgainst": "Prefieres no subir las cotizaciones y buscar otras vías de financiación o de ajuste, aunque las pensiones dependan más de las transferencias del Estado o de recortes futuros.",
+    "glossary": [
       {
-        "id": "suficiencia",
-        "label": "Subir las cotizaciones y garantizar el poder adquisitivo",
-        "value": -1
+        "term": "Base máxima de cotización",
+        "definition": "Sueldo a partir del cual ya no se cotiza (o se cotiza mucho menos). También determina la pensión máxima."
       },
       {
-        "id": "mixta",
-        "label": "Combinar ajustes moderados con nuevos ingresos",
-        "value": 0
-      },
-      {
-        "id": "sostenibilidad",
-        "label": "Retrasar la jubilación e incentivar el ahorro privado",
-        "value": 1
+        "term": "Cuota de solidaridad",
+        "definition": "Cotización adicional sobre la parte del salario que supera la base máxima. No genera más pensión."
       }
     ]
   },
   {
-    "id": "q-educacion",
-    "topicId": "educacion",
-    "text": "¿Qué medidas educativas apoyarías? Marca todas las que quieras.",
-    "type": "multi",
-    "axisNote": "-1: Más financiación pública y becas | +1: Más libertad de elección y conciertos",
-    "options": [
+    "id": "q-planes-pensiones-privados",
+    "topicId": "pensiones",
+    "title": "Ventajas para los planes de pensiones privados",
+    "statement": "Dar más ventajas fiscales a los planes de pensiones privados y de empresa para complementar la pensión pública.",
+    "summary": "Quien ahorra en estos planes paga menos IRPF por lo que aporta. La propuesta aumentaría esa rebaja.",
+    "context": "Desde 2022, el máximo que se puede aportar cada año a un plan individual con ventaja fiscal es de 1.500 euros (antes era de 8.000). A la vez, se ha impulsado el ahorro a través de planes de empresa.",
+    "change": "Volvería a compensar fiscalmente ahorrar más en estos planes, lo que animaría el ahorro privado para la jubilación.",
+    "ifFavor": "Aceptas que una parte de la jubilación se apoye en el ahorro privado, aunque la ventaja fiscal beneficie más a quien puede ahorrar y reduzca la recaudación.",
+    "ifAgainst": "Prefieres concentrar los recursos en la pensión pública, aunque el ahorro complementario para la jubilación siga siendo bajo.",
+    "glossary": [
       {
-        "id": "publica",
-        "label": "Aumentar la financiación de la escuela pública",
-        "value": -1
-      },
-      {
-        "id": "recursos",
-        "label": "Reducir ratios y ampliar las becas",
-        "value": -0.5
-      },
-      {
-        "id": "continuidad",
-        "label": "Mantener el modelo educativo actual",
-        "value": 0
-      },
-      {
-        "id": "conciertos",
-        "label": "Ampliar los conciertos y la libre elección de centro",
-        "value": 0.5
-      },
-      {
-        "id": "privada-publica",
-        "label": "Financiar con dinero público también la educación privada",
-        "value": 1
+        "term": "Plan de pensiones",
+        "definition": "Producto de ahorro a largo plazo que, en general, solo se puede cobrar al jubilarse. Puede ser individual o promovido por la empresa."
       }
     ]
   },
   {
-    "id": "q-impuestos",
-    "topicId": "impuestos",
-    "text": "¿Qué política fiscal prefieres?",
-    "type": "single",
-    "axisNote": "-1: Subir impuestos a rentas altas y patrimonios | +1: Bajar impuestos de forma general",
-    "options": [
+    "id": "q-ingreso-minimo",
+    "topicId": "pensiones",
+    "title": "Ampliar el Ingreso Mínimo Vital",
+    "statement": "Ampliar el Ingreso Mínimo Vital para que llegue a más hogares en situación de pobreza y con cuantías más altas.",
+    "summary": "El Ingreso Mínimo Vital (IMV) es una ayuda mensual del Estado para hogares con ingresos muy bajos.",
+    "context": "El IMV se creó en 2020. Lo cobran cientos de miles de hogares, pero una parte importante de los que cumplen los requisitos no lo pide o no llega a recibirlo.",
+    "change": "Se flexibilizarían los requisitos y subirían las cuantías, lo que aumentaría el gasto en esta prestación.",
+    "ifFavor": "Priorizas reducir la pobreza con una ayuda directa, aunque aumente el gasto público y haya quien piense que puede desanimar la búsqueda de empleo.",
+    "ifAgainst": "Prefieres limitar las ayudas directas y dedicar los recursos al empleo y la formación, aunque menos hogares en pobreza reciban apoyo económico.",
+    "glossary": [
       {
-        "id": "progresiva",
-        "label": "Subir impuestos a las rentas altas y a los patrimonios",
-        "value": -1
-      },
-      {
-        "id": "actual",
-        "label": "Mantener la presión fiscal actual",
-        "value": 0
-      },
-      {
-        "id": "bajada",
-        "label": "Bajar los impuestos a todos, sobre todo a las rentas medias",
-        "value": 1
+        "term": "Prestación no contributiva",
+        "definition": "Ayuda pública a la que se tiene derecho por falta de ingresos, sin necesidad de haber cotizado antes."
       }
     ]
   },
   {
-    "id": "q-energia",
-    "topicId": "energia",
-    "text": "¿Cómo debería abordarse la política energética?",
-    "type": "single",
-    "axisNote": "-1: Intervenir los precios y cerrar la energía nuclear | +1: Libre competencia y más energía nuclear",
-    "options": [
+    "id": "q-sanidad-privada",
+    "topicId": "servicios-publicos",
+    "title": "Más derivaciones a la sanidad privada",
+    "statement": "Aumentar la contratación de hospitales y clínicas privadas con dinero público para reducir las listas de espera.",
+    "summary": "El paciente no pagaría nada: la Administración pagaría a un centro privado para que lo atienda.",
+    "context": "Las comunidades autónomas ya derivan parte de las operaciones y pruebas a centros privados. En 2026, el Gobierno envió al Congreso una ley para dar preferencia a la gestión pública y limitar esas derivaciones a casos excepcionales.",
+    "change": "Habría más derivaciones y contratos con centros privados pagados con dinero público.",
+    "ifFavor": "Priorizas reducir las esperas aprovechando la capacidad privada, aunque una parte del presupuesto sanitario vaya a empresas y se invierta menos en centros públicos.",
+    "ifAgainst": "Prefieres dedicar ese dinero a ampliar la sanidad pública, aunque reducir las listas de espera pueda llevar más tiempo.",
+    "glossary": [
       {
-        "id": "intervencion",
-        "label": "Intervenir los precios y acelerar el cierre de la energía nuclear",
-        "value": -1
-      },
-      {
-        "id": "mixta",
-        "label": "Mantener el mix actual ampliando las renovables",
-        "value": 0
-      },
-      {
-        "id": "libre",
-        "label": "Dejar los precios a la libre competencia y ampliar la energía nuclear",
-        "value": 1
+        "term": "Concierto sanitario",
+        "definition": "Contrato por el que la Administración paga a un centro privado para que atienda a pacientes de la sanidad pública."
       }
     ]
   },
   {
-    "id": "q-desigualdad",
-    "topicId": "desigualdad",
-    "text": "¿Qué medidas contra la desigualdad apoyarías? Marca todas las que quieras.",
-    "type": "multi",
-    "axisNote": "-1: Redistribución con impuestos y ayudas directas | +1: Igualdad de oportunidades y menos impuestos",
-    "options": [
+    "id": "q-escuela-concertada",
+    "topicId": "servicios-publicos",
+    "title": "Financiación de la escuela concertada",
+    "statement": "Aumentar la financiación pública de los colegios concertados.",
+    "summary": "Los colegios concertados son de titularidad privada (muchos, religiosos), pero reciben dinero público y deben ser gratuitos en las etapas obligatorias.",
+    "context": "Alrededor de uno de cada cuatro alumnos estudia en un centro concertado. La ley educativa de 2020 (LOMLOE) dio prioridad a la red pública a la hora de planificar las plazas.",
+    "change": "Los concertados recibirían más fondos y podrían ofrecer más plazas, con lo que las familias tendrían más centros donde elegir.",
+    "ifFavor": "Priorizas la libertad de las familias para elegir centro, aunque parte del presupuesto educativo vaya a centros privados en lugar de a la red pública.",
+    "ifAgainst": "Prefieres concentrar la inversión en la escuela pública, aunque haya menos centros concertados entre los que elegir.",
+    "glossary": [
       {
-        "id": "grandes-fortunas",
-        "label": "Aplicar un impuesto a las grandes fortunas",
-        "value": -1
-      },
-      {
-        "id": "ayudas",
-        "label": "Ampliar el ingreso mínimo y las ayudas directas",
-        "value": -0.5
-      },
-      {
-        "id": "continuidad",
-        "label": "Mantener las políticas actuales",
-        "value": 0
-      },
-      {
-        "id": "oportunidades",
-        "label": "Primar la formación y el empleo sobre las ayudas",
-        "value": 0.5
-      },
-      {
-        "id": "inversion",
-        "label": "Reducir impuestos para fomentar la inversión",
-        "value": 1
+        "term": "Colegio concertado",
+        "definition": "Centro privado que firma un acuerdo con la Administración: recibe fondos públicos a cambio de ser gratuito en las etapas obligatorias y seguir criterios públicos de admisión."
       }
     ]
   },
   {
-    "id": "q-igualdad-genero",
-    "topicId": "igualdad-genero",
-    "text": "¿Qué enfoque prefieres en las políticas de igualdad de género?",
-    "type": "single",
-    "axisNote": "-1: Más cuotas y políticas específicas | +1: Igualdad legal sin cuotas",
-    "options": [
+    "id": "q-regularizacion",
+    "topicId": "inmigracion",
+    "title": "Regularización de inmigrantes sin papeles",
+    "statement": "Regularizar de forma extraordinaria a los inmigrantes que ya viven en España sin permiso, si llevan un tiempo mínimo en el país y no tienen antecedentes penales.",
+    "summary": "Regularizar significa conceder un permiso de residencia y de trabajo a personas que ya están en España en situación irregular.",
+    "context": "En 2026, el Gobierno aprobó por decreto una regularización extraordinaria para unas 500.000 personas, con plazo para solicitarla hasta junio. En marzo, el Congreso aprobó una moción no vinculante que pedía renunciar a ella.",
+    "change": "Esas personas obtendrían permiso de residencia y trabajo, podrían cotizar y tendrían derechos laborales. Dejarían de estar en situación irregular.",
+    "ifFavor": "Aceptas reconocer la situación de quienes ya viven y trabajan aquí, aunque haya quien piense que puede atraer más llegadas irregulares (el llamado «efecto llamada»).",
+    "ifAgainst": "Prefieres que solo existan las vías de entrada regulares y ordinarias, aunque cientos de miles de personas sigan sin papeles ni derechos laborales.",
+    "glossary": [
       {
-        "id": "especificas",
-        "label": "Ampliar las cuotas y las políticas específicas",
-        "value": -1
-      },
-      {
-        "id": "actual",
-        "label": "Mantener las políticas actuales",
-        "value": 0
-      },
-      {
-        "id": "legal",
-        "label": "Igualdad legal sin cuotas ni ministerio propio",
-        "value": 1
+        "term": "Situación irregular",
+        "definition": "La de una persona extranjera que vive en España sin un permiso de residencia válido."
       }
     ]
   },
   {
-    "id": "q-derechos-lgtbiq",
-    "topicId": "derechos-lgtbiq",
-    "text": "¿Qué posición prefieres sobre los derechos del colectivo LGTBIQ+?",
-    "type": "single",
-    "axisNote": "-1: Ampliar la protección de los derechos y la autodeterminación | +1: Revisar la legislación actual",
-    "options": [
+    "id": "q-rechazo-frontera",
+    "topicId": "inmigracion",
+    "title": "Rechazos inmediatos en la frontera",
+    "statement": "Devolver de inmediato a quienes entren de forma irregular en Ceuta y Melilla, sin tramitar un expediente individual.",
+    "summary": "Son las llamadas «devoluciones en caliente»: la persona es devuelta al otro lado de la frontera en el mismo momento de entrar.",
+    "context": "Desde 2015, la ley permite estos «rechazos en frontera» en Ceuta y Melilla. En 2020, el Tribunal Constitucional los avaló siempre que se respeten algunas garantías, como atender a los menores y a quien pide asilo.",
+    "change": "Se aplicarían de forma sistemática, sin un procedimiento individual salvo en esas excepciones.",
+    "ifFavor": "Priorizas el control de la frontera y la rapidez, aunque organizaciones de derechos humanos alerten de que se puede devolver a personas con derecho a asilo.",
+    "ifAgainst": "Prefieres que cada persona sea identificada y tenga un procedimiento con garantías (abogado e intérprete), aunque el control de la frontera sea más lento.",
+    "glossary": [
       {
-        "id": "ampliacion",
-        "label": "Ampliar la protección de los derechos y la autodeterminación de género",
-        "value": -1
-      },
-      {
-        "id": "actual",
-        "label": "Mantener la legislación actual",
-        "value": 0
-      },
-      {
-        "id": "revision",
-        "label": "Revisar la legislación actual en materia de autodeterminación de género",
-        "value": 1
+        "term": "Asilo",
+        "definition": "Protección que un Estado concede a quien huye de persecución o guerra en su país."
       }
     ]
   },
   {
-    "id": "q-modelo-estado",
-    "topicId": "modelo-estado",
-    "text": "¿Cómo debería organizarse el modelo territorial del Estado?",
-    "type": "single",
-    "axisNote": "-1: Centralizar competencias y reforzar el Estado | +1: Ampliar la autonomía de las comunidades",
-    "options": [
+    "id": "q-menores-reparto",
+    "topicId": "inmigracion",
+    "title": "Reparto obligatorio de menores migrantes",
+    "statement": "Repartir de forma obligatoria entre todas las comunidades a los menores migrantes que llegan solos cuando Canarias, Ceuta o Melilla superan su capacidad de acogida.",
+    "summary": "Se refiere a menores de 18 años que llegan sin un adulto responsable y que la Administración está obligada a tutelar.",
+    "context": "En 2025, el Congreso convalidó un decreto que obliga a trasladar a estos menores a otras comunidades cuando una región supera tres veces su capacidad de acogida. Algunas comunidades lo recurrieron ante el Tribunal Constitucional.",
+    "change": "Cada comunidad tendría que acoger un número de menores según criterios como su población o su renta, lo quiera o no.",
+    "ifFavor": "Priorizas la solidaridad entre territorios para atender a los menores, aunque las comunidades pierdan capacidad de decisión sobre una competencia propia.",
+    "ifAgainst": "Prefieres que cada comunidad colabore de forma voluntaria o que el Estado busque otras soluciones, aunque las regiones fronterizas sigan desbordadas.",
+    "glossary": [
       {
-        "id": "centralizacion",
-        "label": "Centralizar competencias y reforzar el Estado",
-        "value": -1
-      },
-      {
-        "id": "actual",
-        "label": "Mantener el Estado autonómico actual",
-        "value": 0
-      },
-      {
-        "id": "autonomia",
-        "label": "Ampliar la autonomía y reconocer la pluralidad nacional",
-        "value": 1
+        "term": "Menor no acompañado",
+        "definition": "Menor de 18 años que llega a España sin un adulto responsable. La ley obliga a la Administración a asumir su tutela."
       }
     ]
   },
   {
-    "id": "q-justicia",
-    "topicId": "justicia",
-    "text": "¿Qué prioridad debería tener la Justicia?",
-    "type": "single",
-    "axisNote": "-1: Reforzar la independencia y las garantías procesales | +1: Agilizar los procesos reduciendo trámites",
-    "options": [
+    "id": "q-nucleares",
+    "topicId": "clima-energia",
+    "title": "Alargar la vida de las centrales nucleares",
+    "statement": "Permitir que las centrales nucleares sigan funcionando más allá de las fechas de cierre previstas, si cumplen los requisitos de seguridad.",
+    "summary": "La pregunta trata solo sobre las centrales que ya existen; no sobre construir otras nuevas.",
+    "context": "El calendario pactado en 2019 entre el Gobierno y las eléctricas prevé cerrar las siete centrales entre 2027 y 2035, empezando por Almaraz. Hoy producen en torno al 20 % de la electricidad.",
+    "change": "Las centrales que superen las revisiones de seguridad podrían seguir funcionando más años y se retrasaría su desmantelamiento.",
+    "ifFavor": "Priorizas una electricidad estable y sin emisiones de CO₂, aunque se sigan generando residuos radiactivos y pueda frenarse el despliegue de las renovables.",
+    "ifAgainst": "Prefieres cumplir el calendario de cierre y sustituir la nuclear por renovables y almacenamiento, aunque durante la transición pueda aumentar la dependencia del gas o subir los precios.",
+    "glossary": [
       {
-        "id": "garantias",
-        "label": "Reforzar la independencia y las garantías procesales",
-        "value": -1
-      },
-      {
-        "id": "actual",
-        "label": "Mantener el sistema actual con mejoras",
-        "value": 0
-      },
-      {
-        "id": "agilidad",
-        "label": "Agilizar los procesos reduciendo trámites y tiempos de espera",
-        "value": 1
+        "term": "Residuo radiactivo",
+        "definition": "Combustible usado y otros materiales que emiten radiación durante miles de años y deben almacenarse de forma segura."
       }
     ]
   },
   {
-    "id": "q-defensa",
-    "topicId": "defensa",
-    "text": "¿Cómo debería ser la política de defensa?",
-    "type": "single",
-    "axisNote": "-1: Reducir el gasto militar | +1: Aumentar el gasto en defensa",
-    "options": [
+    "id": "q-impuestos-verdes",
+    "topicId": "clima-energia",
+    "title": "Impuestos a lo que más contamina",
+    "statement": "Subir los impuestos a los combustibles y a las actividades que más contaminan, para reducir antes las emisiones.",
+    "summary": "Son los llamados «impuestos verdes»: encarecen lo que contamina para animar a cambiar a alternativas más limpias.",
+    "context": "España recauda en impuestos ambientales menos que la media de la Unión Europea. Por ejemplo, el diésel paga menos impuestos por litro que la gasolina, aunque emite más contaminantes locales.",
+    "change": "Subirían el precio de la gasolina, el diésel y otras actividades contaminantes. Lo recaudado podría destinarse a ayudas o a la transición energética.",
+    "ifFavor": "Aceptas pagar más por lo que contamina para cambiar hábitos y reducir emisiones, aunque suban los costes para quien depende del coche o vive en zonas sin alternativas de transporte.",
+    "ifAgainst": "Prefieres reducir emisiones con incentivos y ayudas en lugar de impuestos, aunque el cambio pueda ser más lento.",
+    "glossary": [
       {
-        "id": "reducir",
-        "label": "Reducir el gasto militar y priorizar lo social",
-        "value": -1
-      },
-      {
-        "id": "actual",
-        "label": "Mantener el gasto actual",
-        "value": 0
-      },
-      {
-        "id": "aumentar",
-        "label": "Aumentar el gasto en defensa",
-        "value": 1
+        "term": "Emisiones",
+        "definition": "Gases que se liberan a la atmósfera, como el CO₂, que causan el calentamiento global o contaminan el aire."
       }
     ]
   },
   {
-    "id": "q-agricultura-despoblacion",
-    "topicId": "agricultura-despoblacion",
-    "text": "¿Qué medidas para el medio rural apoyarías? Marca todas las que quieras.",
-    "type": "multi",
-    "axisNote": "-1: Agricultura ecológica y ayudas al medio rural | +1: Productividad y desregulación del sector",
-    "options": [
+    "id": "q-trasvases",
+    "topicId": "clima-energia",
+    "title": "Trasvases de agua entre cuencas",
+    "statement": "Mantener y ampliar los trasvases de agua entre cuencas, como el Tajo-Segura, para abastecer el regadío.",
+    "summary": "Un trasvase lleva agua de un río a otra zona del país, normalmente para la agricultura de regadío y el abastecimiento.",
+    "context": "El trasvase Tajo-Segura lleva agua del centro peninsular al sureste desde 1979. El Gobierno ha aumentado el caudal mínimo que debe conservar el Tajo, lo que reduce el agua que se puede trasvasar.",
+    "change": "Se garantizarían o aumentarían los envíos de agua a las zonas receptoras y podrían plantearse nuevas conexiones entre ríos.",
+    "ifFavor": "Priorizas el agua para el regadío y la economía agrícola de las zonas que la reciben, aunque las cuencas de origen y sus ecosistemas se queden con menos agua.",
+    "ifAgainst": "Prefieres priorizar el caudal ecológico de los ríos y otras fuentes, como la desalación o la reutilización, aunque los regantes de las zonas receptoras dispongan de menos agua o la paguen más cara.",
+    "glossary": [
       {
-        "id": "ecologica",
-        "label": "Fomentar la agricultura ecológica y de proximidad",
-        "value": -1
+        "term": "Cuenca hidrográfica",
+        "definition": "Territorio cuyas aguas desembocan en un mismo río principal."
       },
       {
-        "id": "pequenos",
-        "label": "Ayudar a los pequeños productores y a fijar población",
-        "value": -0.5
-      },
-      {
-        "id": "continuidad",
-        "label": "Mantener las políticas actuales",
-        "value": 0
-      },
-      {
-        "id": "regadios",
-        "label": "Modernizar los regadíos y facilitar la exportación",
-        "value": 0.5
-      },
-      {
-        "id": "productividad",
-        "label": "Desregular el sector y priorizar la productividad",
-        "value": 1
+        "term": "Caudal ecológico",
+        "definition": "Cantidad mínima de agua que debe llevar un río para mantener vivo su ecosistema."
       }
     ]
   },
   {
-    "id": "q-cultura",
-    "topicId": "cultura",
-    "text": "¿Qué papel debería tener el Estado en la cultura?",
-    "type": "single",
-    "axisNote": "-1: Más financiación pública y protección de las lenguas | +1: Mecenazgo privado y menos subvenciones",
-    "options": [
+    "id": "q-cgpj-jueces",
+    "topicId": "instituciones",
+    "title": "Que los jueces elijan el CGPJ",
+    "statement": "Que sean los propios jueces, y no el Congreso y el Senado, quienes elijan a la mayoría de los miembros del Consejo General del Poder Judicial.",
+    "summary": "El Consejo General del Poder Judicial (CGPJ) es el órgano que gobierna a los jueces y nombra a los altos cargos judiciales.",
+    "context": "Hoy, las Cortes eligen a los 20 vocales del CGPJ por mayoría de tres quintos: 12 de ellos entre jueces y 8 entre juristas. Su renovación estuvo bloqueada de 2018 a 2024.",
+    "change": "Los 12 vocales de procedencia judicial los votarían directamente los jueces, y los partidos perderían influencia en su composición.",
+    "ifFavor": "Priorizas reducir la influencia de los partidos en el gobierno de los jueces, aunque las asociaciones judiciales, con sus propias tendencias, ganen peso y se pierda el control indirecto del Parlamento.",
+    "ifAgainst": "Prefieres que el órgano lo elija el Parlamento, que representa a la ciudadanía, aunque eso facilite bloqueos y repartos entre partidos.",
+    "glossary": [
       {
-        "id": "publica",
-        "label": "Aumentar la financiación pública y proteger las lenguas cooficiales",
-        "value": -1
+        "term": "Vocal",
+        "definition": "Cada uno de los miembros del CGPJ con voto en sus decisiones."
       },
       {
-        "id": "actual",
-        "label": "Mantener el apoyo público actual",
-        "value": 0
+        "term": "Mayoría de tres quintos",
+        "definition": "Apoyo de al menos el 60 % de la cámara, lo que obliga a pactar entre varios grupos."
+      }
+    ]
+  },
+  {
+    "id": "q-voto-16",
+    "topicId": "instituciones",
+    "title": "Votar desde los 16 años",
+    "statement": "Rebajar de 18 a 16 años la edad para votar en las elecciones.",
+    "summary": "Afectaría al derecho a votar en las elecciones generales, autonómicas, municipales y europeas.",
+    "context": "Hoy se vota a partir de los 18 años. Algunos países europeos, como Austria o Malta, permiten votar a los 16, y Alemania y Bélgica lo hacen en las elecciones europeas.",
+    "change": "Unos 900.000 jóvenes de 16 y 17 años podrían votar. Haría falta reformar la ley electoral.",
+    "ifFavor": "Priorizas ampliar la participación de los jóvenes en las decisiones que les afectan, aunque haya quien dude de su madurez política o señale que no pueden firmar contratos.",
+    "ifAgainst": "Prefieres mantener la edad de voto ligada a la mayoría de edad legal, aunque los jóvenes de 16 y 17 años sigan sin voz en las urnas.",
+    "glossary": []
+  },
+  {
+    "id": "q-gasto-defensa",
+    "topicId": "seguridad-exterior",
+    "title": "Más gasto en defensa",
+    "statement": "Seguir aumentando el gasto en defensa por encima del 2 % del PIB, como piden la OTAN y la Unión Europea.",
+    "summary": "Incluye equipamiento y armamento, sueldos del personal militar, misiones e industria de defensa.",
+    "context": "España alcanzó en 2025 un gasto en defensa del 2 % del PIB, unos 35.000 millones de euros, gracias a un plan extraordinario. En 2025, la OTAN fijó un objetivo del 3,5 % del PIB para 2035, del que España pidió quedar exenta.",
+    "change": "Habría más dinero para equipamiento, personal e industria militar, lo que dejaría menos margen para otras partidas u obligaría a más deuda o impuestos.",
+    "ifFavor": "Priorizas la seguridad y los compromisos con los aliados, aunque se dediquen a defensa recursos que podrían ir a otras políticas.",
+    "ifAgainst": "Prefieres mantener o reducir el gasto militar y destinar esos recursos a otras prioridades, aunque genere tensiones con los aliados.",
+    "glossary": [
+      {
+        "term": "PIB",
+        "definition": "Producto Interior Bruto: el valor de todo lo que produce un país en un año. Se usa para comparar el tamaño de un gasto entre países."
       },
       {
-        "id": "privada",
-        "label": "Primar el mecenazgo privado y reducir las subvenciones",
-        "value": 1
+        "term": "OTAN",
+        "definition": "Alianza militar de defensa mutua entre países de Europa y Norteamérica, de la que España forma parte desde 1982."
+      }
+    ]
+  },
+  {
+    "id": "q-ayuda-militar-ucrania",
+    "topicId": "seguridad-exterior",
+    "title": "Ayuda militar a Ucrania",
+    "statement": "Seguir enviando armamento y material militar a Ucrania para defenderse de la invasión rusa.",
+    "summary": "La pregunta se refiere a la ayuda militar. La ayuda humanitaria y económica es una cuestión aparte.",
+    "context": "Desde 2022, España ha enviado a Ucrania material militar (blindados, sistemas antiaéreos y munición) además de ayuda humanitaria, de forma coordinada con la Unión Europea y la OTAN.",
+    "change": "España mantendría o ampliaría esos envíos, con el coste presupuestario que suponen.",
+    "ifFavor": "Priorizas ayudar a Ucrania a defenderse y frenar a Rusia, aunque suponga un gasto y una mayor implicación de España en el conflicto.",
+    "ifAgainst": "Prefieres limitar la ayuda a la vía humanitaria y diplomática, aunque Ucrania disponga de menos medios militares.",
+    "glossary": []
+  },
+  {
+    "id": "q-multirreincidencia",
+    "topicId": "seguridad-exterior",
+    "title": "Cárcel para los hurtos reiterados",
+    "statement": "Castigar con prisión a quienes cometen hurtos de forma reiterada, aunque cada uno sea de poco valor.",
+    "summary": "Un hurto es quitar algo sin violencia ni intimidación, como en un robo de cartera o en un comercio.",
+    "context": "Hasta 2026, un hurto de menos de 400 euros era un delito leve castigado con multa, aunque se repitiera. Ese año se aprobó una ley que permite castigar con cárcel a quien acumula varias condenas por hurto.",
+    "change": "Quien repita hurtos pequeños podría acabar en prisión. Habría más juicios y más presión sobre el sistema penitenciario.",
+    "ifFavor": "Priorizas frenar la delincuencia reiterada con penas más duras, aunque aumente la población en prisión y haya quien lo considere desproporcionado para delitos menores.",
+    "ifAgainst": "Prefieres responder con multas, trabajos en beneficio de la comunidad o programas de reinserción, aunque los reincidentes sigan sin pisar la cárcel.",
+    "glossary": [
+      {
+        "term": "Delito leve",
+        "definition": "Infracción penal menor, castigada normalmente con multa y no con prisión."
+      },
+      {
+        "term": "Reincidencia",
+        "definition": "Volver a cometer un delito después de haber sido condenado por otro similar."
+      }
+    ]
+  },
+  {
+    "id": "q-ley-violencia-genero",
+    "topicId": "derechos",
+    "title": "Ley específica contra la violencia de género",
+    "statement": "Mantener una ley específica contra la violencia que sufren las mujeres por parte de sus parejas o exparejas, con juzgados y medidas propias.",
+    "summary": "La pregunta es si esta violencia debe tener un tratamiento legal propio o integrarse en una ley general de violencia en la familia.",
+    "context": "La Ley integral de 2004, aprobada por unanimidad, prevé juzgados especializados, ayudas a las víctimas y penas agravadas cuando el agresor es hombre y la víctima es o fue su pareja.",
+    "change": "Se mantendría este marco. La alternativa que plantean algunos es sustituirlo por una ley de violencia intrafamiliar que no distinga el sexo del agresor ni de la víctima.",
+    "ifFavor": "Consideras que esta violencia tiene un componente específico contra las mujeres que justifica un trato legal propio, aunque haya quien critique que la pena varíe según el sexo.",
+    "ifAgainst": "Prefieres una ley que proteja igual a cualquier víctima de violencia en la familia, sin distinguir por sexo, aunque se pierdan recursos y protocolos especializados.",
+    "glossary": [
+      {
+        "term": "Violencia intrafamiliar",
+        "definition": "Cualquier violencia ejercida entre miembros de una familia, sin distinguir el sexo del agresor ni de la víctima."
+      }
+    ]
+  },
+  {
+    "id": "q-autodeterminacion-genero",
+    "topicId": "derechos",
+    "title": "Cambio de sexo registral sin informes médicos",
+    "statement": "Permitir que cualquier persona mayor de 16 años cambie su sexo en el Registro Civil con su propia declaración, sin informes médicos ni psicológicos.",
+    "summary": "Se refiere al sexo que figura en los documentos oficiales (DNI y Registro Civil), no a tratamientos médicos.",
+    "context": "Es lo que establece la ley aprobada en 2023 (conocida como «ley trans»). Entre los 12 y los 16 años hace falta, según la edad, autorización judicial o de los padres.",
+    "change": "Se mantendría este sistema. Revertirlo supondría volver a exigir un diagnóstico médico y, en su caso, tratamiento previo.",
+    "ifFavor": "Priorizas que cada persona decida sobre su identidad legal sin tutela médica, aunque haya quien alerte de posibles usos fraudulentos o de efectos en espacios y competiciones separados por sexo.",
+    "ifAgainst": "Prefieres exigir algún requisito médico o de tiempo para el cambio legal, aunque las personas trans lo consideren una barrera o una forma de tratarlas como enfermas.",
+    "glossary": [
+      {
+        "term": "Sexo registral",
+        "definition": "El sexo que consta oficialmente en el Registro Civil y en el DNI."
+      }
+    ]
+  },
+  {
+    "id": "q-eutanasia",
+    "topicId": "derechos",
+    "title": "Mantener la ley de eutanasia",
+    "statement": "Mantener la ley que permite pedir ayuda médica para morir a personas con una enfermedad grave e incurable o con un sufrimiento crónico e imposibilitante.",
+    "summary": "La eutanasia es la ayuda médica para morir a petición de la propia persona, con requisitos y controles.",
+    "context": "La ley está en vigor desde 2021. Exige varias solicitudes por escrito, informes médicos y la aprobación de una comisión de control. El Tribunal Constitucional la avaló en 2023.",
+    "change": "Seguiría siendo legal con los requisitos actuales. Derogarla impediría solicitarla y solo quedarían los cuidados paliativos.",
+    "ifFavor": "Priorizas la libertad para decidir sobre el final de la propia vida con garantías, aunque haya quien tema presiones sobre personas vulnerables.",
+    "ifAgainst": "Consideras que el Estado no debe facilitar la muerte y prefieres reforzar los cuidados paliativos, aunque quien quiera la eutanasia no pueda acceder a ella.",
+    "glossary": [
+      {
+        "term": "Cuidados paliativos",
+        "definition": "Atención médica para aliviar el dolor y el sufrimiento de personas con enfermedades avanzadas, sin buscar curarlas ni acelerar su muerte."
+      }
+    ]
+  },
+  {
+    "id": "q-referendum-pactado",
+    "topicId": "modelo-territorial",
+    "title": "Referéndum de independencia pactado",
+    "statement": "Permitir que una comunidad autónoma celebre un referéndum sobre su independencia, pactado con el Estado.",
+    "summary": "Votaría solo la población de esa comunidad, y la consulta sería legal y acordada con el Gobierno central, no unilateral.",
+    "context": "La Constitución no prevé que una parte del territorio decida su independencia, y convocar referéndums es competencia del Estado. La consulta unilateral de Cataluña en 2017 fue declarada ilegal.",
+    "change": "Haría falta un acuerdo político y, según la mayoría de los juristas, una reforma legal o constitucional para que la ciudadanía de esa comunidad votara si quiere seguir en España.",
+    "ifFavor": "Consideras que la ciudadanía de un territorio debe poder decidir su relación con España votando, aunque eso abra la puerta a una posible secesión y pueda dividir a la sociedad.",
+    "ifAgainst": "Consideras que la unidad de España no debe decidirse en un solo territorio, aunque una parte de la ciudadanía de esas comunidades no se sienta representada.",
+    "glossary": [
+      {
+        "term": "Secesión",
+        "definition": "Separación de una parte del territorio de un Estado para formar un Estado independiente."
+      }
+    ]
+  },
+  {
+    "id": "q-autonomia-fiscal",
+    "topicId": "modelo-territorial",
+    "title": "Más autonomía fiscal para las comunidades",
+    "statement": "Que las comunidades que lo pidan recauden todos sus impuestos y paguen al Estado una cuota por los servicios comunes, como ya hacen el País Vasco y Navarra.",
+    "summary": "Hoy la mayoría de las comunidades recibe su dinero a través de un sistema común de reparto. La propuesta les permitiría gestionar directamente sus impuestos.",
+    "context": "El País Vasco y Navarra recaudan casi todos sus impuestos gracias al concierto y el convenio económicos. El resto se financia con un sistema común. En 2026 se aprobó un nuevo modelo de financiación que incluye un trato singular para Cataluña.",
+    "change": "Las comunidades que lo asumieran controlarían todos sus impuestos. El Estado recaudaría menos directamente y se reduciría el reparto automático de recursos entre territorios.",
+    "ifFavor": "Priorizas que cada comunidad gestione sus recursos y decida su política fiscal, aunque el Estado pierda capacidad para redistribuir entre regiones ricas y pobres.",
+    "ifAgainst": "Prefieres un sistema común que garantice recursos parecidos a todos los territorios, aunque limite la autonomía fiscal de cada comunidad.",
+    "glossary": [
+      {
+        "term": "Concierto económico",
+        "definition": "Sistema por el que el País Vasco y Navarra recaudan casi todos los impuestos y pagan al Estado un «cupo» por las competencias que este ejerce allí."
+      }
+    ]
+  },
+  {
+    "id": "q-lengua-cooficial",
+    "topicId": "modelo-territorial",
+    "title": "Lengua cooficial en el empleo público",
+    "statement": "Exigir el conocimiento de la lengua cooficial para trabajar en la Administración de las comunidades que la tienen.",
+    "summary": "Afectaría a quienes quieran trabajar en las administraciones de comunidades con catalán, euskera, gallego o valenciano, incluida la sanidad o la educación públicas.",
+    "context": "Cada comunidad con lengua cooficial decide si su conocimiento es un requisito obligatorio o solo un mérito que suma puntos. Los criterios varían, por ejemplo, en la sanidad.",
+    "change": "Saber la lengua cooficial sería obligatorio para acceder a esos puestos, no solo un mérito.",
+    "ifFavor": "Priorizas que la ciudadanía pueda ser atendida en su lengua y que se protejan las lenguas cooficiales, aunque sea más difícil incorporar a profesionales de otras comunidades.",
+    "ifAgainst": "Prefieres que la lengua cooficial puntúe como mérito pero no excluya a nadie, aunque algunas personas no puedan ser atendidas en esa lengua.",
+    "glossary": [
+      {
+        "term": "Lengua cooficial",
+        "definition": "Lengua que, además del castellano, es oficial en una comunidad autónoma según su Estatuto."
       }
     ]
   }

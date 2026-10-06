@@ -2,14 +2,14 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { partiesFileSchema, topicsFileSchema, type Position } from '../src/data/schema';
+import { partiesFileSchema, questionsFileSchema, type Position } from '../src/data/schema';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const readJson = (relativePath: string): unknown =>
   JSON.parse(readFileSync(join(root, relativePath), 'utf8'));
 
 const parties = partiesFileSchema.parse(readJson('data/parties.json'));
-const topics = topicsFileSchema.parse(readJson('data/topics.json'));
+const questions = questionsFileSchema.parse(readJson('data/questions.json'));
 
 const seedDate = new Date().toISOString().slice(0, 10);
 const positionsDir = join(root, 'data/positions');
@@ -20,11 +20,11 @@ for (const party of parties) {
   const existing: Position[] = existsSync(filePath)
     ? (readJson(`data/positions/${party.id}.json`) as Position[])
     : [];
-  const byTopic = new Map(existing.map((row) => [row.topicId, row]));
-  const rows = topics.map(
-    (topic): Position =>
-      byTopic.get(topic.id) ?? {
-        topicId: topic.id,
+  const byQuestion = new Map(existing.map((row) => [row.questionId, row]));
+  const rows = questions.map(
+    (question): Position =>
+      byQuestion.get(question.id) ?? {
+        questionId: question.id,
         value: null,
         status: 'sin-datos-suficientes',
         sourceType: 'sin-datos',
@@ -36,5 +36,5 @@ for (const party of parties) {
 }
 
 console.log(
-  `Sembrados ${parties.length} ficheros de posiciones (${parties.length * topics.length} filas) en data/positions/.`,
+  `Sembrados ${parties.length} ficheros de posiciones (${parties.length * questions.length} filas) en data/positions/.`,
 );

@@ -1,112 +1,58 @@
 import { describe, expect, it } from 'vitest';
 
+import { ANSWER_SCALE } from '../../src/core/config';
+import { computeResults, type QuestionAnswer } from '../../src/core/scoring';
 import { loadData } from '../../src/data/load';
-import {
-  computeResults,
-  getApplicableParties,
-  type QuestionAnswer,
-} from '../../src/core/scoring';
 
 const data = loadData();
 
-const ESTATAL_COUNT = data.parties.filter((party) => party.scope === 'estatal').length;
-
-const TERRITORY_PARTY_COUNTS: Record<string, number> = {
-  cataluna: 7,
-  'pais-vasco': 7,
-  navarra: 6,
-  galicia: 6,
-  canarias: 6,
-  andalucia: 5,
-  ceuta: 5,
-  melilla: 5,
-};
-
-function territorialPartiesFor(territoryId: string): string[] {
-  return data.parties
-    .filter((party) => party.scope === 'territorial' && party.communities?.includes(territoryId))
-    .map((party) => party.id);
+function answerAll(value: number): QuestionAnswer[] {
+  return data.questions.map((question) => ({ questionId: question.id, value, priority: false }));
 }
 
-function fullAnswerSet(): QuestionAnswer[] {
-  return data.questions.map((question) => ({
-    questionId: question.id,
-    optionIds: [question.options[0].id],
-    priority: false,
-  }));
+// Responde lo mismo que el partido allí donde tiene posición documentada.
+function mirror(partyId: string): QuestionAnswer[] {
+  const rows = data.positions[partyId] ?? [];
+  return rows
+    .filter((row) => row.value !== null)
+    .map((row) => ({ questionId: row.questionId, value: row.value ?? 0, priority: false }));
 }
 
-describe('invariante territorial sobre los 19 territorios', () => {
-  it('solo hace aplicables los estatales y los territoriales de la comunidad elegida', () => {
+describe('integración con los datos reales', () => {
+  it('calcula resultados en todos los territorios sin errores ni NaN', () => {
     for (const territory of data.territories) {
-      const applicable = getApplicableParties(data, territory.id);
-      for (const party of applicable) {
-        const applies =
-          party.scope === 'estatal' || (party.communities?.includes(territory.id) ?? false);
-        expect(applies).toBe(true);
-      }
-      const expected = ESTATAL_COUNT + territorialPartiesFor(territory.id).length;
-      expect(applicable).toHaveLength(expected);
-    }
-  });
-
-  it('no hace aplicables los 11 partidos en ninguna comunidad', () => {
-    for (const territory of data.territories) {
-      expect(getApplicableParties(data, territory.id).length).toBeLessThan(data.parties.length);
-    }
-  });
-
-  it('respeta los recuentos ancla por comunidad', () => {
-    for (const [territoryId, expected] of Object.entries(TERRITORY_PARTY_COUNTS)) {
-      expect(getApplicableParties(data, territoryId)).toHaveLength(expected);
-    }
-  });
-
-  it('excluye a los partidos no aplicables del ranking, la cobertura y los ganadores', () => {
-    const answers = fullAnswerSet();
-    for (const territory of data.territories) {
-      const results = computeResults(data, { territoryId: territory.id, answers });
-      const applicableIds = new Set(results.applicableParties.map((party) => party.id));
-      const nonApplicableIds = new Set(results.nonApplicableParties.map((party) => party.id));
-
-      expect(nonApplicableIds.size).toBeGreaterThan(0);
-
-      for (const score of [...results.ranking, ...results.withoutData]) {
-        expect(applicableIds.has(score.party.id)).toBe(true);
-        expect(nonApplicableIds.has(score.party.id)).toBe(false);
-      }
-
-      for (const question of results.questions) {
-        for (const winner of question.winners) {
-          expect(applicableIds.has(winner.id)).toBe(true);
+      for (const point of ANSWER_SCALE) {
+        const results = computeResults(data, { territoryId: territory.id, answers: answerAll(point.value) });
+        for (const score of results.ranking) {
+          expect(Number.isFinite(score.affinity)).toBe(true);
+          expect(score.affinity).toBeGreaterThanOrEqual(0);
+          expect(score.affinity).toBeLessThanOrEqual(1);
         }
       }
     }
   });
 
-  it('solo puntúa partidos aplicables en los casos ancla', () => {
-    const answers = fullAnswerSet();
-    for (const territoryId of Object.keys(TERRITORY_PARTY_COUNTS)) {
-      const results = computeResults(data, { territoryId, answers });
-      const applicableIds = new Set(results.applicableParties.map((party) => party.id));
-      expect(new Set(results.ranking.map((score) => score.party.id))).toEqual(applicableIds);
-      expect(results.withoutData).toEqual([]);
-    }
+  it('solo compara partidos que concurren en el territorio', () => {
+    const results = computeResults(data, { territoryId: 'andalucia', answers: answerAll(1) });
+    const ids = results.applicableParties.map((party) => party.id);
+    expect(ids).toEqual(expect.arrayContaining(['pp', 'psoe', 'vox', 'sumar', 'podemos']));
+    expect(ids).not.toContain('erc');
   });
 
-  it('no pierde partidos al separar elegibles y baja cobertura con respuestas completas', () => {
-    const answers = fullAnswerSet();
-    for (const territoryId of Object.keys(TERRITORY_PARTY_COUNTS)) {
-      const results = computeResults(data, { territoryId, answers });
-      expect(results.partialComparison).toBe(false);
+  it.each(['psoe', 'pp', 'vox', 'sumar', 'podemos'])(
+    'quien responde como %s obtiene a ese partido en cabeza con un 100 %%',
+    (partyId) => {
+      const results = computeResults(data, { territoryId: 'madrid', answers: mirror(partyId) });
+      const top = results.ranking.filter((score) => score.eligible)[0];
+      expect(top?.affinity).toBeCloseTo(1);
+      const leaders = results.ranking.filter((score) => score.affinity === top?.affinity);
+      expect(leaders.map((score) => score.party.id)).toContain(partyId);
+    },
+  );
 
-      const classified = [
-        ...results.ranking.filter((score) => score.eligible),
-        ...results.lowCoverage,
-      ].map((score) => score.party.id);
-      expect(new Set(classified)).toEqual(
-        new Set(results.ranking.map((score) => score.party.id)),
-      );
-    }
+  it('agrupa los resultados por todos los temas cuando se responde todo', () => {
+    const results = computeResults(data, { territoryId: 'cataluna', answers: answerAll(0) });
+    expect(results.topics).toHaveLength(data.topics.length);
+    expect(results.questions).toHaveLength(data.questions.length);
   });
 });

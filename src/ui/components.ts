@@ -22,50 +22,6 @@ export function el<K extends keyof HTMLElementTagNameMap>(
   return node;
 }
 
-export interface OptionParams {
-  type: 'radio' | 'checkbox';
-  name: string;
-  value: string;
-  label: string;
-  id: string;
-  checked: boolean;
-}
-
-export function createOption(params: OptionParams): HTMLLabelElement {
-  const input = el('input', {
-    className: 'option__input',
-    attrs: { type: params.type, name: params.name, value: params.value, id: params.id },
-  });
-  input.checked = params.checked;
-
-  return el('label', { className: 'option', attrs: { for: params.id } }, [
-    input,
-    el('span', { className: 'option__label', text: params.label }),
-  ]);
-}
-
-export interface PriorityToggleParams {
-  id: string;
-  name: string;
-  checked: boolean;
-  label: string;
-  disabled?: boolean;
-}
-
-export function createPriorityToggle(params: PriorityToggleParams): HTMLLabelElement {
-  const input = el('input', {
-    className: 'priority__input',
-    attrs: { type: 'checkbox', name: params.name, id: params.id },
-  });
-  input.checked = params.checked;
-  input.disabled = params.disabled ?? false;
-
-  return el('label', { className: 'priority', attrs: { for: params.id } }, [
-    input,
-    el('span', { text: params.label }),
-  ]);
-}
-
 export interface ButtonParams {
   label: string;
   variant: 'primary' | 'secondary' | 'ghost';

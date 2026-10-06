@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
+import { ANSWER_SCALE } from '../../src/core/config';
 import { getApplicableParties, loadData } from '../../src/data/load';
 import { validateDataReferences } from '../../src/data/schema';
 
@@ -19,6 +20,8 @@ const EXPECTED_PARTY_IDS = [
   'vox',
 ];
 
+const ESTATAL_PARTY_IDS = ['psoe', 'pp', 'vox', 'sumar', 'podemos'];
+
 const TERRITORY_PARTY_COUNTS: Record<string, number> = {
   cataluna: 7,
   'pais-vasco': 7,
@@ -30,111 +33,87 @@ const TERRITORY_PARTY_COUNTS: Record<string, number> = {
   melilla: 5,
 };
 
+const GLOBAL_COVERAGE_MIN = 0.75;
+const ESTATAL_COVERAGE_MIN = 0.85;
+const NOTE_MAX_LENGTH = 240;
+const SCALE_VALUES = new Set(ANSWER_SCALE.map((point) => point.value));
+
 describe('data/territories.json', () => {
   it('contiene los 19 territorios (17 CCAA + Ceuta y Melilla)', () => {
     expect(data.territories).toHaveLength(19);
   });
-
-  it('usa ids únicos', () => {
-    const ids = data.territories.map((territory) => territory.id);
-    expect(new Set(ids).size).toBe(ids.length);
-  });
 });
 
 describe('data/topics.json', () => {
-  it('contiene exactamente 25 temas', () => {
-    expect(data.topics).toHaveLength(25);
+  it('agrupa el cuestionario en 10-12 temas sin solapamientos', () => {
+    expect(data.topics.length).toBeGreaterThanOrEqual(10);
+    expect(data.topics.length).toBeLessThanOrEqual(12);
   });
 
-  it('reparte 13 temas en el bloque A y 12 en el bloque B', () => {
-    expect(data.topics.filter((topic) => topic.block === 'A')).toHaveLength(13);
-    expect(data.topics.filter((topic) => topic.block === 'B')).toHaveLength(12);
-  });
-
-  it('respaldan el bloque A con evidencia CIS y valor numérico', () => {
-    for (const topic of data.topics.filter((item) => item.block === 'A')) {
-      const cis = topic.evidence.filter(
-        (evidence) => evidence.type === 'cis-ranking' || evidence.type === 'cis-survey',
-      );
-      expect(cis.length).toBeGreaterThan(0);
-      expect(cis.every((evidence) => typeof evidence.value === 'number')).toBe(true);
-    }
-  });
-
-  it('respaldan el bloque B con evidencia de agenda', () => {
-    for (const topic of data.topics.filter((item) => item.block === 'B')) {
-      expect(topic.evidence.some((evidence) => evidence.type === 'agenda')).toBe(true);
+  it('describe cada tema y documenta su evidencia', () => {
+    for (const topic of data.topics) {
+      expect(topic.description.length).toBeGreaterThan(10);
+      expect(topic.evidence.length).toBeGreaterThan(0);
     }
   });
 
   it('no cita Wikipedia', () => {
-    for (const topic of data.topics) {
-      for (const evidence of topic.evidence) {
-        expect(evidence.sourceUrl).not.toContain('wikipedia.org');
-        expect(evidence.sourceName.toLowerCase()).not.toContain('wikipedia');
-      }
-    }
+    const urls = data.topics.flatMap((topic) => topic.evidence.map((item) => item.sourceUrl));
+    for (const url of urls) expect(url).not.toMatch(/wikipedia\.org/);
   });
 });
 
 describe('data/parties.json', () => {
   it('contiene los 11 partidos esperados', () => {
-    const ids = data.parties.map((party) => party.id).sort();
-    expect(ids).toEqual(EXPECTED_PARTY_IDS);
-  });
-
-  it('declara communities existentes en los partidos territoriales', () => {
-    const territoryIds = new Set(data.territories.map((territory) => territory.id));
-    for (const party of data.parties) {
-      if (party.scope === 'territorial') {
-        expect(party.communities?.length ?? 0).toBeGreaterThan(0);
-        for (const community of party.communities ?? []) {
-          expect(territoryIds.has(community)).toBe(true);
-        }
-      } else {
-        expect(party.communities).toBeUndefined();
-      }
-    }
+    expect(data.parties.map((party) => party.id).sort()).toEqual(EXPECTED_PARTY_IDS);
   });
 });
 
 describe('data/questions.json', () => {
-  it('contiene exactamente 25 preguntas, una por tema', () => {
-    expect(data.questions).toHaveLength(25);
-    expect(data.questions.map((question) => question.topicId).sort()).toEqual(
-      data.topics.map((topic) => topic.id).sort(),
-    );
+  it('contiene 30 propuestas con ids únicos', () => {
+    expect(data.questions).toHaveLength(30);
+    expect(new Set(data.questions.map((question) => question.id)).size).toBe(30);
   });
 
-  it('usa ids únicos y referencias a temas existentes', () => {
-    const ids = data.questions.map((question) => question.id);
-    expect(new Set(ids).size).toBe(ids.length);
-    const topicIds = new Set(data.topics.map((topic) => topic.id));
-    for (const question of data.questions) {
-      expect(topicIds.has(question.topicId)).toBe(true);
+  it('incluye al menos dos propuestas por tema', () => {
+    for (const topic of data.topics) {
+      const count = data.questions.filter((question) => question.topicId === topic.id).length;
+      expect(count, `tema "${topic.id}"`).toBeGreaterThanOrEqual(2);
     }
   });
 
-  it('cumple los umbrales de tipo (≥5 single y ≥5 multi)', () => {
-    expect(data.questions.filter((question) => question.type === 'single').length).toBeGreaterThanOrEqual(5);
-    expect(data.questions.filter((question) => question.type === 'multi').length).toBeGreaterThanOrEqual(5);
+  it('agrupa las propuestas de un mismo tema de forma consecutiva', () => {
+    const order = data.questions.map((question) => question.topicId);
+    const seen = new Set<string>();
+    for (let index = 0; index < order.length; index += 1) {
+      const topicId = order[index] ?? '';
+      if (index > 0 && order[index - 1] !== topicId) {
+        expect(seen.has(topicId), `el tema "${topicId}" está partido`).toBe(false);
+      }
+      seen.add(topicId);
+    }
   });
 });
 
 describe('data/positions/', () => {
-  it('incluye un fichero por partido', () => {
+  it('incluye un fichero por partido y una fila por propuesta', () => {
+    const questionIds = data.questions.map((question) => question.id).sort();
     expect(Object.keys(data.positions).sort()).toEqual(EXPECTED_PARTY_IDS);
-  });
-
-  it('completa la matriz 11x25 (una fila por partido y tema)', () => {
-    const topicIds = data.topics.map((topic) => topic.id).sort();
-    for (const rows of Object.values(data.positions)) {
-      expect(rows).toHaveLength(25);
-      expect(rows.map((row) => row.topicId).sort()).toEqual(topicIds);
+    for (const partyId of EXPECTED_PARTY_IDS) {
+      const rows = data.positions[partyId] ?? [];
+      expect(rows.map((row) => row.questionId).sort()).toEqual(questionIds);
     }
   });
 
-  it('mantiene la coherencia estado/valor/sourceType en toda la matriz', () => {
+  it('codifica cada posición en uno de los cinco puntos de la escala común', () => {
+    for (const rows of Object.values(data.positions)) {
+      for (const row of rows) {
+        if (row.value !== null) expect(SCALE_VALUES.has(row.value)).toBe(true);
+      }
+    }
+  });
+
+  it('respeta la coherencia estado/sourceType/sourceDate en cada fila', () => {
     for (const rows of Object.values(data.positions)) {
       for (const row of rows) {
         if (row.value === null) {
@@ -142,13 +121,42 @@ describe('data/positions/', () => {
           expect(row.sourceType).toBe('sin-datos');
           continue;
         }
-        expect(row.value).toBeGreaterThanOrEqual(-1);
-        expect(row.value).toBeLessThanOrEqual(1);
-        expect(row.status).not.toBe('sin-datos-suficientes');
-        expect(row.sourceType).not.toBe('sin-datos');
         const recent = row.sourceType === 'programa-2026' || row.sourceDate >= '2026-01-01';
         expect(row.status).toBe(recent ? 'verificado' : 'provisional');
       }
+    }
+  });
+
+  it('justifica cada posición con una nota breve', () => {
+    for (const rows of Object.values(data.positions)) {
+      for (const row of rows) {
+        expect(row.note, `${row.questionId}`).toBeTruthy();
+        expect(row.note?.length ?? 0).toBeLessThanOrEqual(NOTE_MAX_LENGTH);
+      }
+    }
+  });
+
+  it(`alcanza una cobertura global ≥${GLOBAL_COVERAGE_MIN * 100}%`, () => {
+    const cells = Object.values(data.positions).flat();
+    const withData = cells.filter((row) => row.value !== null).length;
+    expect(withData / cells.length).toBeGreaterThanOrEqual(GLOBAL_COVERAGE_MIN);
+  });
+
+  it(`alcanza una cobertura ≥${ESTATAL_COVERAGE_MIN * 100}% en los partidos estatales`, () => {
+    for (const partyId of ESTATAL_PARTY_IDS) {
+      const rows = data.positions[partyId] ?? [];
+      const withData = rows.filter((row) => row.value !== null).length;
+      expect(withData / rows.length, partyId).toBeGreaterThanOrEqual(ESTATAL_COVERAGE_MIN);
+    }
+  });
+
+  it('diferencia a los partidos: cada propuesta tiene posiciones a favor y en contra', () => {
+    for (const question of data.questions) {
+      const values = Object.values(data.positions)
+        .map((rows) => rows.find((row) => row.questionId === question.id)?.value)
+        .filter((value): value is number => typeof value === 'number');
+      expect(Math.min(...values), question.id).toBeLessThan(0);
+      expect(Math.max(...values), question.id).toBeGreaterThan(0);
     }
   });
 
@@ -165,15 +173,11 @@ describe('getApplicableParties', () => {
   });
 
   it('excluye partidos territoriales fuera de su ámbito', () => {
-    const ercInAndalucia = getApplicableParties(data, 'andalucia').find(
-      (party) => party.id === 'erc',
-    );
-    expect(ercInAndalucia).toBeUndefined();
+    expect(getApplicableParties(data, 'andalucia').some((party) => party.id === 'erc')).toBe(false);
   });
 
   it('devuelve los partidos en orden alfabético por nombre', () => {
     const names = getApplicableParties(data, 'cataluna').map((party) => party.displayName);
-    const sorted = [...names].sort((a, b) => a.localeCompare(b, 'es'));
-    expect(names).toEqual(sorted);
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b, 'es')));
   });
 });

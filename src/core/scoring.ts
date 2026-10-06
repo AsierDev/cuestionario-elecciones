@@ -1,10 +1,10 @@
-import type { DataBundle, Party, Position, Question } from '../data/schema';
+import type { DataBundle, Party, Position, Question, Topic } from '../data/schema';
 
-import { SCORING_CONFIG } from './config';
+import { ANSWER_SCALE, SCORING_CONFIG } from './config';
 
 export interface QuestionAnswer {
   questionId: string;
-  optionIds: string[];
+  value: number;
   priority: boolean;
 }
 
@@ -13,20 +13,54 @@ export interface ScoringInput {
   answers: QuestionAnswer[];
 }
 
+export interface QuestionComparison {
+  question: Question;
+  userValue: number;
+  partyValue: number;
+  affinity: number;
+  position: Position;
+}
+
+export interface TopicAffinity {
+  topic: Topic;
+  affinity: number | null;
+  comparedCount: number;
+}
+
 export interface PartyScore {
   party: Party;
   affinity: number | null;
   coverage: number | null;
   comparedCount: number;
+  answeredCount: number;
   eligible: boolean;
-  missingTopicIds: string[];
+  missingQuestionIds: string[];
   provisional: boolean;
+  comparisons: QuestionComparison[];
+  topics: TopicAffinity[];
+}
+
+export interface PartyStance {
+  party: Party;
+  value: number | null;
+  affinity: number | null;
+  position: Position | undefined;
 }
 
 export interface QuestionResult {
   question: Question;
-  userPosition: number;
-  userOptionIds: string[];
+  userValue: number;
+  priority: boolean;
+  stances: PartyStance[];
+  bestAffinity: number | null;
+  winners: Party[];
+}
+
+export interface TopicResult {
+  topic: Topic;
+  answeredCount: number;
+  priority: boolean;
+  parties: { party: Party; affinity: number | null; comparedCount: number }[];
   bestAffinity: number | null;
   winners: Party[];
 }
@@ -42,9 +76,12 @@ export interface ScoringResults {
   lowCoverage: PartyScore[];
   withoutData: PartyScore[];
   questions: QuestionResult[];
+  topics: TopicResult[];
   provisional: boolean;
   partialComparison: boolean;
 }
+
+const VALID_VALUES = new Set(ANSWER_SCALE.map((point) => point.value));
 
 function compareByName(a: Party, b: Party): number {
   return a.displayName.localeCompare(b.displayName, 'es');
@@ -59,45 +96,42 @@ export function getApplicableParties(data: DataBundle, territoryId: string): Par
     .sort(compareByName);
 }
 
-export function userPosition(question: Question, optionIds: string[]): number | null {
-  if (optionIds.length === 0) return null;
-
-  const valueById = new Map(question.options.map((option) => [option.id, option.value]));
-  const values = optionIds.map((id) => {
-    const value = valueById.get(id);
-    if (value === undefined) {
-      throw new Error(`La opción "${id}" no existe en la pregunta "${question.id}"`);
-    }
-    return value;
-  });
-
-  if (question.type === 'single') {
-    if (values.length > 1) {
-      throw new Error(`La pregunta "${question.id}" es de opción única pero recibió varias`);
-    }
-    return values[0];
-  }
-
-  return values.reduce((sum, value) => sum + value, 0) / values.length;
-}
-
-export function questionAffinity(userPos: number, partyValue: number): number {
+export function questionAffinity(userValue: number, partyValue: number): number {
   const span = SCORING_CONFIG.axisMax - SCORING_CONFIG.axisMin;
-  return 1 - Math.abs(userPos - partyValue) / span;
+  return 1 - Math.abs(userValue - partyValue) / span;
 }
 
-function indexPositionsByPartyTopic(data: DataBundle): Map<string, Map<string, Position>> {
+function indexPositions(data: DataBundle): Map<string, Map<string, Position>> {
   const byParty = new Map<string, Map<string, Position>>();
   for (const [partyId, rows] of Object.entries(data.positions)) {
-    byParty.set(partyId, new Map(rows.map((row) => [row.topicId, row])));
+    byParty.set(partyId, new Map(rows.map((row) => [row.questionId, row])));
   }
   return byParty;
 }
 
+function weightedMean(entries: { weight: number; affinity: number }[]): number | null {
+  const weight = entries.reduce((sum, entry) => sum + entry.weight, 0);
+  if (weight === 0) return null;
+  return entries.reduce((sum, entry) => sum + entry.weight * entry.affinity, 0) / weight;
+}
+
+function bestOf<T extends { party: Party; affinity: number | null }>(
+  candidates: T[],
+): { bestAffinity: number | null; winners: Party[] } {
+  const scored = candidates.filter((candidate) => candidate.affinity !== null);
+  if (scored.length === 0) return { bestAffinity: null, winners: [] };
+  const bestAffinity = Math.max(...scored.map((candidate) => candidate.affinity ?? 0));
+  const winners = scored
+    .filter((candidate) => candidate.affinity === bestAffinity)
+    .map((candidate) => candidate.party)
+    .sort(compareByName);
+  return { bestAffinity, winners };
+}
+
 interface AnsweredEntry {
   question: Question;
-  userPosition: number;
-  userOptionIds: string[];
+  userValue: number;
+  priority: boolean;
   weight: number;
 }
 
@@ -109,7 +143,7 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
     .sort(compareByName);
 
   const questionById = new Map(data.questions.map((question) => [question.id, question]));
-  const positionByPartyTopic = indexPositionsByPartyTopic(data);
+  const positions = indexPositions(data);
 
   const answered: AnsweredEntry[] = [];
   for (const answer of input.answers) {
@@ -117,57 +151,75 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
     if (!question) {
       throw new Error(`La pregunta "${answer.questionId}" no existe en el bundle de datos`);
     }
-    const position = userPosition(question, answer.optionIds);
-    if (position === null) continue;
+    if (!VALID_VALUES.has(answer.value)) {
+      throw new Error(`Valor de respuesta no válido (${answer.value}) en "${question.id}"`);
+    }
     answered.push({
       question,
-      userPosition: position,
-      userOptionIds: [...answer.optionIds],
+      userValue: answer.value,
+      priority: answer.priority,
       weight: answer.priority ? SCORING_CONFIG.priorityFactor : 1,
     });
   }
+  // Las respuestas se ordenan como el cuestionario, sea cual sea el orden de entrada.
+  const order = new Map(data.questions.map((question, index) => [question.id, index]));
+  answered.sort((a, b) => (order.get(a.question.id) ?? 0) - (order.get(b.question.id) ?? 0));
 
   const totalWeight = answered.reduce((sum, entry) => sum + entry.weight, 0);
   const hasAnswers = answered.length > 0;
 
   const scores: PartyScore[] = applicableParties.map((party) => {
-    const positions = positionByPartyTopic.get(party.id);
-    let weightedSum = 0;
-    let scorableWeight = 0;
-    let comparedCount = 0;
+    const partyPositions = positions.get(party.id);
+    const comparisons: QuestionComparison[] = [];
+    const weighted: { weight: number; affinity: number; topicId: string }[] = [];
+    const missingQuestionIds: string[] = [];
     let provisional = false;
-    const missingTopicIds: string[] = [];
 
     for (const entry of answered) {
-      const row = positions?.get(entry.question.topicId);
+      const row = partyPositions?.get(entry.question.id);
       if (row && row.value !== null) {
-        weightedSum += entry.weight * questionAffinity(entry.userPosition, row.value);
-        scorableWeight += entry.weight;
-        comparedCount += 1;
+        const affinity = questionAffinity(entry.userValue, row.value);
+        comparisons.push({
+          question: entry.question,
+          userValue: entry.userValue,
+          partyValue: row.value,
+          affinity,
+          position: row,
+        });
+        weighted.push({ weight: entry.weight, affinity, topicId: entry.question.topicId });
         if (row.status === 'provisional') provisional = true;
       } else {
-        missingTopicIds.push(entry.question.topicId);
+        missingQuestionIds.push(entry.question.id);
       }
     }
 
-    const affinity = scorableWeight > 0 ? weightedSum / scorableWeight : null;
+    const scorableWeight = weighted.reduce((sum, entry) => sum + entry.weight, 0);
+    const affinity = weightedMean(weighted);
     const coverage = totalWeight > 0 ? scorableWeight / totalWeight : null;
+
+    const topics: TopicAffinity[] = data.topics.map((topic) => {
+      const inTopic = weighted.filter((entry) => entry.topicId === topic.id);
+      return { topic, affinity: weightedMean(inTopic), comparedCount: inTopic.length };
+    });
 
     return {
       party,
       affinity,
       coverage,
-      comparedCount,
+      comparedCount: comparisons.length,
+      answeredCount: answered.length,
       eligible:
         affinity !== null &&
         (coverage ?? 0) >= SCORING_CONFIG.minCoverage &&
-        comparedCount >= SCORING_CONFIG.minComparedQuestions,
-      missingTopicIds,
+        comparisons.length >= SCORING_CONFIG.minComparedQuestions,
+      missingQuestionIds,
       provisional,
+      comparisons,
+      topics,
     };
   });
 
-  // `ranking` conserva su semántica: todos los partidos puntuados, por afinidad.
+  // `ranking` incluye todos los partidos puntuados, por afinidad; `eligible` marca el ranking principal.
   const ranking = hasAnswers
     ? scores
         .filter((score) => score.affinity !== null)
@@ -189,38 +241,45 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
   const partialComparison = hasAnswers && answered.length < SCORING_CONFIG.minComparedQuestions;
 
   const questions: QuestionResult[] = answered.map((entry) => {
-    const withData: { party: Party; affinity: number }[] = [];
-    for (const party of applicableParties) {
-      const row = positionByPartyTopic.get(party.id)?.get(entry.question.topicId);
-      if (row && row.value !== null) {
-        withData.push({ party, affinity: questionAffinity(entry.userPosition, row.value) });
-      }
-    }
-
-    if (withData.length === 0) {
+    const stances: PartyStance[] = applicableParties.map((party) => {
+      const row = positions.get(party.id)?.get(entry.question.id);
+      const value = row?.value ?? null;
       return {
-        question: entry.question,
-        userPosition: entry.userPosition,
-        userOptionIds: entry.userOptionIds,
-        bestAffinity: null,
-        winners: [],
+        party,
+        value,
+        affinity: value === null ? null : questionAffinity(entry.userValue, value),
+        position: row,
       };
-    }
-
-    const bestAffinity = Math.max(...withData.map((candidate) => candidate.affinity));
-    const winners = withData
-      .filter((candidate) => candidate.affinity === bestAffinity)
-      .map((candidate) => candidate.party)
-      .sort(compareByName);
-
+    });
     return {
       question: entry.question,
-      userPosition: entry.userPosition,
-      userOptionIds: entry.userOptionIds,
-      bestAffinity,
-      winners,
+      userValue: entry.userValue,
+      priority: entry.priority,
+      stances,
+      ...bestOf(stances),
     };
   });
+
+  const topics: TopicResult[] = data.topics
+    .map((topic) => {
+      const inTopic = answered.filter((entry) => entry.question.topicId === topic.id);
+      const parties = scores.map((score) => {
+        const topicScore = score.topics.find((item) => item.topic.id === topic.id);
+        return {
+          party: score.party,
+          affinity: topicScore?.affinity ?? null,
+          comparedCount: topicScore?.comparedCount ?? 0,
+        };
+      });
+      return {
+        topic,
+        answeredCount: inTopic.length,
+        priority: inTopic.some((entry) => entry.priority),
+        parties,
+        ...bestOf(parties),
+      };
+    })
+    .filter((topic) => topic.answeredCount > 0);
 
   return {
     territoryId: input.territoryId,
@@ -233,7 +292,24 @@ export function computeResults(data: DataBundle, input: ScoringInput): ScoringRe
     lowCoverage,
     withoutData,
     questions,
+    topics,
     provisional: scores.some((score) => score.provisional),
     partialComparison,
   };
+}
+
+export interface AgreementSummary {
+  agreements: QuestionComparison[];
+  disagreements: QuestionComparison[];
+}
+
+// Coincidencias y discrepancias más marcadas con un partido; el empate se resuelve por orden del cuestionario.
+export function summarizeAgreement(score: PartyScore, limit = 3): AgreementSummary {
+  const byAffinityDesc = [...score.comparisons].sort((a, b) => b.affinity - a.affinity);
+  const agreements = byAffinityDesc.filter((item) => item.affinity >= 0.75).slice(0, limit);
+  const disagreements = [...score.comparisons]
+    .sort((a, b) => a.affinity - b.affinity)
+    .filter((item) => item.affinity <= 0.5)
+    .slice(0, limit);
+  return { agreements, disagreements };
 }

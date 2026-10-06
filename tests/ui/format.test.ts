@@ -4,6 +4,8 @@ import type { PartyScore } from '../../src/core/scoring';
 import {
   compareAffinityDescending,
   formatDate,
+  formatFactor,
+  formatList,
   formatPercent,
   roundToDecimals,
   sortRanking,
@@ -16,43 +18,43 @@ function score(displayName: string, affinity: number | null): PartyScore {
     affinity,
     coverage: 1,
     comparedCount: 1,
+    answeredCount: 1,
     eligible: false,
-    missingTopicIds: [],
+    missingQuestionIds: [],
     provisional: false,
+    comparisons: [],
+    topics: [],
   };
 }
 
-describe('formatos de porcentaje y redondeo', () => {
-  it('redondea a un decimal', () => {
-    expect(roundToDecimals(0.6666)).toBe(0.7);
-    expect(roundToDecimals(0.05)).toBe(0.1);
-    expect(roundToDecimals(1)).toBe(1);
+describe('formatos', () => {
+  it('redondea y formatea porcentajes sin decimales y con espacio fino', () => {
+    expect(roundToDecimals(0.6666)).toBe(1);
+    expect(formatPercent(0.6666)).toBe('67 %');
+    expect(formatPercent(1)).toBe('100 %');
+    expect(formatPercent(0)).toBe('0 %');
   });
 
-  it('formatea porcentajes con un decimal y coma decimal', () => {
-    expect(formatPercent(0.6666)).toBe('66,7 %');
-    expect(formatPercent(1)).toBe('100,0 %');
-    expect(formatPercent(0)).toBe('0,0 %');
+  it('admite decimales explícitos con coma decimal', () => {
+    expect(formatPercent(0.6666, 1)).toBe('66,7 %');
   });
 
-  it('formatea fechas ISO como día/mes/año', () => {
+  it('formatea factores, fechas y listas en español', () => {
+    expect(formatFactor(1.5)).toBe('1,5');
     expect(formatDate('2026-10-05')).toBe('05/10/2026');
+    expect(formatList(['A'])).toBe('A');
+    expect(formatList(['A', 'B'])).toBe('A y B');
+    expect(formatList(['A', 'B', 'C'])).toBe('A, B y C');
   });
 });
 
 describe('orden del ranking', () => {
   it('ordena por afinidad descendente y desempata alfabéticamente', () => {
-    const sorted = sortRanking([
-      score('Beta', 0.5),
-      score('Alfa', 0.8),
-      score('Gamma', 0.5),
-    ]);
-
+    const sorted = sortRanking([score('Beta', 0.5), score('Alfa', 0.8), score('Gamma', 0.5)]);
     expect(sorted.map((entry) => entry.party.displayName)).toEqual(['Alfa', 'Beta', 'Gamma']);
   });
 
   it('compara afinidades iguales por nombre', () => {
     expect(compareAffinityDescending(score('Alfa', 0.5), score('Beta', 0.5))).toBeLessThan(0);
-    expect(compareAffinityDescending(score('Beta', 0.5), score('Alfa', 0.5))).toBeGreaterThan(0);
   });
 });

@@ -5,7 +5,6 @@ import type {
   Position,
   PositionStatus,
   Question,
-  QuestionType,
   SourceType,
   Territory,
   Topic,
@@ -35,7 +34,7 @@ export function topic(id: string): Topic {
   return {
     id,
     name: `Tema ${id}`,
-    block: 'B',
+    description: `Descripción del tema ${id}`,
     evidence: [
       {
         type: 'agenda',
@@ -47,33 +46,34 @@ export function topic(id: string): Topic {
   };
 }
 
-export function question(
-  id: string,
-  topicId: string,
-  options: { type?: QuestionType; values?: number[] } = {},
-): Question {
-  const values = options.values ?? [-1, 0, 1];
+export function question(id: string, topicId: string): Question {
   return {
     id,
     topicId,
-    text: `Pregunta ${id}`,
-    type: options.type ?? 'single',
-    options: values.map((value, index) => ({
-      id: `${id}-op${index}`,
-      label: `Opción ${index}`,
-      value,
-    })),
+    title: `Título ${id}`,
+    statement: `Propuesta ${id}`,
+    summary: `Resumen ${id}`,
+    context: `Contexto ${id}`,
+    change: `Cambio ${id}`,
+    ifFavor: `A favor ${id}`,
+    ifAgainst: `En contra ${id}`,
+    glossary: [],
   };
 }
 
 export function position(
-  topicId: string,
+  questionId: string,
   value: number | null,
-  options: { status?: PositionStatus; sourceType?: SourceType; sourceDate?: string } = {},
+  options: {
+    status?: PositionStatus;
+    sourceType?: SourceType;
+    sourceDate?: string;
+    note?: string;
+  } = {},
 ): Position {
   if (value === null) {
     return {
-      topicId,
+      questionId,
       value: null,
       status: 'sin-datos-suficientes',
       sourceType: 'sin-datos',
@@ -88,12 +88,13 @@ export function position(
   const sourceDate = options.sourceDate ?? (status === 'provisional' ? '2023-06-01' : '2026-06-01');
 
   return {
-    topicId,
+    questionId,
     value,
     status,
     sourceType,
     sourceUrl: 'https://example.com/fuente',
     sourceDate,
+    ...(options.note ? { note: options.note } : {}),
   };
 }
 
@@ -114,8 +115,13 @@ export function makeBundle(parts: {
   };
 }
 
-export function manyQuestions(count: number): { topics: Topic[]; questions: Question[] } {
-  const topics = Array.from({ length: count }, (_, index) => topic(`tema-${index + 1}`));
-  const questions = topics.map((item, index) => question(`q${index + 1}`, item.id));
+export function manyQuestions(
+  count: number,
+  topicCount = 1,
+): { topics: Topic[]; questions: Question[] } {
+  const topics = Array.from({ length: topicCount }, (_, index) => topic(`tema-${index + 1}`));
+  const questions = Array.from({ length: count }, (_, index) =>
+    question(`q${index + 1}`, topics[index % topicCount]?.id ?? 'tema-1'),
+  );
   return { topics, questions };
 }
