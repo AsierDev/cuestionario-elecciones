@@ -12,10 +12,11 @@ import {
   goNext,
   goPrevious,
   isAnswered,
+  MAX_PRIORITY_TOPICS,
   selectTerritory,
   setAnswer,
   skipCurrent,
-  togglePriority,
+  togglePriorityTopic,
 } from '../../src/ui/state';
 
 const questions = [{ id: 'q-a' }, { id: 'q-b' }, { id: 'q-c' }];
@@ -25,12 +26,13 @@ function startedState() {
 }
 
 describe('máquina de estados del cuestionario', () => {
-  it('empieza en el paso de territorio sin respuestas', () => {
+  it('empieza en el paso de territorio sin respuestas ni temas prioritarios', () => {
     const state = createInitialState();
     expect(state.step).toBe('territory');
     expect(state.territoryId).toBeNull();
     expect(state.currentIndex).toBe(0);
     expect(state.answers).toEqual({});
+    expect(state.priorityTopicIds).toEqual([]);
   });
 
   it('no avanza al cuestionario sin territorio seleccionado', () => {
@@ -57,23 +59,48 @@ describe('máquina de estados del cuestionario', () => {
     expect(state.territoryId).toBe('madrid');
   });
 
-  it('guarda la respuesta y la marca de prioridad por pregunta', () => {
+  it('guarda la respuesta por pregunta', () => {
     let state = startedState();
     state = setAnswer(state, 'q-a', ['op1']);
-    state = togglePriority(state, 'q-a');
 
-    expect(getAnswer(state, 'q-a')).toEqual({ optionIds: ['op1'], priority: true });
+    expect(getAnswer(state, 'q-a')).toEqual({ optionIds: ['op1'] });
     expect(isAnswered(state, 'q-a')).toBe(true);
     expect(answeredCount(state)).toBe(1);
   });
 
-  it('marca la prioridad sin respuesta sin contarla como respondida', () => {
+  it('marca, desmarca y limita los temas prioritarios a tres', () => {
     let state = startedState();
-    state = togglePriority(state, 'q-a');
+    state = togglePriorityTopic(state, 'tema-1');
+    state = togglePriorityTopic(state, 'tema-2');
+    state = togglePriorityTopic(state, 'tema-3');
 
-    expect(getAnswer(state, 'q-a')).toEqual({ optionIds: [], priority: true });
-    expect(isAnswered(state, 'q-a')).toBe(false);
-    expect(answeredCount(state)).toBe(0);
+    expect(state.priorityTopicIds).toEqual(['tema-1', 'tema-2', 'tema-3']);
+
+    const capped = togglePriorityTopic(state, 'tema-4');
+    expect(capped).toBe(state);
+    expect(capped.priorityTopicIds).toEqual(['tema-1', 'tema-2', 'tema-3']);
+    expect(capped.priorityTopicIds.length).toBeLessThanOrEqual(MAX_PRIORITY_TOPICS);
+
+    const unmarked = togglePriorityTopic(state, 'tema-2');
+    expect(unmarked).not.toBe(state);
+    expect(unmarked.priorityTopicIds).toEqual(['tema-1', 'tema-3']);
+  });
+
+  it('no muta el estado al cambiar los temas prioritarios', () => {
+    const initial = createInitialState();
+    const withTopic = togglePriorityTopic(initial, 'tema-1');
+
+    expect(initial.priorityTopicIds).toEqual([]);
+    expect(withTopic.priorityTopicIds).toEqual(['tema-1']);
+  });
+
+  it('conserva los temas prioritarios al confirmar el territorio', () => {
+    let state = togglePriorityTopic(createInitialState(), 'tema-1');
+    state = selectTerritory(state, 'madrid');
+    state = confirmTerritory(state);
+
+    expect(state.step).toBe('questions');
+    expect(state.priorityTopicIds).toEqual(['tema-1']);
   });
 
   it('no muta el estado anterior', () => {
@@ -84,7 +111,7 @@ describe('máquina de estados del cuestionario', () => {
     expect(initial.territoryId).toBeNull();
     expect(initial.answers).toEqual({});
     expect(withTerritory.territoryId).toBe('galicia');
-    expect(withAnswer.answers).toEqual({ 'q-a': { optionIds: ['op1'], priority: false } });
+    expect(withAnswer.answers).toEqual({ 'q-a': { optionIds: ['op1'] } });
   });
 
   it('avanza y retrocede conservando las respuestas', () => {

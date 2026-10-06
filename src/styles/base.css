@@ -191,8 +191,28 @@ p {
   min-width: 0;
 }
 
-.priority-row {
-  margin-top: var(--space-4);
+.priority-topics {
+  margin-top: var(--space-6);
+  padding: 0;
+  border: 0;
+}
+
+.priority-topics__legend {
+  padding: 0;
+  font-weight: 600;
+}
+
+.priority-topics__hint {
+  margin: var(--space-1) 0 var(--space-3);
+  max-width: 60ch;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.priority-topics__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
 }
 
 .priority {
@@ -212,6 +232,11 @@ p {
   height: 1.15rem;
   margin: 0;
   accent-color: var(--color-accent);
+}
+
+.priority:has(.priority__input:disabled) {
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 .question-error {

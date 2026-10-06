@@ -97,7 +97,7 @@ export function renderMethodologyView(
         text: 'afinidad = 1 − |tu posición − posición del partido| / 2',
       }),
       el('p', {
-        text: `La distancia máxima del eje es 2, así que la afinidad va de 0 a 1 (de 0 % a 100 %). Los temas que marcas como prioritarios pesan ${String(SCORING_CONFIG.priorityFactor).replace('.', ',')} veces más.`,
+        text: `La distancia máxima del eje es 2, así que la afinidad va de 0 a 1 (de 0 % a 100 %). Los temas que marques como prioritarios pesan ${String(SCORING_CONFIG.priorityFactor).replace('.', ',')} veces más (puedes elegir hasta 3 en el paso inicial).`,
       }),
       el('p', {
         text: 'La afinidad de un partido es la media ponderada de la afinidad en los temas que respondiste y en los que el partido tiene posición documentada. La cobertura es la parte de tus respuestas (ponderadas) con dato disponible para ese partido. El redondeo a un decimal solo se aplica al mostrar.',

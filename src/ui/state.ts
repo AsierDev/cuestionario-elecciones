@@ -1,8 +1,9 @@
 export type QuestionnaireStep = 'territory' | 'questions' | 'done';
 
+export const MAX_PRIORITY_TOPICS = 3;
+
 export interface QuestionAnswer {
   optionIds: string[];
-  priority: boolean;
 }
 
 export interface QuestionnaireState {
@@ -10,10 +11,17 @@ export interface QuestionnaireState {
   territoryId: string | null;
   currentIndex: number;
   answers: Record<string, QuestionAnswer>;
+  priorityTopicIds: string[];
 }
 
 export function createInitialState(): QuestionnaireState {
-  return { step: 'territory', territoryId: null, currentIndex: 0, answers: {} };
+  return {
+    step: 'territory',
+    territoryId: null,
+    currentIndex: 0,
+    answers: {},
+    priorityTopicIds: [],
+  };
 }
 
 export function selectTerritory(
@@ -48,25 +56,24 @@ export function setAnswer(
   questionId: string,
   optionIds: string[],
 ): QuestionnaireState {
-  const previous = state.answers[questionId];
   return {
     ...state,
     answers: {
       ...state.answers,
-      [questionId]: { optionIds: [...optionIds], priority: previous?.priority ?? false },
+      [questionId]: { optionIds: [...optionIds] },
     },
   };
 }
 
-export function togglePriority(state: QuestionnaireState, questionId: string): QuestionnaireState {
-  const previous = state.answers[questionId] ?? { optionIds: [], priority: false };
-  return {
-    ...state,
-    answers: {
-      ...state.answers,
-      [questionId]: { ...previous, priority: !previous.priority },
-    },
-  };
+export function togglePriorityTopic(
+  state: QuestionnaireState,
+  topicId: string,
+): QuestionnaireState {
+  if (state.priorityTopicIds.includes(topicId)) {
+    return { ...state, priorityTopicIds: state.priorityTopicIds.filter((id) => id !== topicId) };
+  }
+  if (state.priorityTopicIds.length >= MAX_PRIORITY_TOPICS) return state;
+  return { ...state, priorityTopicIds: [...state.priorityTopicIds, topicId] };
 }
 
 export function clearAnswer(state: QuestionnaireState, questionId: string): QuestionnaireState {

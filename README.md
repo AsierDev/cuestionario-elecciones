@@ -4,8 +4,8 @@ Web estática, solo cliente y sin backend que ayuda a cualquier persona a ver **
 español se ajusta más a sus posiciones** de cara a las elecciones generales del
 **29 de noviembre de 2026**.
 
-El flujo es: elegir comunidad autónoma → responder 25 preguntas neutrales (de opción única o
-múltiple, con temas prioritarios opcionales ponderados ×1,5) → ver, por cada pregunta, el
+El flujo es: elegir comunidad autónoma y hasta 3 temas prioritarios opcionales ponderados ×1,5 →
+responder 25 preguntas neutrales (de opción única o múltiple) → ver, por cada pregunta, el
 partido votable en tu territorio más afín, y al final el **% de afinidad** por partido
 aplicable, la **cobertura de datos**, los **temas sin datos suficientes**, los **enlaces a los
 programas**, la **última actualización** y la **metodología**.
@@ -136,7 +136,7 @@ Principios de neutralidad:
 - Posición del usuario: `single` → valor de la opción; `multi` → media de los valores elegidos;
   pregunta omitida → no puntúa.
 - Afinidad por pregunta: `1 − |u − p| / 2` ∈ [0,1] (distancia máxima del eje = 2).
-- Peso: `1,5` si el tema se marcó prioritario, `1,0` si no.
+- Peso: `1,5` si el tema se marcó prioritario (hasta 3, elegidos en el paso inicial), `1,0` si no.
 - Afinidad por partido: `Σ(peso × afinidad) / Σ(peso)` sobre los temas puntuables.
 - Cobertura: `Σpeso(puntuables) / Σpeso(respondidos)`.
 - Filtrado territorial: los partidos no aplicables en la comunidad elegida no se puntúan.

@@ -6,3 +6,4 @@ coverage/
 # Artefactos del asistente y capturas de verificación (no forman parte del sitio)
 /.openchamber/
 /.opencode/
+/.kilo/

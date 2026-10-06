@@ -49,6 +49,7 @@ export interface PriorityToggleParams {
   name: string;
   checked: boolean;
   label: string;
+  disabled?: boolean;
 }
 
 export function createPriorityToggle(params: PriorityToggleParams): HTMLLabelElement {
@@ -57,6 +58,7 @@ export function createPriorityToggle(params: PriorityToggleParams): HTMLLabelEle
     attrs: { type: 'checkbox', name: params.name, id: params.id },
   });
   input.checked = params.checked;
+  input.disabled = params.disabled ?? false;
 
   return el('label', { className: 'priority', attrs: { for: params.id } }, [
     input,

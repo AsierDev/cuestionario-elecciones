@@ -1,12 +1,15 @@
-import type { Question, Territory } from '../data/schema';
+import { SCORING_CONFIG } from '../core/config';
+import type { Question, Territory, Topic } from '../data/schema';
 
 import { createButton, createOption, createPriorityToggle, el } from './components';
+import { MAX_PRIORITY_TOPICS } from './state';
 
 const NO_ANSWER_MESSAGE =
   'Selecciona al menos una respuesta o pulsa «No lo sé / omitir» para continuar.';
 
 export interface TerritoryViewHandlers {
   onSelect: (territoryId: string) => void;
+  onTogglePriorityTopic: (topicId: string) => void;
   onSubmit: () => void;
 }
 
@@ -14,11 +17,13 @@ export interface TerritoryViewParams {
   territories: Territory[];
   selectedId: string | null;
   error: string | null;
+  topics: Topic[];
+  priorityTopicIds: string[];
   handlers: TerritoryViewHandlers;
 }
 
 export function renderTerritoryView(params: TerritoryViewParams): HTMLElement {
-  const { territories, selectedId, error, handlers } = params;
+  const { territories, selectedId, error, topics, priorityTopicIds, handlers } = params;
   const selectId = 'territory-select';
 
   const select = el('select', {
@@ -42,9 +47,68 @@ export function renderTerritoryView(params: TerritoryViewParams): HTMLElement {
     }),
   ]);
 
+  const priorityHint = `Marca hasta 3 temas que te importen especialmente: pesarán ${String(
+    SCORING_CONFIG.priorityFactor,
+  ).replace('.', ',')} veces más en tu ranking.`;
+
+  const priorityOptions = el('div', { className: 'priority-topics__options' });
+
+  const syncPriorityDisabled = (): void => {
+    const inputs = Array.from(
+      priorityOptions.querySelectorAll<HTMLInputElement>('input[name="priority-topics"]'),
+    );
+    const marked = inputs.filter((input) => input.checked).length;
+    for (const input of inputs) {
+      input.disabled = !input.checked && marked >= MAX_PRIORITY_TOPICS;
+    }
+  };
+
+  for (const topic of topics) {
+    const checked = priorityTopicIds.includes(topic.id);
+    const toggle = createPriorityToggle({
+      id: `priority-topic-${topic.id}`,
+      name: 'priority-topics',
+      checked,
+      disabled: !checked && priorityTopicIds.length >= MAX_PRIORITY_TOPICS,
+      label: topic.name,
+    });
+    const input = toggle.querySelector<HTMLInputElement>('input');
+    input?.addEventListener('change', () => {
+      const marked = priorityOptions.querySelectorAll<HTMLInputElement>('input:checked').length;
+      if (input.checked && marked > MAX_PRIORITY_TOPICS) {
+        input.checked = false;
+        return;
+      }
+      handlers.onTogglePriorityTopic(topic.id);
+      syncPriorityDisabled();
+    });
+    priorityOptions.append(toggle);
+  }
+
+  const priorityFieldset = el(
+    'fieldset',
+    {
+      className: 'priority-topics',
+      attrs: { 'aria-describedby': 'priority-topics-hint' },
+    },
+    [
+      el('legend', {
+        className: 'priority-topics__legend',
+        text: 'Temas prioritarios (opcional, máximo 3)',
+      }),
+      el('p', {
+        className: 'priority-topics__hint',
+        text: priorityHint,
+        attrs: { id: 'priority-topics-hint' },
+      }),
+      priorityOptions,
+    ],
+  );
+
   const submit = createButton({ label: 'Continuar', variant: 'primary', type: 'submit' });
   const form = el('form', { className: 'territory-form', attrs: { novalidate: true } }, [
     field,
+    priorityFieldset,
     submit,
   ]);
   form.addEventListener('submit', (event) => {
@@ -66,7 +130,7 @@ export function renderTerritoryView(params: TerritoryViewParams): HTMLElement {
       }),
       el('p', {
         className: 'lead',
-        text: 'Tu territorio determina qué partidos pueden votarse. Podrás revisar tus respuestas antes de terminar.',
+        text: 'Tu territorio determina qué partidos pueden votarse. También puedes marcar hasta 3 temas prioritarios; podrás revisar tus respuestas antes de terminar.',
       }),
       el('div', { className: 'panel' }, [form]),
     ],
@@ -75,7 +139,6 @@ export function renderTerritoryView(params: TerritoryViewParams): HTMLElement {
 
 export interface QuestionViewHandlers {
   onAnswer: (optionIds: string[]) => void;
-  onTogglePriority: () => void;
   onPrevious: () => void;
   onSkip: () => void;
   onSubmit: () => void;
@@ -87,12 +150,11 @@ export interface QuestionViewParams {
   index: number;
   total: number;
   selectedOptionIds: string[];
-  priority: boolean;
   handlers: QuestionViewHandlers;
 }
 
 export function renderQuestionView(params: QuestionViewParams): HTMLElement {
-  const { question, topicName, index, total, selectedOptionIds, priority, handlers } = params;
+  const { question, topicName, index, total, selectedOptionIds, handlers } = params;
   const inputType = question.type === 'multi' ? 'checkbox' : 'radio';
   const groupName = `question-${question.id}`;
 
@@ -136,16 +198,6 @@ export function renderQuestionView(params: QuestionViewParams): HTMLElement {
 
   const fieldset = el('fieldset', { className: 'question-fieldset' }, [legend, options]);
 
-  const priorityToggle = createPriorityToggle({
-    id: `priority-${question.id}`,
-    name: `priority-${question.id}`,
-    checked: priority,
-    label: 'Marcar este tema como prioritario',
-  });
-  priorityToggle.querySelector('input')?.addEventListener('change', () => {
-    handlers.onTogglePriority();
-  });
-
   const previousButton = createButton({ label: 'Anterior', variant: 'secondary', action: 'previous' });
   previousButton.disabled = index === 0;
   previousButton.addEventListener('click', () => handlers.onPrevious());
@@ -162,7 +214,6 @@ export function renderQuestionView(params: QuestionViewParams): HTMLElement {
 
   const form = el('form', { className: 'question-form', attrs: { novalidate: true } }, [
     fieldset,
-    el('div', { className: 'priority-row' }, [priorityToggle]),
     errorNode,
     el('div', { className: 'actions' }, [previousButton, skipButton, nextButton]),
   ]);

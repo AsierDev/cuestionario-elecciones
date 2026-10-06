@@ -23,6 +23,10 @@ function chooseTerritory(value: string): void {
   select.dispatchEvent(new Event('change', { bubbles: true }));
 }
 
+function priorityInputs(): HTMLInputElement[] {
+  return Array.from(document.querySelectorAll<HTMLInputElement>('input[name="priority-topics"]'));
+}
+
 describe('punto de entrada del sitio', () => {
   beforeEach(() => {
     document.body.innerHTML = '<main id="app"></main>';
@@ -111,5 +115,65 @@ describe('punto de entrada del sitio', () => {
 
     document.querySelector<HTMLButtonElement>('button[data-action="back"]')?.click();
     expect(document.querySelector('#results-heading')?.textContent).toBe('Resultados');
+  });
+
+  it('permite marcar hasta tres temas prioritarios sin robar el foco', async () => {
+    await mountEntryPoint();
+
+    const inputs = priorityInputs();
+    expect(inputs).toHaveLength(25);
+
+    inputs[0]!.focus();
+    inputs[0]!.checked = true;
+    inputs[0]!.dispatchEvent(new Event('change', { bubbles: true }));
+
+    expect(document.querySelector('#app-status')?.textContent).toBe(
+      'Has marcado 1 de 3 temas prioritarios.',
+    );
+    expect(document.activeElement).toBe(inputs[0]);
+
+    inputs[1]!.checked = true;
+    inputs[1]!.dispatchEvent(new Event('change', { bubbles: true }));
+    inputs[2]!.checked = true;
+    inputs[2]!.dispatchEvent(new Event('change', { bubbles: true }));
+
+    expect(inputs.filter((input) => input.disabled)).toHaveLength(22);
+
+    inputs[3]!.checked = true;
+    inputs[3]!.dispatchEvent(new Event('change', { bubbles: true }));
+
+    expect(document.querySelector('#app-status')?.textContent).toBe(
+      'Has marcado 3 de 3 temas prioritarios.',
+    );
+  });
+
+  it('reinicia el cuestionario con los temas prioritarios vacíos', async () => {
+    await mountEntryPoint();
+
+    for (const input of priorityInputs().slice(0, 3)) {
+      input.checked = true;
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    }
+
+    chooseTerritory('cataluna');
+    submitForm(territoryForm());
+
+    for (let index = 0; index < 25; index += 1) {
+      const input = document.querySelector<HTMLInputElement>('.options input');
+      if (!input) throw new Error('No se encontró ninguna opción');
+      input.checked = true;
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+      const form = document.querySelector<HTMLFormElement>('.question-form');
+      if (!form) throw new Error('No se encontró el formulario de pregunta');
+      submitForm(form);
+    }
+
+    const restart = document.querySelector<HTMLButtonElement>('button[data-action="restart"]');
+    if (!restart) throw new Error('No se encontró el botón de reinicio');
+    restart.click();
+
+    expect(document.querySelector('#territory-select')).not.toBeNull();
+    expect(document.querySelectorAll('input[name="priority-topics"]:checked')).toHaveLength(0);
+    expect(document.querySelector('#app-status')?.textContent).toBe('Cuestionario reiniciado.');
   });
 });

@@ -4,6 +4,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { loadData } from '../../src/data/load';
 import type { Question, Territory } from '../../src/data/schema';
 import { renderQuestionView, renderTerritoryView } from '../../src/ui/questionnaire';
+import { topic } from '../fixtures/scoring';
 
 const data = loadData();
 
@@ -11,6 +12,8 @@ const territories: Territory[] = Array.from({ length: 19 }, (_, index) => ({
   id: `t-${index + 1}`,
   name: `Territorio ${index + 1}`,
 }));
+
+const topics = ['tema-1', 'tema-2', 'tema-3', 'tema-4'].map((id) => topic(id));
 
 function singleQuestion(): Question {
   return {
@@ -43,9 +46,16 @@ function multiQuestion(): Question {
 function questionHandlers() {
   return {
     onAnswer: vi.fn(),
-    onTogglePriority: vi.fn(),
     onPrevious: vi.fn(),
     onSkip: vi.fn(),
+    onSubmit: vi.fn(),
+  };
+}
+
+function territoryHandlers() {
+  return {
+    onSelect: vi.fn(),
+    onTogglePriorityTopic: vi.fn(),
     onSubmit: vi.fn(),
   };
 }
@@ -56,7 +66,9 @@ describe('vista de territorio', () => {
       territories,
       selectedId: null,
       error: null,
-      handlers: { onSelect: vi.fn(), onSubmit: vi.fn() },
+      topics,
+      priorityTopicIds: [],
+      handlers: territoryHandlers(),
     });
 
     const select = view.querySelector('select');
@@ -71,8 +83,15 @@ describe('vista de territorio', () => {
   });
 
   it('notifica el territorio seleccionado al cambiar el select', () => {
-    const handlers = { onSelect: vi.fn(), onSubmit: vi.fn() };
-    const view = renderTerritoryView({ territories, selectedId: null, error: null, handlers });
+    const handlers = territoryHandlers();
+    const view = renderTerritoryView({
+      territories,
+      selectedId: null,
+      error: null,
+      topics,
+      priorityTopicIds: [],
+      handlers,
+    });
 
     const select = view.querySelector('select');
     select!.value = 't-7';
@@ -86,12 +105,87 @@ describe('vista de territorio', () => {
       territories,
       selectedId: null,
       error: 'Selecciona una comunidad autónoma para continuar.',
-      handlers: { onSelect: vi.fn(), onSubmit: vi.fn() },
+      topics,
+      priorityTopicIds: [],
+      handlers: territoryHandlers(),
     });
 
     const error = view.querySelector('#territory-error');
     expect(error?.hasAttribute('hidden')).toBe(false);
     expect(error?.textContent).toContain('Selecciona una comunidad');
+  });
+
+  it('mantiene un único h2 con tabindex -1', () => {
+    const view = renderTerritoryView({
+      territories,
+      selectedId: null,
+      error: null,
+      topics,
+      priorityTopicIds: [],
+      handlers: territoryHandlers(),
+    });
+
+    expect(view.querySelectorAll('h2[tabindex="-1"]')).toHaveLength(1);
+  });
+});
+
+describe('temas prioritarios en la vista de territorio', () => {
+  function renderTerritory(priorityTopicIds: string[], handlers = territoryHandlers()) {
+    return renderTerritoryView({
+      territories,
+      selectedId: null,
+      error: null,
+      topics,
+      priorityTopicIds,
+      handlers,
+    });
+  }
+
+  it('muestra un checkbox por tema con name priority-topics y su nombre como etiqueta', () => {
+    const view = renderTerritory([]);
+
+    const inputs = Array.from(
+      view.querySelectorAll<HTMLInputElement>('input[name="priority-topics"]'),
+    );
+    expect(inputs).toHaveLength(topics.length);
+    expect(inputs.map((input) => input.closest('label')?.textContent)).toEqual(
+      topics.map((item) => item.name),
+    );
+    expect(view.querySelector('legend')?.textContent).toBe('Temas prioritarios (opcional, máximo 3)');
+  });
+
+  it('deshabilita los temas no marcados al llegar a tres seleccionados', () => {
+    const view = renderTerritory(['tema-1', 'tema-2', 'tema-3']);
+
+    const inputs = Array.from(
+      view.querySelectorAll<HTMLInputElement>('input[name="priority-topics"]'),
+    );
+    const disabled = inputs.filter((input) => input.disabled);
+    expect(disabled).toHaveLength(1);
+    expect(disabled[0]?.id).toBe('priority-topic-tema-4');
+  });
+
+  it('notifica el tema marcado al cambiar el checkbox', () => {
+    const handlers = territoryHandlers();
+    const view = renderTerritory([], handlers);
+
+    const input = view.querySelector<HTMLInputElement>('#priority-topic-tema-2');
+    input!.checked = true;
+    input!.dispatchEvent(new Event('change', { bubbles: true }));
+
+    expect(handlers.onTogglePriorityTopic).toHaveBeenCalledWith('tema-2');
+  });
+
+  it('revierte un cuarto tema y no notifica el cambio', () => {
+    const handlers = territoryHandlers();
+    const view = renderTerritory(['tema-1', 'tema-2', 'tema-3'], handlers);
+
+    const input = view.querySelector<HTMLInputElement>('#priority-topic-tema-4');
+    input!.checked = true;
+    input!.dispatchEvent(new Event('change', { bubbles: true }));
+
+    expect(handlers.onTogglePriorityTopic).not.toHaveBeenCalled();
+    expect(input!.checked).toBe(false);
   });
 });
 
@@ -103,7 +197,6 @@ describe('vista de pregunta', () => {
       index: 0,
       total: 25,
       selectedOptionIds: [],
-      priority: false,
       handlers: questionHandlers(),
     });
 
@@ -125,7 +218,6 @@ describe('vista de pregunta', () => {
       index: 3,
       total: 25,
       selectedOptionIds: [],
-      priority: false,
       handlers: questionHandlers(),
     });
 
@@ -141,7 +233,6 @@ describe('vista de pregunta', () => {
       index: 0,
       total: 25,
       selectedOptionIds: [],
-      priority: false,
       handlers,
     });
     const second = renderQuestionView({
@@ -150,29 +241,24 @@ describe('vista de pregunta', () => {
       index: 1,
       total: 25,
       selectedOptionIds: [],
-      priority: false,
       handlers,
     });
 
     expect(first.querySelector('input')?.name).not.toBe(second.querySelector('input')?.name);
   });
 
-  it('incluye el checkbox de tema prioritario y la marca actual', () => {
+  it('no muestra el toggle de prioridad por pregunta', () => {
     const view = renderQuestionView({
       question: singleQuestion(),
       topicName: null,
       index: 0,
       total: 25,
       selectedOptionIds: [],
-      priority: true,
       handlers: questionHandlers(),
     });
 
-    const priority = view.querySelector<HTMLInputElement>('input[name="priority-q1"]');
-    expect(priority).not.toBeNull();
-    expect(priority?.type).toBe('checkbox');
-    expect(priority?.checked).toBe(true);
-    expect(priority?.closest('label')?.textContent).toContain('prioritario');
+    expect(view.querySelector('.priority-row')).toBeNull();
+    expect(view.querySelector('input[name^="priority-"]')).toBeNull();
   });
 
   it('muestra el progreso y conserva la selección previa', () => {
@@ -182,7 +268,6 @@ describe('vista de pregunta', () => {
       index: 4,
       total: 25,
       selectedOptionIds: ['b'],
-      priority: false,
       handlers: questionHandlers(),
     });
 
@@ -199,7 +284,6 @@ describe('vista de pregunta', () => {
       index: 0,
       total: 25,
       selectedOptionIds: [],
-      priority: false,
       handlers,
     });
 
@@ -218,7 +302,6 @@ describe('vista de pregunta', () => {
       index: 0,
       total: 25,
       selectedOptionIds: [],
-      priority: false,
       handlers,
     });
 
@@ -237,7 +320,6 @@ describe('vista de pregunta', () => {
       index: 0,
       total: 25,
       selectedOptionIds: [],
-      priority: false,
       handlers: questionHandlers(),
     });
 
@@ -252,7 +334,6 @@ describe('vista de pregunta', () => {
       index: 0,
       total: 25,
       selectedOptionIds: [],
-      priority: false,
       handlers: questionHandlers(),
     });
 

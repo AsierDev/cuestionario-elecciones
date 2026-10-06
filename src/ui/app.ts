@@ -14,10 +14,11 @@ import {
   getAnswer,
   goNext,
   goPrevious,
+  MAX_PRIORITY_TOPICS,
   selectTerritory,
   setAnswer,
   skipCurrent,
-  togglePriority,
+  togglePriorityTopic,
   type QuestionnaireState,
 } from './state';
 
@@ -25,13 +26,14 @@ type ResultScreen = 'results' | 'methodology';
 
 function collectAnswers(state: QuestionnaireState, questions: Question[]): QuestionAnswer[] {
   const answers: QuestionAnswer[] = [];
+  const priorityTopicIds = new Set(state.priorityTopicIds);
   for (const question of questions) {
     const answer = getAnswer(state, question.id);
     if (answer && answer.optionIds.length > 0) {
       answers.push({
         questionId: question.id,
         optionIds: answer.optionIds,
-        priority: answer.priority,
+        priority: priorityTopicIds.has(question.topicId),
       });
     }
   }
@@ -73,12 +75,20 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
           territories: data.territories,
           selectedId: state.territoryId,
           error: territoryError,
+          topics: data.topics,
+          priorityTopicIds: state.priorityTopicIds,
           handlers: {
             onSelect: (territoryId) => {
               state = selectTerritory(state, territoryId);
               territoryError = null;
               const errorNode = viewRoot.querySelector<HTMLElement>('#territory-error');
               if (errorNode) errorNode.hidden = true;
+            },
+            onTogglePriorityTopic: (topicId) => {
+              state = togglePriorityTopic(state, topicId);
+              announce(
+                `Has marcado ${state.priorityTopicIds.length} de ${MAX_PRIORITY_TOPICS} temas prioritarios.`,
+              );
             },
             onSubmit: () => {
               if (state.territoryId === null) {
@@ -112,13 +122,9 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
           index,
           total,
           selectedOptionIds: answer?.optionIds ?? [],
-          priority: answer?.priority ?? false,
           handlers: {
             onAnswer: (optionIds) => {
               state = setAnswer(state, question.id, optionIds);
-            },
-            onTogglePriority: () => {
-              state = togglePriority(state, question.id);
             },
             onPrevious: () => {
               state = goPrevious(state);
