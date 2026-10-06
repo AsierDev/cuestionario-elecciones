@@ -68,22 +68,24 @@ describe('máquina de estados del cuestionario', () => {
     expect(answeredCount(state)).toBe(1);
   });
 
-  it('marca, desmarca y limita los temas prioritarios a tres', () => {
+  it('marca, desmarca y limita los temas prioritarios a cinco', () => {
     let state = startedState();
     state = togglePriorityTopic(state, 'tema-1');
     state = togglePriorityTopic(state, 'tema-2');
     state = togglePriorityTopic(state, 'tema-3');
+    state = togglePriorityTopic(state, 'tema-4');
+    state = togglePriorityTopic(state, 'tema-5');
 
-    expect(state.priorityTopicIds).toEqual(['tema-1', 'tema-2', 'tema-3']);
+    expect(state.priorityTopicIds).toEqual(['tema-1', 'tema-2', 'tema-3', 'tema-4', 'tema-5']);
 
-    const capped = togglePriorityTopic(state, 'tema-4');
+    const capped = togglePriorityTopic(state, 'tema-6');
     expect(capped).toBe(state);
-    expect(capped.priorityTopicIds).toEqual(['tema-1', 'tema-2', 'tema-3']);
+    expect(capped.priorityTopicIds).toEqual(['tema-1', 'tema-2', 'tema-3', 'tema-4', 'tema-5']);
     expect(capped.priorityTopicIds.length).toBeLessThanOrEqual(MAX_PRIORITY_TOPICS);
 
     const unmarked = togglePriorityTopic(state, 'tema-2');
     expect(unmarked).not.toBe(state);
-    expect(unmarked.priorityTopicIds).toEqual(['tema-1', 'tema-3']);
+    expect(unmarked.priorityTopicIds).toEqual(['tema-1', 'tema-3', 'tema-4', 'tema-5']);
   });
 
   it('no muta el estado al cambiar los temas prioritarios', () => {

@@ -47,7 +47,7 @@ export function renderTerritoryView(params: TerritoryViewParams): HTMLElement {
     }),
   ]);
 
-  const priorityHint = `Marca hasta 3 temas que te importen especialmente: pesarán ${String(
+  const priorityHint = `Marca hasta ${MAX_PRIORITY_TOPICS} temas que te importen especialmente: pesarán ${String(
     SCORING_CONFIG.priorityFactor,
   ).replace('.', ',')} veces más en tu ranking.`;
 
@@ -94,7 +94,7 @@ export function renderTerritoryView(params: TerritoryViewParams): HTMLElement {
     [
       el('legend', {
         className: 'priority-topics__legend',
-        text: 'Temas prioritarios (opcional, máximo 3)',
+        text: 'Temas prioritarios (opcional, máximo ' + MAX_PRIORITY_TOPICS + ')',
       }),
       el('p', {
         className: 'priority-topics__hint',
@@ -130,7 +130,7 @@ export function renderTerritoryView(params: TerritoryViewParams): HTMLElement {
       }),
       el('p', {
         className: 'lead',
-        text: 'Tu territorio determina qué partidos pueden votarse. También puedes marcar hasta 3 temas prioritarios; podrás revisar tus respuestas antes de terminar.',
+        text: `Tu territorio determina qué partidos pueden votarse. También puedes marcar hasta ${MAX_PRIORITY_TOPICS} temas prioritarios; podrás revisar tus respuestas antes de terminar.`,
       }),
       el('div', { className: 'panel' }, [form]),
     ],

@@ -117,7 +117,7 @@ describe('punto de entrada del sitio', () => {
     expect(document.querySelector('#results-heading')?.textContent).toBe('Resultados');
   });
 
-  it('permite marcar hasta tres temas prioritarios sin robar el foco', async () => {
+  it('permite marcar hasta cinco temas prioritarios sin robar el foco', async () => {
     await mountEntryPoint();
 
     const inputs = priorityInputs();
@@ -128,22 +128,22 @@ describe('punto de entrada del sitio', () => {
     inputs[0]!.dispatchEvent(new Event('change', { bubbles: true }));
 
     expect(document.querySelector('#app-status')?.textContent).toBe(
-      'Has marcado 1 de 3 temas prioritarios.',
+      'Has marcado 1 de 5 temas prioritarios.',
     );
     expect(document.activeElement).toBe(inputs[0]);
 
-    inputs[1]!.checked = true;
-    inputs[1]!.dispatchEvent(new Event('change', { bubbles: true }));
-    inputs[2]!.checked = true;
-    inputs[2]!.dispatchEvent(new Event('change', { bubbles: true }));
+    for (const input of inputs.slice(1, 5)) {
+      input.checked = true;
+      input.dispatchEvent(new Event('change', { bubbles: true }));
+    }
 
-    expect(inputs.filter((input) => input.disabled)).toHaveLength(22);
+    expect(inputs.filter((input) => input.disabled)).toHaveLength(20);
 
-    inputs[3]!.checked = true;
-    inputs[3]!.dispatchEvent(new Event('change', { bubbles: true }));
+    inputs[5]!.checked = true;
+    inputs[5]!.dispatchEvent(new Event('change', { bubbles: true }));
 
     expect(document.querySelector('#app-status')?.textContent).toBe(
-      'Has marcado 3 de 3 temas prioritarios.',
+      'Has marcado 5 de 5 temas prioritarios.',
     );
   });
 

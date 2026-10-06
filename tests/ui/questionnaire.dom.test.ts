@@ -13,7 +13,7 @@ const territories: Territory[] = Array.from({ length: 19 }, (_, index) => ({
   name: `Territorio ${index + 1}`,
 }));
 
-const topics = ['tema-1', 'tema-2', 'tema-3', 'tema-4'].map((id) => topic(id));
+const topics = ['tema-1', 'tema-2', 'tema-3', 'tema-4', 'tema-5', 'tema-6'].map((id) => topic(id));
 
 function singleQuestion(): Question {
   return {
@@ -151,18 +151,18 @@ describe('temas prioritarios en la vista de territorio', () => {
     expect(inputs.map((input) => input.closest('label')?.textContent)).toEqual(
       topics.map((item) => item.name),
     );
-    expect(view.querySelector('legend')?.textContent).toBe('Temas prioritarios (opcional, máximo 3)');
+    expect(view.querySelector('legend')?.textContent).toBe('Temas prioritarios (opcional, máximo 5)');
   });
 
-  it('deshabilita los temas no marcados al llegar a tres seleccionados', () => {
-    const view = renderTerritory(['tema-1', 'tema-2', 'tema-3']);
+  it('deshabilita los temas no marcados al llegar a cinco seleccionados', () => {
+    const view = renderTerritory(['tema-1', 'tema-2', 'tema-3', 'tema-4', 'tema-5']);
 
     const inputs = Array.from(
       view.querySelectorAll<HTMLInputElement>('input[name="priority-topics"]'),
     );
     const disabled = inputs.filter((input) => input.disabled);
     expect(disabled).toHaveLength(1);
-    expect(disabled[0]?.id).toBe('priority-topic-tema-4');
+    expect(disabled[0]?.id).toBe('priority-topic-tema-6');
   });
 
   it('notifica el tema marcado al cambiar el checkbox', () => {
@@ -176,11 +176,11 @@ describe('temas prioritarios en la vista de territorio', () => {
     expect(handlers.onTogglePriorityTopic).toHaveBeenCalledWith('tema-2');
   });
 
-  it('revierte un cuarto tema y no notifica el cambio', () => {
+  it('revierte un sexto tema y no notifica el cambio', () => {
     const handlers = territoryHandlers();
-    const view = renderTerritory(['tema-1', 'tema-2', 'tema-3'], handlers);
+    const view = renderTerritory(['tema-1', 'tema-2', 'tema-3', 'tema-4', 'tema-5'], handlers);
 
-    const input = view.querySelector<HTMLInputElement>('#priority-topic-tema-4');
+    const input = view.querySelector<HTMLInputElement>('#priority-topic-tema-6');
     input!.checked = true;
     input!.dispatchEvent(new Event('change', { bubbles: true }));
 

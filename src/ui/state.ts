@@ -1,6 +1,6 @@
 export type QuestionnaireStep = 'territory' | 'questions' | 'done';
 
-export const MAX_PRIORITY_TOPICS = 3;
+export const MAX_PRIORITY_TOPICS = 5;
 
 export interface QuestionAnswer {
   optionIds: string[];
