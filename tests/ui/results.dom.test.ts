@@ -142,15 +142,17 @@ describe('vista de resultados — ganadores por pregunta', () => {
 
     const node = render(data, { territoryId: 't1', answers: [answer('q1', ['q1-op1'])] });
 
-    expect(node.querySelector('.winner__party')?.textContent).toBe('Más afín: Alfa, Beta');
-    expect(node.querySelector('.winner__affinity')?.textContent).toBe(
-      'Afinidad con los partidos más afines: 100,0 %',
+    expect(node.querySelector('.winner__party')?.textContent).toBe(
+      'Más afín: Alfa, Beta — 100,0 % de cercanía en esta pregunta',
     );
+    expect(node.querySelector('.winner__affinity')).toBeNull();
     expect(node.querySelector('.winner__answer')?.textContent).toBe('Tu respuesta: Opción 1');
 
     const winnersLead = node.querySelector('#results-winners-heading')?.parentElement?.textContent ?? '';
     expect(winnersLead).toContain('máxima de la pregunta');
     expect(winnersLead).toContain('todos los partidos empatados');
+    expect(winnersLead).toContain('misma posición');
+    expect(winnersLead).toContain('extremos opuestos');
   });
 
   it('muestra las etiquetas de todas las opciones elegidas en una pregunta múltiple', () => {

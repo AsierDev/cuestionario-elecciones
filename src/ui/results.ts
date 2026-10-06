@@ -84,17 +84,11 @@ function renderQuestionResult(result: QuestionResult): HTMLElement {
     return item;
   }
 
-  item.append(
-    el('p', {
-      className: 'winner__party',
-      text: `Más afín: ${result.winners.map((party) => party.displayName).join(', ')}`,
-    }),
-  );
   if (result.bestAffinity !== null) {
     item.append(
       el('p', {
-        className: 'winner__affinity',
-        text: `Afinidad con los partidos más afines: ${formatPercent(result.bestAffinity)}`,
+        className: 'winner__party',
+        text: `Más afín: ${result.winners.map((party) => party.displayName).join(', ')} — ${formatPercent(result.bestAffinity)} de cercanía en esta pregunta`,
       }),
     );
   }
@@ -227,7 +221,7 @@ export function renderResultsView(params: ResultsViewParams): HTMLElement {
       section('results-winners-heading', 'Ganador por pregunta', [
         el('p', {
           className: 'section-lead',
-          text: 'Partido o partidos más afines a tu respuesta en cada pregunta. La afinidad indicada es la máxima de la pregunta y la comparten todos los partidos empatados en cabeza.',
+          text: 'Partido o partidos más afines a tu respuesta en cada pregunta. La afinidad indicada es la máxima de la pregunta y la comparten todos los partidos empatados en cabeza. El porcentaje de cercanía va de 100 % (misma posición) a 0 % (extremos opuestos).',
         }),
         list,
       ]),
