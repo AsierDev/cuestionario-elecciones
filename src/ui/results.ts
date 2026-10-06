@@ -94,7 +94,7 @@ function renderQuestionResult(result: QuestionResult): HTMLElement {
     item.append(
       el('p', {
         className: 'winner__affinity',
-        text: `Afinidad: ${formatPercent(result.bestAffinity)}`,
+        text: `Afinidad con los partidos más afines: ${formatPercent(result.bestAffinity)}`,
       }),
     );
   }
@@ -227,7 +227,7 @@ export function renderResultsView(params: ResultsViewParams): HTMLElement {
       section('results-winners-heading', 'Ganador por pregunta', [
         el('p', {
           className: 'section-lead',
-          text: 'Partido o partidos más afines a tu respuesta en cada pregunta.',
+          text: 'Partido o partidos más afines a tu respuesta en cada pregunta. La afinidad indicada es la máxima de la pregunta y la comparten todos los partidos empatados en cabeza.',
         }),
         list,
       ]),
