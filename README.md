@@ -174,10 +174,14 @@ TMP_DIR=$(mktemp -d) && mkdir -p "$TMP_DIR/sub" && cp -R dist/. "$TMP_DIR/sub/" 
 # abrir http://localhost:4173/sub/
 ```
 
-No hay secretos, backend ni datos personales.
+No hay secretos ni backend; la aplicación no transmite ni almacena tus respuestas fuera del navegador.
 
 ## Límites y licencias
 
+- **Código**: el repositorio no incluye un fichero `LICENSE`; el código no tiene una licencia de
+  reutilización declarada.
+- **Datos propios** (`data/`): las preguntas, temas y posiciones recopiladas tampoco declaran
+  licencia; se publican con fines informativos y de verificación.
 - **GitHub Pages**: límite de tamaño de sitio ≈ **1 GB** y de ancho de banda ≈ **100 GB/mes**;
   HTTPS gratuito. El proyecto es solo estático, sin backend.
 - **CIS (Estudio 3577)**: se cita la fuente con URL y fecha y se respetan sus condiciones de

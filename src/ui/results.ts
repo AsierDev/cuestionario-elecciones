@@ -146,6 +146,14 @@ export function renderResultsView(params: ResultsViewParams): HTMLElement {
     }),
   );
 
+  children.push(
+    el('p', {
+      className: 'notice',
+      attrs: { role: 'note', id: 'results-affinity-notice' },
+      text: 'El porcentaje expresa cercanía según estas preguntas y esta escala. No es una probabilidad de voto ni indica qué porcentaje de un programa apoyas.',
+    }),
+  );
+
   if (results.provisional) {
     children.push(
       el('p', {
@@ -159,7 +167,7 @@ export function renderResultsView(params: ResultsViewParams): HTMLElement {
   children.push(
     el('p', {
       className: 'updated-at',
-      text: `Datos actualizados el ${formatDate(updatedAt)}.`,
+      text: `Conjunto de datos actualizado el ${formatDate(updatedAt)}; cada posición incluye la fecha de su evidencia.`,
     }),
   );
 

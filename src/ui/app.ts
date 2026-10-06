@@ -47,7 +47,7 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
     el('h1', { className: 'app-title', text: APP_NAME }),
     el('p', {
       className: 'app-subtitle',
-      text: 'Responde 25 preguntas y descubre qué partidos se ajustan más a tus posiciones. Sin cuentas ni datos personales.',
+      text: `Compara tus respuestas a ${data.questions.length} preguntas con las posiciones documentadas de los partidos incluidos. La aplicación no transmite ni almacena tus respuestas fuera del navegador.`,
     }),
   ]);
   const status = el('div', {

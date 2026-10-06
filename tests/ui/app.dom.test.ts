@@ -42,6 +42,9 @@ describe('punto de entrada del sitio', () => {
     expect(document.querySelector('.app-title')?.textContent).toBe(
       'Buscador de afinidad de voto',
     );
+    const subtitle = document.querySelector('.app-subtitle')?.textContent ?? '';
+    expect(subtitle).toContain('posiciones documentadas');
+    expect(subtitle).toContain('no transmite ni almacena tus respuestas');
     expect(document.querySelector('#app-status')?.getAttribute('aria-live')).toBe('polite');
 
     const select = document.querySelector<HTMLSelectElement>('#territory-select');

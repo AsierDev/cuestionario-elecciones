@@ -346,7 +346,24 @@ describe('vista de resultados — aviso provisional y actualización', () => {
 
     const node = render(data, { territoryId: 't1', answers: [answer('q1', ['q1-op1'])] });
 
-    expect(node.querySelector('.updated-at')?.textContent).toBe('Datos actualizados el 05/10/2026.');
+    expect(node.querySelector('.updated-at')?.textContent).toBe(
+      'Conjunto de datos actualizado el 05/10/2026; cada posición incluye la fecha de su evidencia.',
+    );
+  });
+
+  it('explica qué mide el porcentaje junto a los resultados', () => {
+    const data = makeBundle({
+      parties: [ALFA],
+      topics: [topic('tema-1')],
+      questions: [question('q1', 'tema-1')],
+      positions: { 'partido-a': [position('tema-1', 0)] },
+    });
+
+    const node = render(data, { territoryId: 't1', answers: [answer('q1', ['q1-op1'])] });
+
+    expect(node.querySelector('#results-affinity-notice')?.textContent).toContain(
+      'No es una probabilidad de voto',
+    );
   });
 });
 
@@ -382,10 +399,14 @@ describe('vista de metodología', () => {
     expect(text).toContain('Cómo se calcula la afinidad');
     expect(text).toContain('Cobertura y datos faltantes');
     expect(text).toContain('Estados de los datos y actualización');
-    expect(text).toContain('Neutralidad y orden');
+    expect(text).toContain('Criterios para reducir sesgos');
     expect(text).toContain('Catálogo de temas y evidencias');
     expect(text).toContain('Alcance');
     expect(text).toContain('Reutilización y derechos');
+    expect(text).not.toContain('Puedes reutilizar esta herramienta');
+    expect(text).toContain('datos propios');
+    expect(text).toContain('fuentes externas');
+    expect(text).toContain('no transmite ni almacena tus respuestas');
     expect(text).toContain('comparación suficiente');
     expect(text).toContain('Cobertura insuficiente');
     expect(node.querySelector('.evidence__link')).not.toBeNull();

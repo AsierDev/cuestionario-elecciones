@@ -120,10 +120,10 @@ export function renderMethodologyView(
         text: 'Cada posición guarda su fuente, su fecha y un estado: «verificado» cuando procede de un programa o una fuente del ciclo de 2026, «provisional» cuando se apoya en evidencia anterior, y «sin datos suficientes» cuando la búsqueda no encontró una posición atribuible.',
       }),
       el('p', {
-        text: `La fecha de última actualización del conjunto de datos aparece en los resultados («Datos actualizados el ${formatDate(data.meta.updatedAt)}»). Actualizar posiciones solo requiere editar los ficheros de datos y volver a validarlos.`,
+        text: `La fecha de última actualización del conjunto de datos aparece en los resultados («Conjunto de datos actualizado el ${formatDate(data.meta.updatedAt)}»). Actualizar posiciones solo requiere editar los ficheros de datos y volver a validarlos.`,
       }),
     ]),
-    section('methodology-neutrality-heading', 'Neutralidad y orden', [
+    section('methodology-neutrality-heading', 'Criterios para reducir sesgos', [
       el('p', {
         text: 'Usamos la misma escala para todos los partidos y no empleamos colores, logos ni símbolos de partido. Todas las listas van en orden alfabético, salvo el ranking de resultados, que se ordena por afinidad de mayor a menor y, en caso de empate, alfabéticamente. Es la única excepción y está justificada por la finalidad del ranking.',
       }),
@@ -146,7 +146,7 @@ export function renderMethodologyView(
         text: 'Esta herramienta es informativa y orientativa. No es una predicción electoral ni una estimación de voto: mide la cercanía entre tus respuestas y las posiciones documentadas, nada más.',
       }),
       el('p', {
-        text: 'No recogemos cuentas, datos personales, cookies ni analítica; tus respuestas se quedan en tu navegador y se pierden al recargar.',
+        text: 'La aplicación no transmite ni almacena tus respuestas fuera del navegador.',
       }),
     ]),
     section('methodology-rights-heading', 'Reutilización y derechos', [
@@ -154,7 +154,7 @@ export function renderMethodologyView(
         text: 'Los datos del CIS se citan y enlazan a su publicación oficial; los programas y documentos de los partidos se enlazan, sin reproducir textos extensos. Este proyecto no usa logos ni marcas de partidos.',
       }),
       el('p', {
-        text: 'Puedes reutilizar esta herramienta citando la fuente y enlazando a los originales.',
+        text: 'El código de esta herramienta y los datos propios (preguntas, temas y posiciones recopiladas) no tienen una licencia de reutilización declarada; se publican con fines informativos y de verificación. Las fuentes externas (CIS, programas y documentos de partidos) mantienen sus propias condiciones de uso.',
       }),
     ]),
   ];
