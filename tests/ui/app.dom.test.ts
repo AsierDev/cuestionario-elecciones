@@ -109,6 +109,7 @@ describe('punto de entrada del sitio', () => {
 
     expect(document.querySelector('#results-heading')?.textContent).toBe('Resultados');
     expect(document.querySelector('.ranking')).not.toBeNull();
+    expect(document.querySelector('#results-partial-notice')).toBeNull();
 
     document.querySelector<HTMLButtonElement>('button[data-action="methodology"]')?.click();
     expect(document.querySelector('#methodology-heading')?.textContent).toBe('Metodología');

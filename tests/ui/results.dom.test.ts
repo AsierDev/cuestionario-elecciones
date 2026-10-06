@@ -5,7 +5,7 @@ import { computeResults, type ScoringInput, type QuestionAnswer } from '../../sr
 import type { DataBundle } from '../../src/data/schema';
 import { renderMethodologyView } from '../../src/ui/methodology';
 import { renderResultsView } from '../../src/ui/results';
-import { makeBundle, party, position, question, topic } from '../fixtures/scoring';
+import { makeBundle, manyQuestions, party, position, question, topic } from '../fixtures/scoring';
 
 const ALFA = party('partido-a', { displayName: 'Alfa' });
 const BETA = party('partido-b', { displayName: 'Beta' });
@@ -35,17 +35,22 @@ const bothAnswered: ScoringInput = {
 
 describe('vista de resultados — ranking', () => {
   it('ordena por afinidad descendente con desempate alfabético y formato de un decimal', () => {
+    const { topics, questions } = manyQuestions(10);
     const data = makeBundle({
       parties: [BETA, ALFA],
-      topics: [topic('tema-1'), topic('tema-2')],
-      questions: [question('q1', 'tema-1'), question('q2', 'tema-2')],
+      topics,
+      questions,
       positions: {
-        'partido-a': [position('tema-1', 1), position('tema-2', 1)],
-        'partido-b': [position('tema-1', -1), position('tema-2', -1)],
+        'partido-a': topics.map((item) => position(item.id, 1)),
+        'partido-b': topics.map((item) => position(item.id, -1)),
       },
     });
+    const input: ScoringInput = {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [`${item.id}-op2`])),
+    };
 
-    const node = render(data, bothAnswered);
+    const node = render(data, input);
 
     const names = Array.from(node.querySelectorAll('.ranking__name')).map(
       (element) => element.textContent,
@@ -53,6 +58,9 @@ describe('vista de resultados — ranking', () => {
     expect(names).toEqual(['Alfa', 'Beta']);
     expect(node.querySelector('.ranking__affinity')?.textContent).toBe('100,0 %');
     expect(node.querySelector('.ranking__meta')?.textContent).toContain('Cobertura: 100,0 %');
+    expect(node.querySelector('.ranking__meta')?.textContent).toContain(
+      'Comparadas: 10 de 10 preguntas',
+    );
   });
 
   it('enlaza los programas en una pestaña nueva con rel de seguridad', () => {
@@ -86,17 +94,21 @@ describe('vista de resultados — ranking', () => {
   });
 
   it('excluye del ranking los partidos que no concurren y los lista aparte', () => {
+    const { topics, questions } = manyQuestions(10);
     const data = makeBundle({
       parties: [ALFA, GAMMA],
-      topics: [topic('tema-1')],
-      questions: [question('q1', 'tema-1')],
+      topics,
+      questions,
       positions: {
-        'partido-a': [position('tema-1', 0)],
-        'partido-c': [position('tema-1', 1)],
+        'partido-a': topics.map((item) => position(item.id, 0)),
+        'partido-c': topics.map((item) => position(item.id, 1)),
       },
     });
 
-    const node = render(data, { territoryId: 't1', answers: [answer('q1', ['q1-op1'])] });
+    const node = render(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [`${item.id}-op1`])),
+    });
 
     const ranked = Array.from(node.querySelectorAll('.ranking__name')).map(
       (element) => element.textContent,
@@ -109,22 +121,118 @@ describe('vista de resultados — ranking', () => {
   });
 
   it('coloca bajo «Sin datos suficientes» los partidos sin cobertura, sin porcentaje', () => {
+    const { topics, questions } = manyQuestions(10);
     const data = makeBundle({
       parties: [ALFA, BETA],
-      topics: [topic('tema-1')],
-      questions: [question('q1', 'tema-1')],
+      topics,
+      questions,
       positions: {
-        'partido-a': [position('tema-1', null)],
-        'partido-b': [position('tema-1', 0)],
+        'partido-a': topics.map((item) => position(item.id, null)),
+        'partido-b': topics.map((item) => position(item.id, 0)),
       },
     });
 
-    const node = render(data, { territoryId: 't1', answers: [answer('q1', ['q1-op1'])] });
+    const node = render(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [`${item.id}-op1`])),
+    });
 
     const withoutData = node.querySelector('#results-without-data-heading');
     expect(withoutData?.textContent).toBe('Sin datos suficientes');
     expect(node.querySelector('.without-data__list')?.textContent).toContain('Alfa');
     expect(node.querySelector('.ranking__name')?.textContent).toBe('Beta');
+  });
+});
+
+describe('vista de resultados — cobertura y comparación parcial', () => {
+  it('solo incluye en el ranking los partidos elegibles y lista el resto bajo cobertura insuficiente', () => {
+    const { topics, questions } = manyQuestions(10);
+    const data = makeBundle({
+      parties: [ALFA, BETA],
+      topics,
+      questions,
+      positions: {
+        'partido-a': topics.map((item) => position(item.id, 0)),
+        'partido-b': topics.slice(0, 5).map((item) => position(item.id, 0)),
+      },
+    });
+
+    const node = render(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [`${item.id}-op1`])),
+    });
+
+    const ranked = Array.from(node.querySelectorAll('.ranking .ranking__name')).map(
+      (element) => element.textContent,
+    );
+    expect(ranked).toEqual(['Alfa']);
+    expect(node.querySelector('#results-low-coverage-heading')?.textContent).toBe(
+      'Cobertura insuficiente',
+    );
+    expect(node.querySelector('.low-coverage__list .ranking__name')?.textContent).toBe('Beta');
+    expect(node.querySelector('.low-coverage__list .ranking__affinity')?.textContent).toBe(
+      '100,0 %',
+    );
+  });
+
+  it('avisa de comparación parcial y no renderiza ranking con menos de 10 respuestas', () => {
+    const { topics, questions } = manyQuestions(10);
+    const data = makeBundle({
+      parties: [ALFA],
+      topics,
+      questions,
+      positions: { 'partido-a': topics.map((item) => position(item.id, 0)) },
+    });
+
+    const node = render(data, {
+      territoryId: 't1',
+      answers: questions.slice(0, 5).map((item) => answer(item.id, [`${item.id}-op1`])),
+    });
+
+    expect(node.querySelector('#results-partial-notice')?.textContent).toContain(
+      'Comparación parcial',
+    );
+    expect(node.querySelector('#results-ranking-heading')).toBeNull();
+    expect(node.querySelector('ol.ranking')).toBeNull();
+    expect(node.querySelector('.low-coverage__list')?.textContent).toContain('Alfa');
+    expect(node.querySelector('#results-winners-heading')).not.toBeNull();
+  });
+
+  it('con 10 respuestas no hay aviso parcial y sí ranking', () => {
+    const { topics, questions } = manyQuestions(10);
+    const data = makeBundle({
+      parties: [ALFA],
+      topics,
+      questions,
+      positions: { 'partido-a': topics.map((item) => position(item.id, 0)) },
+    });
+
+    const node = render(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [`${item.id}-op1`])),
+    });
+
+    expect(node.querySelector('#results-partial-notice')).toBeNull();
+    expect(node.querySelector('.ranking')).not.toBeNull();
+  });
+
+  it('muestra las preguntas comparadas en el meta del ranking', () => {
+    const { topics, questions } = manyQuestions(10);
+    const data = makeBundle({
+      parties: [ALFA],
+      topics,
+      questions,
+      positions: { 'partido-a': topics.map((item) => position(item.id, 0)) },
+    });
+
+    const node = render(data, {
+      territoryId: 't1',
+      answers: questions.map((item) => answer(item.id, [`${item.id}-op1`])),
+    });
+
+    expect(node.querySelector('.ranking__meta')?.textContent).toContain(
+      'Comparadas: 10 de 10 preguntas',
+    );
   });
 });
 
@@ -278,6 +386,8 @@ describe('vista de metodología', () => {
     expect(text).toContain('Catálogo de temas y evidencias');
     expect(text).toContain('Alcance');
     expect(text).toContain('Reutilización y derechos');
+    expect(text).toContain('comparación suficiente');
+    expect(text).toContain('Cobertura insuficiente');
     expect(node.querySelector('.evidence__link')).not.toBeNull();
   });
 

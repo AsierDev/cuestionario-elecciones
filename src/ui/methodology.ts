@@ -2,7 +2,7 @@ import { SCORING_CONFIG } from '../core/config';
 import type { DataBundle } from '../data/schema';
 
 import { createButton, el } from './components';
-import { formatDate } from './format';
+import { formatDate, formatPercent } from './format';
 import { MAX_PRIORITY_TOPICS } from './state';
 
 export interface MethodologyViewHandlers {
@@ -110,6 +110,9 @@ export function renderMethodologyView(
       }),
       el('p', {
         text: 'Un partido sin ningún dato entre tus respuestas aparece bajo «Sin datos suficientes», sin porcentaje. Los partidos que no concurren en tu comunidad no se puntúan y se listan aparte.',
+      }),
+      el('p', {
+        text: `El ranking principal solo incluye a los partidos con comparación suficiente: al menos ${SCORING_CONFIG.minComparedQuestions} preguntas comparadas y ${formatPercent(SCORING_CONFIG.minCoverage)} de cobertura ponderada. Los partidos con dato pero por debajo de esos umbrales aparecen bajo «Cobertura insuficiente». Si respondes menos de ${SCORING_CONFIG.minComparedQuestions} preguntas, no se muestra ranking y se avisa de comparación parcial.`,
       }),
     ]),
     section('methodology-status-heading', 'Estados de los datos y actualización', [

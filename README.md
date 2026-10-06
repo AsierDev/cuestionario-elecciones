@@ -142,6 +142,9 @@ Principios de neutralidad:
 - Filtrado territorial: los partidos no aplicables en la comunidad elegida no se puntúan.
 - Datos faltantes: se excluyen del cálculo y reducen la cobertura; sin cobertura → "Sin datos
   suficientes", sin porcentaje.
+- Ranking principal: solo partidos con comparación suficiente (≥10 preguntas comparadas y ≥60 %
+  de cobertura ponderada); el resto va bajo «Cobertura insuficiente». Con menos de 10 respuestas
+  se avisa de comparación parcial y no se muestra ranking.
 - Sin respuestas: la afinidad y la cobertura quedan vacías (nunca `0/0` ni `NaN`).
 
 Esta herramienta **no es una predicción electoral** ni una estimación de intención de voto.

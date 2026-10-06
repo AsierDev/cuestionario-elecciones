@@ -1,8 +1,9 @@
+import { SCORING_CONFIG } from '../core/config';
 import type { PartyScore, QuestionResult, ScoringResults } from '../core/scoring';
 import type { DataBundle } from '../data/schema';
 
 import { createButton, el } from './components';
-import { formatDate, formatPercent, sortRanking } from './format';
+import { formatDate, formatPercent } from './format';
 
 export interface ResultsViewHandlers {
   onRestart: () => void;
@@ -34,7 +35,11 @@ function section(id: string, title: string, children: (Node | string)[]): HTMLEl
   ]);
 }
 
-function renderRankingItem(topicNameById: Map<string, string>, score: PartyScore): HTMLElement {
+function renderRankingItem(
+  topicNameById: Map<string, string>,
+  score: PartyScore,
+  totalQuestions: number,
+): HTMLElement {
   const item = el('li', { className: 'ranking__item' }, [
     el('div', { className: 'ranking__head' }, [
       el('span', { className: 'ranking__name', text: score.party.displayName }),
@@ -42,7 +47,7 @@ function renderRankingItem(topicNameById: Map<string, string>, score: PartyScore
     ]),
     el('p', {
       className: 'ranking__meta',
-      text: `Cobertura: ${formatPercent(score.coverage ?? 0)}`,
+      text: `Cobertura: ${formatPercent(score.coverage ?? 0)} · Comparadas: ${score.comparedCount} de ${totalQuestions} preguntas`,
     }),
   ]);
 
@@ -158,16 +163,42 @@ export function renderResultsView(params: ResultsViewParams): HTMLElement {
     }),
   );
 
-  if (results.ranking.length > 0) {
+  const eligibleRanking = results.ranking.filter((score) => score.eligible);
+
+  if (results.partialComparison) {
+    children.push(
+      el('p', {
+        className: 'notice',
+        attrs: { role: 'note', id: 'results-partial-notice' },
+        text: `Comparación parcial: has respondido menos de ${SCORING_CONFIG.minComparedQuestions} preguntas, así que ningún partido alcanza el mínimo de comparabilidad y no se muestra un ranking. Los partidos con datos aparecen bajo «Cobertura insuficiente».`,
+      }),
+    );
+  } else if (eligibleRanking.length > 0) {
     const list = el('ol', { className: 'ranking' });
-    for (const score of sortRanking(results.ranking)) {
-      list.append(renderRankingItem(topicNameById, score));
+    for (const score of eligibleRanking) {
+      list.append(renderRankingItem(topicNameById, score, data.questions.length));
     }
     children.push(
       section('results-ranking-heading', 'Ranking por afinidad', [
         el('p', {
           className: 'section-lead',
-          text: 'Afinidad media ponderada con los partidos que concurren en tu comunidad. Ordenado de mayor a menor y, en caso de empate, alfabéticamente.',
+          text: `Afinidad media ponderada con los partidos que concurren en tu comunidad. Solo se incluyen los partidos con comparación suficiente (al menos ${SCORING_CONFIG.minComparedQuestions} preguntas comparadas y ${formatPercent(SCORING_CONFIG.minCoverage)} de cobertura ponderada). Ordenado de mayor a menor y, en caso de empate, alfabéticamente.`,
+        }),
+        list,
+      ]),
+    );
+  }
+
+  if (results.lowCoverage.length > 0) {
+    const list = el('ul', { className: 'low-coverage__list' });
+    for (const score of results.lowCoverage) {
+      list.append(renderRankingItem(topicNameById, score, data.questions.length));
+    }
+    children.push(
+      section('results-low-coverage-heading', 'Cobertura insuficiente', [
+        el('p', {
+          className: 'section-lead',
+          text: `Estos partidos tienen posiciones documentadas en parte de tus respuestas, pero no alcanzan el mínimo de comparabilidad (al menos ${SCORING_CONFIG.minComparedQuestions} preguntas comparadas y ${formatPercent(SCORING_CONFIG.minCoverage)} de cobertura ponderada), así que no entran en el ranking. El porcentaje se muestra solo como referencia.`,
         }),
         list,
       ]),
