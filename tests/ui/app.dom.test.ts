@@ -49,11 +49,13 @@ async function startIn(territoryId: string): Promise<void> {
 
 describe('flujo completo', () => {
   beforeEach(() => {
+    localStorage.clear();
     document.body.innerHTML = '<div id="app"></div>';
   });
 
   afterEach(() => {
     document.body.innerHTML = '';
+    localStorage.clear();
   });
 
   it('monta la portada con las 19 comunidades y los temas prioritarios', async () => {
@@ -181,5 +183,41 @@ describe('flujo completo', () => {
     click('back');
     click('restart');
     expect(document.querySelector('#territory-select')).not.toBeNull();
+  });
+
+  it('recupera el progreso tras recargar la página', async () => {
+    await startIn('madrid');
+    pick(4);
+    submit('.question-form');
+    pick(0);
+
+    document.body.innerHTML = '<div id="app"></div>';
+    await mountEntryPoint();
+    expect(heading()).toBe(data.questions[1]?.statement);
+    expect(document.querySelector<HTMLInputElement>('.scale__input:checked')?.value).toBe('-1');
+    click('previous');
+    expect(document.querySelector<HTMLInputElement>('.scale__input:checked')?.value).toBe('1');
+  });
+
+  it('mantiene los resultados tras recargar hasta que se vuelve a empezar', async () => {
+    await startIn('madrid');
+    data.questions.forEach(() => {
+      pick(4);
+      submit('.question-form');
+    });
+    expect(document.querySelector('#results-heading')).not.toBeNull();
+
+    document.body.innerHTML = '<div id="app"></div>';
+    await mountEntryPoint();
+    expect(document.querySelector('#results-heading')).not.toBeNull();
+    // Arriba, junto a la navegación, y abajo, tras el detalle.
+    expect(document.querySelector('.results-hero button[data-action="restart"]')).not.toBeNull();
+    expect(document.querySelector('.actions--results button[data-action="restart"]')).not.toBeNull();
+
+    click('restart');
+    document.body.innerHTML = '<div id="app"></div>';
+    await mountEntryPoint();
+    expect(document.querySelector('#territory-select')).not.toBeNull();
+    expect(document.querySelector('#results-heading')).toBeNull();
   });
 });

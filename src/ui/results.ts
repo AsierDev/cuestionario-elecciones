@@ -314,14 +314,22 @@ function renderProposals(results: ScoringResults, data: DataBundle): HTMLElement
   return groups;
 }
 
+function renderRestartButton(handlers: ResultsViewHandlers): HTMLButtonElement {
+  const restart = createButton({ label: 'Volver a empezar', variant: 'ghost', action: 'restart' });
+  restart.addEventListener('click', () => handlers.onRestart());
+  return restart;
+}
+
 function renderActions(handlers: ResultsViewHandlers): HTMLElement {
   const review = createButton({ label: 'Revisar mis respuestas', variant: 'secondary', action: 'review' });
   review.addEventListener('click', () => handlers.onReview());
   const methodology = createButton({ label: 'Cómo se calcula', variant: 'secondary', action: 'methodology' });
   methodology.addEventListener('click', () => handlers.onShowMethodology());
-  const restart = createButton({ label: 'Volver a empezar', variant: 'ghost', action: 'restart' });
-  restart.addEventListener('click', () => handlers.onRestart());
-  return el('div', { className: 'actions actions--results' }, [review, methodology, restart]);
+  return el('div', { className: 'actions actions--results' }, [
+    review,
+    methodology,
+    renderRestartButton(handlers),
+  ]);
 }
 
 export function renderResultsView(params: ResultsViewParams): HTMLElement {
@@ -381,7 +389,7 @@ export function renderResultsView(params: ResultsViewParams): HTMLElement {
       el('h2', { className: 'results-hero__title', text: hero.title, attrs: { id: 'results-heading', tabindex: '-1' } }),
       el('p', { className: 'results-hero__lead', text: hero.lead }),
       ...notices,
-      nav,
+      el('div', { className: 'results-toolbar' }, [nav, renderRestartButton(handlers)]),
     ]),
   ];
 
@@ -480,6 +488,10 @@ export function renderResultsView(params: ResultsViewParams): HTMLElement {
 
   children.push(renderActions(handlers));
   children.push(
+    el('p', {
+      className: 'updated-at',
+      text: 'Tus respuestas se guardan solo en este navegador durante 7 días para que puedas volver a consultarlas. «Volver a empezar» las borra.',
+    }),
     el('p', {
       className: 'updated-at',
       text: `Datos actualizados el ${formatDate(updatedAt)}. Cada posición enlaza a la fuente y fecha de su evidencia.`,

@@ -5,6 +5,7 @@ import type { DataBundle, Question } from '../data/schema';
 
 import { el } from './components';
 import { renderMethodologyView } from './methodology';
+import { clearProgress, loadProgress, saveProgress } from './persistence';
 import { renderIntroView, renderQuestionView } from './questionnaire';
 import { renderResultsView } from './results';
 import {
@@ -62,7 +63,7 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
 
   const topicById = new Map(data.topics.map((topic) => [topic.id, topic]));
   const total = data.questions.length;
-  let state: QuestionnaireState = createInitialState();
+  let state: QuestionnaireState = loadProgress(data) ?? createInitialState();
   let screen: ResultScreen = 'results';
   let territoryError: string | null = null;
 
@@ -71,6 +72,7 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
   }
 
   function render(): void {
+    saveProgress(state);
     viewRoot.textContent = '';
 
     if (state.step === 'intro') {
@@ -85,12 +87,14 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
           handlers: {
             onSelect: (territoryId) => {
               state = selectTerritory(state, territoryId);
+              saveProgress(state);
               territoryError = null;
               const errorNode = viewRoot.querySelector<HTMLElement>('#territory-error');
               if (errorNode) errorNode.hidden = true;
             },
             onTogglePriorityTopic: (topicId) => {
               state = togglePriorityTopic(state, topicId);
+              saveProgress(state);
               announce(
                 `Has marcado ${state.priorityTopicIds.length} de ${MAX_PRIORITY_TOPICS} temas prioritarios.`,
               );
@@ -136,6 +140,7 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
           handlers: {
             onAnswer: (value) => {
               state = setAnswer(state, question.id, value);
+              saveProgress(state);
               const counter = viewRoot.querySelector<HTMLElement>('.progress__answered');
               if (counter) counter.textContent = `${answeredCount(state)} respondidas`;
             },
@@ -167,6 +172,7 @@ export function mountApp(container: HTMLElement, data: DataBundle = loadData()):
           updatedAt: data.meta.updatedAt,
           handlers: {
             onRestart: () => {
+              clearProgress();
               state = createInitialState();
               territoryError = null;
               screen = 'results';

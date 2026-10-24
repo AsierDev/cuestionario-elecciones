@@ -985,11 +985,24 @@ a {
   font-size: 1.15rem;
 }
 
+.results-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+
+/* Se queda a la derecha también cuando baja de línea en pantallas estrechas. */
+.results-toolbar > .button {
+  margin-left: auto;
+}
+
 .results-nav {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-2);
-  margin-top: var(--space-5);
 }
 
 .results-nav a {
