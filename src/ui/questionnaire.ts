@@ -211,18 +211,40 @@ export interface QuestionViewParams {
   handlers: QuestionViewHandlers;
 }
 
-function renderExplainer(question: Question): HTMLDetailsElement {
+const EXPLAINER_OPEN_KEY = 'explainer-open';
+
+// La preferencia es una comodidad: si el almacenamiento falla, el desplegable sigue funcionando.
+function readExplainerOpen(): boolean {
+  try {
+    return localStorage.getItem(EXPLAINER_OPEN_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+function saveExplainerOpen(open: boolean): void {
+  try {
+    localStorage.setItem(EXPLAINER_OPEN_KEY, open ? '1' : '0');
+  } catch {
+    // Sin almacenamiento disponible: no se recuerda entre preguntas.
+  }
+}
+
+function renderExplainer(question: Question): HTMLElement {
   const block = (title: string, text: string, className: string): HTMLElement =>
     el('section', { className }, [
       el('h3', { className: 'explainer__title', text: title }),
       el('p', { className: 'explainer__text', text }),
     ]);
 
+  // «Situación actual» siempre visible: quien lee en diagonal ve contenido, no solo un desplegable.
+  const preview = el('section', { className: 'explainer__preview' }, [
+    el('h3', { className: 'explainer__title', text: 'Situación actual' }),
+    el('p', { className: 'explainer__text explainer__preview-text', text: question.context }),
+  ]);
+
   const body = el('div', { className: 'explainer__body' }, [
-    el('div', { className: 'explainer__facts' }, [
-      block('Situación actual', question.context, 'explainer__block'),
-      block('Qué cambiaría si se aplica', question.change, 'explainer__block'),
-    ]),
+    block('Qué cambiaría si se aplica', question.change, 'explainer__block'),
     el('div', { className: 'explainer__sides' }, [
       block('Si estás en contra', question.ifAgainst, 'explainer__side explainer__side--against'),
       block('Si estás a favor', question.ifFavor, 'explainer__side explainer__side--favor'),
@@ -245,15 +267,27 @@ function renderExplainer(question: Question): HTMLDetailsElement {
     );
   }
 
-  const summary = el('summary', { className: 'explainer__summary' }, [
-    el('span', { className: 'explainer__summary-label', text: 'Entender la propuesta' }),
+  const summary = el('summary', { className: 'explainer__toggle' }, [
     el('span', {
-      className: 'explainer__summary-hint',
-      text: 'Situación actual, qué cambiaría y qué implica tu respuesta',
+      className: 'explainer__toggle-closed',
+      text: 'Leer qué cambiaría y qué implica tu respuesta',
     }),
+    el('span', { className: 'explainer__toggle-open', text: 'Ocultar detalles' }),
   ]);
 
-  return el('details', { className: 'explainer' }, [summary, body]);
+  const details = el('details', { className: 'explainer__details' }, [summary, body]);
+  details.open = readExplainerOpen();
+  details.addEventListener('toggle', () => saveExplainerOpen(details.open));
+
+  return el('aside', { className: 'explainer', attrs: { 'aria-labelledby': `explainer-${question.id}` } }, [
+    el('p', {
+      className: 'explainer__eyebrow',
+      text: 'Entender la propuesta',
+      attrs: { id: `explainer-${question.id}` },
+    }),
+    preview,
+    details,
+  ]);
 }
 
 function renderScale(question: Question, selectedValue: number | undefined): HTMLFieldSetElement {
