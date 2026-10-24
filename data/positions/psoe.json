@@ -145,12 +145,12 @@
   },
   {
     "questionId": "q-nucleares",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
-    "sourceDate": "2025-06-17",
-    "note": "Votó contra la ley para prorrogar las nucleares (junio 2025); el Gobierno se muestra abierto solo si las eléctricas lo piden y asumen el coste."
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://es.euronews.com/my-europe/2026/08/14/el-gobierno-de-espana-prorroga-la-central-nuclear-de-almaraz-hasta-2030-y-aplaza-su-cierre",
+    "sourceDate": "2026-08-14",
+    "note": "Su Gobierno prorrogó Almaraz hasta 2030 (agosto 2026) a petición de las eléctricas y con aval del CSN, aunque votó contra la ley de prórroga general en 2025."
   },
   {
     "questionId": "q-impuestos-verdes",
