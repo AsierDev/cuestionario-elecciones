@@ -25,12 +25,13 @@
   },
   {
     "id": "sumar",
-    "displayName": "Sumar",
+    "displayName": "Frente Amplio",
     "scope": "estatal",
     "websiteUrl": "https://movimientosumar.es/",
     "programUrl": "https://movimientosumar.es/programa-electoral-23j/",
     "programYear": 2023,
-    "identityNote": "En 2026 Sumar se recompone como 'Frente Amplio' (Movimiento Sumar, IU, Más Madrid, Catalunya en Comú); identidad sujeta a las coaliciones del 16-oct-2026."
+    "identityNote": "Coalición registrada el 16-oct-2026 (IU, Movimiento Sumar, Más Madrid, Catalunya en Comú, CHA y otros), heredera de Sumar 2023, sin Podemos. En Canarias su espacio concurre en Unidad de Pueblo Canario y en la Comunidad Valenciana en Compromís-Front Valencià.",
+    "excludedCommunities": ["canarias", "comunidad-valenciana"]
   },
   {
     "id": "podemos",
@@ -39,7 +40,8 @@
     "websiteUrl": "https://podemos.info/",
     "programUrl": "https://podemos.info/wp-content/uploads/2023/05/Podemos_programa_marco_28M_interactivo.pdf",
     "programYear": 2023,
-    "identityNote": "En 2023 concurrió dentro de Sumar sin programa propio de generales; en 2026 negocia coalición o concurrencia propia (primarias 14-15-oct-2026)."
+    "identityNote": "Concurre en solitario el 29-N tras no pactar con Frente Amplio. En Cataluña no presenta lista y apoya a ERC; en Canarias va en Unidad de Pueblo Canario y en la Comunidad Valenciana en Compromís-Front Valencià.",
+    "excludedCommunities": ["canarias", "cataluna", "comunidad-valenciana"]
   },
   {
     "id": "erc",
@@ -48,7 +50,8 @@
     "communities": ["cataluna"],
     "websiteUrl": "https://www.esquerra.cat/",
     "programUrl": "https://esquerrarepublicana.cat/",
-    "programYear": 2023
+    "programYear": 2023,
+    "identityNote": "En el Congreso por Cataluña su lista incluye a independientes propuestos por Podemos (acuerdo de octubre de 2026)."
   },
   {
     "id": "junts",
@@ -93,6 +96,7 @@
     "communities": ["canarias"],
     "websiteUrl": "https://coalicioncanaria.org/",
     "programUrl": "https://coalicioncanaria.org/programas-electorales/",
-    "programYear": 2023
+    "programYear": 2023,
+    "identityNote": "Concurre el 29-N en coalición con Municipalistas Primero."
   }
 ]

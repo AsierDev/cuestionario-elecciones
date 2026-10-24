@@ -89,9 +89,10 @@ function compareByName(a: Party, b: Party): number {
 
 export function getApplicableParties(data: DataBundle, territoryId: string): Party[] {
   return data.parties
-    .filter(
-      (party) =>
-        party.scope === 'estatal' || (party.communities?.includes(territoryId) ?? false),
+    .filter((party) =>
+      party.scope === 'estatal'
+        ? !(party.excludedCommunities?.includes(territoryId) ?? false)
+        : (party.communities?.includes(territoryId) ?? false),
     )
     .sort(compareByName);
 }

@@ -159,6 +159,20 @@ describe('computeResults', () => {
     expect(getApplicableParties(data, 't2').map((p) => p.id)).toContain('local');
   });
 
+  it('excluye un partido estatal de las comunidades donde no concurre', () => {
+    const data = makeBundle({
+      territories: [territory('t1'), territory('t2')],
+      parties: [party('a'), party('b', { excludedCommunities: ['t2'] })],
+      topics: [topic('t')],
+      questions: [question('q1', 't')],
+      positions: { a: [position('q1', 1)], b: [position('q1', 1)] },
+    });
+    expect(getApplicableParties(data, 't1').map((p) => p.id)).toEqual(['a', 'b']);
+    const results = computeResults(data, { territoryId: 't2', answers: [answer('q1', 1)] });
+    expect(results.applicableParties.map((p) => p.id)).toEqual(['a']);
+    expect(results.nonApplicableParties.map((p) => p.id)).toEqual(['b']);
+  });
+
   it('exige un mínimo de propuestas comparadas y cobertura para entrar en el ranking', () => {
     const { topics, questions } = manyQuestions(SCORING_CONFIG.minComparedQuestions + 2);
     const full = questions.map((item) => position(item.id, 1));

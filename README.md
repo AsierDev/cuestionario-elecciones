@@ -95,7 +95,8 @@ Reglas del contrato que debes respetar al editar:
 ```
 data/territories.json            [{ id, name }]                                 // 19 territorios
 data/parties.json                [{ id, displayName, scope, communities?,       // 11 partidos
-                                     websiteUrl, programUrl, programYear, identityNote? }]
+                                     excludedCommunities?, websiteUrl, programUrl,
+                                     programYear, identityNote? }]
 data/topics.json                 [{ id, name, description, evidence[] }]        // 11 temas
 data/questions.json              [{ id, topicId, title, statement, summary,     // 30 propuestas
                                      context, change, ifFavor, ifAgainst, glossary[] }]

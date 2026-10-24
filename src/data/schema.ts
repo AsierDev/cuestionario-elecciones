@@ -19,6 +19,7 @@ export const partySchema = z
     displayName: z.string().min(1),
     scope: partyScopeSchema,
     communities: z.array(idSchema).min(1).optional(),
+    excludedCommunities: z.array(idSchema).min(1).optional(),
     websiteUrl: urlSchema,
     programUrl: urlSchema,
     programYear: z.number().int(),
@@ -30,6 +31,13 @@ export const partySchema = z
         code: 'custom',
         path: ['communities'],
         message: 'communities es obligatorio para partidos territoriales',
+      });
+    }
+    if (party.scope === 'territorial' && party.excludedCommunities) {
+      ctx.addIssue({
+        code: 'custom',
+        path: ['excludedCommunities'],
+        message: 'excludedCommunities solo se admite en partidos estatales',
       });
     }
   });
@@ -227,7 +235,7 @@ export function validateDataReferences(data: DataBundle): string[] {
   const questionIds = new Set(data.questions.map((question) => question.id));
 
   for (const party of data.parties) {
-    for (const community of party.communities ?? []) {
+    for (const community of [...(party.communities ?? []), ...(party.excludedCommunities ?? [])]) {
       if (!territoryIds.has(community)) {
         issues.push(
           `partido "${party.id}": la comunidad "${community}" no existe en data/territories.json`,

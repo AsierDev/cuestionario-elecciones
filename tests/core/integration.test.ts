@@ -39,6 +39,20 @@ describe('integración con los datos reales', () => {
     expect(ids).not.toContain('erc');
   });
 
+  it('no compara candidaturas estatales donde se integran en listas territoriales', () => {
+    const ids = (territoryId: string) =>
+      computeResults(data, { territoryId, answers: answerAll(1) }).applicableParties.map(
+        (party) => party.id,
+      );
+    expect(ids('cataluna')).toEqual(expect.arrayContaining(['sumar', 'erc']));
+    expect(ids('cataluna')).not.toContain('podemos');
+    for (const territoryId of ['canarias', 'comunidad-valenciana']) {
+      expect(ids(territoryId)).not.toContain('podemos');
+      expect(ids(territoryId)).not.toContain('sumar');
+    }
+    expect(ids('galicia')).toEqual(expect.arrayContaining(['sumar', 'podemos', 'bng']));
+  });
+
   it.each(['psoe', 'pp', 'vox', 'sumar', 'podemos'])(
     'quien responde como %s obtiene a ese partido en cabeza con un 100 %%',
     (partyId) => {

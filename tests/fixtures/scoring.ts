@@ -16,7 +16,12 @@ export function territory(id: string): Territory {
 
 export function party(
   id: string,
-  options: { displayName?: string; scope?: PartyScope; communities?: string[] } = {},
+  options: {
+    displayName?: string;
+    scope?: PartyScope;
+    communities?: string[];
+    excludedCommunities?: string[];
+  } = {},
 ): Party {
   const scope = options.scope ?? 'estatal';
   return {
@@ -24,6 +29,7 @@ export function party(
     displayName: options.displayName ?? id.toUpperCase(),
     scope,
     ...(scope === 'territorial' ? { communities: options.communities ?? [] } : {}),
+    ...(options.excludedCommunities ? { excludedCommunities: options.excludedCommunities } : {}),
     websiteUrl: `https://example.com/${id}`,
     programUrl: `https://example.com/${id}/programa`,
     programYear: 2026,
