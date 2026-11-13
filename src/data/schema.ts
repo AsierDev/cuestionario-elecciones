@@ -23,6 +23,10 @@ export const partySchema = z
     websiteUrl: urlSchema,
     programUrl: urlSchema,
     programYear: z.number().int(),
+    /** Nombre del documento enlazado cuando no es un programa electoral al uso. */
+    programLabel: z.string().min(1).optional(),
+    /** Candidatura sin escaños en el Congreso saliente: no hay votaciones suyas que citar. */
+    withoutSeats: z.boolean().optional(),
     identityNote: z.string().min(1).optional(),
   })
   .superRefine((party, ctx) => {
@@ -158,6 +162,8 @@ export const metaSchema = z.object({
   updatedAt: isoDateSchema,
   dataVersion: z.string().min(1),
   notes: z.string().optional(),
+  /** Lista oficial completa de candidaturas proclamadas (BOE). */
+  candidaciesUrl: urlSchema.optional(),
 });
 
 export const territoriesFileSchema = z.array(territorySchema);

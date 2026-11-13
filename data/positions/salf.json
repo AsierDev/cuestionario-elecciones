@@ -1,0 +1,272 @@
+[
+  {
+    "questionId": "q-alquiler-tope",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=3",
+    "sourceDate": "2026-03-04",
+    "note": "Programa de Castilla y León (2026): califica los topes de alquiler de fracaso porque reducen la oferta y propone incentivos fiscales."
+  },
+  {
+    "questionId": "q-desalojo-rapido",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=5",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: con denuncia y título de propiedad, la Policía desaloja al okupa en 48 horas; al inquiokupa, lanzamiento en 30 días."
+  },
+  {
+    "questionId": "q-impuesto-grandes-fortunas",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=13",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: suprimir Sucesiones, Donaciones y Patrimonio, y también el impuesto a las grandes fortunas."
+  },
+  {
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-bajar-irpf",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=12",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: mínimo exento de 35.000 € para todos, financiado con recortes de gasto (regla «un euro de rebaja, un euro de ahorro»)."
+  },
+  {
+    "questionId": "q-jornada-37-5",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-salario-minimo",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-cotizaciones-contratar",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=31",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: bajar la cuña fiscal del 41 al 29 % y cotización cero durante dos años por contratar a menores de 30 y mayores de 50."
+  },
+  {
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-planes-pensiones-privados",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=20",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: sistema mixto con cuenta individual obligatoria (2 % del salario) y mochila austriaca; no detalla ventajas fiscales a planes privados."
+  },
+  {
+    "questionId": "q-ingreso-minimo",
+    "value": 0,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=33",
+    "sourceDate": "2026-11-10",
+    "note": "Postura mixta: complemento para que el IMV baje 50 céntimos por euro ganado, pero sin ayudas no contributivas hasta 5 años de residencia legal."
+  },
+  {
+    "questionId": "q-sanidad-privada",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=23",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: si se superan 60 días para operarse, el paciente elige centro público o privado y lo paga la sanidad pública."
+  },
+  {
+    "questionId": "q-escuela-concertada",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=35",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: cheque escolar del mismo importe por alumno válido en pública, concertada y privada."
+  },
+  {
+    "questionId": "q-regularizacion",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=17",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: derogar la regularización de 2026 y prohibir por ley orgánica cualquier regularización masiva."
+  },
+  {
+    "questionId": "q-rechazo-frontera",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=17",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: expulsión en 48 horas tras identificación y orden; no menciona expresamente las devoluciones en frontera sin expediente."
+  },
+  {
+    "questionId": "q-menores-reparto",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/03/Programa-electoral-CyL-de-Alvise-Pe%CC%81rez.pdf#page=21",
+    "sourceDate": "2026-03-04",
+    "note": "Programa de Castilla y León (2026): exigir al Gobierno que paralice el calendario de cierre de las centrales nucleares."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=13",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: IVA de la luz al 4 %, suprimir el impuesto a la producción eléctrica y vetar el Pacto Verde europeo."
+  },
+  {
+    "questionId": "q-trasvases",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-cgpj-jueces",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=28",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: reforma constitucional para que el CGPJ se componga por elección de jueces y magistrados, antigüedad o sorteo."
+  },
+  {
+    "questionId": "q-voto-16",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-gasto-defensa",
+    "value": 0,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=40",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: compromiso con el 2 % del PIB, priorizando industria nacional y sueldos militares; no plantea superarlo."
+  },
+  {
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://t.me/AlvisePerez/13899",
+    "sourceDate": "2026-02-24",
+    "note": "Su eurodiputado votó contra la ayuda europea a Ucrania, incluido el préstamo de 2026, y rechaza enviarle misiles."
+  },
+  {
+    "questionId": "q-multirreincidencia",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=8",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: con tres condenas, prisión sin suspensión, y juicios rápidos en 72 horas para multirreincidentes."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-autodeterminacion-genero",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-eutanasia",
+    "value": -1,
+    "status": "provisional",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://t.me/AlvisePerez/6901",
+    "sourceDate": "2023-02-16",
+    "note": "Alvise Pérez calificó la eutanasia de «asesinato de ancianos y depresivos» (2023, antes de fundar el partido)."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-autonomia-fiscal",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf#page=14",
+    "sourceDate": "2026-11-10",
+    "note": "Contrato 29N: financiación autonómica con criterios objetivos iguales para todas las comunidades, sin acuerdos ad hoc con socios."
+  },
+  {
+    "questionId": "q-lengua-cooficial",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en el contrato electoral del 29N ni en declaraciones oficiales consultadas."
+  }
+]

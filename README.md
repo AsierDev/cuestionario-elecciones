@@ -70,9 +70,10 @@ posición:
    Si necesitas un partido o tema nuevo, edita también `data/parties.json` o `data/topics.json`
    (y la pregunta correspondiente en `data/questions.json`).
 2. **Valida el contrato**: `npm run validate:data`
-   (esquema, campos obligatorios por posición, referencias cruzadas y matriz completa 11×30).
+   (esquema, campos obligatorios por posición, referencias cruzadas y matriz completa 13×30).
 3. **Revisa la cobertura**: `npm run coverage:data`
-   (los tests exigen ≥75 % global, ≥85 % en los partidos estatales y que cada propuesta tenga
+   (los tests exigen ≥75 % global, ≥85 % en los partidos estatales con escaños, ≥60 % en las
+   candidaturas sin escaños previos (`withoutSeats`) y que cada propuesta tenga
    al menos un partido a favor y otro en contra).
 4. **Pasa la suite completa**: `npm test`
    (incluye contrato, integración territorial, motor y el test que garantiza que `src/` no
@@ -94,15 +95,16 @@ Reglas del contrato que debes respetar al editar:
 
 ```
 data/territories.json            [{ id, name }]                                 // 19 territorios
-data/parties.json                [{ id, displayName, scope, communities?,       // 11 partidos
+data/parties.json                [{ id, displayName, scope, communities?,       // 13 partidos
                                      excludedCommunities?, websiteUrl, programUrl,
-                                     programYear, identityNote? }]
+                                     programYear, programLabel?, withoutSeats?,
+                                     identityNote? }]
 data/topics.json                 [{ id, name, description, evidence[] }]        // 11 temas
 data/questions.json              [{ id, topicId, title, statement, summary,     // 30 propuestas
                                      context, change, ifFavor, ifAgainst, glossary[] }]
 data/positions/<partyId>.json    [{ questionId, value, status, sourceType,      // 30 por partido
                                      sourceUrl, sourceDate, note }]
-data/meta.json                   { updatedAt, dataVersion, notes? }
+data/meta.json                   { updatedAt, dataVersion, notes?, candidaciesUrl? }
 ```
 
 Código:
@@ -215,6 +217,12 @@ se apoyan en 2023/declaraciones/votaciones y se marcan como `provisional` con av
 
 ## Estado de los datos
 
-- `dataVersion`: `0.4.0` · `updatedAt`: `2026-10-06`.
-- Cobertura global de posiciones: **269/330 (81,5 %)**. Estatales ≥93 %; huecos principales en
-  Coalición Canaria (10/30) y Junts (17/30), que quedan como «sin datos» en lugar de estimarse.
+- `dataVersion`: `0.5.0` · `updatedAt`: `2026-11-13`.
+- Cobertura global de posiciones: **307/390 (78,7 %)**. Estatales con escaños ≥93 %; huecos
+  principales en Coalición Canaria (10/30) y Junts (17/30), que quedan como «sin datos» en lugar
+  de estimarse.
+- Partidos comparados: los que tenían escaños en el Congreso saliente y concurren el 29-N, más
+  dos candidaturas estatales sin escaños previos (`withoutSeats`): SALF (19/30, contrato
+  electoral del 29N; no concurre en Cantabria) y Frente Obrero (19/30, programa político de
+  octubre de 2026). Los resultados enlazan a la lista completa de candidaturas del BOE
+  (`meta.candidaciesUrl`).

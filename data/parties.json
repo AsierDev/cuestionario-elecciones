@@ -98,5 +98,28 @@
     "programUrl": "https://coalicioncanaria.org/programas-electorales/",
     "programYear": 2023,
     "identityNote": "Concurre el 29-N en coalición con Municipalistas Primero."
+  },
+  {
+    "id": "salf",
+    "displayName": "SALF",
+    "scope": "estatal",
+    "websiteUrl": "https://seacabolafiesta.com/",
+    "programUrl": "https://theobjective.com/wp-content/uploads/2026/11/salf.pdf",
+    "programYear": 2026,
+    "programLabel": "Contrato electoral",
+    "withoutSeats": true,
+    "identityNote": "Se Acabó La Fiesta, de Alvise Pérez. Sin escaños en el Congreso saliente. Presenta lista al Congreso en 46 de 52 circunscripciones: no en Cantabria, Bizkaia, Gipuzkoa, Ciudad Real, Girona ni Lleida. No concurre al Senado.",
+    "excludedCommunities": ["cantabria"]
+  },
+  {
+    "id": "frente-obrero",
+    "displayName": "Frente Obrero",
+    "scope": "estatal",
+    "websiteUrl": "https://frenteobrero.es/",
+    "programUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "programYear": 2026,
+    "programLabel": "Programa político",
+    "withoutSeats": true,
+    "identityNote": "Partido de Roberto Vaquero. Sin escaños en el Congreso saliente. Concurre al Congreso en las 52 circunscripciones. Su documento de octubre de 2026 es su programa político general, no un programa electoral específico."
   }
 ]

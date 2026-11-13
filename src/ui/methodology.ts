@@ -2,7 +2,7 @@ import { ANSWER_SCALE, SCORING_CONFIG } from '../core/config';
 import type { DataBundle } from '../data/schema';
 
 import { createButton, el } from './components';
-import { formatDate, formatFactor, formatPercent } from './format';
+import { formatDate, formatFactor, formatList, formatPercent } from './format';
 import { MAX_PRIORITY_TOPICS } from './state';
 
 export interface MethodologyViewHandlers {
@@ -22,6 +22,40 @@ function partiesWithDeclarations(data: DataBundle): string[] {
     if (rows.some((row) => row.sourceType === 'declaracion')) partyIds.add(partyId);
   }
   return data.parties.filter((party) => partyIds.has(party.id)).map((party) => party.displayName);
+}
+
+function renderPartySelection(data: DataBundle): HTMLElement {
+  const withoutSeats = data.parties
+    .filter((party) => party.withoutSeats)
+    .map((party) => party.displayName)
+    .sort((a, b) => a.localeCompare(b, 'es'));
+  const children: (Node | string)[] = [
+    el('p', {
+      text: `Se comparan ${data.parties.length} candidaturas: las que tenían escaños en el Congreso saliente y concurren el 29-N, en su comunidad si son territoriales.`,
+    }),
+  ];
+  if (withoutSeats.length > 0) {
+    children.push(
+      el('p', {
+        text: `Además se incluyen candidaturas estatales sin escaños previos que concurren en la mayoría de circunscripciones y tienen presencia relevante en la campaña: ${formatList(withoutSeats)}. Como no tienen votaciones en el Congreso, sus posiciones se documentan con su programa y sus declaraciones, y suelen tener menos cobertura.`,
+      }),
+    );
+  }
+  const boe: (Node | string)[] = [
+    'Hay muchas más candidaturas en las papeletas que no se comparan aquí.',
+  ];
+  if (data.meta.candidaciesUrl) {
+    boe.push(
+      ' Puedes consultar la ',
+      el('a', {
+        text: 'lista completa de candidaturas proclamadas en el BOE',
+        attrs: { href: data.meta.candidaciesUrl, target: '_blank', rel: 'noopener noreferrer' },
+      }),
+      '.',
+    );
+  }
+  children.push(el('p', {}, boe));
+  return section('methodology-parties-heading', 'Qué partidos se comparan', children);
 }
 
 function renderTopicCatalog(data: DataBundle): HTMLElement {
@@ -100,6 +134,7 @@ export function renderMethodologyView(
         text: `Respondes en una escala común de cinco puntos: ${ANSWER_SCALE.map((point) => `«${point.label}» (${formatFactor(point.value)})`).join(', ')}. «Sin opinión» no cuenta; la posición central sí, como postura intermedia. Las posiciones de los partidos se codifican en esa misma escala.`,
       }),
     ]),
+    renderPartySelection(data),
     section('methodology-formula-heading', 'Cómo se calcula la afinidad', [
       el('p', {
         text: 'En cada propuesta, la afinidad con un partido es la cercanía entre tu posición y la suya en la escala de −1 a +1:',

@@ -51,9 +51,11 @@ describe('integración con los datos reales', () => {
       expect(ids(territoryId)).not.toContain('sumar');
     }
     expect(ids('galicia')).toEqual(expect.arrayContaining(['sumar', 'podemos', 'bng']));
+    expect(ids('cantabria')).not.toContain('salf');
+    expect(ids('cantabria')).toContain('frente-obrero');
   });
 
-  it.each(['psoe', 'pp', 'vox', 'sumar', 'podemos'])(
+  it.each(['psoe', 'pp', 'vox', 'sumar', 'podemos', 'salf', 'frente-obrero'])(
     'quien responde como %s obtiene a ese partido en cabeza con un 100 %%',
     (partyId) => {
       const results = computeResults(data, { territoryId: 'madrid', answers: mirror(partyId) });

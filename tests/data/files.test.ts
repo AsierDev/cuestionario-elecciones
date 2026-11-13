@@ -11,30 +11,36 @@ const EXPECTED_PARTY_IDS = [
   'coalicion-canaria',
   'eh-bildu',
   'erc',
+  'frente-obrero',
   'junts',
   'pnv',
   'podemos',
   'pp',
   'psoe',
+  'salf',
   'sumar',
   'vox',
 ];
 
+// Estatales con escaños en el Congreso saliente: se exige cobertura alta.
 const ESTATAL_PARTY_IDS = ['psoe', 'pp', 'vox', 'sumar', 'podemos'];
+// Estatales sin escaños previos: sin votaciones que citar, basta con poder entrar en el ranking.
+const WITHOUT_SEATS_PARTY_IDS = ['frente-obrero', 'salf'];
 
 const TERRITORY_PARTY_COUNTS: Record<string, number> = {
-  cataluna: 7,
-  'pais-vasco': 7,
-  navarra: 6,
-  galicia: 6,
-  canarias: 6,
-  andalucia: 5,
-  ceuta: 5,
-  melilla: 5,
+  cataluna: 9,
+  'pais-vasco': 9,
+  navarra: 8,
+  galicia: 8,
+  canarias: 8,
+  andalucia: 7,
+  ceuta: 7,
+  melilla: 7,
 };
 
 const GLOBAL_COVERAGE_MIN = 0.75;
 const ESTATAL_COVERAGE_MIN = 0.85;
+const WITHOUT_SEATS_COVERAGE_MIN = 0.6;
 const NOTE_MAX_LENGTH = 240;
 const SCALE_VALUES = new Set(ANSWER_SCALE.map((point) => point.value));
 
@@ -64,7 +70,7 @@ describe('data/topics.json', () => {
 });
 
 describe('data/parties.json', () => {
-  it('contiene los 11 partidos esperados', () => {
+  it('contiene los 13 partidos esperados', () => {
     expect(data.parties.map((party) => party.id).sort()).toEqual(EXPECTED_PARTY_IDS);
   });
 });
@@ -147,6 +153,16 @@ describe('data/positions/', () => {
       const rows = data.positions[partyId] ?? [];
       const withData = rows.filter((row) => row.value !== null).length;
       expect(withData / rows.length, partyId).toBeGreaterThanOrEqual(ESTATAL_COVERAGE_MIN);
+    }
+  });
+
+  it(`alcanza una cobertura ≥${WITHOUT_SEATS_COVERAGE_MIN * 100}% en las candidaturas sin escaños`, () => {
+    const flagged = data.parties.filter((party) => party.withoutSeats).map((party) => party.id);
+    expect(flagged.sort()).toEqual(WITHOUT_SEATS_PARTY_IDS);
+    for (const partyId of WITHOUT_SEATS_PARTY_IDS) {
+      const rows = data.positions[partyId] ?? [];
+      const withData = rows.filter((row) => row.value !== null).length;
+      expect(withData / rows.length, partyId).toBeGreaterThanOrEqual(WITHOUT_SEATS_COVERAGE_MIN);
     }
   });
 

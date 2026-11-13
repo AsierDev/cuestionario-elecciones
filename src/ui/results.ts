@@ -169,8 +169,20 @@ function renderPartyRow(
       }),
     );
   }
+  if (score.party.withoutSeats) {
+    body.append(
+      el('p', {
+        className: 'party-row__missing',
+        text: 'No tenía escaños en el Congreso saliente: sus posiciones salen de su programa y sus declaraciones, no de votaciones parlamentarias.',
+      }),
+    );
+  }
   body.append(
-    externalLink(`Programa electoral (${score.party.programYear})`, score.party.programUrl, 'program-link'),
+    externalLink(
+      `${score.party.programLabel ?? 'Programa electoral'} (${score.party.programYear})`,
+      score.party.programUrl,
+      'program-link',
+    ),
   );
 
   return el('li', { className: 'party-row' }, [
@@ -442,6 +454,15 @@ export function renderResultsView(params: ResultsViewParams): HTMLElement {
         className: 'others__line',
         text: `No concurren en tu comunidad y no se comparan: ${formatList(results.nonApplicableParties.map((p) => p.displayName))}.`,
       }),
+    );
+  }
+  if (data.meta.candidaciesUrl) {
+    others.push(
+      el('p', { className: 'others__line' }, [
+        'Hay más candidaturas en tu circunscripción; consulta la ',
+        externalLink('lista completa en el BOE', data.meta.candidaciesUrl, 'source-link'),
+        '.',
+      ]),
     );
   }
   if (others.length > 0) children.push(el('div', { className: 'others' }, others));

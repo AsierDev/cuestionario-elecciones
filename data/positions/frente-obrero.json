@@ -1,0 +1,272 @@
+[
+  {
+    "questionId": "q-alquiler-tope",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-desalojo-rapido",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=46",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): la ocupación de viviendas de particulares no debe permitirse en ningún caso, pero pide paralizar desahucios de familias vulnerables."
+  },
+  {
+    "questionId": "q-impuesto-grandes-fortunas",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=19",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): centralizar Patrimonio y Sucesiones, quitar bonificaciones a los más ricos y subir Patrimonio a grandes empresas."
+  },
+  {
+    "questionId": "q-impuesto-banca-energeticas",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=13",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): nacionalizar sectores estratégicos y acabar con los abusos de los oligopolios energéticos; no cita un impuesto a beneficios extraordinarios."
+  },
+  {
+    "questionId": "q-bajar-irpf",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=18",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): bajar el IRPF a las rentas bajas y subirlo a las altas con más tramos y tipos."
+  },
+  {
+    "questionId": "q-jornada-37-5",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-salario-minimo",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=9",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): aumento general de los salarios en relación con el coste de la vida; no fija una meta para el SMI."
+  },
+  {
+    "questionId": "q-cotizaciones-contratar",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-cotizacion-sueldos-altos",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-planes-pensiones-privados",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=48",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): critica que los grandes grupos se lucren con los planes privados y rechaza el giro hacia un modelo mixto."
+  },
+  {
+    "questionId": "q-ingreso-minimo",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-sanidad-privada",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=42",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): acabar con la externalización y privatización de la sanidad."
+  },
+  {
+    "questionId": "q-escuela-concertada",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=22",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): eliminar las subvenciones a la escuela privada para fortalecer la pública."
+  },
+  {
+    "questionId": "q-regularizacion",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=53",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): imposibilidad de regularizarse si se entró de forma ilegal y revisión de los permisos concedidos."
+  },
+  {
+    "questionId": "q-rechazo-frontera",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=51",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): control absoluto de fronteras; quien las cruce sin permiso debe ser expulsado, con centros de deportación en países cercanos."
+  },
+  {
+    "questionId": "q-menores-reparto",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-nucleares",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=16",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): frenar el cierre de centrales, modernizar y ampliar el parque nuclear."
+  },
+  {
+    "questionId": "q-impuestos-verdes",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=15",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): poner fin a la «transición ecológica» y regular los combustibles, encarecidos por sus impuestos."
+  },
+  {
+    "questionId": "q-trasvases",
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=38",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): planes hidrográficos para repartir el agua entre territorios y acabar con la sequía; no menciona trasvases concretos."
+  },
+  {
+    "questionId": "q-cgpj-jueces",
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=58",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): priorizar la carrera judicial en los órganos superiores y suprimir los nombramientos del Gobierno."
+  },
+  {
+    "questionId": "q-voto-16",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-gasto-defensa",
+    "value": -0.5,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=11",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): salida inmediata de la OTAN, a la que ve como un gasto, aunque pide reforzar el ejército propio."
+  },
+  {
+    "questionId": "q-ayuda-militar-ucrania",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-multirreincidencia",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-ley-violencia-genero",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=31",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): sostiene que la violencia de género como violencia estructural no existe y pide derogar las leyes de discriminación positiva."
+  },
+  {
+    "questionId": "q-autodeterminacion-genero",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=32",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): derogación de la Ley Trans."
+  },
+  {
+    "questionId": "q-eutanasia",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  },
+  {
+    "questionId": "q-referendum-pactado",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): se opone a todos los procesos de independencia en España."
+  },
+  {
+    "questionId": "q-autonomia-fiscal",
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "declaracion",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf#page=56",
+    "sourceDate": "2026-10-06",
+    "note": "Programa político (oct. 2026): mismas competencias y mismo régimen fiscal para todas las comunidades."
+  },
+  {
+    "questionId": "q-lengua-cooficial",
+    "value": null,
+    "status": "sin-datos-suficientes",
+    "sourceType": "sin-datos",
+    "sourceUrl": "https://frenteobrero.es/documentos/programa-frente-obrero.pdf",
+    "sourceDate": "2026-11-13",
+    "note": "Sin posición localizada en su programa político (oct. 2026) ni en declaraciones oficiales consultadas."
+  }
+]
