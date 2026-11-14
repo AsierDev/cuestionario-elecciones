@@ -50,7 +50,7 @@ npm run preview # sirve dist/ localmente
 | `npm run test:core` | Tests del motor de scoring. |
 | `npm run test:ui` | Tests de la UI (happy-dom). |
 | `npm run lint` | ESLint. |
-| `npm run validate:data` | Valida `/data` contra el esquema zod, referencias cruzadas y matriz 11×30. |
+| `npm run validate:data` | Valida `/data` contra el esquema zod, referencias cruzadas y matriz 13×30. |
 | `npm run coverage:data` | Informe de cobertura de posiciones por partido y global. |
 | `npm run check:dist` | Verifica que `dist/index.html` usa rutas relativas y que sus assets existen. |
 
