@@ -217,7 +217,7 @@ se apoyan en 2023/declaraciones/votaciones y se marcan como `provisional` con av
 
 ## Estado de los datos
 
-- `dataVersion`: `0.5.0` · `updatedAt`: `2026-11-13`.
+- `dataVersion`: `0.5.0` · `updatedAt`: `2026-11-19`.
 - Cobertura global de posiciones: **307/390 (78,7 %)**. Estatales con escaños ≥93 %; huecos
   principales en Coalición Canaria (10/30) y Junts (17/30), que quedan como «sin datos» en lugar
   de estimarse.
@@ -226,3 +226,9 @@ se apoyan en 2023/declaraciones/votaciones y se marcan como `provisional` con av
   electoral del 29N; no concurre en Cantabria) y Frente Obrero (19/30, programa político de
   octubre de 2026). Los resultados enlazan a la lista completa de candidaturas del BOE
   (`meta.candidaciesUrl`).
+- Programas enlazados (a 19-nov-2026): todos los partidos enlazan un documento de 2026 salvo
+  Junts, que no ha publicado programa del 29-N y mantiene el de 2023. Los de las candidaturas
+  con escaños están verificados en sus webs oficiales. Coalición Canaria enlaza sus bases del
+  programa, SALF su contrato electoral simplificado (publicado por theobjective.com) y Frente
+  Obrero su programa político. Las posiciones aún no se han recodificado con los documentos
+  de 2026.

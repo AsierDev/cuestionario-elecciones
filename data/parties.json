@@ -4,8 +4,8 @@
     "displayName": "PSOE",
     "scope": "estatal",
     "websiteUrl": "https://www.psoe.es/",
-    "programUrl": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
-    "programYear": 2023
+    "programUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "programYear": 2026
   },
   {
     "id": "pp",
@@ -20,17 +20,16 @@
     "displayName": "VOX",
     "scope": "estatal",
     "websiteUrl": "https://www.voxespana.es/",
-    "programUrl": "https://www.voxespana.es/abascal/es-sentido-comun-estas-son-las-medidas-de-vox-para-el-29n-20261112",
-    "programYear": 2026,
-    "programLabel": "Resumen del programa electoral"
+    "programUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "programYear": 2026
   },
   {
     "id": "sumar",
     "displayName": "Frente Amplio",
     "scope": "estatal",
     "websiteUrl": "https://movimientosumar.es/",
-    "programUrl": "https://movimientosumar.es/programa-electoral-23j/",
-    "programYear": 2023,
+    "programUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "programYear": 2026,
     "identityNote": "Coalición registrada el 16-oct-2026 (IU, Movimiento Sumar, Más Madrid, Catalunya en Comú, CHA y otros), heredera de Sumar 2023, sin Podemos. En Canarias su espacio concurre en Unidad de Pueblo Canario y en la Comunidad Valenciana en Compromís-Front Valencià.",
     "excludedCommunities": ["canarias", "comunidad-valenciana"]
   },
@@ -39,8 +38,8 @@
     "displayName": "Podemos",
     "scope": "estatal",
     "websiteUrl": "https://podemos.info/",
-    "programUrl": "https://podemos.info/wp-content/uploads/2023/05/Podemos_programa_marco_28M_interactivo.pdf",
-    "programYear": 2023,
+    "programUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "programYear": 2026,
     "identityNote": "Concurre en solitario el 29-N tras no pactar con Frente Amplio. En Cataluña no presenta lista y apoya a ERC; en Canarias va en Unidad de Pueblo Canario y en la Comunidad Valenciana en Compromís-Front Valencià.",
     "excludedCommunities": ["canarias", "cataluna", "comunidad-valenciana"]
   },
@@ -50,8 +49,8 @@
     "scope": "territorial",
     "communities": ["cataluna"],
     "websiteUrl": "https://www.esquerra.cat/",
-    "programUrl": "https://esquerrarepublicana.cat/",
-    "programYear": 2023,
+    "programUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "programYear": 2026,
     "identityNote": "En el Congreso por Cataluña su lista incluye a independientes propuestos por Podemos (acuerdo de octubre de 2026)."
   },
   {
@@ -78,8 +77,8 @@
     "scope": "territorial",
     "communities": ["pais-vasco", "navarra"],
     "websiteUrl": "https://ehbildu.eus/",
-    "programUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
-    "programYear": 2023
+    "programUrl": "https://posibleegin.ehbildu.eus/wp-content/uploads/2026/11/PROGRAMA-CAS.pdf",
+    "programYear": 2026
   },
   {
     "id": "bng",
