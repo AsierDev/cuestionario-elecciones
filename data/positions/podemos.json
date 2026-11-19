@@ -2,11 +2,11 @@
   {
     "questionId": "q-alquiler-tope",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
-    "sourceDate": "2023-04-27",
-    "note": "Votó a favor de la Ley de Vivienda (2023) y reclama topes de alquiler más amplios."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 1): rebajar por ley un 40 % los alquileres vigentes y nuevos, con un suelo del 60 % del precio medio de la zona."
   },
   {
     "questionId": "q-desalojo-rapido",
@@ -20,47 +20,47 @@
   {
     "questionId": "q-impuesto-grandes-fortunas",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/fiscalidad/",
-    "sourceDate": "2020-09-08",
-    "note": "Propone un impuesto permanente a las grandes fortunas."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 30): convertir el impuesto de solidaridad de las grandes fortunas en un impuesto estatal permanente."
   },
   {
     "questionId": "q-impuesto-banca-energeticas",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.cronicamadrid.com/noticia/1297360/nacional/el-congreso-deroga-el-decreto-del-gravamen-energetico-con-el-voto-de-pp-vox-junts-el-pnv-y-upn.html",
-    "sourceDate": "2025-01-22",
-    "note": "Votó a favor de mantener el impuesto a las energéticas (enero 2025) y pide hacerlo permanente."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 31): impuesto permanente a los beneficios extraordinarios de la gran banca y recuperar los de eléctricas y petroleras."
   },
   {
     "questionId": "q-bajar-irpf",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/fiscalidad/",
-    "sourceDate": "2020-09-08",
-    "note": "Defiende una fiscalidad más progresiva para financiar los servicios públicos."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 48): subir los tipos del IRPF a partir de 60.000 euros y rebajar solo el tipo mínimo."
   },
   {
     "questionId": "q-jornada-37-5",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
-    "sourceDate": "2025-09-10",
-    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada (septiembre 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 113): reducir la jornada a 30 horas en la legislatura, empezando por 35, sin rebajar salarios."
   },
   {
     "questionId": "q-salario-minimo",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/empleo/",
-    "sourceDate": "2020-09-08",
-    "note": "Defiende subir el SMI al menos al 60 % del salario medio."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 111): subir el SMI a 1.800 euros y fijar por ley que nunca baje del 75 % del salario mediano."
   },
   {
     "questionId": "q-cotizaciones-contratar",
@@ -74,65 +74,65 @@
   {
     "questionId": "q-cotizacion-sueldos-altos",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
-    "sourceDate": "2023-03-30",
-    "note": "Votó a favor de la reforma de 2023 dentro de Unidas Podemos y defiende destopar las bases máximas."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 126): suprimir la base máxima de cotización y establecer cotizaciones progresivas."
   },
   {
     "questionId": "q-planes-pensiones-privados",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/pensiones/",
-    "sourceDate": "2020-09-08",
-    "note": "Defiende el sistema público de pensiones frente a los planes privados."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 50): eliminar por completo las desgravaciones en el IRPF por planes de pensiones privados."
   },
   {
     "questionId": "q-ingreso-minimo",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/lucha-contra-la-pobreza/",
-    "sourceDate": "2020-09-08",
-    "note": "Impulsó el Ingreso Mínimo Vital y pide ampliarlo."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 135): potenciar el IMV para convertirlo en una renta universal incondicionada."
   },
   {
     "questionId": "q-sanidad-privada",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/sanidad/",
-    "sourceDate": "2020-09-08",
-    "note": "Rechaza las derivaciones a la sanidad privada y pide revertir privatizaciones."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N: derogar la Ley 15/1997 y prohibir la externalización y privatización de centros y servicios sanitarios."
   },
   {
     "questionId": "q-escuela-concertada",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/educacion/",
-    "sourceDate": "2020-09-08",
-    "note": "Defiende priorizar la escuela pública y reducir progresivamente los conciertos."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N: moratoria indefinida de nuevos conciertos y reabsorción progresiva y voluntaria de la concertada en la red pública."
   },
   {
     "questionId": "q-regularizacion",
     "value": 1,
     "status": "verificado",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://elpais.com/espana/2026-01-26/podemos-anuncia-un-acuerdo-con-el-gobierno-para-una-regularizacion-extraordinaria-de-migrantes.html",
-    "sourceDate": "2026-01-26",
-    "note": "Pactó con el Gobierno la regularización extraordinaria aprobada en enero de 2026."
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 210): un procedimiento permanente de regularización basado en el arraigo, tras la regularización extraordinaria de 2026."
   },
   {
     "questionId": "q-rechazo-frontera",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/migraciones/",
-    "sourceDate": "2020-09-08",
-    "note": "Pide acabar con las devoluciones en caliente."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N: ley integral que ponga fin a las disposiciones que permiten las devoluciones en caliente."
   },
   {
     "questionId": "q-menores-reparto",
@@ -155,11 +155,11 @@
   {
     "questionId": "q-impuestos-verdes",
     "value": 0.5,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/medio-ambiente/",
-    "sourceDate": "2020-09-08",
-    "note": "Apoya la fiscalidad ambiental, con compensaciones para no penalizar a las rentas bajas."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 41): impuesto del 7 al 15 % sobre los beneficios de las empresas más contaminantes, aunque propone topes a los carburantes."
   },
   {
     "questionId": "q-trasvases",
@@ -173,38 +173,38 @@
   {
     "questionId": "q-cgpj-jueces",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/justicia/",
-    "sourceDate": "2020-09-08",
-    "note": "Rechaza que el CGPJ lo elijan los propios jueces."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 414): los vocales judiciales del CGPJ seguirán eligiéndose en el Congreso, por mayoría absoluta y con apoyo amplio de grupos."
   },
   {
     "questionId": "q-voto-16",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/democracia-participacion/",
-    "sourceDate": "2020-09-08",
-    "note": "Defiende el voto a los 16 años."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 413): reconocer el derecho al voto a partir de los 16 años."
   },
   {
     "questionId": "q-gasto-defensa",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/paz-seguridad/",
-    "sourceDate": "2020-09-08",
-    "note": "Se opone al aumento del gasto militar."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medidas 72 y 73): revertir el aumento del gasto militar, congelarlo y rechazar el objetivo del 5 % de la OTAN."
   },
   {
     "questionId": "q-ayuda-militar-ucrania",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/internacional/",
-    "sourceDate": "2020-09-08",
-    "note": "Se opone al envío de armamento a Ucrania y defiende una salida negociada."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 109): solución negociada y alto el fuego en Ucrania; critica el envío de armamento y la escalada bélica."
   },
   {
     "questionId": "q-multirreincidencia",
@@ -218,11 +218,11 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://podemos.info/materia/feminismos/",
-    "sourceDate": "2020-09-08",
-    "note": "Defiende reforzar la ley integral contra la violencia de género."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://podemos.info/wp-content/uploads/2026/11/29N-programa-Podemos.-Paz-casa-y-trabajo.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 145): fondo de mil millones para financiar de forma estable las políticas contra todas las violencias machistas."
   },
   {
     "questionId": "q-autodeterminacion-genero",

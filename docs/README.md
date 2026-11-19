@@ -15,7 +15,7 @@ Estado al final de cada línea: fecha de verificación (`2026-11-14`), `unverifi
 - [Metodología](../README.md#metodología-resumen) — leer al tocar el scoring, umbrales o la página de metodología · 2026-11-14
 - [Despliegue en GitHub Pages](../README.md#despliegue-en-github-pages) — leer al cambiar build, CI o base path · 2026-11-14
 - [Límites y licencias](../README.md#límites-y-licencias) — leer al citar fuentes externas o añadir recursos · 2026-11-14
-- [Estado de los datos](../README.md#estado-de-los-datos) — leer y actualizar al cambiar `/data` · 2026-11-14
+- [Estado de los datos](../README.md#estado-de-los-datos) — leer y actualizar al cambiar `/data` · 2026-11-19
 
 ## Decisiones
 

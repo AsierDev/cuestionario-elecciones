@@ -217,8 +217,8 @@ se apoyan en 2023/declaraciones/votaciones y se marcan como `provisional` con av
 
 ## Estado de los datos
 
-- `dataVersion`: `0.5.0` · `updatedAt`: `2026-11-19`.
-- Cobertura global de posiciones: **307/390 (78,7 %)**. Estatales con escaños ≥93 %; huecos
+- `dataVersion`: `0.6.0` · `updatedAt`: `2026-11-19`.
+- Cobertura global de posiciones: **312/390 (80,0 %)**. Estatales con escaños ≥96 %; huecos
   principales en Coalición Canaria (10/30) y Junts (17/30), que quedan como «sin datos» en lugar
   de estimarse.
 - Partidos comparados: los que tenían escaños en el Congreso saliente y concurren el 29-N, más
@@ -230,5 +230,10 @@ se apoyan en 2023/declaraciones/votaciones y se marcan como `provisional` con av
   Junts, que no ha publicado programa del 29-N y mantiene el de 2023. Los de las candidaturas
   con escaños están verificados en sus webs oficiales. Coalición Canaria enlaza sus bases del
   programa, SALF su contrato electoral simplificado (publicado por theobjective.com) y Frente
-  Obrero su programa político. Las posiciones aún no se han recodificado con los documentos
-  de 2026.
+  Obrero su programa político.
+- Recodificación con los programas del 29-N (19-nov-2026): todos los partidos salvo Junts.
+  146 posiciones citan ya el programa de 2026 y 207/390 están verificadas. Solo cambia un valor
+  cuando el programa trata la medida concreta; si no, se conserva la votación, la declaración o
+  el programa de 2023, y las votaciones de 2026 siguen como fuente preferente. Cambian 10
+  valores y se rellenan 5 huecos. Donde programa y votación no coinciden se mantiene el valor
+  anterior hasta revisarlo.

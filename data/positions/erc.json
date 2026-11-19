@@ -20,47 +20,47 @@
   {
     "questionId": "q-impuesto-grandes-fortunas",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: fiscalidad progresiva, incluido el impuesto a las grandes fortunas."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 74): hacer permanente el impuesto de solidaridad de las grandes fortunas y subir el tipo de los mayores patrimonios."
   },
   {
     "questionId": "q-impuesto-banca-energeticas",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.cronicamadrid.com/noticia/1297360/nacional/el-congreso-deroga-el-decreto-del-gravamen-energetico-con-el-voto-de-pp-vox-junts-el-pnv-y-upn.html",
-    "sourceDate": "2025-01-22",
-    "note": "Votó a favor de mantener el impuesto a las energéticas (enero 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medidas 75 y 76): recuperar el impuesto a las grandes energéticas y hacer permanente el de la banca."
   },
   {
     "questionId": "q-bajar-irpf",
     "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: fiscalidad progresiva; rechaza rebajas generales de impuestos."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 69): subir el IRPF de las rentas del capital y bajarlo solo a las rentas del trabajo inferiores a 35.000 euros."
   },
   {
     "questionId": "q-jornada-37-5",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
-    "sourceDate": "2025-09-10",
-    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada (septiembre 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 105): reducir por ley la jornada máxima a 37,5 horas semanales sin reducción salarial."
   },
   {
     "questionId": "q-salario-minimo",
-    "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Apoya subir el salario mínimo, aunque reclama un SMI propio para Cataluña."
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 66): subir el SMI estatal hasta el 60 % del salario medio y permitir un salario mínimo catalán superior."
   },
   {
     "questionId": "q-cotizaciones-contratar",
@@ -92,20 +92,20 @@
   {
     "questionId": "q-ingreso-minimo",
     "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Apoya el IMV, pero reclama su gestión por la Generalitat."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 123): más financiación estatal para adaptar las cuantías del IMV al coste de la vida en Cataluña."
   },
   {
     "questionId": "q-sanidad-privada",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2026-10-06",
-    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 203): blindar la sanidad pública con gestión pública y frenar la privatización."
   },
   {
     "questionId": "q-escuela-concertada",
@@ -154,12 +154,12 @@
   },
   {
     "questionId": "q-impuestos-verdes",
-    "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: impulsar la fiscalidad ambiental."
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 83): consolidar una fiscalidad verde y eliminar las exenciones al combustible de aviación y navegación."
   },
   {
     "questionId": "q-trasvases",
@@ -182,11 +182,11 @@
   {
     "questionId": "q-voto-16",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Defiende el voto a los 16 años."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N: promover el derecho de voto a partir de los 16 años."
   },
   {
     "questionId": "q-gasto-defensa",
@@ -200,11 +200,11 @@
   {
     "questionId": "q-ayuda-militar-ucrania",
     "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Apoya a Ucrania en el marco de la UE."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 44): mantener el apoyo a Ucrania desde la UE junto con la vía diplomática; no concreta el envío de armamento."
   },
   {
     "questionId": "q-multirreincidencia",
@@ -218,20 +218,20 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Defiende la ley integral contra la violencia de género."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 88): reforzar y actualizar la Ley Orgánica 1/2004 para cubrir todas las violencias machistas."
   },
   {
     "questionId": "q-autodeterminacion-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://theobjective.com/espana/politica/2023-02-16/congreso-ley-trans-mayoria/",
-    "sourceDate": "2023-02-16",
-    "note": "Votó a favor de la ley trans (2023)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 93): reconocer las identidades no binarias en el Registro Civil sin requisitos patologizadores. Votó la ley trans (2023)."
   },
   {
     "questionId": "q-eutanasia",
@@ -245,28 +245,28 @@
   {
     "questionId": "q-referendum-pactado",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: referéndum de autodeterminación acordado con el Estado."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N: defiende el derecho de Cataluña a la autodeterminación como vía para resolver el conflicto con el Estado."
   },
   {
     "questionId": "q-autonomia-fiscal",
     "value": 1,
     "status": "verificado",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://www.moncloa.com/2026/09/05/financiacion-singular-cataluna-cpff-3426682/",
-    "sourceDate": "2026-09-05",
-    "note": "Pactó una financiación singular para que Cataluña recaude todos sus impuestos."
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 34): que la Agència Tributària de Catalunya recaude todos los impuestos, en la línea de un «concierto económico solidario»."
   },
   {
     "questionId": "q-lengua-cooficial",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.abc.es/espana/programa-electoral-erc-grabriel-rufian-elecciones-generales-20230723144554-nt.html",
-    "sourceDate": "2023-07-23",
-    "note": "Defiende el catalán como requisito en la Administración catalana."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://esquerrarepublicana.cat/documents/e2026-programa.pdf",
+    "sourceDate": "2026-11-17",
+    "note": "Programa 29N (medida 10): ley de plurilingüismo que exija conocer la lengua oficial propia a los empleados de la Administración del Estado."
   }
 ]

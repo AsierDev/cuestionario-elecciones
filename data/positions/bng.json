@@ -20,74 +20,74 @@
   {
     "questionId": "q-impuesto-grandes-fortunas",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa 23J: fiscalidad progresiva sobre las grandes fortunas."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: blindar la permanencia del impuesto a las grandes fortunas, reducir sus exenciones y transferir su gestión a Galicia."
   },
   {
     "questionId": "q-impuesto-banca-energeticas",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.cronicamadrid.com/noticia/1297360/nacional/el-congreso-deroga-el-decreto-del-gravamen-energetico-con-el-voto-de-pp-vox-junts-el-pnv-y-upn.html",
-    "sourceDate": "2025-01-22",
-    "note": "Votó a favor de mantener el impuesto a las energéticas (enero 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: blindar la permanencia de los impuestos a los beneficios de la banca y las grandes energéticas."
   },
   {
     "questionId": "q-bajar-irpf",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa 23J: fiscalidad progresiva para financiar los servicios públicos."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: aumentar la progresividad del IRPF para que pague más quien más renta obtiene."
   },
   {
     "questionId": "q-jornada-37-5",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
-    "sourceDate": "2025-09-10",
-    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada (septiembre 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: jornada de 35 horas sin reducción salarial y horizonte de 32 horas en cuatro días."
   },
   {
     "questionId": "q-salario-minimo",
-    "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Apoya subir el salario mínimo y reclama uno propio para Galicia."
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: situar el SMI en el 60 % del salario medio, como fija la Carta Social Europea, y permitir que Galicia lo mejore."
   },
   {
     "questionId": "q-cotizaciones-contratar",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Rechaza rebajar cotizaciones empresariales."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: revisar y reducir las bonificaciones y descuentos en las cotizaciones empresariales."
   },
   {
     "questionId": "q-cotizacion-sueldos-altos",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2026-10-06",
-    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: eliminar el tope máximo de las bases de cotización para sostener el sistema público de pensiones."
   },
   {
     "questionId": "q-planes-pensiones-privados",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Defiende el sistema público de pensiones."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: derogar las normas que fomentan los planes de pensiones privados de empleo."
   },
   {
     "questionId": "q-ingreso-minimo",
@@ -101,20 +101,20 @@
   {
     "questionId": "q-sanidad-privada",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa 23J: sanidad pública y rechazo a las derivaciones a la privada."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: denuncia la deriva hacia la sanidad privada y defiende un sistema público con plena capacidad gallega."
   },
   {
     "questionId": "q-escuela-concertada",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa 23J: priorizar la escuela pública."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: avanzar hacia la supresión de los conciertos educativos, empezando por la enseñanza no obligatoria."
   },
   {
     "questionId": "q-regularizacion",
@@ -128,11 +128,11 @@
   {
     "questionId": "q-rechazo-frontera",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Pide acabar con las devoluciones en caliente."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: prohibir las devoluciones en caliente."
   },
   {
     "questionId": "q-menores-reparto",
@@ -154,12 +154,12 @@
   },
   {
     "questionId": "q-impuestos-verdes",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2026-10-06",
-    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+    "value": 0,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: propone una fiscalidad ambiental sobre energía y transporte, pero también un precio máximo legal para gasolina y diésel."
   },
   {
     "questionId": "q-trasvases",
@@ -191,20 +191,20 @@
   {
     "questionId": "q-gasto-defensa",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa 23J: reducir el gasto militar."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: rechazar el incremento del gasto militar y las directrices de la OTAN, y reducirlo progresivamente."
   },
   {
     "questionId": "q-ayuda-militar-ucrania",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Se opone al envío de armamento y a la escalada militar."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: cesar de inmediato el envío de armamento español a Ucrania y buscar una salida negociada."
   },
   {
     "questionId": "q-multirreincidencia",
@@ -218,20 +218,20 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Defiende la ley integral contra la violencia de género."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: reforzar la respuesta pública a la violencia machista y ejecutar las medidas pendientes del Pacto de Estado."
   },
   {
     "questionId": "q-autodeterminacion-genero",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2026-10-06",
-    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: completar la despatologización legal de las personas trans y respetar la autodeterminación de género de los menores."
   },
   {
     "questionId": "q-eutanasia",
@@ -245,28 +245,28 @@
   {
     "questionId": "q-referendum-pactado",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa 23J: derecho de autodeterminación de Galicia."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: cambios legales para poder convocar referendos vinculantes, incluido el de autodeterminación."
   },
   {
     "questionId": "q-autonomia-fiscal",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Programa 23J: concierto económico propio para Galicia."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: un modelo de concierto económico en el que Galicia recaude todos los impuestos, con una Facenda Galega propia."
   },
   {
     "questionId": "q-lengua-cooficial",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://web.archive.org/web/20260517023018/https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
-    "sourceDate": "2023-07-05",
-    "note": "Defiende el gallego como requisito en la Administración gallega."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2026/11/12/26_bng_xerais_documentos_programa_electoral.pdf",
+    "sourceDate": "2026-11-12",
+    "note": "Programa 29N: exigir el conocimiento del gallego al funcionariado de la Administración central en Galicia."
   }
 ]

@@ -2,11 +2,11 @@
   {
     "questionId": "q-alquiler-tope",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
-    "sourceDate": "2023-04-27",
-    "note": "Votó en contra de la Ley de Vivienda (abril 2023) y rechaza el control de precios del alquiler."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N (medida 145): derogar la Ley de Vivienda y eliminar las zonas tensionadas y el índice de precios del alquiler."
   },
   {
     "questionId": "q-desalojo-rapido",
@@ -38,11 +38,11 @@
   {
     "questionId": "q-bajar-irpf",
     "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: bajar el IRPF, sobre todo a rentas medias y bajas, y ganar eficiencia en el gasto."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N: bajar el IRPF a rentas medias y bajas y a familias y deflactar la tarifa; no plantea una rebaja en todos los tramos con recorte del gasto."
   },
   {
     "questionId": "q-jornada-37-5",
@@ -65,11 +65,11 @@
   {
     "questionId": "q-cotizaciones-contratar",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: rebajar cotizaciones para fomentar la contratación, especialmente de jóvenes y autónomos."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N: bonificar el 100 % de las cotizaciones empresariales por el primer trabajador durante un año y el 50 % por el segundo."
   },
   {
     "questionId": "q-cotizacion-sueldos-altos",
@@ -110,11 +110,11 @@
   {
     "questionId": "q-escuela-concertada",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: libertad de elección de centro y apoyo a la enseñanza concertada."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N: conciertos de al menos seis años con módulos que cubran el coste real de la plaza y sin suprimir conciertos donde haya demanda."
   },
   {
     "questionId": "q-regularizacion",
@@ -146,11 +146,11 @@
   {
     "questionId": "q-nucleares",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
-    "sourceDate": "2025-06-17",
-    "note": "Autor de la ley para prorrogar las centrales nucleares (junio 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N (medida 228): eliminar el calendario de cierre de las cinco centrales y extender su vida útil con el aval del CSN. Fue autor de la ley de prórroga (2025)."
   },
   {
     "questionId": "q-impuestos-verdes",
@@ -173,11 +173,11 @@
   {
     "questionId": "q-cgpj-jueces",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: que los jueces elijan a los vocales judiciales del CGPJ."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N (medida 72): que jueces y magistrados elijan a los doce vocales judiciales del CGPJ."
   },
   {
     "questionId": "q-voto-16",
@@ -191,20 +191,20 @@
   {
     "questionId": "q-gasto-defensa",
     "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: cumplir los compromisos de gasto con la OTAN."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N: ley de programación y financiación de la defensa para cumplir los compromisos con los aliados, sin fijar un porcentaje del PIB."
   },
   {
     "questionId": "q-ayuda-militar-ucrania",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Apoya la ayuda militar a Ucrania en el marco de la UE y la OTAN."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N (medida 240): mantener el apoyo político, económico, militar y humanitario a Ucrania mientras dure la agresión rusa."
   },
   {
     "questionId": "q-multirreincidencia",
@@ -218,20 +218,20 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Apoya el Pacto de Estado contra la Violencia de Género, aunque ha pactado textos de «violencia intrafamiliar» en algunos gobiernos autonómicos."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N: cumplir el Pacto de Estado contra la Violencia de Género y dar más medios a las secciones judiciales de violencia sobre la mujer; no se pronuncia sobre la ley."
   },
   {
     "questionId": "q-autodeterminacion-genero",
-    "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Votó en contra de la ley trans en su paso por el Congreso (2022) y propone reformarla."
+    "value": -1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N: revisar la Ley Trans y eliminar la libre autodeterminación registral del sexo."
   },
   {
     "questionId": "q-eutanasia",
@@ -245,20 +245,20 @@
   {
     "questionId": "q-referendum-pactado",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Rechaza cualquier referéndum de autodeterminación."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N: recuperar en el Código Penal el delito de convocatoria de referéndum ilegal."
   },
   {
     "questionId": "q-autonomia-fiscal",
     "value": -1,
     "status": "verificado",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://www.moncloa.com/2026/09/05/financiacion-singular-cataluna-cpff-3426682/",
-    "sourceDate": "2026-09-05",
-    "note": "Sus comunidades votaron contra el nuevo modelo de financiación con trato singular para Cataluña (2026)."
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf",
+    "sourceDate": "2026-11-10",
+    "note": "Programa 29N: blindar la unidad de la Agencia Tributaria y la caja única de la Seguridad Social y pactar la financiación autonómica de forma multilateral."
   },
   {
     "questionId": "q-lengua-cooficial",

@@ -2,11 +2,11 @@
   {
     "questionId": "q-alquiler-tope",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
-    "sourceDate": "2023-04-27",
-    "note": "Votó a favor de la Ley de Vivienda (abril 2023), que permite topar el alquiler en zonas tensionadas."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 77): garantizar el cumplimiento de la normativa de precios del alquiler en las zonas tensionadas con más inspecciones."
   },
   {
     "questionId": "q-desalojo-rapido",
@@ -20,11 +20,11 @@
   {
     "questionId": "q-impuesto-grandes-fortunas",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: impulsó y defiende mantener el impuesto temporal de solidaridad de las grandes fortunas."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 127): una tributación complementaria de los grandes patrimonios para financiar la prestación por crianza."
   },
   {
     "questionId": "q-impuesto-banca-energeticas",
@@ -38,29 +38,29 @@
   {
     "questionId": "q-bajar-irpf",
     "value": -0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: rebajas fiscales selectivas para rentas bajas, sin bajada general ni recorte de gasto."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 88): deducción en el IRPF para rentas medias y bajas cuando suban los precios, compatible con la estabilidad presupuestaria; sin rebaja general."
   },
   {
     "questionId": "q-jornada-37-5",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
-    "sourceDate": "2025-09-10",
-    "note": "Votó contra las enmiendas que tumbaron la reducción de jornada a 37,5 horas (septiembre 2025); el proyecto era del Gobierno."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 108): completar la reducción de la jornada a 37,5 horas e incentivar las 35 horas en la negociación colectiva."
   },
   {
     "questionId": "q-salario-minimo",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: situar el SMI en el 60 % del salario medio, como recomienda la Carta Social Europea."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 87): blindar por ley el SMI por encima del 60 % del salario medio."
   },
   {
     "questionId": "q-cotizaciones-contratar",
@@ -74,11 +74,11 @@
   {
     "questionId": "q-cotizacion-sueldos-altos",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
-    "sourceDate": "2023-03-30",
-    "note": "Su Gobierno aprobó la reforma de pensiones de 2023, que sube la base máxima y crea la cuota de solidaridad para los sueldos altos."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N: acelerar el despliegue de la cuota de solidaridad para completarla en la próxima legislatura. Su Gobierno aprobó la reforma de 2023."
   },
   {
     "questionId": "q-planes-pensiones-privados",
@@ -92,20 +92,20 @@
   {
     "questionId": "q-ingreso-minimo",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: consolidar y ampliar el Ingreso Mínimo Vital y el complemento de ayuda a la infancia."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 89): potenciar el IMV, automatizar su concesión y adecuar cuantías y umbrales al coste de la crianza."
   },
   {
     "questionId": "q-sanidad-privada",
     "value": -1,
     "status": "verificado",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://www.rtve.es/noticias/20260512/gobierno-aprueba-proyecto-ley-frena-gestion-privada-sanidad-publica/17064696.shtml",
-    "sourceDate": "2026-05-12",
-    "note": "El Gobierno aprobó en 2026 el proyecto de Ley de Gestión Pública del SNS, que limita las derivaciones a la privada a casos excepcionales."
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 138): limitar la privatización de la sanidad con la gestión directa como modalidad preferente."
   },
   {
     "questionId": "q-escuela-concertada",
@@ -181,12 +181,12 @@
   },
   {
     "questionId": "q-voto-16",
-    "value": 0.5,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.aragonplay.es/aragonnoticias/espana/el-congreso-aprueba-una-propuesta-de-sumar-para-rebajar-a-los-16-anos-la-edad-para-votar.html",
-    "sourceDate": "2024-06-27",
-    "note": "Apoyó en comisión la propuesta para rebajar la edad de voto a 16 años (junio 2024), aunque el Gobierno no la ha impulsado."
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 372): rebajar la edad de voto a los 16 años."
   },
   {
     "questionId": "q-gasto-defensa",
@@ -200,11 +200,11 @@
   {
     "questionId": "q-ayuda-militar-ucrania",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: apoyo a Ucrania, incluida ayuda militar coordinada con la UE y la OTAN."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N: respaldar la soberanía de Ucrania; destaca que España fue en 2025 el quinto país de la UE en ayuda militar."
   },
   {
     "questionId": "q-multirreincidencia",
@@ -218,29 +218,29 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: renovar el Pacto de Estado contra la Violencia de Género y mantener la ley integral."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 350): incorporar las violencias digitales a la Ley Integral contra la Violencia de Género, tras renovar el Pacto de Estado en 2025."
   },
   {
     "questionId": "q-autodeterminacion-genero",
-    "value": 0.5,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://theobjective.com/espana/politica/2023-02-16/congreso-ley-trans-mayoria/",
-    "sourceDate": "2023-02-16",
-    "note": "Su grupo votó a favor de la ley trans (2023), con alguna abstención interna crítica con la autodeterminación."
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medida 412): garantizar que la Ley 4/2023 sea el suelo común de derechos de las personas trans y LGTBI en toda España."
   },
   {
     "questionId": "q-eutanasia",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
-    "sourceDate": "2021-03-18",
-    "note": "Votó a favor de la ley de eutanasia (marzo 2021), que impulsó su Gobierno."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.psoe.es/media-content/2026/11/PROGRAMAPSOE29N26.pdf",
+    "sourceDate": "2026-11-15",
+    "note": "Programa 29N (medidas 147 y 368): garantizar el ejercicio efectivo de la eutanasia y blindarla en la Constitución."
   },
   {
     "questionId": "q-referendum-pactado",

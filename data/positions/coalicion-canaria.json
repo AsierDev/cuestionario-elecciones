@@ -137,11 +137,11 @@
   {
     "questionId": "q-menores-reparto",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
-    "sourceDate": "2025-04-10",
-    "note": "Impulsó y votó a favor del decreto de reparto obligatorio de menores (abril 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+    "sourceDate": "2026-11-08",
+    "note": "Bases del programa 29N (medida 84): acogida compartida y traslados a otras comunidades sin negociación caso a caso. Impulsó el decreto de reparto (2025)."
   },
   {
     "questionId": "q-nucleares",
@@ -218,11 +218,11 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/cc-pdf/programas-electorales/01%20Programa%20Electoral%20Elecciones%20Generales%20noviembre%202019.pdf",
-    "sourceDate": "2019-10-04",
-    "note": "Apoya el Pacto de Estado contra la Violencia de Género."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2026/11/CCA-26-Programa_Electoral-29NOV.pdf",
+    "sourceDate": "2026-11-08",
+    "note": "Bases del programa 29N (medida 17): financiación estatal suficiente para aplicar en todas las islas el Pacto de Estado contra la violencia de género."
   },
   {
     "questionId": "q-autodeterminacion-genero",

@@ -218,11 +218,11 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
-    "sourceDate": "2023-07-23",
-    "note": "Apoya la ley integral contra la violencia de género."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.eaj-pnv.eus/es/programa-elecciones-generales-2026/",
+    "sourceDate": "2026-11-09",
+    "note": "Programa 29N: mejorar la atención a las víctimas de violencia machista y reforzar los recursos judiciales especializados."
   },
   {
     "questionId": "q-autodeterminacion-genero",

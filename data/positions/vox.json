@@ -2,11 +2,11 @@
   {
     "questionId": "q-alquiler-tope",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
-    "sourceDate": "2023-04-27",
-    "note": "Votó en contra de la Ley de Vivienda (abril 2023)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 30): derogar la Ley de Vivienda y sustituir la regulación por incentivos fiscales al alquiler de larga duración."
   },
   {
     "questionId": "q-desalojo-rapido",
@@ -38,11 +38,11 @@
   {
     "questionId": "q-bajar-irpf",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: rebaja general del IRPF y reducción del gasto político y administrativo."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N: bajada y simplificación del IRPF dentro de una «rebaja masiva de impuestos» compensada con recortes del gasto administrativo."
   },
   {
     "questionId": "q-jornada-37-5",
@@ -92,20 +92,20 @@
   {
     "questionId": "q-ingreso-minimo",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: critica el IMV y propone priorizar a nacionales y la inserción laboral."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 22): que el IMV atienda solo a españoles con menos recursos y promover el retorno de los inmigrantes que lo cobren."
   },
   {
     "questionId": "q-sanidad-privada",
-    "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: libertad de elección de médico y centro, incluida la colaboración con la sanidad privada."
+    "value": 0.5,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 62): fomentar la colaboración público-privada cuando ayude a reducir las listas de espera, con evaluación y control del gasto."
   },
   {
     "questionId": "q-escuela-concertada",
@@ -128,11 +128,11 @@
   {
     "questionId": "q-rechazo-frontera",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: deportación de inmigrantes irregulares y defensa de las fronteras de Ceuta y Melilla."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N: expulsión inmediata de quienes entren de forma irregular en Ceuta y militarización de la frontera para repeler entradas."
   },
   {
     "questionId": "q-menores-reparto",
@@ -146,20 +146,20 @@
   {
     "questionId": "q-nucleares",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
-    "sourceDate": "2025-06-17",
-    "note": "Votó a favor de la ley para prorrogar las centrales nucleares (junio 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N: derogar el calendario de cierre de las centrales nucleares y estudiar nuevas centrales junto a las actuales."
   },
   {
     "questionId": "q-impuestos-verdes",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: rechaza la fiscalidad verde y la Agenda 2030."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N: revertir los impuestos a las emisiones de CO2 y las normas del Pacto Verde Europeo."
   },
   {
     "questionId": "q-trasvases",
@@ -173,11 +173,11 @@
   {
     "questionId": "q-cgpj-jueces",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: que los jueces elijan el CGPJ."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 100): que los doce vocales judiciales del CGPJ los elijan los propios jueces y magistrados por voto directo."
   },
   {
     "questionId": "q-voto-16",
@@ -191,11 +191,11 @@
   {
     "questionId": "q-gasto-defensa",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: aumentar el gasto en defensa al menos hasta el 2 % del PIB."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 89): aumentar la inversión en Defensa, sin fijar un porcentaje del PIB."
   },
   {
     "questionId": "q-ayuda-militar-ucrania",
@@ -218,11 +218,11 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: derogar la ley de violencia de género y sustituirla por una de violencia intrafamiliar."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 47): derogar las «leyes de género» y sustituirlas por normas de protección a las víctimas de maltrato."
   },
   {
     "questionId": "q-autodeterminacion-genero",
@@ -236,20 +236,20 @@
   {
     "questionId": "q-eutanasia",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
-    "sourceDate": "2021-03-18",
-    "note": "Votó en contra de la ley de eutanasia (marzo 2021) y la recurrió al Constitucional."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 98): defensa de la vida «hasta la muerte natural» y fin de la «cultura de la muerte». Votó contra la ley de eutanasia (2021)."
   },
   {
     "questionId": "q-referendum-pactado",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Rechaza cualquier referéndum de autodeterminación."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 103): ilegalizar las organizaciones que atenten contra la unidad e integridad territorial de España."
   },
   {
     "questionId": "q-autonomia-fiscal",
@@ -263,10 +263,10 @@
   {
     "questionId": "q-lengua-cooficial",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: eliminar la exigencia de lenguas cooficiales para acceder al empleo público."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://www.voxespana.es/wp-content/uploads/2026/11/Programa-completo-A5-1.pdf",
+    "sourceDate": "2026-11-04",
+    "note": "Programa 29N (medida 60): que no conocer la lengua cooficial no impida acceder por oposición a plazas sanitarias."
   }
 ]

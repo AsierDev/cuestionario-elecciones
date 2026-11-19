@@ -2,11 +2,11 @@
   {
     "questionId": "q-alquiler-tope",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.idealista.com/news/inmobiliario/vivienda/2023/04/27/805657-aprobada-la-ley-de-vivienda-en-el-congreso-con-el-tope-al-alquiler-y-el-adios-al-IPC",
-    "sourceDate": "2023-04-27",
-    "note": "Sus integrantes (Unidas Podemos, Más País, Compromís) votaron a favor de la Ley de Vivienda (2023); el programa 23J pide topes más amplios."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: limitar por ley el alquiler en todas las zonas tensionadas, vinculándolo al 25 % de la renta del barrio, con declaración estatal subsidiaria."
   },
   {
     "questionId": "q-desalojo-rapido",
@@ -20,11 +20,11 @@
   {
     "questionId": "q-impuesto-grandes-fortunas",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: impuesto permanente a las grandes fortunas."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: reformar el impuesto de solidaridad para que tribute desde 1 millón de patrimonio neto y subir sus tipos."
   },
   {
     "questionId": "q-impuesto-banca-energeticas",
@@ -38,29 +38,29 @@
   {
     "questionId": "q-bajar-irpf",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: reforma fiscal progresiva para aumentar la recaudación y el gasto social."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: reforma fiscal que carga más a grandes empresas y fortunas y solo baja el IRPF a los salarios más bajos."
   },
   {
     "questionId": "q-jornada-37-5",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.pressdigital.es/articulo/economia/2025-09-10/5423067-congreso-tumba-reduccion-jornada-laboral-prosperar-veto-pp-vox-junts",
-    "sourceDate": "2025-09-10",
-    "note": "Impulsó desde el Ministerio de Trabajo la reducción de jornada a 37,5 horas (2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: implantar de inmediato las 37,5 horas sin reducción salarial y avanzar hacia las 32 horas. Lo impulsó desde Trabajo (2025)."
   },
   {
     "questionId": "q-salario-minimo",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: SMI al 60 % del salario medio."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: blindar por ley un SMI equivalente al 60 % del salario medio neto."
   },
   {
     "questionId": "q-cotizaciones-contratar",
@@ -74,47 +74,47 @@
   {
     "questionId": "q-cotizacion-sueldos-altos",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.rtve.es/noticias/20230330/congreso-convalida-reforma-pensiones/2434352.shtml",
-    "sourceDate": "2023-03-30",
-    "note": "Sus integrantes votaron a favor de la reforma de 2023 y su programa 23J pide destopar por completo las bases de cotización."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: seguir elevando el tope máximo de cotización y la cotización de solidaridad de los salarios más altos."
   },
   {
     "questionId": "q-planes-pensiones-privados",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: reforzar el sistema público frente a los incentivos a planes privados."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: eliminar las deducciones por planes de pensiones privados individuales."
   },
   {
     "questionId": "q-ingreso-minimo",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: ampliar el Ingreso Mínimo Vital y la protección contra la pobreza."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: reforma del IMV para que se acerque al 60 % de la renta mediana autonómica y se extienda a jóvenes de 18 a 30 años."
   },
   {
     "questionId": "q-sanidad-privada",
     "value": -1,
     "status": "verificado",
-    "sourceType": "declaracion",
-    "sourceUrl": "https://www.rtve.es/noticias/20260512/gobierno-aprueba-proyecto-ley-frena-gestion-privada-sanidad-publica/17064696.shtml",
-    "sourceDate": "2026-05-12",
-    "note": "Forma parte del Gobierno que aprobó el proyecto de ley que limita las derivaciones a la sanidad privada (2026)."
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: ley de gestión pública directa como vía general del SNS y derogación de la Ley 15/1997 que abrió la colaboración privada."
   },
   {
     "questionId": "q-escuela-concertada",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: priorizar la escuela pública."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: crear plazas públicas en todas las etapas con el objetivo de que el 100 % de los fondos públicos vaya a la escuela pública."
   },
   {
     "questionId": "q-regularizacion",
@@ -128,38 +128,38 @@
   {
     "questionId": "q-rechazo-frontera",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: derogar la Ley de Seguridad Ciudadana y poner fin a las devoluciones en caliente."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: derogar la disposición de la Ley de Extranjería sobre el «rechazo en frontera» y crear un control independiente en la Frontera Sur."
   },
   {
     "questionId": "q-menores-reparto",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://confilegal.com/20250410-el-congreso-convalida-el-decreto-ley-para-trasladar-menores-migrantes-entre-comunidades-autonomas/",
-    "sourceDate": "2025-04-10",
-    "note": "Votó a favor del decreto de reparto obligatorio de menores (abril 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: plan de atención a la infancia migrante con un acuerdo marco vinculante de reparto entre comunidades. Votó a favor del decreto (2025)."
   },
   {
     "questionId": "q-nucleares",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.democrata.es/actualidad/pp-junts-derrotan-gobierno-tramitan-ley-prorroga-nuclear/",
-    "sourceDate": "2025-06-17",
-    "note": "Votó en contra de prorrogar las centrales nucleares (junio 2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: cumplir el calendario de cierre nuclear; Almaraz I y II cerrarán en 2027-2028."
   },
   {
     "questionId": "q-impuestos-verdes",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: fiscalidad verde para acelerar la transición ecológica."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: gravar el queroseno de los vuelos nacionales, equiparar la fiscalidad del diésel y crear tributos ambientales."
   },
   {
     "questionId": "q-trasvases",
@@ -173,29 +173,29 @@
   {
     "questionId": "q-cgpj-jueces",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Defiende que el CGPJ lo elijan las Cortes y rechaza el modelo de elección por los propios jueces."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: los vocales judiciales del CGPJ seguirán eligiéndose en las Cortes, con segunda votación por mayoría absoluta si hay bloqueo."
   },
   {
     "questionId": "q-voto-16",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.aragonplay.es/aragonnoticias/espana/el-congreso-aprueba-una-propuesta-de-sumar-para-rebajar-a-los-16-anos-la-edad-para-votar.html",
-    "sourceDate": "2024-06-27",
-    "note": "Promovió la proposición aprobada en comisión para rebajar la edad de voto a 16 años (junio 2024)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: reconocer por ley el derecho al voto a partir de los 16 años."
   },
   {
     "questionId": "q-gasto-defensa",
     "value": -1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Se opone a aumentar el gasto militar y criticó el plan para alcanzar el 2 % (2025)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: rechazar el objetivo del 5 % de la OTAN e impulsar una reducción efectiva del gasto militar."
   },
   {
     "questionId": "q-ayuda-militar-ucrania",
@@ -218,47 +218,47 @@
   {
     "questionId": "q-ley-violencia-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: reforzar la ley integral contra la violencia de género."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: blindar con carácter plurianual las partidas del Pacto de Estado contra la Violencia de Género y reforzar la protección de las víctimas."
   },
   {
     "questionId": "q-autodeterminacion-genero",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://theobjective.com/espana/politica/2023-02-16/congreso-ley-trans-mayoria/",
-    "sourceDate": "2023-02-16",
-    "note": "Sus integrantes impulsaron y votaron a favor de la ley trans (2023)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: desplegar de forma efectiva la Ley Trans y reconocer a las personas no binarias."
   },
   {
     "questionId": "q-eutanasia",
     "value": 1,
-    "status": "provisional",
-    "sourceType": "votacion",
-    "sourceUrl": "https://www.abc.es/sociedad/abci-congreso-aprueba-mayoria-absoluta-ley-eutanasia-202103181241_noticia.html",
-    "sourceDate": "2021-03-18",
-    "note": "Sus integrantes votaron a favor de la ley de eutanasia (2021)."
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: reconocer el derecho a la eutanasia y al suicidio asistido y un permiso para acompañar a quien reciba la ayuda para morir."
   },
   {
     "questionId": "q-referendum-pactado",
-    "value": 0.5,
-    "status": "provisional",
-    "sourceType": "programa-2023",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2023-07-23",
-    "note": "Programa 23J: diálogo y soluciones pactadas; varias de sus formaciones defienden una consulta acordada."
+    "value": 1,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: impulsar un modelo federal y plurinacional que incluya el derecho a decidir mediante referéndum."
   },
   {
     "questionId": "q-autonomia-fiscal",
-    "value": null,
-    "status": "sin-datos-suficientes",
-    "sourceType": "sin-datos",
-    "sourceUrl": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/",
-    "sourceDate": "2026-10-06",
-    "note": "Búsqueda negativa: no se ha localizado una posición atribuible y contrastable sobre esta propuesta concreta."
+    "value": 0,
+    "status": "verificado",
+    "sourceType": "programa-2026",
+    "sourceUrl": "https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf",
+    "sourceDate": "2026-11-19",
+    "note": "Programa 29N: más capacidad tributaria y agencias autonómicas y acomodar el mayor autogobierno, pero dentro de un modelo común con solidaridad interterritorial."
   },
   {
     "questionId": "q-lengua-cooficial",
